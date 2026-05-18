@@ -1,55 +1,34 @@
 {
-  "IP":   [["NP", "VP"],
-            ["VP", "NP"]],
-  "VP":   [
-    ["V", "VP"],
-    ["VP", "V"],
-    ["V", "NP"],
-    ["NP", "V"],
-    ["V", "PP"],
-    ["PP", "V"],
-    ["CP", "V"],
-    ["V", "CP"],
-    ["V", "NP", "PP"],
-    ["V", "NP", "NP"],
-    ["VP", "PP"],
-    ["PP", "VP"],
-    ["VP", "AdvP"],
-    ["AdvP", "VP"],
-    ["V"]
-  ],
-  "NP":   [
-    ["AP", "N"],
-    ["N", "AP"],
-    ["Det", "N"],
-    ["N", "Det"],
-    ["Q", "N"],
-    ["N", "Q"],
-    ["N", "PP"],
-    ["PP", "N"],
-    ["N", "CP"],
-    ["CP", "N"],
-    ["Pron"],
-    ["N"]
-  ],
-  "PP":   [
-    ["P", "NP"],
-    ["NP", "P"]
-  ],
-  "AP":   [
-    ["AdvP", "A"],
-    ["A", "AdvP"],
-    ["A", "PP"],
-    ["PP", "A"],
-    ["A"]
-  ],
-  "AdvP": [
-    ["Adv", "PP"],
-    ["PP", "Adv"],
-    ["Adv"]
-  ],
-  "CP":   [
+  "IP":   [
     ["C", "IP"],
-    ["C", "IP"]
-  ]
+    ["IP", "ConjIP"],
+    ["NP", "VP"], ["VP", "NP"],
+    ["NP", "AP"], ["AP", "NP"],
+    ["NP", "NP"],
+    ["NP", "PP"], ["PP", "NP"],
+    ["VP"], ["AdvP"], ["AP"]
+  ],
+  "ConjIP": [["Comma", "IP"], ["Semicolon", "IP"], ["Colon", "IP"], ["C", "IP"], ["CommaC", "IP"]],
+  "CommaC": [["Comma", "C"]],
+  "VP":   [
+    ["V", "VP"], ["VP", "V"], ["V", "NP"], ["NP", "V"], ["V", "PP"], ["PP", "V"],
+    ["CP", "V"], ["V", "CP"], ["V", "ConjCP"],
+    ["V", "NP", "PP"], ["V", "NP", "NP"],
+    ["VP", "PP"], ["PP", "VP"], ["VP", "AdvP"], ["AdvP", "VP"], ["V"],
+    ["VP", "ConjVP"], ["VP", "VP"]
+  ],
+  "ConjVP": [["C", "VP"], ["Comma", "VP"]],
+  "ConjCP": [["Comma", "CP"]],
+  "NP":   [
+    ["AP", "N"], ["N", "AP"], ["AP", "NP"], ["Det", "N"], ["N", "Det"],
+    ["Q", "N"], ["N", "Q"], ["N", "N"], ["N", "NP"], ["N", "PP"], ["N", "CP"], ["N", "ConjAP"],
+    ["Pron"], ["N"], ["NP", "ConjNP"], ["NP", "NP"], ["NP", "ConjCP"]
+  ],
+  "ConjNP": [["C", "NP"], ["Comma", "NP"]],
+  "PP":   [["P", "NP"]],
+  "AP":   [["AdvP", "A"], ["A", "AdvP"], ["A", "PP"], ["PP", "A"], ["A"], ["A", "N"], ["AP", "NP"], ["AP", "ConjAP"], ["AP", "AP"]],
+  "ConjAP": [["C", "AP"], ["Comma", "AP"]],
+  "AdvP": [["Adv", "PP"], ["PP", "Adv"], ["Adv"], ["AdvP", "ConjAdvP"]],
+  "ConjAdvP": [["C", "AdvP"], ["Comma", "AdvP"]],
+  "CP":   [["C", "IP"]]
 }

@@ -1,37 +1,37 @@
 #!/usr/bin/env python3
 """
-Разбиение текста на предложения по символу точки (.).
-Точка в конце каждого фрагмента восстанавливается, если она была в исходном тексте;
-хвост без финальной точки выводится как есть.
+Разбиение текста на предложения по символам конца предложения.
+Исходная пунктуация сохраняется, пробельные символы внутри предложения
+нормализуются до одного пробела.
 """
 
 import argparse
+import re
 import sys
 
 
-def split_by_dots(text: str) -> list[str]:
+def split_sentences(text: str) -> list[str]:
     out: list[str] = []
     buf: list[str] = []
 
-    def flush(with_dot: bool) -> None:
-        s = "".join(buf).strip()
+    def flush() -> None:
+        s = re.sub(r"\s+", " ", "".join(buf)).strip()
         buf.clear()
         if not s:
             return
-        out.append(s + "." if with_dot else s)
+        out.append(s)
 
     for ch in text:
-        if ch == ".":
-            flush(with_dot=True)
-        else:
-            buf.append(ch)
-    flush(with_dot=False)
+        buf.append(ch)
+        if ch in ".?!":
+            flush()
+    flush()
     return out
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Разбор текста на фрагменты по точкам (.)."
+        description="Разбор текста на предложения по . ? !."
     )
     parser.add_argument(
         "path",
@@ -45,9 +45,8 @@ def main() -> None:
             text = f.read()
     else:
         text = sys.stdin.read()
-        print(text)
 
-    for sentence in split_by_dots(text):
+    for sentence in split_sentences(text):
         print(sentence)
 
 

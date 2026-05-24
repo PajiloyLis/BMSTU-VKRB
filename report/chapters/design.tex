@@ -1,0 +1,406 @@
+\chapter{Конструкторская часть}
+
+\section{Описание сущностей  базы данных}
+
+В соответствии с таблицей~\ref{tab:tab_2}, рисунком~\ref{fig:ER} и алгоритмом получения реляционный схемы из диаграммы сущность-связь, простые сущности преобразуются в следующие таблицы:
+\begin{itemize}
+    \item company~---~таблица компаний в группы;
+    \item post~---~таблица должностей, представленных в компания группы;
+    \item position~---~таблица позиций сотрудника;
+    \item employee~---~таблица сотрудников;
+    \item post\_story~---~таблица историй изменений должностей сотрудников;
+    \item position\_story~---~таблица историй изменений позиций сотрудников;
+    \item education~---~таблица пройденных сотрудниками учебных курсов, в том числе получение среднего общего и высшего образования, курсов повышения профессиональной квалификации, курсов профессиональной переподготовки и т.~п.;
+    \item score\_story~---~таблица оценок сотрудников за все время их работы в компаниях группы.
+\end{itemize}
+
+В таблицах~\ref{tab:tab_employee},~\ref{tab:tab_education},~\ref{tab:tab_post},~\ref{tab:tab_position},~\ref{tab:tab_company},~\ref{tab:tab_post_history},~\ref{tab:tab_position_history},~\ref{tab:tab_score_history} представлена информация о структуре столбцов перечисленных таблиц, указаны их ограничения.
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы employee}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id &  primary key & Идентификатор сотрудника\\\hline
+        full_name  & not null & ФИО сотрудника\\\hline
+        phone  & check %(phone ~ '^\+[0-9]{1,3}[0-9]{4,14}\$')
+        & Номер телефона \\\hline
+        email & not null, check %(email ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$')
+        & Адрес рабочей электронной почты \\\hline
+        birth_date & not null, check %(иш <= CURRENT_DATE)
+        & Дата рождения\\\hline
+        photo &  & Путь к фотографии в файловом хранилище\\\hline
+        duties &  & Характеристика рабочих обязанностей в формате json\\\hline
+    \end{tabular}
+    \label{tab:tab_employee}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы education}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id & primary key & Идентификатор записи\\\hline
+        employee_id  & foreign key & Идентификатор сотрудника\\\hline
+        institution  & not null & Название учебного заведения \\\hline
+        education_level & not null & Уровень полученного образования \\\hline
+        study_field & not null & Направление подготовки\\\hline
+        start_date & not null, check & Дата начала обучения\\\hline
+        end_date & not null, check & Дата окончания обучения\\\hline
+    \end{tabular}
+    \label{tab:tab_education}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы post}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id & primary key & Идентификатор должности\\\hline
+        title & not null & Название\\\hline
+        salary & not null, check & Оклад \\\hline
+        company_id & foreign key & Идентификатор компании, в которой введена должность \\\hline
+    \end{tabular}
+    \label{tab:tab_post}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы position}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id & primary key & Идентификатор позиции\\\hline
+        parent_id & foreign key & Идентификатор непосредственного начальника \\\hline
+        title & not null & Название\\\hline
+        company_id & foreign key & Идентификатор компании позиции \\\hline
+    \end{tabular}
+    \label{tab:tab_position}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы company}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id & primary key & Идентификатор компании\\\hline
+        title & not null & Название\\\hline
+        registration_date & not null, check & Дата регистрации\\\hline
+        phone & check & Номер телефона \\\hline
+        email & not null, check & Адрес рабочей электронной почты \\\hline
+        inn & not null, check & Индивидуальный номер налогоплательщика компании\\\hline
+        kpp & not null check & Код причины постановки на учет \\\hline
+        ogrn & not null, check & Основной государственный регистрационный номер\\\hline
+        address & not null & Юридический адрес компании\\\hline
+    \end{tabular}
+    \label{tab:tab_company}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы post_history}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        post_id & foreign key & Идентификатор должности\\\hline
+        employee_id & foreign key & Идентификатор сотрудника\\\hline
+        start_date & not null, check & Дата вступления в должность\\\hline
+        end_date & check & Дата ухода с должности \\\hline
+    \end{tabular}
+    \label{tab:tab_post_history}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы position_history}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        position_id & foreign key & Идентификатор позиции\\\hline
+        employee_id & foreign key & Идентификатор сотрудника\\\hline
+        start_date & not null, check & Дата вступления на позицию\\\hline
+        end_date & check & Дата ухода с позиции \\\hline
+    \end{tabular}
+    \label{tab:tab_position_history}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы score_story}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id & primary key & Идентификатор оценки\\\hline
+        employee_id & foreign key & Идентификатор сотрудника, которому выставлена оценка\\\hline
+        author_id & foreign key & Идентификатор сотрудника, который выставил оценку\\\hline
+        position_id & foreign key &  Позиция оцениваемого\\\hline
+        created_at & not null, default & Дата и время создания оценки\\\hline
+        efficiency_score & check & Оценка эффективности сотрудника\\\hline
+        engagement_score & check & Оценка вовлеченности сотрудника\\\hline
+        competency_score & check & Оценка компетенций сотрудника\\\hline
+    \end{tabular}
+    \label{tab:tab_score_history}
+\end{table}
+
+При удалении позиции, должности или компании, необходимо сделать так, чтобы история работы пользователя валидной. Для этого данные не будут удаляться на прямую, а будут введены специальные флаги в таблицах, указывающие, что данная позиция, должность или компания уже были удалены. Редактироваие удаленных сущностей будет запрещено. 
+На рисунке~\ref{fig:er} приведена диаграмма базы данных.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textheight, angle=90]{images/ER_DB_2.pdf}
+    \caption{Диаграмма базы данных}
+    \label{fig:er}
+\end{figure}
+
+\section{Ролевая модель}
+
+Гость имеет права на выполнение только SELECT запросов в таблицах company, post и position.
+
+Сотрудник имеет права на выполнение SELECT запросов в таблицах:
+\begin{itemize}
+    \item company без ограничений;
+    \item post без ограничений;
+    \item position без ограничений;
+    \item post\_hitsory при условии, что позиция просматриваемого сотрудника ниже позиции просматривающего или на том же уровне, в той же компании;
+    \item position\_hitsory при условии, что позиция просматриваемого сотрудника ниже позиции просматривающего или на том же уровне, в той же компании;
+    \item employee при условии, что позиция просматриваемого сотрудника ниже позиции просматривающего или на том же уровне, в той же компании;
+    \item score\_history при условии, что позиция просматриваемого сотрудника ниже позиции просматривающего или на том же уровне, в той же компании;
+    \item education при условии, что записи относятся к самому сотруднику, его подчиненным или сотрудникам на том же уровне в той же компании.
+\end{itemize}
+
+Сотрудник имеет права на выполнение INSERT запросов в таблице score\_history при условии, что сотрудник, которому выставляется оценка является непосредственным подчиненным.
+
+Прочие запросы сотрудник выполнять не может. Для реализации таких ограничений доступа, будут использоваться row security policies~\cite{RLS}. Так как ограничения затрагивают таблицы на основе которых они будут вычисляться, необходимо ввести дополнительные таблицы. Для таблицы employee создадим таблицу employee\_reduced, для position\_history~---~position\_history\_reduced, для position~---~position\_reduced, в последней будут поддерживаться только занимающие позицию на текущий момент сотрудники. Поля этих таблиц представлены в таблицах~\ref{tab:tab_employee_reduced}~\ref{tab:tab_position_reduced}~\ref{tab:tab_position_history_reduced}.
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы employee\_reduced}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id &  foreign key & Идентификатор сотрудника\\\hline
+        email & unique, not null, check & Адрес рабочей электронной почты \\\hline
+    \end{tabular}
+    \label{tab:tab_employee_reduced}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы position\_reduced}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        id & primary key & Идентификатор позиции\\\hline
+        parent_id & foreign key & Идентификатор непосредственного начальника \\\hline
+    \end{tabular}
+    \label{tab:tab_position_reduced}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Описание столбцов таблицы position\_history\_reduced}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+    \hline
+        Столбец & Ограничения & Значение\\\hline
+        position_id & foreign key & Идентификатор позиции\\\hline
+        employee_id & foreign key & Идентификатор сотрудника\\\hline
+    \end{tabular}
+    \label{tab:tab_position_history_reduced}
+\end{table}
+
+Для этих таблиц row security policies реализованы не будут, сотрудник не обладает правами прямого чтения или изменения этих таблиц, чтение будет осуществляться только из специальных функций, описанных ниже и используемых только для вычисления row security policies.
+
+Администратор имеет права на выполнение любых запросов к любым таблицам, не нарушая при этом целостности данных.
+
+\section{Используемые триггеры}
+
+Для отслеживания целостности данных и предотвращения становления более не валидными в базе данных будут реализованы триггеры. Ниже описаны некоторые из них.
+
+% Поскольку названия должностей и позиций предполагаются уникальными в пределах компании, необходимо реализовать триггеры, проверяющие это требование перед операциями INSERT или UPDATE в таблицах position и post. На рисунке~\ref{fig:unique_position_title} представлена схема триггера, выполняемого перед операциями INSERT или UPDATE для таблицы position. Аналогичный триггер реализован для таблицы post.
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.6\linewidth]{images/unique_position_title_trigger.pdf}
+%     \caption{Схема триггера before insert or update для таблицы position.}
+%     \label{fig:unique_position_title}
+% \end{figure}
+
+% Так как в одной компании на одной позиции одновременно может быть один сотрудник, необходимо реализовать триггер, который проверяет, что при операциях INSERT или UPDATE другой сотрудник уже не занимает эту должность в этот период. На рисунке~\ref{fig:non_crossing_positions} представлена схема триггера, выполняемого перед операциями INSERT или UPDATE для таблицы position\_history.
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.6\linewidth]{images/non_crossing_positions_history.pdf}
+%     \caption{Схема триггера before insert or update для таблицы position\_history.}
+%     \label{fig:non_crossing_positions}
+% \end{figure}
+
+При удалении позиции, необходимо, чтобы подчиненные позиции остались в иерархии. В связи с этим необходимо реализовать триггер, выполняемый перед операцией DELETE в таблице position, назначающий руководителем подчиненных удаляемой позиции ее руководителя. При этом, поскольку в position\_reduced поддерживаются только актуальные позиции, из этой таблицы запись необходимо удалить. На рисунке~\ref{fig:before_delete_position} представлена схема такого триггера.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/position_delete.pdf}
+    \caption{Схема триггера before delete для таблицы position.}
+    \label{fig:before_delete_position}
+\end{figure}
+
+При обновлении непосредственного руководителя позиции, имеющей подчиненных, поведение пользователя не определено: пользователь может хотеть переместить только вершину, соответствующую обновляемой позиции в иерархии, или переместить все поддерево, корнем которого является вершина, соответствующая обновляемой позиции. Таким образом, необходимо реализовать триггер, который запретит использование операции UPDATE для таблицы position напрямую и будет указывать пользователю на необходимость использования специальных функций, которые будут описаны ниже. Схема триггер, выполняемого перед операцией UPDATE в таблице position и выполняющего необходимые проверки указаны на рисунке~\ref{fig:protect_parent_id}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{images/protect_parent_id.pdf}
+    \caption{Схема триггера before update для таблицы position.}
+    \label{fig:protect_parent_id}
+\end{figure}
+
+Минимальный интервал между выставляемыми оценками сотруднику на одной и той же позиции должен составлять не менее одного месяца. Для проверки этого требования будет реализован триггер, выполняемый перед операциями INSERT и UPDATE в таблице score\_story. На рисунке~\ref{fig:score_frequency} представлена схема этого триггера.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/scores_frequency.pdf}
+    \caption{Схема триггера before insert or update для таблицы score_story.}
+    \label{fig:score_frequency}
+\end{figure}
+
+Поскольку компании не удаляются из таблицы напрямую, необходим триггер, который будет устанавливать соответствующий флаг. На рисунке~\ref{fig:soft_delete_company} представлена схема триггера, вызываемого перед операцией DELETE для таблицы company.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{images/soft_delete_company.pdf}
+    \caption{Схема триггера before delete для таблицы company.}
+    \label{fig:soft_delete_company}
+\end{figure}
+
+Аналогичный триггер будет реализован для таблицы post. При этом предполагается, что при удалении должности, сотрудники перестают занимать эту должность. На рисунке~\ref{fig:soft_delete_post} показана схема триггера, вызываемого перед операцией DELETE для таблицы post.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/soft_delete_post.pdf}
+    \caption{Схема триггера before delete для таблицы post.}
+    \label{fig:soft_delete_post}
+\end{figure}
+
+Аналогичный триггер для таблицы position, должен помимо снятия сотрудников с позиций в position\_history, должен также удалять все записи об этой позиции в position\_history\_reduced. На рисунке~\ref{fig:soft_delete_pos}, приведена схема триггера, выполняемого перед операцией DELETE в таблице position.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/soft_delete_position.pdf}
+    \caption{Схема триггера before delete для таблицы position.}
+    \label{fig:soft_delete_pos}
+\end{figure}
+
+% При добавлении данных в position\_history, необходимо обеспечить также вставку этих данных в position\_history\_reduced, если они описывают текущую занятость позиции. Для этого будет реализован триггер, вызываемый после операции INSERT в таблице position\_history. Схема такого триггера представлена на рисунке~\ref{fig:position_insert}.
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.6\linewidth]{images/position_insert.pdf}
+%     \caption{Схема триггера after insert для таблицы position_history.}
+%     \label{fig:position_insert}
+% \end{figure}
+
+При обновлении данных в таблице position\_history, необходимо также обновить данные в таблице position\_history\_reduced. При этом, если обновление снимает сотрудника с текущей позиции, необходимо удалить запись об этом в position\_history\_reduced. Схема триггера, реализующего такое поведение и вызываемого после операции UPDATE в таблице position\_history, показана на рисунке~\ref{fig:close_previous_position_update}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/close_previous_position_update.pdf}
+    \caption{Схема триггера after update для таблицы position_history.}
+    \label{fig:close_previous_position_update}
+\end{figure}
+
+% Если из position\_history удаляются данные о том, что в данный момент некоторый сотрудник занимает некоторую позицию, эквивалентные данные должны быть удалены из position\_history\_reduced. На рисунке~\ref{fig:delete_position_history} показана схема триггера, вызываемого после операции DELETE в таблице position\_history и реализующего такое поведение.
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.6\linewidth]{images/delete_position_history.pdf}
+%     \caption{Схема триггера after delete для таблицы position_history}
+%     \label{fig:delete_position_history}
+% \end{figure}
+
+Сотрудник может занимать единственную должность в каждой компании в каждый момент времени. Соответственно, в случае вставки данных в таблицу post\_history, необходимо проверить, что сотрудник в настоящий момент не занимает никакой должности и, в случае если занятая им должность найдена, снять с нее сотрудника. На рисунке~\ref{fig:close_previous_post_insert} показана схема триггера, вызываемого перед операцией INSERT в таблице post\_history, для выполнения таких действий.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/close_previous_post_insert.pdf}
+    \caption{Схема триггера before insert для таблицы post_history.}
+    \label{fig:close_previous_post_insert}
+\end{figure}
+
+% В случае обновления адреса электронной почты сотрудника, необходимо отобразить эти изменения в таблице employee\_reduced. На рисунке~\ref{fig:update_employee_email} представлена схема триггера, вызываемого после операции UPDATE в таблице employee, выполняющего это отображение. 
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.6\linewidth]{images/update_employee_email.pdf}
+%     \caption{Схема триггера after update для таблицы employee.}
+%     \label{fig:update_employee_email}
+% \end{figure}
+
+% Также будут реализованы два идентичных триггера для таблиц employee и position, срабатывающие после операции INSERT, и добавляющие новые данные в таблицы employee\_reduced и position\_reduced соответственно. На рисунке~\ref{fig:insert-employee} приведена схема такого триггера для таблицы employee.
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.4\linewidth]{images/insert_employee.pdf}
+%     \caption{Схема триггера after insert для таблицы employee.}
+%     \label{fig:insert-employee}
+% \end{figure}
+
+\section{Используемые функции}
+
+Для упрощения доступа к данным и реализации row security policies в базе данных будут реализованы дополнительные пользовательские функции.
+
+Так как к пользователь-сотрудник имеет доступ только к данным о своих подчиненных, необходимо реализовать функцию, вычисляющую текущих подчиненных сотрудника, по одному из его потенциальных ключей. Для вычисления иерархии подчинения позиций будет использоваться функция get\_subordinates\_by\_id\_rls, схема алгоритма которой представлена на рисунке~\ref{fig:subordinates_position}. Эта функция принимает первичный ключ позиции руководителя и рекурсивно обходит подчиненных по иерархии представленной в таблице position\_reduced. Поскольку пользователь-сотрудник не имеет прав на чтение из этой таблицы, а функция будет выполняться при вычислении его row security policies, функция будет отмечена ключевым словом security definer~\cite{SecDef}, что позволит выполняться ей от имени ее создателя-суперпользователя. Таким образом пользователь-сотрудник не сможет получить доступ к данным других своих сотрудников, кроме своих подчиненных, будучи авторизованным под своей учетной записью.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/subordinates_position.pdf}
+    \caption{Схема алгоритма поиска подчиненных позиций.}
+    \label{fig:subordinates_position}
+\end{figure}
+
+Для получения текущих подчиненных сотрудника будет реализована функция get\_current\_subordinates\_id\_by\_employee\_id\_rls\linebreak[0], схема алгоритма которой представлена на рисунке~\ref{fig:subordinates_employee}. Эта функция также будет отмечена ключевым словом security definer, чтобы использовать таблицы employee\_reduced и position\_history\_reduced.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/subordinates_employee.pdf}
+    \caption{Схема алгоритма поиска текущих подчиненных сотрудников.}
+    \label{fig:subordinates_employee}
+\end{figure}
+
+Пользователь-сотрудник может использовать две функции, идентичные предыдущим, однако не отмеченные security definer и обращающиеся напрямую к таблицами employee, position, position\_history. С использованием этих функций сотрудник может получать иерархии позиций или иерархии своих подчиненных, при этом он не сможет получить или изменить данные других сотрудников.
+
+На рисунке~\ref{fig:update_with_subordinates} приведена схема алгоритма перемещения поддерева иерархии, корнем которой является обновляемая позиция, реализованного отдельной процедурой. Данная процедура использует параметр session\_replication\_role~\cite{SessionReplicationRole}: в начале выполнения функции параметр устанавливается в значение replica, что позволяет использовать операцию UPDATE к таблице position в данной сессии, в конце, значение возвращается к значению по умолчанию origin.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/update_with_subordinates.pdf}
+    \caption{Схема алгоритма перемещения поддерева иерархии.}
+    \label{fig:update_with_subordinates}
+\end{figure}
+
+На рисунке~\ref{fig:update_without_subordinates} приведена схема алгоритма перемещения вершины соответствующей обновляемой позиции, при этом подчиненные этой позиции становятся подчиненными руководителя этой позиции. Процедура использующая этот алгоритм, также изменяет значение параметра  session\_replication\_role.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/update_without_subordinates.pdf}
+    \caption{Схема алгоритма перемещения одной вершины иерархии.}
+    \label{fig:update_without_subordinates}
+\end{figure}
+
+\section{Диаграмма классов приложения}
+
+На рисунке~\ref{fig:uml} приведена диаграмма классов приложения, реализующего интерфейс доступа к базе данных, представленный в виде REST API. Для допустпа к данным используется паттерн репозиторий. Авторизация и аутентификация в приложении основываются на ролевой системе реализованной в базе данных.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\textheight, angle=90]{images/class_uml.drawio.pdf}
+    \caption{Диаграмма классов приложения}
+    \label{fig:uml}
+\end{figure}
+
+\section*{Вывод}
+
+В данном разделе были описаны все сущности базы данных и приведена диаграмма базы данных. Были спроектированы необходимые триггеры и хранимые процедуры, приведены соответствующие схемы алгоритмов. Также приведена диаграмма классов приложения реализующего необходимые методы REST API для предоставления доступа к базе данных.
+
+\clearpage

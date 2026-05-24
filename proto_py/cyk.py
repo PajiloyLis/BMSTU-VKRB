@@ -114,12 +114,15 @@ def agreement_check_unary(lhs, sym, feat_fs):
         return True
     if lhs == "IP" and sym in ("AdvP", "AP"):
         return True
+    # Короткие ответы/эллипсис: «Сто рублей», «Без сахара».
+    if lhs == "IP" and sym in ("NP", "PP"):
+        return True
     return True
 
 
 def merge_features_unary(lhs, sym, feat_fs):
     """Признаки узла lhs при унарном правиле lhs -> sym."""
-    if lhs == "IP" and sym in ("VP", "AdvP", "AP"):
+    if lhs == "IP" and sym in ("VP", "AdvP", "AP", "NP", "PP"):
         return feat_fs
     return feat_fs
 
@@ -318,9 +321,24 @@ def agreement_check(
     # IP -> C IP: вводный союз/частица перед клаузой (А он ушёл)
     if lhs == "IP" and left_sym == "C" and right_sym == "IP":
         return True
+    # IP -> C ConjIP: ответная частица + запятая + клауза («Да, хочу»).
+    if lhs == "IP" and left_sym == "C" and right_sym == "ConjIP":
+        return True
     # IP -> IP ConjIP: бессоюзная / запятая / точка с запятой между предложениями
     if lhs == "IP" and left_sym == "IP" and right_sym == "ConjIP":
         return True
+    # IP -> AdvP IP: препозитивное обстоятельство/интенсификатор (Больше всего ему хочется ...)
+    if lhs == "IP" and left_sym == "AdvP" and right_sym == "IP":
+        return True
+    # IP -> NP IP: внешний аргумент/топик перед уже собранным предикатом
+    # («Мне нужен хлеб», «Меня зовут Анна», «Я не знаю ответа»).
+    if lhs == "IP" and left_sym == "NP" and right_sym == "IP":
+        if lf.get("case") == "nomn" and rf.get("verb_form") is not None:
+            return _ip_subject_vp_agree(lf, rf)
+        return lf.get("case") in ("datv", "accs", "gent")
+    # IP -> NP ConjVP: подлежащее, вставка/пауза, затем сказуемое (книги, хлопая ..., гибнут)
+    if lhs == "IP" and left_sym == "NP" and right_sym == "ConjVP":
+        return _ip_subject_vp_agree(lf, rf)
     if lhs == "ConjIP" and left_sym == "CommaC" and right_sym == "IP":
         return True
     # AP -> A N: пассивное причастие + твор. (пожираемый огнем) — падежи разные, не требуем совпадения
@@ -332,6 +350,12 @@ def agreement_check(
     # AP -> AP AP: определения подряд без запятой (большой красный …)
     if lhs == "AP" and left_sym == "AP" and right_sym == "AP":
         return _np_modifier_head_agree(lf, rf)
+    # AP -> AP ConjPP: вставная предложная группа внутри определения (черный, с отливом)
+    if lhs == "AP" and left_sym == "AP" and right_sym == "ConjPP":
+        return True
+    # AdvP -> AdvP AdvP / AdvP NP: составные обстоятельства и деепричастные группы.
+    if lhs == "AdvP" and left_sym == "AdvP" and right_sym in ("AdvP", "NP"):
+        return True
     # NP -> NP ConjCP: коррелят и относительные (предвкушение того, что …)
     if lhs == "NP" and left_sym == "NP" and right_sym == "ConjCP":
         return True
@@ -344,6 +368,9 @@ def agreement_check(
         return True
     # NP -> AP N: прилагательное с существительным (частичные граммемы pymorphy — только где оба заданы)
     if lhs == "NP" and left_sym == "AP" and right_sym == "N":
+        return _np_modifier_head_agree(lf, rf)
+    # NP -> AP ConjN: определение + запятая + вершина N (черный, с отливом, шлем)
+    if lhs == "NP" and left_sym == "AP" and right_sym == "ConjN":
         return _np_modifier_head_agree(lf, rf)
     if lhs == "NP" and left_sym == "AP" and right_sym == "NP":
         return _np_modifier_head_agree(lf, rf)
@@ -384,6 +411,14 @@ def agreement_check(
     # AdvP -> AdvP ConjAdvP: однородные обстоятельства (морф. ограничения слабые)
     if lhs == "AdvP" and left_sym == "AdvP" and right_sym == "ConjAdvP":
         return True
+    # VP -> AdvP ConjVP: деепричастная вставка перед сказуемым (хлопая ..., гибнут)
+    if lhs == "VP" and left_sym == "AdvP" and right_sym == "ConjVP":
+        return True
+    # PP -> PP ConjPP: однородные предложные группы (на крыльце и на газоне)
+    if lhs == "PP" and left_sym == "PP" and right_sym == "ConjPP":
+        return True
+    if lhs == "ConjPP" and left_sym in ("C", "Comma") and right_sym == "PP":
+        return True
     # PP -> P NP: падеж именной группы по словарю управления предлога
     if lhs == "PP" and left_sym == "P" and right_sym == "NP":
         if tokens is None or span_left is None:
@@ -391,9 +426,16 @@ def agreement_check(
         i0, i1 = span_left
         prep_phrase = " ".join(tokens[i0:i1])
         return _pp_prep_np_agree(prep_phrase, rf)
+    # PP -> P Q: время/количество без явного N («в пять»).
+    if lhs == "PP" and left_sym == "P" and right_sym == "Q":
+        return True
     # VP -> V NP: справа дополнение; переходный глагол — прямое дополнение в вин.п.
     # (для VP -> NP V порядок подлежащее/дополнение не размечен — вин.п. не требуем)
     if lhs == "VP" and left_sym == "V" and right_sym == "NP":
+        if tokens is not None and span_left is not None:
+            verb = " ".join(tokens[span_left[0]:span_left[1]]).lower()
+            if verb == "зовут":
+                return True
         return _verb_np_direct_object_agree(lf, rf)
     # IP -> NP VP / VP NP: подлежащее и финитный глагол (вершина VP)
     if lhs == "IP" and left_sym == "NP" and right_sym == "VP":
@@ -426,11 +468,15 @@ def merge_features(lhs, left_sym, left_fs, right_sym, right_fs):
     rf = dict_from_frozenset(right_fs)
     if lhs == "ConjNP" and left_sym in ("C", "Comma") and right_sym == "NP":
         return right_fs
+    if lhs == "ConjN" and left_sym == "Comma" and right_sym == "N":
+        return right_fs
     if lhs == "ConjVP" and left_sym in ("C", "Comma") and right_sym == "VP":
         return right_fs
     if lhs == "ConjAP" and left_sym in ("C", "Comma") and right_sym == "AP":
         return right_fs
     if lhs == "ConjAdvP" and left_sym in ("C", "Comma") and right_sym == "AdvP":
+        return right_fs
+    if lhs == "ConjPP" and left_sym in ("C", "Comma") and right_sym == "PP":
         return right_fs
     if lhs == "ConjCP" and left_sym == "Comma" and right_sym == "CP":
         return right_fs
@@ -449,6 +495,8 @@ def merge_features(lhs, left_sym, left_fs, right_sym, right_fs):
             return _coord_np_merge_frozenset(left_fs, right_fs)
         if left_sym == "NP" and right_sym == "ConjCP":
             return left_fs
+        if left_sym == "AP" and right_sym == "ConjN":
+            return right_fs
         # прилагательное + ИГ (символическим числом 451): голова — внутренняя ИГ
         if left_sym == "AP" and right_sym == "NP":
             return right_fs
@@ -462,6 +510,8 @@ def merge_features(lhs, left_sym, left_fs, right_sym, right_fs):
     if lhs == "VP":
         if left_sym == "VP" and right_sym == "ConjVP":
             return left_fs
+        if left_sym == "AdvP" and right_sym == "ConjVP":
+            return right_fs
         if left_sym == "VP" and right_sym == "VP":
             return left_fs
         # вершина глагол
@@ -469,6 +519,8 @@ def merge_features(lhs, left_sym, left_fs, right_sym, right_fs):
         if right_sym == "V": return right_fs
     if lhs == "AP":
         if left_sym == "AP" and right_sym == "NP":
+            return left_fs
+        if left_sym == "AP" and right_sym == "ConjPP":
             return left_fs
         if left_sym == "AP" and right_sym == "ConjAP":
             return _coord_ap_merge_frozenset(left_fs, right_fs)
@@ -481,12 +533,29 @@ def merge_features(lhs, left_sym, left_fs, right_sym, right_fs):
     if _is_binarization_aux(lhs) and left_sym == "NP" and right_sym == "NP":
         return _coord_np_merge_frozenset(left_fs, right_fs)
     if lhs == "AdvP":
+        if left_sym == "AdvP" and right_sym in ("AdvP", "NP"):
+            return left_fs
         if left_sym == "AdvP" and right_sym == "ConjAdvP":
             return left_fs
+    if lhs == "PP":
+        if left_sym == "PP" and right_sym == "ConjPP":
+            return left_fs
+        if left_sym == "P" and right_sym == "Q":
+            return right_fs
     if lhs == "IP":
         if left_sym == "C" and right_sym == "IP":
             return right_fs
+        if left_sym == "C" and right_sym == "ConjIP":
+            return right_fs
+        if left_sym == "AdvP" and right_sym == "IP":
+            return right_fs
         if left_sym == "IP" and right_sym == "ConjIP":
+            return left_fs
+        if left_sym == "NP" and right_sym == "IP":
+            if dict_from_frozenset(left_fs).get("case") == "nomn":
+                return left_fs
+            return right_fs
+        if left_sym == "NP" and right_sym == "ConjVP":
             return left_fs
         if left_sym == "NP" and right_sym in ("AP", "NP", "PP"):
             return left_fs

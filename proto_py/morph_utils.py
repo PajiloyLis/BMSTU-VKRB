@@ -74,6 +74,25 @@ def get_features(word):
     # Чистые цифры — как квантор (число 451), иначе pymorphy даёт X и ломает N Q.
     if word.isdigit():
         return [{"pos": "Q"}]
+    if word.lower() == "то":
+        return [
+            {"pos": "Pron", "gender": "n", "number": "sg", "case": "accs", "person": "3"},
+            {"pos": "Pron", "gender": "n", "number": "sg", "case": "nomn", "person": "3"},
+            {"pos": "C"},
+        ]
+    if word.lower() == "всего":
+        return [
+            {"pos": "Adv"},
+            {"pos": "A", "gender": "n", "number": "sg", "case": "gent"},
+            {"pos": "C"},
+        ]
+    if word.lower() == "её":
+        return [
+            {"pos": "Pron", "gender": "f", "number": "sg", "case": "accs", "person": "3"},
+            {"pos": "Pron", "gender": "f", "number": "sg", "case": "gent", "person": "3"},
+            {"pos": "A", "gender": "f", "number": "sg", "case": "accs"},
+            {"pos": "A", "gender": "f", "number": "sg", "case": "gent"},
+        ]
 
     parses = morph.parse(word)
     filtered = [p for p in parses if p.score >= MIN_PARSE_SCORE]

@@ -1,0 +1,322 @@
+{
+  "id": "5d2fee5a08e24e86a164df42929ad0c8",
+  "text": "Я люблю чай.",
+  "tokens": [
+    "Я",
+    "люблю",
+    "чай"
+  ],
+  "parsed": true,
+  "rootSymbol": "IP",
+  "treeCount": 12,
+  "returnedTreeCount": 3,
+  "trees": [
+    {
+      "index": 1,
+      "bracket": "IP[sg,nomn,1](NP[sg,nomn,1](Я) IP[sg,impf,tran,fin](VP[sg,impf,tran,fin](VP[sg,1,pres,impf,tran,fin](люблю) чай)))",
+      "tree": {
+        "tag": "IP",
+        "feats": {
+          "person": "1",
+          "case": "nomn",
+          "number": "sg",
+          "pos": "Pron"
+        },
+        "children": [
+          {
+            "tag": "NP",
+            "feats": {
+              "person": "1",
+              "case": "nomn",
+              "number": "sg",
+              "pos": "Pron"
+            },
+            "children": [
+              {
+                "tag": "Pron",
+                "feats": {
+                  "person": "1",
+                  "case": "nomn",
+                  "number": "sg",
+                  "pos": "Pron"
+                },
+                "word": "Я"
+              }
+            ]
+          },
+          {
+            "tag": "IP",
+            "feats": {
+              "trans": "tran",
+              "number": "sg",
+              "aspect": "impf",
+              "verb_form": "fin",
+              "pos": "V"
+            },
+            "children": [
+              {
+                "tag": "VP",
+                "feats": {
+                  "trans": "tran",
+                  "number": "sg",
+                  "aspect": "impf",
+                  "verb_form": "fin",
+                  "pos": "V"
+                },
+                "children": [
+                  {
+                    "tag": "VP",
+                    "feats": {
+                      "trans": "tran",
+                      "person": "1",
+                      "number": "sg",
+                      "aspect": "impf",
+                      "verb_form": "fin",
+                      "tense": "pres",
+                      "pos": "V"
+                    },
+                    "children": [
+                      {
+                        "tag": "V",
+                        "feats": {
+                          "trans": "tran",
+                          "person": "1",
+                          "number": "sg",
+                          "aspect": "impf",
+                          "verb_form": "fin",
+                          "tense": "pres",
+                          "pos": "V"
+                        },
+                        "word": "люблю"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "V",
+                    "feats": {
+                      "trans": "tran",
+                      "number": "sg",
+                      "aspect": "impf",
+                      "verb_form": "fin",
+                      "pos": "V"
+                    },
+                    "word": "чай"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "dotUrl": "/artifacts/parses/5d2fee5a08e24e86a164df42929ad0c8/tree_1.dot",
+      "pngUrl": "/artifacts/parses/5d2fee5a08e24e86a164df42929ad0c8/tree_1.png"
+    },
+    {
+      "index": 2,
+      "bracket": "IP[sg,nomn,1](NP[sg,nomn,1](Я) IP[sg,1,pres,impf,tran,fin](VP[sg,1,pres,impf,tran,fin](люблю VP[sg,impf,tran,fin](чай))))",
+      "tree": {
+        "tag": "IP",
+        "feats": {
+          "person": "1",
+          "case": "nomn",
+          "number": "sg",
+          "pos": "Pron"
+        },
+        "children": [
+          {
+            "tag": "NP",
+            "feats": {
+              "person": "1",
+              "case": "nomn",
+              "number": "sg",
+              "pos": "Pron"
+            },
+            "children": [
+              {
+                "tag": "Pron",
+                "feats": {
+                  "person": "1",
+                  "case": "nomn",
+                  "number": "sg",
+                  "pos": "Pron"
+                },
+                "word": "Я"
+              }
+            ]
+          },
+          {
+            "tag": "IP",
+            "feats": {
+              "trans": "tran",
+              "person": "1",
+              "number": "sg",
+              "aspect": "impf",
+              "verb_form": "fin",
+              "tense": "pres",
+              "pos": "V"
+            },
+            "children": [
+              {
+                "tag": "VP",
+                "feats": {
+                  "trans": "tran",
+                  "person": "1",
+                  "number": "sg",
+                  "aspect": "impf",
+                  "verb_form": "fin",
+                  "tense": "pres",
+                  "pos": "V"
+                },
+                "children": [
+                  {
+                    "tag": "V",
+                    "feats": {
+                      "trans": "tran",
+                      "person": "1",
+                      "number": "sg",
+                      "aspect": "impf",
+                      "verb_form": "fin",
+                      "tense": "pres",
+                      "pos": "V"
+                    },
+                    "word": "люблю"
+                  },
+                  {
+                    "tag": "VP",
+                    "feats": {
+                      "trans": "tran",
+                      "number": "sg",
+                      "aspect": "impf",
+                      "verb_form": "fin",
+                      "pos": "V"
+                    },
+                    "children": [
+                      {
+                        "tag": "V",
+                        "feats": {
+                          "trans": "tran",
+                          "number": "sg",
+                          "aspect": "impf",
+                          "verb_form": "fin",
+                          "pos": "V"
+                        },
+                        "word": "чай"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "dotUrl": "/artifacts/parses/5d2fee5a08e24e86a164df42929ad0c8/tree_2.dot",
+      "pngUrl": "/artifacts/parses/5d2fee5a08e24e86a164df42929ad0c8/tree_2.png"
+    },
+    {
+      "index": 3,
+      "bracket": "IP[sg,nomn,1](NP[sg,nomn,1](Я) IP[sg,1,pres,impf,tran,fin](VP[sg,1,pres,impf,tran,fin](люблю NP[m,sg,accs](чай))))",
+      "tree": {
+        "tag": "IP",
+        "feats": {
+          "person": "1",
+          "case": "nomn",
+          "number": "sg",
+          "pos": "Pron"
+        },
+        "children": [
+          {
+            "tag": "NP",
+            "feats": {
+              "person": "1",
+              "case": "nomn",
+              "number": "sg",
+              "pos": "Pron"
+            },
+            "children": [
+              {
+                "tag": "Pron",
+                "feats": {
+                  "person": "1",
+                  "case": "nomn",
+                  "number": "sg",
+                  "pos": "Pron"
+                },
+                "word": "Я"
+              }
+            ]
+          },
+          {
+            "tag": "IP",
+            "feats": {
+              "trans": "tran",
+              "person": "1",
+              "number": "sg",
+              "aspect": "impf",
+              "verb_form": "fin",
+              "tense": "pres",
+              "pos": "V"
+            },
+            "children": [
+              {
+                "tag": "VP",
+                "feats": {
+                  "trans": "tran",
+                  "person": "1",
+                  "number": "sg",
+                  "aspect": "impf",
+                  "verb_form": "fin",
+                  "tense": "pres",
+                  "pos": "V"
+                },
+                "children": [
+                  {
+                    "tag": "V",
+                    "feats": {
+                      "trans": "tran",
+                      "person": "1",
+                      "number": "sg",
+                      "aspect": "impf",
+                      "verb_form": "fin",
+                      "tense": "pres",
+                      "pos": "V"
+                    },
+                    "word": "люблю"
+                  },
+                  {
+                    "tag": "NP",
+                    "feats": {
+                      "pos": "N",
+                      "case": "accs",
+                      "number": "sg",
+                      "gender": "m"
+                    },
+                    "children": [
+                      {
+                        "tag": "N",
+                        "feats": {
+                          "pos": "N",
+                          "case": "accs",
+                          "number": "sg",
+                          "gender": "m"
+                        },
+                        "word": "чай"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "dotUrl": "/artifacts/parses/5d2fee5a08e24e86a164df42929ad0c8/tree_3.dot",
+      "pngUrl": "/artifacts/parses/5d2fee5a08e24e86a164df42929ad0c8/tree_3.png"
+    }
+  ],
+  "diagnostics": {
+    "IP": 4,
+    "VP": 2
+  },
+  "message": "Найдено деревьев: 12; возвращено: 3"
+}

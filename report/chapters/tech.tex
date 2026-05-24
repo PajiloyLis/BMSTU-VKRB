@@ -1,0 +1,1855 @@
+\chapter{Технологическая часть}
+
+\section{Сравнение объектно-реляционных СУБД}
+
+Среди объектно-реляционных СУБД наиболее широко выделяются~\cite{object-oriented} Oracle Database~\cite{Oracle}, PostgreSQL~\cite{Postgres} и DB2~\cite{DB2}.
+
+Для сравнения СУБД были выбраны следующие критерии:
+\begin{itemize}
+    \item возможность создания ролей;
+    \item поддержка row level security;
+    \item поддержка механизма sequrity definer или аналогов;
+    \item поддержка работы с JSON полями;
+    \item распространение по свободной лицензии.
+\end{itemize}
+
+В таблице~\ref{tab:compare_dbms} приведено сравнение вышеуказанных СУБД по сформулированным критериям.
+
+\begin{table}[H]
+    \caption{Сравнение объектно-реляционных СУБД}
+    \centering
+    \begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|p{3cm}|}\hline
+         & Oracle Database & PostgreSQL & DB2 \\\hline
+        Создание ролей & + & + & + \\\hline
+        Row level security & - & + & + \\\hline
+        Sequrity definer & + & + & - \\\hline
+        Поддержка JSON & + & + & + \\\hline
+        Свободное ПО & - & + & - \\\hline
+    \end{tabular}
+    \label{tab:compare_dbms}
+\end{table}
+
+По результатам сравнения, в данной работе будет использоваться PostgreSQL, поскольку данная СУБД обеспечивает необходимый инструментарий и является распространяемой по свободной лицензии.
+
+\section{Выбор языка программирования}
+
+Для реализации приложения был выбран язык C\#~\cite{Csharp} в связи с тем, что он обладает следующими необходимыми качествами и инструментами:
+\begin{itemize}
+    \item поддерживает парадигму объектно-ориентированного программирования, что позволяет упростить работу с сущностями, представленными в базе данных, путем определения соответствующих им классов и методов для работы с объектами этих классов;
+    \item поддерживается платформами .NET~\cite{net} и ASP.NET~\cite{aspnet}, предоставляющими необходимый инструментарий для написания веб-приложений, а также библиотеки для работы с различными базами данных, в том числе ролями и пользователями БД.
+    \item данный язык поддерживает ADO.NET Entity Framework~\cite{efcore}, который предоставляет необходимый интерфейс для работы с сущностями базы данных, и возможность реализации комплексных запросов к базе данных.
+\end{itemize}
+
+\section{Создание таблиц базы данных}
+
+В листингах~\ref{lst:create_employee}~\ref{lst:create_education}~\ref{lst:create_company}~\ref{lst:create_post}~\ref{lst:create_position}~\ref{lst:create_post_hist}~\ref{lst:create_position_hist}~\ref{lst:create_score_hist} представлено создание таблиц базы данных.
+
+\begin{code}
+\caption{Создание таблиц employee_base и employee_reduced}
+\label{lst:create_employee}
+    \begin{minted}{SQL}
+create table if not exists employee_base
+(
+    id         uuid primary key default gen_random_uuid(),
+    full_name  text                not null,
+    phone      varchar(16) unique  not null check ( phone ~ '^\+[0-9]{1,3}[0-9]{4,14}$' ),
+    email      varchar(255) unique not null check ( email ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' ),
+    birth_date date                not null check ( birth_date < CURRENT_DATE ),
+    photo      text unique      default null,
+    duties     jsonb            default null
+);
+
+create table if not exists employee_reduced
+    (
+        id         uuid references employee_base (id) on delete cascade,
+        email      varchar(255) unique not null check ( email ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' )
+);
+\end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание таблицы education}
+\label{lst:create_education}
+    \begin{minted}{SQL}
+create table if not exists education
+(
+    id              uuid primary key default gen_random_uuid(),
+    employee_id     uuid references employee_base (id) on delete cascade,
+    institution     text not null,
+    education_level text not null check ( education_level in (
+                                              'Высшее (бакалавриат)',
+                                              'Высшее (магистратура)',
+                                              'Высшее (специалитет)',
+                                              'Среднее профессиональное (ПКР)',
+                                              'Среднее профессиональное (ПССЗ)',
+                                              'Программы переподготовки',
+                                              'Курсы повышения квалификации'
+        ) ),
+    study_field     text not null,
+    start_date      date not null check ( start_date < CURRENT_DATE ),
+    end_date        date
+);
+\end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание таблицы company}
+\label{lst:create_company}
+    \begin{minted}{SQL}
+create table if not exists company
+(
+    id                uuid primary key             default gen_random_uuid(),
+    title             text unique         not null,
+    registration_date date                not null check ( registration_date <= CURRENT_DATE ),
+    phone             varchar(16) unique  not null check ( phone ~ '^\+[0-9]{1,3}[0-9]{4,14}$' ),
+    email             varchar(255) unique not null check ( email ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' ),
+    inn               varchar(10) unique  not null check ( inn ~ '^[0-9]{10}$' ),
+    kpp               varchar(9) unique   not null check ( kpp ~ '^[0-9]{9}$' ),
+    ogrn              varchar(13) unique  not null check ( ogrn ~ '^[0-9]{13}$' ),
+    address           text                not null,
+    _is_deleted       bool                not null default false
+);
+\end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание таблицы post}
+\label{lst:create_post}
+    \begin{minted}{SQL}
+create table if not exists post
+(
+    id          uuid primary key        default gen_random_uuid(),
+    title       text           not null,
+    salary      numeric(10, 2) not null check ( salary > 0 ),
+    company_id  uuid references company (id) on delete cascade,
+    _is_deleted bool           not null default false
+);
+\end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание таблиц position и position_reduced}
+\label{lst:create_position}
+    \begin{minted}{SQL}
+create table if not exists position
+(
+    id          uuid primary key default gen_random_uuid(),
+    parent_id   uuid references position (id),
+    title       text not null,
+    company_id  uuid references company (id) on delete cascade,
+    _is_deleted bool not null    default false
+);
+
+create table if not exists position_reduced
+(
+  id uuid primary key,
+  parent_id uuid references position_reduced(id)
+);
+\end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание таблицы post_history}
+\label{lst:create_post_hist}
+    \begin{minted}{SQL}
+create table if not exists post_history
+(
+    post_id     uuid references post (id),
+    employee_id uuid references employee_base (id) on delete cascade,
+    start_date  date not null check ( start_date < CURRENT_DATE ),
+    end_date    date check ( end_date <= CURRENT_DATE )
+);
+\end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание таблиц position_history и position_history_reduced}
+\label{lst:create_position_hist}
+    \begin{minted}{SQL}
+create table if not exists position_history
+(
+    position_id uuid references position (id),
+    employee_id uuid references employee_base (id) on delete cascade,
+    start_date  date not null check ( start_date < CURRENT_DATE ),
+    end_date    date check ( end_date <= current_date )
+);
+
+create table if not exists position_history_reduced(
+    position_id uuid references position (id),
+    employee_id uuid references employee_base(id) on delete cascade
+);
+\end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание таблицы score_story}
+\label{lst:create_score_hist}
+    \begin{minted}{SQL}
+create table if not exists score_story
+(
+    id               uuid primary key     default gen_random_uuid(),
+    employee_id      uuid references employee_base (id) on delete cascade,
+    author_id        uuid        references employee_base (id) on delete set null,
+    position_id      uuid references position (id),
+    created_at       timestamptz not null default now(),
+    efficiency_score int check ( efficiency_score > 0 and efficiency_score < 6 ),
+    engagement_score int check ( engagement_score > 0 and engagement_score < 6 ),
+    competency_score int check ( competency_score > 0 and competency_score < 6 )
+);
+    \end{minted}
+\end{code}
+
+\section{Создание триггеров}
+
+Ниже приведены листинги создания триггеров:
+\begin{itemize}
+    \item листинг~\ref{lst:trig4}~---~триггер, запрещающий прямое обновление поля parent\_id в таблице position;
+    \item листинг~\ref{lst:trig5}~---~триггер, проверяющий частоту выставления оценок;
+    \item листинг~\ref{lst:trig6}~---~триггер, обновляющий флаг \_is\_deleted и запрещающий прямое удаление записей в таблице company;
+    \item листинг~\ref{lst:trig7}~---~триггер, триггер, обновляющий флаг \_is\_deleted и запрещающий прямое удаление записей в таблице post;
+    \item листинг~\ref{lst:trig8}~---~триггер, обновляющий флаг \_is\_deleted и запрещающий прямое удаление записей в таблице position;
+    \item листинг~\ref{lst:trig10}~---~триггер, каскадом обновляющий данные в таблице position\_history\_reduced при обновлении данных в position\_history;
+    \item листинг~\ref{lst:trig12}~---~триггер, устанавливающий текущую дату в поле end\_date при вставке новой записи о работе сотрудника на новой должности в таблицу post\_history.
+\end{itemize}
+
+\begin{code}
+\caption{Создание триггера protect_column_parent_id_trigger.}
+\label{lst:trig4}
+    \begin{minted}{SQL}
+create or replace function protect_column_parent_id()
+    returns trigger
+    language plpgsql
+as
+$$
+begin
+    if old.parent_id is distinct from new.parent_id and
+       (select count(*) from position where parent_id = old.id) > 0 then
+        raise exception 'Parent id cannot be changed directly for employees with subordinates, use the special functions: change_parent_id_with_subordinates(uuid, uuid), change_parent_id_without_subordinates(uuid, uuid)';
+    end if;
+    return new;
+end;
+$$;
+
+create trigger protect_column_parent_id_trigger
+    before update
+    on position
+    for each row
+execute function protect_column_parent_id();
+    \end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание триггера check_scores_frequency_trigger.}
+\label{lst:trig5}
+    \begin{minted}{SQL}
+create or replace function check_scores_frequency()
+    returns trigger
+    language plpgsql
+as
+$$
+begin
+    if new.created_at - (select max(score_story.created_at)
+                         from score_story
+                         where employee_id = new.employee_id
+                           and position_id = new.position_id) < interval '1 month' then
+        raise exception 'Scores frequency must be at least 1 month';
+    end if;
+    return new;
+end;
+$$;
+
+create trigger check_scores_frequency_trigger
+    before insert or update
+    on score_story
+    for each row
+execute function check_scores_frequency();
+    \end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание триггера soft_delete_company_trigger.}
+\label{lst:trig6}
+    \begin{minted}{SQL}
+create or replace function soft_delete_company()
+    returns trigger
+    language plpgsql
+as
+$$
+begin
+    update company set _is_deleted = true where id = old.id;
+    update post set _is_deleted= true where company_id = old.id;
+    update position set _is_deleted = true where company_id = old.id;
+    delete from position_reduced where id in (select id from position where company_id = old.id);
+    delete from position_history_reduced where position_id in (select id from position where company_id = old.id);
+    update post_history set end_date=current_date where post_id in (select id from post where company_id = old.id);
+    update position_history
+    set end_date=current_date
+    where position_id in (select id from position where company_id = old.id);
+    return null;
+end;
+$$;
+
+create trigger soft_delete_company_trigger
+    before delete
+    on company
+    for each row
+execute function soft_delete_company();
+    \end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание триггера soft_delete_post_trigger.}
+\label{lst:trig7}
+    \begin{minted}{SQL}
+create or replace function soft_delete_post()
+    returns trigger
+    language plpgsql
+as
+$$
+begin
+    update post set _is_deleted = true where id = old.id;
+    update post_history set end_date = CURRENT_DATE where post_id = old.id;
+    return null;
+end;
+$$;
+
+create trigger soft_delete_post_trigger
+    before delete
+    on post
+    for each row
+execute function soft_delete_post();
+    \end{minted}
+\end{code}
+
+\begin{code}
+\caption{Создание триггера soft_delete_position_trigger.}
+\label{lst:trig8}
+\begin{minted}{SQL}
+create or replace function soft_delete_position()
+    returns trigger
+    language plpgsql
+as
+$$
+begin
+    if (select parent_id from position where id = old.id) is null then
+        raise 'Unable to delete chief position';
+    end if;
+    set session_replication_role = replica;
+    update position set parent_id = old.parent_id where parent_id = old.id;
+    update position_reduced set parent_id = old.parent_id where parent_id = old.id;
+    set session_replication_role = origin;
+    update position set _is_deleted = true where id = old.id;
+    update position_history set end_date = current_date where position_id = old.id and end_date is null;
+    delete from position_history_reduced where position_id = old.id;
+    return null;
+end;
+$$;
+
+create trigger soft_delete_position_trigger
+    before delete
+    on position
+    for each row
+execute function soft_delete_position();
+    \end{minted}
+\end{code}
+
+% \begin{code}
+% \caption{Создание триггера close_previous_position_insert}
+% \label{lst:trig9}
+% \begin{minted}
+% create or replace function close_previous_position_insert() returns trigger
+%     language plpgsql as
+% $$
+% begin
+%     if (new.end_date is null) then
+%         insert into position_history_reduced values (new.position_id, new.employee_id);
+%     end if;
+%     return new;
+% end;
+% $$;
+
+
+% create trigger close_previous_position_insert
+%     after insert
+%     on position_history
+%     for each row
+% execute function close_previous_position_insert();
+%     \end{minted}
+% \end{code}
+
+\begin{code}
+\caption{Создание триггера close_previous_position_update.}
+\label{lst:trig10}
+\begin{minted}{SQL}
+create or replace function close_previous_position_update() returns trigger
+    language plpgsql as
+$$
+begin
+    if (old.end_date is null and new.end_date is not null) then
+        delete
+        from position_history_reduced
+        where employee_id = old.employee_id
+          and position_id = old.position_id;
+    else
+        update position_history_reduced
+        set employee_id = new.employee_id,
+            position_id = new.position_id
+        where employee_id = old.employee_id
+          and position_id = old.position_id;
+    end if;
+    return new;
+end;
+$$;
+
+create trigger close_previous_position_update
+    after update
+    on position_history
+    for each row
+execute function close_previous_position_update();
+    \end{minted}
+\end{code}
+
+% \begin{code}
+% \caption{Создание триггера delete_position_history}
+% \label{lst:trig11}
+% \begin{minted}
+% create or replace function delete_position_history() returns trigger
+%     language plpgsql as
+% $$
+% begin
+%     if (old.end_date is null) then
+%         delete from position_history_reduced where employee_id = old.employee_id and position_id = old.position_id;
+%     end if;
+%     return old;
+% end;
+% $$;
+
+% -- drop trigger delete_position_history on position_history;
+
+% create trigger delete_position_history
+%     after delete
+%     on position_history
+%     for each row
+% execute function delete_position_history();
+%     \end{minted}
+% \end{code}
+
+\begin{code}
+\caption{Создание триггера close_previous_post_insert.}
+\label{lst:trig12}
+\begin{minted}{SQL}
+create or replace function close_previous_post_insert() returns trigger
+    language plpgsql as
+$$
+begin
+    update post_history
+    set end_date=CURRENT_DATE
+    where employee_id = new.employee_id
+      and end_date is null
+      and (select company_id from post where post_id = post.id) =
+          (select company_id from post where post.id = new.post_id);
+    return new;
+end;
+$$;
+
+
+create trigger close_previous_post_insert
+    before insert
+    on post_history
+    for each row
+execute function close_previous_post_insert();
+    \end{minted}
+\end{code}
+
+% \begin{code}
+% \caption{Создание триггера update_employee_email}
+% \label{lst:trig13}
+% \begin{minted}
+% create or replace function update_employee_email() returns trigger
+%     language plpgsql as
+% $$
+% begin
+%     if (new.email != old.email) then
+%         update employee_reduced set email = new.email where id = old.id;
+%         update users set email = new.email where email = old.email;
+%     end if;
+%     return new;
+% end;
+% $$;
+
+% drop trigger update_employee_email on cp_test.public.employee_base;
+
+% create trigger update_employee_email
+%     after update
+%     on employee_base
+%     for each row
+% execute function update_employee_email();
+%     \end{minted}
+% \end{code}
+
+\section{Создание хранимых процедур и функций}
+
+Ниже приведены листинги хранимых процедур, описанных в конструкторском разделе:
+\begin{itemize}
+    \item листинг~\ref{lst:position_subordinates}~---~функция поиска всех позиции находящихся ниже данной в иерархии для вычисления row security policies;
+    \item листинг~\ref{lst:employee_subordinates}~---~функция поиска всех текущих подчиненных сотрудников по email руководителя для вычисления row security policies;
+    \item листинг~\ref{lst:with_sub}~---~функция реализующая перевод позиции в иерархии вместе с подчиненными;
+    \item листинг~\ref{lst:without_sub}~---~функция реализующая перевод позиции в иерархии без подчиненных. Подчиненные переведенной позиции становятся подчиненными руководителя этой позиции.
+\end{itemize}
+
+\begin{code}
+    \caption{Функция поиска подчиненных позиций по первичному ключу руководящей позиции.}
+    \label{lst:position_subordinates}
+    \begin{minted}{SQL}
+create or replace function get_subordinates_by_id_rls(start_id uuid)
+    returns table
+            (
+                id uuid
+            )
+    security definer
+AS
+$$
+begin
+    return query
+        with recursive hierarchy as (select p.id
+                                     from position_reduced as p
+                                     where p.id = start_id
+
+                                     union all
+
+                                     select p.id
+                                     from position_reduced p
+                                              join hierarchy as h on p.parent_id = h.id)
+        SELECT *
+        from hierarchy;
+END;
+$$ LANGUAGE plpgsql;
+    \end{minted}
+\end{code}
+
+\begin{code}
+    \caption{Функция поиска текущих подчиненных сотрудников по email руководящего сотрудника.}
+    \label{lst:employee_subordinates}
+    \begin{minted}{SQL}
+create or replace function get_current_subordinates_id_by_employee_id_rls(head_employee_email text)
+    returns table
+            (
+                employee_id uuid
+            )
+    security definer
+AS
+$$
+declare
+    manager_position_id uuid;
+begin
+    select position_history_reduced.position_id
+    into manager_position_id
+    from employee_reduced
+             join position_history_reduced on employee_reduced.id = position_history_reduced.employee_id
+    where employee_reduced.email = head_employee_email;
+
+    if manager_position_id is null then
+        return query (select id from employee_reduced where email = head_employee_email);
+    end if;
+
+    return query (select ph.employee_id
+                  from (select position_history_reduced.employee_id, position_history_reduced.position_id
+                        from position_history_reduced) as ph
+                           join (select * from get_subordinates_by_id_rls(manager_position_id)) as h
+                                on h.id = ph.position_id);
+end;
+$$ LANGUAGE plpgsql;        
+    \end{minted}
+\end{code}
+
+\begin{code}
+    \caption{Функция для перемещения позиции с подчиненными в иерархии позиций.}
+    \label{lst:with_sub}
+    \begin{minted}{SQL}
+create or replace function change_parent_id_with_subordinates(position_to_update_id uuid, new_parent_id uuid)
+    returns void
+    language plpgsql
+    security definer
+as
+$$
+begin
+    set session_replication_role = replica;
+    if ((select count(*) from position where id = new_parent_id) = 0) then
+        set session_replication_role  = origin;
+        raise exception 'New parent id is not an employee';
+    else
+        update position set parent_id = new_parent_id where id = position_to_update_id;
+        update position_reduced set parent_id = new_parent_id where id = position_to_update_id;
+    end if;
+    set session_replication_role = origin;
+end;
+$$;
+    \end{minted}
+\end{code}
+
+\begin{code}
+    \caption{Функция для перемещения позиции с подчиненными в иерархии позиций.}
+    \label{lst:without_sub}
+    \begin{minted}{SQL}
+create or replace function change_parent_id_without_subordinates(position_to_update_id uuid, new_parent_id uuid)
+    returns void
+    language plpgsql
+    security definer
+as
+$$
+begin
+    set session_replication_role = replica;
+    if ((select count(*) from position where id = new_parent_id) = 0) then
+        set session_replication_role = origin;
+        raise exception 'New parent id is not an employee';
+    else
+        update position
+        set parent_id = (select parent_id from position where id = position_to_update_id)
+        where parent_id = position_to_update_id;
+        update position set parent_id = new_parent_id where id = position_to_update_id;
+
+        update position_reduced
+        set parent_id = (select parent_id from position where id = position_to_update_id)
+        where parent_id = position_to_update_id;
+        update position_reduced set parent_id = new_parent_id where id = position_to_update_id;
+    end if;
+    set session_replication_role = origin;
+end;
+$$;
+    \end{minted}
+\end{code}
+
+\section{Создание ролевой модели}
+
+В соответствии с описанием в конструкторском разделе, в листинге~\ref{lst:roles} приведено создание ролевой модели.
+
+\begin{code}
+    \caption{Создание ролевой модели.}
+    \label{lst:roles}
+    \begin{minted}{SQL}
+create role admin_user with
+    login
+    password 'admin_pass'
+    superuser
+    createdb
+    createrole
+    replication
+    bypassrls;
+
+create role guest_user with
+    login
+    password 'guest_pass';
+grant select on company, post, position, public.users to guest_user;
+grant execute on function get_subordinates_by_id to guest_user;
+
+create role employee_user with
+    login password 'employee_pass';
+grant select on all tables in schema public to employee_user;
+revoke select on employee_reduced, position_reduced, position_history_reduced from employee_user;
+grant insert, update on score_story to employee_user;
+grant execute on function get_subordinates_by_position to employee_user;
+grant execute on function get_subordinates_by_id to employee_user;
+grant execute on function get_current_subordinates_id_by_employee_id to employee_user;
+grant execute on function get_current_subordinates_id_by_employee_id_rls to employee_user;
+grant execute on function get_subordinates_by_id_rls to employee_user;
+
+create policy employee_reading_policy on position_history
+    for select
+    to employee_user
+    using (employee_id in(select * from get_current_subordinates_id_by_employee_id_rls((SELECT current_setting('app.current_user_name')))));
+
+create policy employee_reading_policy on post_history
+    for select
+    to employee_user
+    using (employee_id in(select * from get_current_subordinates_id_by_employee_id_rls((SELECT current_setting('app.current_user_name')))));
+
+create policy employee_reading_policy on education
+    for select
+    to employee_user
+    using (employee_id in(select * from get_current_subordinates_id_by_employee_id_rls((SELECT current_setting('app.current_user_name')))));
+
+create policy score_reading_policy on score_story
+    for select
+    to employee_user
+    using (employee_id in(select * from get_current_subordinates_id_by_employee_id_rls((SELECT current_setting('app.current_user_name')))));
+
+create policy employee_reading_policy on employee_base
+    for select
+    to employee_user
+    using (id in(select * from get_current_subordinates_id_by_employee_id_rls((SELECT current_setting('app.current_user_name')))));
+    \end{minted}
+\end{code}
+
+\section{Реализация доступа к данным в приложении}
+
+Для доступа к данным из приложения, для каждой сущности реализован собственный репозиторий, использующий Entity Framework Core. Также реализован общий контекст базы данных, представленный классом ProjectDbContext, осуществляющий сопоставление сущностей приложения с сущностями базы данных.
+
+В листинге~\ref{lst:position_repo} приведен листинг метода репозитория сущности position, вызывающего функцию реализованную в базе данных.
+
+\begin{code}
+    \caption{Метод класса PositionRepository, использующий функцию change_parent_id_with_subordinates.}
+    \label{lst:position_repo}
+    \begin{minted}{csharp}
+public async Task<BasePosition> UpdatePositionParentWithSubordinatesAsync(UpdatePosition position)
+{
+    try{
+        var positionDb = await _context.PositionDb
+            .FirstOrDefaultAsync(p => p.Id == position.Id && p.CompanyId == position.CompanyId);
+        if (positionDb is null)
+        {
+            _logger.LogWarning("Position with id {Id} not found for update", position.Id);
+            throw new PositionNotFoundException($"Position with id {position.Id} not found");
+        }
+        var existingPosition = await _context.PositionDb
+            .Where(p => p.Id != position.Id &&
+                        p.CompanyId == position.CompanyId &&
+                        p.Title == position.Title)
+            .FirstOrDefaultAsync();
+        if (existingPosition is not null)
+        {
+            _logger.LogWarning("Position with title {Title} already exists in company {CompanyId}", position.Title,
+                position.CompanyId);
+            throw new PositionAlreadyExistsException(
+                $"Position with title {position.Title} already exists in company {position.CompanyId}");
+        }
+        await _context.Database.ExecuteSqlAsync(
+            $"select change_parent_id_with_subordinates({position.Id}, {position.ParentId})");
+        positionDb.Title = position.Title ?? positionDb.Title;
+        await _context.SaveChangesAsync();
+        _logger.LogInformation("Position with id {Id} was updated", position.Id);
+        return PositionConverter.Convert(positionDb)!;
+    }
+    catch (Exception e)
+    {
+        _logger.LogError(e, "Error occurred while updating position with id {Id}", position.Id);
+        throw;
+    }
+}
+    \end{minted}
+\end{code}
+
+В листинге~\ref{lst:db_context} приведен листинг метода onModelCreating класса ProjectDbContext, в котором производится регистрация конфигураций сущностей, а также функций, реализованных в базе данных. В частности в листинге показана регистрация функций get\_current\_subordinates\_id\_by\_employee\_id и get\_subordinates\_by\_id
+
+\begin{code}
+    \caption{Метод onModelCreating и объявление функций реализованных в БД.}
+    \label{lst:db_context}
+    \begin{minted}{csharp}
+protected override void OnModelCreating(ModelBuilder modelBuilder){
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.HasDbFunction(
+            typeof(ProjectDbContext)
+                .GetMethod(nameof(GetCurrentSubordinatesIdByEmployeeId))!);
+        modelBuilder.HasDbFunction(() => GetCurrentSubordinatesIdByEmployeeId(Guid.Empty));
+        modelBuilder.HasDbFunction(
+            typeof(ProjectDbContext)
+                .GetMethod(nameof(GetSubordinatesById))!);
+        modelBuilder.HasDbFunction(()=> GetSubordinatesById(Guid.Empty))
+        modelBuilder.ApplyConfiguration(new EmployeeDbConfiguration());
+        modelBuilder.ApplyConfiguration(new CompanyDbConfiguration());
+        modelBuilder.ApplyConfiguration(new EducationDbConfiguration());
+        modelBuilder.ApplyConfiguration(new PostDbConfiguration());
+        modelBuilder.ApplyConfiguration(new PositionDbConfiguration());
+        modelBuilder.ApplyConfiguration(new PostHistoryDbConfiguration());
+        modelBuilder.ApplyConfiguration(new ScoreDbConfiguration());
+        modelBuilder.ApplyConfiguration(new PositionHistoryDbConfiguration());
+        modelBuilder.ApplyConfiguration(new UserDbConfiguration());
+    }
+    [DbFunction(Name = "get_current_subordinates_id_by_employee_id", Schema = "public")]
+    public IQueryable<PositionHierarchyWithEmployeeIdDb> GetCurrentSubordinatesIdByEmployeeId(Guid startId){
+        return Set<PositionHierarchyWithEmployeeIdDb>()
+            .FromSqlRaw("SELECT * FROM get_current_subordinates_id_by_employee_id({0})", startId);
+    }
+    [DbFunction(Name = "get_subordinates_by_id", Schema = "public")]
+    public IQueryable<PositionHierarchyDb> GetSubordinatesById(Guid startId){
+        return Set<PositionHierarchyDb>()
+            .FromSqlRaw("SELECT * FROM get_subordinates_by_id({0})", startId);
+    }
+    \end{minted}
+\end{code}
+
+Функции объявленные в ProjectDbContext используются как методы этого класса, например, в классе PositionHistoryRepository для получения текущих подчиненных сотрудника. В листинге~\ref{lst:position_history_repo} приведен метод, использующий эти функции как методы класса.
+\begin{code}
+    \caption{Метод использующий функции БД, как методы класса ProjectDbContext.}
+    \label{lst:position_history_repo}
+    \begin{minted}{csharp}
+public async Task<PositionHierarchyWithEmployeePage> GetCurrentSubordinatesAsync(
+        Guid managerId,
+        int pageNumber,
+        int pageSize)
+{
+    try
+    {
+        _logger.LogInformation(
+            "Getting current subordinates position history for manager {ManagerId}, page {PageNumber}, size {PageSize}",
+            managerId, pageNumber, pageSize);
+
+        var query = _context.GetCurrentSubordinatesIdByEmployeeId(managerId)
+            .OrderBy(x => x.Level)
+            .ThenBy(x => x.Title);
+        var totalCount = await query.CountAsync();
+        var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
+
+        var items = await query
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .Select(x => PositionHierarchyWithEmployeeIdConverter.Convert(x)!)
+            .ToListAsync();
+
+        _logger.LogInformation(
+            "Successfully retrieved {Count} current subordinates position history records for manager {ManagerId}",
+            items.Count, managerId);
+
+        return new PositionHierarchyWithEmployeePage(items, new Page(pageNumber, totalPages, totalCount));
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex,
+            "Error getting current subordinates position history for manager {ManagerId}",
+            managerId);
+        throw;
+    }
+}
+    \end{minted}
+\end{code}
+
+Для вычисления row security policies используется параметр конфигурации app.current\_user\_name, в котором записан email текущего пользователя, если последний принадлежит роли employee\_user. Для установки этого параметра при открытии соединения и начале сессии написан класс RlsInterceptor, представленный в листинге~\ref{lst:interceptor}.
+
+\begin{code}
+    \caption{Класс, устанавливающий значение параметра конфигурации при открытии соединения.}
+    \label{lst:interceptor}
+    \begin{minted}{csharp}
+public class RlsInterceptor : DbConnectionInterceptor
+{
+    private readonly string _userId;
+    public RlsInterceptor(string userId)
+    {
+        _userId = userId;
+    }
+    public override async Task ConnectionOpenedAsync(
+        DbConnection connection,
+        ConnectionEndEventData eventData,
+        CancellationToken cancellationToken = default)
+    {
+        await base.ConnectionOpenedAsync(connection, eventData, cancellationToken);
+        await using var cmd = connection.CreateCommand();
+        cmd.CommandText = $"SET app.current_user_name = '{_userId}';";
+        await cmd.ExecuteNonQueryAsync(cancellationToken);
+    }
+}
+    \end{minted}
+\end{code}
+
+\section{Тестирование триггеров и функций}
+
+Ниже приведены тестовые случаи для перечисленных выше триггеров и процедур. Тест разделены на классы эквивалентности, для каждого из которых приведено по одному тесту. 
+\subsection{Триггер protect\_column\_parent\_id\_trigger}
+\begin{enumerate}
+    \item У позиции нет подчиненных, поле parent\_id изменяется.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+update position set parent_id = '0ae9589e-0004-4000-8000-000000000004' where id = '0ae9589e-0006-4000-8000-000000000006';
+select id, parent_id from position where id = '0ae9589e-0006-4000-8000-000000000006';
+        \end{minted}
+    \end{code}
+    
+    Ожидаемые выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & parent_id\\\hline
+            0ae9589e-0006-4000-8000-000000000006 & 0ae9589e-0004-4000-8000-000000000004 \\\hline
+        \end{tabular}
+    \end{table}
+    
+    Полученные выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & parent_id\\\hline
+            0ae9589e-0006-4000-8000-000000000006 & 0ae9589e-0004-4000-8000-000000000004 \\\hline
+        \end{tabular}
+    \end{table}
+
+    \item У позиции есть подчиненные, поле parent\_id изменяется.
+
+    Тестовый сценарий:
+    \begin{code}
+    \begin{minted}{SQL}
+update position set parent_id = '0ae9589e-0003-4000-8000-000000000003' where id = '0ae9589e-0005-4000-8000-000000000005';
+    \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+    
+    [P0001] ERROR: Parent id cannot be changed directly for employees with subordinates, use the special functions: change\_parent\_id\_with\_subordinates(uuid, uuid), change\_parent\_id\_without\_subordinates(uuid, uuid)
+
+    Полученные выходные данные:
+
+    [P0001] ERROR: Parent id cannot be changed directly for employees with subordinates, use the special functions: change\_parent\_id\_with\_subordinates(uuid, uuid), change\_parent\_id\_without\_subordinates(uuid, uuid)
+
+    \item Поле parent\_id не изменяется.
+
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+update position set title = 'Старший специалист по безопасности 1' where id = '0ae9589e-0005-4000-8000-000000000005';
+select title from position where id = '0ae9589e-0005-4000-8000-000000000005';
+        \end{minted}
+    \end{code}    
+
+Ожидаемые выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            title\\\hline
+            Старший специалист по безопасности 1\\\hline
+        \end{tabular}
+    \end{table}
+    
+    Полученные выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            title\\\hline
+            Старший специалист по безопасности 1\\\hline
+        \end{tabular}
+    \end{table}
+\end{enumerate}
+
+\subsection{Триггер check_scores_frequency_trigger}
+
+\begin{enumerate}
+    \item Вставка в таблицу score\_story, с момента последней оценки прошло не меньше месяца.
+
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+insert into score_story(employee_id, author_id, position_id, created_at, efficiency_score, engagement_score, competency_score) values ('4b5377fa-cb51-4954-8552-54acb626c108', 'ad5887f2-0bec-4c4a-b8e0-318fb303d99e', '0ae9589e-0004-4000-8000-000000000004', now() - interval '2 month', 5, 4, 5);
+insert into score_story(employee_id, author_id, position_id, created_at, efficiency_score, engagement_score, competency_score) values ('4b5377fa-cb51-4954-8552-54acb626c108', 'ad5887f2-0bec-4c4a-b8e0-318fb303d99e', '0ae9589e-0004-4000-8000-000000000004', now() - interval '1 month', 5, 4, 5);
+select count(*) from score_story where employee_id = '4b5377fa-cb51-4954-8552-54acb626c108' and position_id = '0ae9589e-0004-4000-8000-000000000004';
+        \end{minted}
+    \end{code}
+    
+    Ожидаемые выходные данные:
+    
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            2\\\hline
+        \end{tabular}
+    \end{table}
+
+Полученные выходные данные:
+    
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            2\\\hline
+        \end{tabular}
+    \end{table}
+
+    \item Вставка в таблицу score\_story, с момента последней оценки прошло меньше месяца.
+
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+insert into score_story(employee_id, author_id, position_id, created_at, efficiency_score, engagement_score, competency_score) values ('4b5377fa-cb51-4954-8552-54acb626c108', 'ad5887f2-0bec-4c4a-b8e0-318fb303d99e', '0ae9589e-0004-4000-8000-000000000004', now() - interval '10 day', 5, 4, 5);
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+
+    [P0001] ERROR: Scores frequency must be at least 1 month
+
+    Полученные выходные данные:
+
+    [P0001] ERROR: Scores frequency must be at least 1 month
+\end{enumerate}
+
+\subsection{Триггер soft\_delete\_company\_trigger}
+В случае данного триггера класс эквивалентности один: удаление существующей компании.
+
+Тестовый сценарий:
+
+\begin{code}
+    \begin{minted}{SQL}
+delete from company where id = '0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af';
+select id, _is_deleted from company where id = '0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af';
+select id, position._is_deleted from position where company_id = '0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af';
+select id, _is_deleted from post where company_id = '0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af';
+select count(*) from position_reduced where id in (select id from position where company_id='0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af');
+select count(*) from public.position_history_reduced where position_id in (select id from position where company_id='0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af');
+select count(*) from position_history where end_date is null and position_id in (select id from position where company_id='0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af');
+select count(*) from post_history where end_date is null and post_id in (select id from post where company_id='0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af');
+    \end{minted}
+\end{code}
+
+Ожидаемые выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af & true\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            0ae9589e-0001-4000-8000-000000000001 & true\\\hline
+            0ae9589e-0002-4000-8000-000000000002 & true\\\hline
+            0ae9589e-0003-4000-8000-000000000003 & true\\\hline
+            0ae9589e-0007-4000-8000-000000000007 & true\\\hline
+            0ae9589e-0008-4000-8000-000000000008 & true\\\hline
+            0ae9589e-0009-4000-8000-000000000009 & true\\\hline
+            0ae9589e-000a-4000-8000-00000000000a & true\\\hline
+            0ae9589e-0004-4000-8000-000000000004 & true\\\hline
+            0ae9589e-0006-4000-8000-000000000006 & true\\\hline
+            0ae9589e-0005-4000-8000-000000000005 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            6e49bd73-a683-4c1e-81a8-e2d3368b0d95 & true\\\hline
+            11e89ab9-d8ee-48d2-8c34-ebff24cdf4f5 & true\\\hline
+            5f18d34e-7bee-4f49-8c44-0eaca8bb1557 & true\\\hline
+            b992b65b-ca2f-487a-ac8a-cc0aa7737d63 & true\\\hline
+            96fc47f4-d8aa-4fb5-9089-0b7ee39bfe90 & true\\\hline
+            0cc0fc8a-4185-434f-b384-ddd509ce8539 & true\\\hline
+            3155a63f-5871-47f6-8c83-2811dc20405e & true\\\hline
+            984035b8-a9a7-45f7-88a2-2f46fd4ec9a6 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+Полученные выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            0ae9589e-b2e8-4d26-b1b6-9decdd7ab5af & true\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            0ae9589e-0001-4000-8000-000000000001 & true\\\hline
+            0ae9589e-0002-4000-8000-000000000002 & true\\\hline
+            0ae9589e-0003-4000-8000-000000000003 & true\\\hline
+            0ae9589e-0007-4000-8000-000000000007 & true\\\hline
+            0ae9589e-0008-4000-8000-000000000008 & true\\\hline
+            0ae9589e-0009-4000-8000-000000000009 & true\\\hline
+            0ae9589e-000a-4000-8000-00000000000a & true\\\hline
+            0ae9589e-0004-4000-8000-000000000004 & true\\\hline
+            0ae9589e-0006-4000-8000-000000000006 & true\\\hline
+            0ae9589e-0005-4000-8000-000000000005 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            6e49bd73-a683-4c1e-81a8-e2d3368b0d95 & true\\\hline
+            11e89ab9-d8ee-48d2-8c34-ebff24cdf4f5 & true\\\hline
+            5f18d34e-7bee-4f49-8c44-0eaca8bb1557 & true\\\hline
+            b992b65b-ca2f-487a-ac8a-cc0aa7737d63 & true\\\hline
+            96fc47f4-d8aa-4fb5-9089-0b7ee39bfe90 & true\\\hline
+            0cc0fc8a-4185-434f-b384-ddd509ce8539 & true\\\hline
+            3155a63f-5871-47f6-8c83-2811dc20405e & true\\\hline
+            984035b8-a9a7-45f7-88a2-2f46fd4ec9a6 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+\subsection{Триггер soft_delete_post_trigger}
+В случае данного триггера класс эквивалентности также один: удаление существующей должности.
+
+Тестовый сценарий:
+\begin{code}
+    \begin{minted}{SQL}
+delete from post where id = '6e49bd73-a683-4c1e-81a8-e2d3368b0d95';
+select id, post._is_deleted from post where id = '6e49bd73-a683-4c1e-81a8-e2d3368b0d95';
+select count(*) from post_history where post_id='6e49bd73-a683-4c1e-81a8-e2d3368b0d95' and end_date is null;
+    \end{minted}
+\end{code}
+
+Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            6e49bd73-a683-4c1e-81a8-e2d3368b0d95 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            6e49bd73-a683-4c1e-81a8-e2d3368b0d95 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}    
+
+\subsection{Триггер soft_delete_position_trigger}
+
+\begin{enumerate}
+    \item Удаление не корневой позиции в иерархии.
+    
+Тестовый сценарий:
+\begin{code}
+    \begin{minted}{SQL}
+delete from position where id = '0ae9589e-0004-4000-8000-000000000004';
+select id, _is_deleted from position where id ='0ae9589e-0004-4000-8000-000000000004';
+select count(*) from position where parent_id = '0ae9589e-0004-4000-8000-000000000004';
+select count(*) from position_reduced where parent_id = '0ae9589e-0004-4000-8000-000000000004';
+select count(*) from position_history_reduced where position_id = '0ae9589e-0004-4000-8000-000000000004';
+select count(*) from position_history where position_id = '0ae9589e-0004-4000-8000-000000000004' and end_date is null;
+    \end{minted}
+\end{code}
+
+
+Ожидаемые выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            0ae9589e-0004-4000-8000-000000000004 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+Полученные выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+            id & _is_deleted\\\hline
+            0ae9589e-0004-4000-8000-000000000004 & true\\\hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}
+
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count\\\hline
+            0\\\hline
+        \end{tabular}
+    \end{table}    
+
+\item Удаление корневой позиции в иерархии.
+
+Тестовый сценарий
+\begin{code}
+    \begin{minted}{SQL}
+delete from position where id = '0ae9589e-0001-4000-8000-000000000001';
+    \end{minted}
+\end{code}
+
+Ожидаемые выходные данные:
+
+[P0001] ERROR: Unable to delete chief position
+
+Полученные выходные данные:
+
+[P0001] ERROR: Unable to delete chief position
+
+\end{enumerate}
+
+\subsection{Триггер close_previous_position_update}
+
+\begin{enumerate}
+    \item Обновление даты окончания пребывания на позиции.
+
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+update position_history set end_date = '2025-06-07' where position_id='0ae9589e-0004-4000-8000-000000000004' and employee_id = '4b5377fa-cb51-4954-8552-54acb626c108';
+select end_date from position_history where position_id='0ae9589e-0004-4000-8000-000000000004' and employee_id = '4b5377fa-cb51-4954-8552-54acb626c108';
+select count(*) from position_history_reduced where position_id ='0ae9589e-0004-4000-8000-000000000004' and employee_id = '4b5377fa-cb51-4954-8552-54acb626c108';
+        \end{minted}
+    \end{code}
+
+Ожидаемые выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            end_date \\\hline
+            2025-06-07 \\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count \\\hline
+            0 \\\hline
+        \end{tabular}
+    \end{table}
+
+Полученные выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            end_date \\\hline
+            2025-06-07 \\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count \\\hline
+            0 \\\hline
+        \end{tabular}
+    \end{table}
+
+\item Изменение id сотрудника.
+
+Тестовый сценарий:
+\begin{code}
+    \begin{minted}{SQL}
+update position_history set employee_id = 'bad8a5a0-ec08-412e-8f19-0d9e993d5651' where position_id = 'fa001e78-0008-4000-8000-000000000008' and employee_id = '33dea239-2610-49d9-8f33-748f62f04e74';
+select count(*) from position_history_reduced where position_id = 'fa001e78-0008-4000-8000-000000000008' and employee_id = '33dea239-2610-49d9-8f33-748f62f04e74';
+select count(*) from position_history_reduced where position_id = 'fa001e78-0008-4000-8000-000000000008' and employee_id = 'bad8a5a0-ec08-412e-8f19-0d9e993d5651';
+    \end{minted}
+\end{code}
+
+Ожидаемые выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count \\\hline
+            0 \\\hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count \\\hline
+            1 \\\hline
+        \end{tabular}
+    \end{table}
+
+Полученные выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count \\\hline
+            0 \\\hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|}\hline
+            count \\\hline
+            1 \\\hline
+        \end{tabular}
+    \end{table}
+    \end{enumerate}
+\subsection{Триггер close_previous_post_insert}
+
+\begin{enumerate}
+    \item Вставка новой записи о пребывании на должности.
+
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select post_id, start_date, end_date from post_history where employee_id = '446a4190-0a9a-49db-b205-2099138c15ef';
+insert into  post_history values ('6e49bd73-a683-4c1e-81a8-e2d3368b0d95', '446a4190-0a9a-49db-b205-2099138c15ef', current_date - interval '1 days', null)
+select post_id, start_date, end_date from post_history where employee_id = '446a4190-0a9a-49db-b205-2099138c15ef';
+        \end{minted}
+    \end{code}
+
+Ожидаемые выходные данные:
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+5f18d34e-7bee-4f49-8c44-0eaca8bb1557&2015-07-01&2018-06-30\\\hline
+b992b65b-ca2f-487a-ac8a-cc0aa7737d63&2018-07-01&2021-06-30\\\hline
+96fc47f4-d8aa-4fb5-9089-0b7ee39bfe90&2021-07-01&2023-06-30\\\hline
+0cc0fc8a-4185-434f-b384-ddd509ce8539&2023-07-01&null\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+5f18d34e-7bee-4f49-8c44-0eaca8bb1557&2015-07-01&2018-06-30\\\hline
+b992b65b-ca2f-487a-ac8a-cc0aa7737d63&2018-07-01&2021-06-30\\\hline
+96fc47f4-d8aa-4fb5-9089-0b7ee39bfe90&2021-07-01&2023-06-30\\\hline
+0cc0fc8a-4185-434f-b384-ddd509ce8539&2023-07-01&2025-09-16\\\hline
+6e49bd73-a683-4c1e-81a8-e2d3368b0d95&2025-09-16&null\\\hline
+        \end{tabular}
+    \end{table}
+
+Полученные выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+5f18d34e-7bee-4f49-8c44-0eaca8bb1557&2015-07-01&2018-06-30\\\hline
+b992b65b-ca2f-487a-ac8a-cc0aa7737d63&2018-07-01&2021-06-30\\\hline
+96fc47f4-d8aa-4fb5-9089-0b7ee39bfe90&2021-07-01&2023-06-30\\\hline
+0cc0fc8a-4185-434f-b384-ddd509ce8539&2023-07-01&null\\\hline
+        \end{tabular}
+    \end{table}
+
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+5f18d34e-7bee-4f49-8c44-0eaca8bb1557&2015-07-01&2018-06-30\\\hline
+b992b65b-ca2f-487a-ac8a-cc0aa7737d63&2018-07-01&2021-06-30\\\hline
+96fc47f4-d8aa-4fb5-9089-0b7ee39bfe90&2021-07-01&2023-06-30\\\hline
+0cc0fc8a-4185-434f-b384-ddd509ce8539&2023-07-01&2025-09-16\\\hline
+6e49bd73-a683-4c1e-81a8-e2d3368b0d95&2025-09-16&null\\\hline
+        \end{tabular}
+    \end{table}
+\end{enumerate}
+\subsection{Функция get\_subordinates\_by\_id}
+\begin{enumerate}
+    \item Позиция является корнем в дереве иерархии позиций.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select id, parent_id, level from get_subordinates_by_id('0ae9589e-0001-4000-8000-000000000001');
+        \end{minted}
+    \end{code}
+
+Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0001-4000-8000-000000000001&null&0\\\hline
+0ae9589e-0002-4000-8000-000000000002&0ae9589e-0001-4000-8000-000000000001&1\\\hline
+0ae9589e-000a-4000-8000-00000000000a&0ae9589e-0001-4000-8000-000000000001&1\\\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0002-4000-8000-000000000002&2\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0005-4000-8000-000000000005&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&4\\\hline
+        \end{tabular}
+    \end{table}
+
+Полученные выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0001-4000-8000-000000000001&null&0\\\hline
+0ae9589e-0002-4000-8000-000000000002&0ae9589e-0001-4000-8000-000000000001&1\\\hline
+0ae9589e-000a-4000-8000-00000000000a&0ae9589e-0001-4000-8000-000000000001&1\\\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0002-4000-8000-000000000002&2\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0005-4000-8000-000000000005&0ae9589e-0003-4000-8000-000000000003&3\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&4\\\hline
+        \end{tabular}
+    \end{table}
+    \item Позиция является листом в дереве иерархии позиций.
+
+    Тестовый сценарий:
+        \begin{code}
+        \begin{minted}{SQL}
+select id, parent_id, level from get_subordinates_by_id('0ae9589e-0006-4000-8000-000000000006');
+        \end{minted}
+    \end{code}
+
+Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&0\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&0\\\hline
+        \end{tabular}
+    \end{table}
+    \item Позиция не является ни корнем ни листом в дереве иерархии позиций.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select id, parent_id, level from get_subordinates_by_id('0ae9589e-0003-4000-8000-000000000003');
+        \end{minted}
+    \end{code}
+
+Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0002-4000-8000-000000000002&0\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0005-4000-8000-000000000005&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&2\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0002-4000-8000-000000000002&0\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0005-4000-8000-000000000005&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&2\\\hline
+        \end{tabular}
+    \end{table}
+\end{enumerate}
+
+\subsection{Функция get\_current\_subordinates\_id\_by\_employee\_id}
+\begin{enumerate}
+    \item Сотрудник не имеет текущей позиции и подчиненных.
+
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select * from get_current_subordinates_id_by_employee_id ('21cc75fe-63ea-43c4-8232-c93ffccd30b0');
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+
+    [P0001] ERROR: Employee with id 21cc75fe-63ea-43c4-8232-c93ffccd30b0 not found or has no current position
+
+    Полученные выходные данные:
+
+    [P0001] ERROR: Employee with id 21cc75fe-63ea-43c4-8232-c93ffccd30b0 not found or has no current position
+
+    \item Сотрудник является корнем текущей иерархии позиций.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select employee_id, position_id, level from get_current_subordinates_id_by_employee_id ('d82bbccc-7456-445e-9834-eeffad9d5a0e');
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0002-4000-8000-000000000002&0\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0005-4000-8000-000000000005&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&2\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0002-4000-8000-000000000002&0\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0005-4000-8000-000000000005&0ae9589e-0003-4000-8000-000000000003&1\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0005-4000-8000-000000000005&2\\\hline
+        \end{tabular}
+    \end{table}
+    \item Сотрудник является листом текущей иерархии позиций.
+
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select employee_id, position_id, level from get_current_subordinates_id_by_employee_id ('2c354bc1-5c3d-41b3-b406-4540b3fac852');
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+2c354bc1-5c3d-41b3-b406-4540b3fac852&4eae2daf-0007-4000-8000-000000000007&0\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+2c354bc1-5c3d-41b3-b406-4540b3fac852&4eae2daf-0007-4000-8000-000000000007&0\\\hline
+        \end{tabular}
+    \end{table}
+
+    \item Сотрудник не является ни листом, ни корнем текущей иерархии позиций.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select employee_id, position_id, level from get_current_subordinates_id_by_employee_id ('2c354bc1-5c3d-41b3-b406-4540b3fac852');
+        \end{minted}
+    \end{code}
+
+        Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+ad5887f2-0bec-4c4a-b8e0-318fb303d99e&0ae9589e-0003-4000-8000-000000000003&0\\\hline
+446a4190-0a9a-49db-b205-2099138c15ef&0ae9589e-0007-4000-8000-000000000007&1\\\hline
+6ff7e9d8-3c9f-4d09-82ef-f4f963972f88&0ae9589e-0008-4000-8000-000000000008&1\\\hline
+4b5377fa-cb51-4954-8552-54acb626c108&0ae9589e-0004-4000-8000-000000000004&1\\\hline
+2f0083df-d72c-4c50-a9ea-72c6e742537d&0ae9589e-0006-4000-8000-000000000006&2\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|l|}\hline
+ad5887f2-0bec-4c4a-b8e0-318fb303d99e&0ae9589e-0003-4000-8000-000000000003&0\\\hline
+446a4190-0a9a-49db-b205-2099138c15ef&0ae9589e-0007-4000-8000-000000000007&1\\\hline
+6ff7e9d8-3c9f-4d09-82ef-f4f963972f88&0ae9589e-0008-4000-8000-000000000008&1\\\hline
+4b5377fa-cb51-4954-8552-54acb626c108&0ae9589e-0004-4000-8000-000000000004&1\\\hline
+2f0083df-d72c-4c50-a9ea-72c6e742537d&0ae9589e-0006-4000-8000-000000000006&2\\\hline
+        \end{tabular}
+    \end{table}
+\end{enumerate}
+\subsection{Функция change\_parent\_id\_with\_subordinates}
+\begin{enumerate}
+    \item Новый руководитель в иерархии позиций не существует.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select change_parent_id_with_subordinates ('0ae9589e-0005-4000-8000-000000000005', '0ae9589e-0005-4000-8000-0000000000ab');
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+
+    [P0001] ERROR: New parent id is not an employee
+
+    Полученные выходные данные:
+
+    [P0001] ERROR: New parent id is not an employee
+
+    \item Новый руководитель существует в иерархии позиций.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select change_parent_id_with_subordinates ('0ae9589e-0005-4000-8000-000000000005', '0ae9589e-0004-4000-8000-000000000004');
+select id, parent_id from position where id = '0ae9589e-0005-4000-8000-000000000005';
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+        0ae9589e-0005-4000-8000-000000000005&0ae9589e-0004-4000-8000-000000000004\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+        0ae9589e-0005-4000-8000-000000000005&0ae9589e-0004-4000-8000-000000000004\\\hline
+        \end{tabular}
+    \end{table}
+\end{enumerate}
+
+\subsection{Функция change\_parent\_id\_without\_subordinates}
+\begin{enumerate}
+    \item Новый руководитель не существует в иерархии позиций.
+    
+    Тестовый сценарий:
+    \begin{code}
+        \begin{minted}{SQL}
+select change_parent_id_without_subordinates ('0ae9589e-0005-4000-8000-000000000005', '0ae9589e-0004-4000-8000-0000000000a4');
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+
+    [P0001] ERROR: New parent id is not an employee
+
+    Полученные выходные данные:
+
+    [P0001] ERROR: New parent id is not an employee
+    \item Новый руководитель существует в иерархии позиций.
+    
+    Тестовый сценарий:
+     \begin{code}
+        \begin{minted}{SQL}
+create temp table children as select * from position where parent_id = '0ae9589e-0003-4000-8000-000000000003';
+select change_parent_id_without_subordinates ('0ae9589e-0003-4000-8000-000000000003', '0ae9589e-0001-4000-8000-000000000001');
+select id, parent_id from position where id = '0ae9589e-0003-4000-8000-000000000003' or id in (select id from children);
+drop table children;
+        \end{minted}
+    \end{code}
+
+    Ожидаемые выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0001-4000-8000-000000000001\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0002-4000-8000-000000000002\\\hline
+        \end{tabular}
+    \end{table}
+
+    Полученные выходные данные:
+\begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}\hline
+0ae9589e-0003-4000-8000-000000000003&0ae9589e-0001-4000-8000-000000000001\\\hline
+0ae9589e-0007-4000-8000-000000000007&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0008-4000-8000-000000000008&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0009-4000-8000-000000000009&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0004-4000-8000-000000000004&0ae9589e-0002-4000-8000-000000000002\\\hline
+0ae9589e-0006-4000-8000-000000000006&0ae9589e-0002-4000-8000-000000000002\\\hline
+        \end{tabular}
+    \end{table}
+\end{enumerate}
+
+\section{Интерфейс доступа к базе данных}
+
+Приложение представляет API для взаимодействия с базой данных, реализованный с использованием библиотеки Swashbuckle~\cite{swashbuckle}. Реализованные запросы представлены на рисунках~\ref{fig:auth_int},~\ref{fig:company_int},~\ref{fig:education_int},~\ref{fig:employee_int},~\ref{fig:position_int},~\ref{fig:position_history_int},~\ref{fig:post_int},~\ref{fig:post_history_int},~\ref{fig:scores_int}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Auth_interface.png}
+    \caption{Запросы для аутентификации, регистрации и получения данных о текущем пользователе.}
+    \label{fig:auth_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Company_interface.png}
+    \caption{Запросы для работы с записями о компаниях.}
+    \label{fig:company_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Education_interface.png}
+    \caption{Запросы для работы с записями о полученных сотрудниками образованиями.}
+    \label{fig:education_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Employee_interface.png}
+    \caption{Запросы для работы с записями о сотрудниках.}
+    \label{fig:employee_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Position_interface.png}
+    \caption{Запросы для работы с записями о позициях.}
+    \label{fig:position_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Position_history_interface.png}
+    \caption{Запросы для работы с записями об истории изменения позиций сотрудников.}
+    \label{fig:position_history_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Post_interface.png}
+    \caption{Запросы для работы с записями о должностях.}
+    \label{fig:post_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Post_history_interface.png}
+    \caption{Запросы для работы с записями об истории изменения должностей сотрудников.}
+    \label{fig:post_history_int}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Score_interface.png}
+    \caption{Запросы для работы с оценками сотрудников.}
+    \label{fig:scores_int}
+\end{figure}
+
+\section*{Вывод}
+
+В данном разделе было проведено сравнение объектно-реляционных СУБД и выбрана СУБД для работы с базой данных. Были определены средства реализации, а также созданы таблицы, триггеры, хранимые процедуры и функции, ролевая модель. Было проведено тестирование триггеров и функций, все тесты были успешно пройдены. Была описана реализация доступа к данным в приложении, а также предоставляемый приложением интерфейс доступа к базе данных.
+
+\clearpage

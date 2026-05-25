@@ -1,3 +1,205 @@
 \ssr{ПРИЛОЖЕНИЕ А}
 
 Презентация к научно-исследовательской работе на 8 слайдах.
+
+\ssr{ПРИЛОЖЕНИЕ Б}
+
+Правила  грамматики ограниченного естественного русского языка.
+
+
+\small
+\begin{longtable}{|p{5cm}|p{10cm}|}
+	\caption{Реализуемые правила грамматики ограниченного естественного русского языка}
+	\label{tab:grammar_rules}\\
+	\hline
+	Формальная запись правила & Описание \\
+	\hline
+	\endfirsthead
+	
+	\multicolumn{2}{p{14cm}}{Продолжение таблицы~\thetable~--- Реализуемые правила грамматики ограниченного естественного русского языка}\\
+	\hline
+	Формальная запись правила & Описание \\
+	\hline
+	\endhead
+	
+	\hline
+	\endfoot
+	
+	\hline
+	\endlastfoot
+	
+	$IP \rightarrow NP\ VP$\newline
+	$IP \rightarrow VP\ NP$ &
+	Группа существительного соединяется с глагольной группой образуя предикативную основу предложения\\\hline
+	
+	$IP \rightarrow NP\ IP$ &
+	Именная группа предшествует предикативной основе предложения, дополняя ее\\\hline
+	
+	$IP \rightarrow NP\ ConjVP$ &
+	Именная группа соединяется с глагольной группой посредством запятой или союза, образуя предикативную основу предложения\\\hline
+	
+	$IP \rightarrow NP\ AP$\newline
+	$IP \rightarrow AP\ NP$ &
+	Именная группа соединяется с группой прилагательного образуя предикативную основу без глагола в роли сказуемого\\\hline
+	
+	$IP \rightarrow NP\ NP$ &
+	Именная группа соединяется с другой именной группой образуя предикативную основу без глагола в роли сказуемого\\\hline
+	
+	$IP \rightarrow PP\ NP$\newline
+	$IP \rightarrow NP\ PP$ &
+	Именная группа соединяется с предложной группой образуя предикативную основу без глагола в роли сказуемого\\\hline
+	
+	$IP \rightarrow C\ IP$ &
+	Предикативная основа предложения дополняется служебным словом слева\\\hline
+	
+	$IP \rightarrow C\ ConjIP$ &
+	Предикативная основа предложения дополняется служебным словом слева и соединяется с ним посредством союза или запятой\\\hline
+	
+	$IP \rightarrow AdvP\ IP$ &
+	Предикативная основа предложения дополняется группой наречия слева\\\hline
+	
+	$IP \rightarrow IP\ ConjIP$ &
+	Предикативная основа предложения соединяется с другой посредством запятой, двоеточия, точки с запятой или союза\\\hline
+	
+	$IP \rightarrow VP$\newline
+	$IP \rightarrow AdvP$\newline
+	$IP \rightarrow AP$\newline
+	$IP \rightarrow NP$\newline
+	$IP \rightarrow PP$ &
+	Предикативная основа предложения выражена единственной синтаксической группой\\\hline
+	
+	$VP \rightarrow V$ &
+	Глагольная группа состоит из одного глагола\\\hline
+	
+	$VP \rightarrow V\ NP$\newline
+	$VP \rightarrow NP\ V$ &
+	Глагол соединяется с именной группой, образуя глагольную группу\\\hline
+	
+	$VP \rightarrow V\ PP$\newline
+	$VP \rightarrow PP\ V$ &
+	Глагол соединяется с предложной группой, образуя глагольную группу\\\hline
+	
+	$VP \rightarrow VP\ PP$\newline
+	$VP \rightarrow PP\ VP$ &
+	Глагольная группа дополняется предложной группой\\\hline
+	
+	$VP \rightarrow VP\ AdvP$\newline
+	$VP \rightarrow AdvP\ VP$ &
+	Глагольная группа дополняется группой наречия\\\hline
+	
+	$VP \rightarrow V\ CP$\newline
+	$VP \rightarrow CP\ V$\newline
+	$VP \rightarrow V\ ConjCP$ &
+	Глагол соединяется с частью предложения, вводимой союзом, либо с присоединенной частью после запятой\\\hline
+	
+	$VP \rightarrow VP\ ConjVP$\newline
+	$VP \rightarrow VP\ VP$ &
+	Две глагольные группы соединяются союзом, запятой или бессоюзной связью\\\hline
+	
+	$VP \rightarrow V\ NP\ PP$\newline
+	$VP \rightarrow V\ NP\ NP$ &
+	После глагола последовательно дополняется именной и предложной группой или двумя именными группами\\\hline
+	
+	$NP \rightarrow Pron$\newline
+	$NP \rightarrow N$ &
+	Именная группа состоит из одного местоимения или одного существительного\\\hline
+	
+	$NP \rightarrow AP\ N$\newline
+	$NP \rightarrow N\ AP$ &
+	Существительное соединяется с описательной группой, образуя именную группу\\\hline
+	
+	$NP \rightarrow AP\ NP$ & Именная группа дополняется описательной группой слева \\\hline
+	$NP \rightarrow AP\ ConjN$ &
+	Существительное соединяется с описательной группой слева через запятую или союз, образуя именную группу\\\hline
+	
+	$NP \rightarrow Q\ N$\newline
+	$NP \rightarrow N\ Q$ &
+	Числительное соединяется с существительным, образуя именную группу\\\hline
+	
+	$NP \rightarrow N\ N$ & Существительное соединяется с другим существительным образуя именную группу\\\hline
+	$NP \rightarrow N\ NP$ & Именная группа дополняется существительным слева\\\hline
+	
+	$NP \rightarrow N\ PP$\newline
+	$NP \rightarrow N\ CP$\newline
+	$NP \rightarrow N\ ConjAP$ &
+	Существительного соединяется справа с предложной группой, частью предложения, или описательной группой через союз, образуя именную группу\\\hline
+	
+	$NP \rightarrow NP\ ConjNP$\newline
+	$NP \rightarrow NP\ NP$\newline
+	$NP \rightarrow NP\ ConjCP$ &
+	Именная группа соединяется с другой именной группой, либо с присоединенной частью после союза или запятой\\\hline
+	
+	$PP \rightarrow P\ NP$\newline
+	$PP \rightarrow P\ Q$ &
+	Предложная группа образуется из предлога и именной группы, либо из предлога и количественного слова\\\hline
+	
+	$PP \rightarrow PP\ ConjPP$ &
+	Две предложные группы соединяются союзом или запятой\\\hline
+	
+	$AP \rightarrow A$ &
+	Группа прилагательного состоит из одного слова со значением признака\\\hline
+	
+	$AP \rightarrow AdvP\ A$\newline
+	$AP \rightarrow A\ AdvP$ &
+	Слово со значением признака соединяется с уточняющим или усиливающим словом, которое может стоять до него или после него\\\hline
+	
+	$AP \rightarrow A\ PP$\newline
+	$AP \rightarrow PP\ A$ &
+	Группа прилагательного соединяется с предложной группой, стоящей до нее или после нее\\\hline
+	
+	$AP \rightarrow A\ N$ &
+	Слово со значением признака соединяется с существительным\\\hline
+	
+	$AP \rightarrow AP\ NP$\newline
+	$AP \rightarrow AP\ ConjPP$ &
+	К уже собранной группе прилагательного добавляется именная или предложная группа\\\hline
+	
+	$AP \rightarrow AP\ ConjAP$\newline
+	$AP \rightarrow AP\ AP$ &
+	Две группы прилагательного соединяются союзом, запятой или бессоюзно\\\hline
+	
+	$AdvP \rightarrow Adv$ &
+	Группа наречия состоит из одного наречия\\\hline
+	
+	$AdvP \rightarrow AdvP\ AdvP$\newline
+	$AdvP \rightarrow AdvP\ NP$\newline
+	$AdvP \rightarrow AdvP\ ConjAdvP$ &
+	Группа наречия дополняется другой группой наречия, именной группой или присоединенной частью через союз или запятую\\\hline
+	
+	$CP \rightarrow C\ IP$ &
+	Служебное слово соединяется с предикативной основой предложения образуя зависимую часть предложения\\\hline
+	
+	$ConjIP \rightarrow Comma\ IP$\newline
+	$ConjIP \rightarrow Semicolon\ IP$\newline
+	$ConjIP \rightarrow Colon\ IP$\newline
+	$ConjIP \rightarrow C\ IP$\newline
+	$ConjIP \rightarrow CommaC\ IP$ &
+	Присоединяемая часть предложения образуется из знака препинания или служебного слова и следующей за ним предикативной основы\\\hline
+	
+	$CommaC \rightarrow Comma\ C$ &
+	Запятая соединяется со служебным словом и образует единый элемент для присоединения следующей части предложения\\\hline
+	
+	$ConjVP \rightarrow C\ VP$\newline
+	$ConjVP \rightarrow Comma\ VP$ &
+	Присоединяемая глагольная группа образуется из союза или запятой и следующей за ними глагольной группы\\\hline
+	
+	$ConjNP \rightarrow C\ NP$\newline
+	$ConjNP \rightarrow Comma\ NP$ &
+	Присоединяемая именная группа образуется из союза или запятой и следующей за ними именной группы\\\hline
+	
+	$ConjPP \rightarrow C\ PP$\newline
+	$ConjPP \rightarrow Comma\ PP$ &
+	Присоединяемая предложная группа образуется из союза или запятой и следующей за ними предложной группы\\\hline
+	
+	$ConjAP \rightarrow C\ AP$\newline
+	$ConjAP \rightarrow Comma\ AP$ &
+	Присоединяемая группа прилагательного образуется из союза или запятой и следующей за ними группой прилагательного\\\hline
+	
+	$ConjAdvP \rightarrow C\ AdvP$\newline
+	$ConjAdvP \rightarrow Comma\ AdvP$ &
+	Присоединяемая группа наречия образуется из союза или запятой и следующей за ними группой наречия\\\hline
+	
+	$ConjCP \rightarrow Comma\ CP$ &
+	Присоединяемая часть предложения с союзом образуется из запятой и следующей за ней части предложения\\
+\end{longtable}
+\normalsize

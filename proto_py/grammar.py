@@ -59,3 +59,28 @@ def fix_grammar(gram):
     ]
     gram["NP"] = [r for r in gram["NP"] if r in allowed_NP]
     return gram
+
+def invert_grammar(gram):
+    """
+    Строит инвертированные индексы для унарных и бинарных правил.
+    
+    Args:
+        gram (dict): грамматика вида {lhs: [[sym1, sym2, ...], ...]}
+    
+    Returns:
+        tuple: (unary_index, binary_index)
+        - unary_index: dict[str, list[str]]: правый символ -> список lhs (для правил длины 1)
+        - binary_index: dict[tuple[str, str], list[str]]: (symA, symB) -> список lhs (для правил длины 2)
+    """
+    unary = {}
+    binary = {}
+    for lhs, rules in gram.items():
+        for rhs in rules:
+            if len(rhs) == 1:
+                sym = rhs[0]
+                unary.setdefault(sym, []).append(lhs)
+            elif len(rhs) == 2:
+                key = (rhs[0], rhs[1])
+                binary.setdefault(key, []).append(lhs)
+            # после бинаризации правил длины >2 быть не должно
+    return unary, binary

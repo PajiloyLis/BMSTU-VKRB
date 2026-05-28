@@ -15,23 +15,16 @@ with _PREP_PATH.open(encoding="utf-8") as _f:
 PREPOSITION_GOVERNMENT = {k.lower().strip(): tuple(v) for k, v in _raw_prep.items()}
 
 
-def _unary_closure_round(dp, grammar, tokens, n):
-    """
-    Один полный проход унарных правил lhs -> sym по всем отрезам.
-    Возвращает True, если добавились новые состояния.
-    """
+def _unary_closure_round(dp, unary_index, tokens, n):
     changed = False
     for length in range(1, n + 1):
         for i in range(0, n - length + 1):
             j = i + length
-            for lhs, rules in grammar.items():
-                for rhs in rules:
-                    if len(rhs) != 1:
-                        continue
-                    sym = rhs[0]
-                    if sym not in dp[i][j]:
-                        continue
-                    for feat in list(dp[i][j][sym]):
+            # Для каждого нетерминала в ячейке
+            for sym, feat_set in list(dp[i][j].items()):
+                # Получаем lhs, которые могут быть выведены из sym по унарным правилам
+                for lhs in unary_index.get(sym, []):
+                    for feat in feat_set:
                         if not agreement_check_unary(lhs, sym, feat):
                             continue
                         new_feat = merge_features_unary(lhs, sym, feat)
@@ -43,58 +36,44 @@ def _unary_closure_round(dp, grammar, tokens, n):
     return changed
 
 
-def build_cyk_table(tokens, grammar):
-    n = len(tokens)
-    # dp[i][j] -> dict {nonterm: set of frozenset features}
+def build_cyk_table(token_feature_pairs, unary_index, binary_index):
+    n = len(token_feature_pairs)
+    # Извлекаем токены отдельно для удобства в agreement_check
+    tokens = [pair[0] for pair in token_feature_pairs]
     dp = [[dict() for _ in range(n+1)] for _ in range(n+1)]
     
-    # Инициализация (j-1, j)
     for j in range(1, n+1):
-        word = tokens[j-1]
-        features_list = get_features(word)   # список словарей
+        token, features_list = token_feature_pairs[j-1]
         for feat in features_list:
             pos = feat['pos']
-            # Добавляем терминал
             feat_set = frozenset(feat.items())
             dp[j-1][j].setdefault(pos, set()).add(feat_set)
-            # Унарные правила
-            for lhs, rules in grammar.items():
-                for rhs in rules:
-                    if len(rhs) == 1 and rhs[0] == pos:
-                        dp[j-1][j].setdefault(lhs, set()).add(feat_set)
-    # Унарные из терминалов (NP <- N и т.д.) — до бинарных длин >1
-    while _unary_closure_round(dp, grammar, tokens, n):
+            for lhs in unary_index.get(pos, []):
+                dp[j-1][j].setdefault(lhs, set()).add(feat_set)
+    
+    while _unary_closure_round(dp, unary_index, tokens, n):
         pass
 
-    # Заполнение для более длинных отрезков: после каждой длины — унарное замыкание,
-    # иначе CP <- C IP не видит IP <- VP на уже построенном VP (напр. «что сейчас произойдет»).
     for length in range(2, n + 1):
         for i in range(0, n - length + 1):
             j = i + length
             for k in range(i + 1, j):
                 left_cell = dp[i][k]
                 right_cell = dp[k][j]
-                for lhs, rules in grammar.items():
-                    for rhs in rules:
-                        if len(rhs) != 2:
-                            continue
-                        symA, symB = rhs[0], rhs[1]
-                        if symA in left_cell and symB in right_cell:
-                            for featA in left_cell[symA]:
-                                for featB in right_cell[symB]:
+                for symA, featsA_set in left_cell.items():
+                    for symB, featsB_set in right_cell.items():
+                        for lhs in binary_index.get((symA, symB), []):
+                            for featA in featsA_set:
+                                for featB in featsB_set:
                                     if agreement_check(
-                                        lhs,
-                                        symA,
-                                        featA,
-                                        symB,
-                                        featB,
+                                        lhs, symA, featA, symB, featB,
                                         tokens=tokens,
                                         span_left=(i, k),
                                         span_right=(k, j),
                                     ):
                                         new_feat = merge_features(lhs, symA, featA, symB, featB)
                                         dp[i][j].setdefault(lhs, set()).add(new_feat)
-        while _unary_closure_round(dp, grammar, tokens, n):
+        while _unary_closure_round(dp, unary_index, tokens, n):
             pass
     return dp
 

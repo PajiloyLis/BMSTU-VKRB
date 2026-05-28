@@ -30,12 +30,14 @@ class ParserEngine:
     def __init__(self, grammar_path: Path, root_symbol: str = "IP") -> None:
         grammar = load_grammar(str(grammar_path))
         self.grammar = binarize_grammar(fix_grammar(grammar))
+        self.unary_index, self.binary_index = invert_grammar(self.grammar)
         self.root_symbol = root_symbol
 
     def parse_sentence(self, text: str, max_trees: int = 5) -> ParseResult:
         normalized = text.strip()
         tokens = tokenize_input(normalized)
-        dp = build_cyk_table(tokens, self.grammar)
+        token_feature_pairs = preprocess_tokens(tokens)
+        dp = build_cyk_table(token_feature_pairs, self.unary_index, self.binary_index)
         top_cell = dp[0][len(tokens)]
         parsed = self.root_symbol in top_cell
         trees: list[ParsedTree] = []

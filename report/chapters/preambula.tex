@@ -41,9 +41,151 @@
 \usepackage{rotating}
 \usepackage{rotfloat}
 \usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{etoolbox}
 
-% Нумерация листингов в пределах раздела
-\counterwithin{listing}{chapter}
+% Настройка листингов (переносимые блоки кода)
+\usepackage[listings,breakable,skins]{tcolorbox}
+
+% --- Нумерация листингов в пределах раздела ---
+%\counterwithin{lstlisting}{chapter}
+
+% --- Стиль оформления кода (настройки подсветки) ---
+\lstdefinestyle{myCodeStyle}{
+	language=Python,
+	basicstyle=\small\ttfamily,
+	numbers=left,
+	numberstyle=\small,
+	stepnumber=1,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2,
+	captionpos=t,
+	breaklines=true,
+	breakatwhitespace=false,
+	escapeinside={\#*}{*)},
+	extendedchars=true,
+	inputencoding=utf8,
+	literate=                     % Подстановка русских букв
+	{а}{{\selectfont\char224}}1
+	{б}{{\selectfont\char225}}1
+	{в}{{\selectfont\char226}}1
+	{г}{{\selectfont\char227}}1
+	{д}{{\selectfont\char228}}1
+	{е}{{\selectfont\char229}}1
+	{ё}{{\"e}}1
+	{ж}{{\selectfont\char230}}1
+	{з}{{\selectfont\char231}}1
+	{и}{{\selectfont\char232}}1
+	{й}{{\selectfont\char233}}1
+	{к}{{\selectfont\char234}}1
+	{л}{{\selectfont\char235}}1
+	{м}{{\selectfont\char236}}1
+	{н}{{\selectfont\char237}}1
+	{о}{{\selectfont\char238}}1
+	{п}{{\selectfont\char239}}1
+	{р}{{\selectfont\char240}}1
+	{с}{{\selectfont\char241}}1
+	{т}{{\selectfont\char242}}1
+	{у}{{\selectfont\char243}}1
+	{ф}{{\selectfont\char244}}1
+	{х}{{\selectfont\char245}}1
+	{ц}{{\selectfont\char246}}1
+	{ч}{{\selectfont\char247}}1
+	{ш}{{\selectfont\char248}}1
+	{щ}{{\selectfont\char249}}1
+	{ъ}{{\selectfont\char250}}1
+	{ы}{{\selectfont\char251}}1
+	{ь}{{\selectfont\char252}}1
+	{э}{{\selectfont\char253}}1
+	{ю}{{\selectfont\char254}}1
+	{я}{{\selectfont\char255}}1
+	{А}{{\selectfont\char192}}1
+	{Б}{{\selectfont\char193}}1
+	{В}{{\selectfont\char194}}1
+	{Г}{{\selectfont\char195}}1
+	{Д}{{\selectfont\char196}}1
+	{Е}{{\selectfont\char197}}1
+	{Ё}{{\"E}}1
+	{Ж}{{\selectfont\char198}}1
+	{З}{{\selectfont\char199}}1
+	{И}{{\selectfont\char200}}1
+	{Й}{{\selectfont\char201}}1
+	{К}{{\selectfont\char202}}1
+	{Л}{{\selectfont\char203}}1
+	{М}{{\selectfont\char204}}1
+	{Н}{{\selectfont\char205}}1
+	{О}{{\selectfont\char206}}1
+	{П}{{\selectfont\char207}}1
+	{Р}{{\selectfont\char208}}1
+	{С}{{\selectfont\char209}}1
+	{Т}{{\selectfont\char210}}1
+	{У}{{\selectfont\char211}}1
+	{Ф}{{\selectfont\char212}}1
+	{Х}{{\selectfont\char213}}1
+	{Ц}{{\selectfont\char214}}1
+	{Ч}{{\selectfont\char215}}1
+	{Ш}{{\selectfont\char216}}1
+	{Щ}{{\selectfont\char217}}1
+	{Ъ}{{\selectfont\char218}}1
+	{Ы}{{\selectfont\char219}}1
+	{Ь}{{\selectfont\char220}}1
+	{Э}{{\selectfont\char221}}1
+	{Ю}{{\selectfont\char222}}1
+	{Я}{{\selectfont\char223}}1
+}
+
+% --- Окружение для переносимого листинга с кодом внутри документа ---
+\newtcblisting[auto counter, number within=chapter]{breakablecode}[2][]{
+	listing only,
+	breakable,
+	enhanced,
+	sharp corners,
+	colback=white,
+	colframe=black,
+	boxrule=0.5pt,
+	left=10pt,
+	right=5pt,
+	top=10pt,
+	bottom=5pt,
+	before skip=10pt,
+	after skip=10pt,
+	%title={Листинг~\thetcbcounter~---~#2},
+	listing style=myCodeStyle,
+	#1,
+	% --- Обеспечиваем рисование полных рамок при разрыве ---
+	overlay first={
+		\draw[line width=.5pt] (frame.south west)--(frame.south east);
+	},
+	overlay middle={
+		\draw[line width=.5pt] (frame.south west)--(frame.south east);
+		\draw[line width=.5pt] (frame.north west)--(frame.north east);
+	},
+	overlay last={
+		\draw[line width=.5pt] (frame.north west)--(frame.north east);
+	},
+	% --- Если нужно на страницах-продолжениях слово "Продолжение" ---
+	% Раскомментируйте строки ниже, если хотите, чтобы на второй и последующих страницах
+	% вместо полного заголовка было только "Продолжение листинга N".
+	% В этом случае закомментируйте опцию title выше.
+	title={},
+	overlay first={
+		     \node[anchor=north west, xshift=5pt, yshift=-5pt] at (frame.north west) 
+		         {Листинг~\thetcbcounter: #2};
+		 },
+	 overlay middle={
+	     \node[anchor=north west, xshift=5pt, yshift=-5pt] at (frame.north west) 
+	         {Продолжение листинга~\thetcbcounter~---~#2};
+	 }
+	overlay last={
+	    \node[anchor=north west, xshift=5pt, yshift=-5pt] at (frame.north west) 
+	        {Продолжение листинга~\thetcbcounter~---~#2};
+	}
+}
+
+% ===== Остальные ваши настройки (без изменений) =====
 
 \newcommand{\ssr}[1]{\begin{center}
 		\Large\bfseries{#1}
@@ -68,7 +210,6 @@
 \makeatletter
 \renewcommand{\@biblabel}[1]{#1.}
 \makeatother
-
 
 \titleformat{\chapter}[hang]{\LARGE\bfseries}{\hspace{1.25cm}\thechapter}{1ex}{\LARGE\bfseries}
 \titleformat{\section}[hang]{\Large\bfseries}{\hspace{1.25cm}\thesection}{1ex}{\Large\bfseries}
@@ -104,36 +245,11 @@
 \graphicspath{{images/}}%путь к рисункам
 
 \newcommand{\mytexttilde}{\raisebox{0.5ex}{\texttildelow}}
-
 \newcommand{\floor}[1]{\lfloor #1 \rfloor}
 
-\lstset{ %
-	language=SQL,                 % выбор языка для подсветки (здесь это С)
-	basicstyle=\small\ttfamily, % размер и начертание шрифта для подсветки кода
-	numbers=left,               % где поставить нумерацию строк (слева\справа)
-	numberstyle=\small,           % размер шрифта для номеров строк
-	stepnumber=1,                   % размер шага между двумя номерами строк
-	numbersep=5pt,                % как далеко отстоят номера строк от подсвечиваемого кода
-	showspaces=false,            % показывать или нет пробелы специальными отступами
-	showstringspaces=false,      % показывать или нет пробелы в строках
-	showtabs=false,             % показывать или нет табуляцию в строках
-	frame=single,              % рисовать рамку вокруг кода
-	tabsize=2,                 % размер табуляции по умолчанию равен 2 пробелам
-	captionpos=t,              % позиция заголовка вверху [t] или внизу [b] 
-	breaklines=true,           % автоматически переносить строки (да\нет)
-	breakatwhitespace=false, % переносить строки только если есть пробел
-	escapeinside={\#*}{*)},   % если нужно добавить комментарии в коде
-	abovecaptionskip=-5pt
-}
-
 \pgfplotsset{width=0.85\linewidth, height=0.5\columnwidth}
-
 \linespread{1.3}
-
 \parindent=1.25cm
-
-%\LetLtxMacro\itemold\item
-%\renewcommand{\item}{\itemindent0.75cm\itemold}
 
 \def\labelitemi{---}
 \setlist[itemize]{leftmargin=1.25cm, itemindent=0.65cm}

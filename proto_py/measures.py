@@ -104,11 +104,11 @@ def run_benchmark(max_words=20, repeats=5, show_progress=True):
     """
     Запускает бенчмарк для длин слов от 1 до max_words.
     repeats – число повторений для каждой длины.
-    Возвращает списки: lengths, cyk_times, extract_times (средние и стандартные отклонения), tree_counts.
+    Возвращает список всех измерений (list of dict).
     """
     grammar_path = Path(__file__).parent / "grammar.json"
     if not grammar_path.exists():
-        raise FileNotFoundError(f"Грамматика не найдена: {grammar_path}. Укажите правильный путь.")
+        raise FileNotFoundError(f"Грамматика не найдена: {grammar_path}")
 
     grammar = load_grammar(str(grammar_path))
     grammar = binarize_grammar(fix_grammar(grammar))
@@ -122,49 +122,45 @@ def run_benchmark(max_words=20, repeats=5, show_progress=True):
     engine.grammar = grammar
 
     lengths = list(range(1, max_words + 1))
-    cyk_means = []
-    cyk_stds = []
-    extract_means = []
-    extract_stds = []
-    tree_counts = []
+    all_measurements = []
 
     iterator = tqdm(lengths, desc="Обработка длин", disable=not show_progress)
     for L in iterator:
         sentence = generate_sentence(L)
-        cyk_times = []
-        extract_times = []
-        last_tree_count = 0
         for _ in range(repeats):
             t_cyk, t_ext, n_trees = measure_parser(sentence, engine)
-            cyk_times.append(t_cyk)
-            extract_times.append(t_ext)
-            last_tree_count = n_trees
-        cyk_means.append(statistics.mean(cyk_times))
-        cyk_stds.append(statistics.stdev(cyk_times) if len(cyk_times) > 1 else 0.0)
-        extract_means.append(statistics.mean(extract_times))
-        extract_stds.append(statistics.stdev(extract_times) if len(extract_times) > 1 else 0.0)
-        tree_counts.append(last_tree_count)
-        iterator.set_postfix(cyk=f"{cyk_means[-1]:.4f}s", ext=f"{extract_means[-1]:.4f}s", trees=last_tree_count)
+            all_measurements.append({
+                'length': L,
+                'cyk_time': t_cyk,
+                'extract_time': t_ext,
+                'tree_count': n_trees
+            })
+        # опционально: выводить последние значения в прогресс-баре
+        last = all_measurements[-1]
+        iterator.set_postfix(cyk=f"{last['cyk_time']:.4f}s", ext=f"{last['extract_time']:.4f}s", trees=last['tree_count'])
 
-    return lengths, cyk_means, cyk_stds, extract_means, extract_stds, tree_counts
+    return all_measurements
 
-
-def save_measurements_to_csv(lengths, cyk_means, extract_means, tree_counts, csv_path):
+def save_measurements_to_csv(measurements, csv_path):
     """
-    Сохраняет результаты замеров в CSV файл (дозапись).
+    Сохраняет список всех замеров в CSV файл (дозапись).
     """
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
-    # Проверяем, существует ли файл, чтобы записать заголовок только один раз
     file_exists = csv_path.exists()
-    
+
     with open(csv_path, 'a', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         if not file_exists:
             writer.writerow(['timestamp', 'length', 'cyk_time_sec', 'extract_trees_time_sec', 'tree_count'])
-        
-        for L, c_m, e_m, n_t in zip(lengths, cyk_means, extract_means, tree_counts):
-            writer.writerow([timestamp, L, f"{c_m:.6f}", f"{e_m:.6f}", n_t])
+
+        for m in measurements:
+            writer.writerow([
+                timestamp,
+                m['length'],
+                f"{m['cyk_time']:.6f}",
+                f"{m['extract_time']:.6f}",
+                m['tree_count']
+            ])
 
 
 def plot_results(lengths, cyk_means, cyk_stds, extract_means, extract_stds, tree_counts, save_dir=None):
@@ -225,29 +221,51 @@ def main():
     args = parser.parse_args()
 
     print("Запуск бенчмарка...")
-    lengths, cyk_m, cyk_s, ext_m, ext_s, tree_counts = run_benchmark(
+    measurements = run_benchmark(
         max_words=args.max_words,
         repeats=args.repeats,
         show_progress=not args.no_progress
     )
 
-    # Нормированные значения для вывода в таблицу
-    ext_m_per_tree = [m / k if k > 0 else 0.0 for m, k in zip(ext_m, tree_counts)]
-    ext_s_per_tree = [s / k if k > 0 else 0.0 for s, k in zip(ext_s, tree_counts)]
+    if not measurements:
+        print("Нет данных.")
+        return
 
-    print("\nРезультаты (среднее ± std):")
+    # Сохранение всех замеров в CSV
+    csv_path = Path(args.csv)
+    save_measurements_to_csv(measurements, csv_path)
+    print(f"\nРезультаты (все замеры) сохранены в CSV: {csv_path}")
+
+    # Агрегация для вывода в консоль и графиков
+    grouped = {}
+    for m in measurements:
+        L = m['length']
+        if L not in grouped:
+            grouped[L] = {'cyk': [], 'ext': [], 'trees': []}
+        grouped[L]['cyk'].append(m['cyk_time'])
+        grouped[L]['ext'].append(m['extract_time'])
+        grouped[L]['trees'].append(m['tree_count'])
+
+    lengths = sorted(grouped.keys())
+    cyk_means = [np.mean(grouped[L]['cyk']) for L in lengths]
+    cyk_stds  = [np.std(grouped[L]['cyk'], ddof=1) if len(grouped[L]['cyk'])>1 else 0.0 for L in lengths]
+    ext_means = [np.mean(grouped[L]['ext']) for L in lengths]
+    ext_stds  = [np.std(grouped[L]['ext'], ddof=1) if len(grouped[L]['ext'])>1 else 0.0 for L in lengths]
+    tree_counts = [int(np.mean(grouped[L]['trees'])) for L in lengths]
+
+    # Нормированные значения для вывода в таблицу
+    ext_m_per_tree = [m / k if k > 0 else 0.0 for m, k in zip(ext_means, tree_counts)]
+    ext_s_per_tree = [s / k if k > 0 else 0.0 for s, k in zip(ext_stds, tree_counts)]
+
+    print("\nРезультаты (среднее ± std по каждому length):")
     print(f"{'Длина':>5}  {'CYK (с)':>25}  {'Дерево (с/шт)':>25}  {'Деревьев':>10}")
-    for L, c_m, c_s, e_m, e_s, n_t in zip(lengths, cyk_m, cyk_s, ext_m_per_tree, ext_s_per_tree, tree_counts):
+    for L, c_m, c_s, e_m, e_s, n_t in zip(lengths, cyk_means, cyk_stds, ext_m_per_tree, ext_s_per_tree, tree_counts):
         print(f"{L:5d}  {c_m:.6f} ± {c_s:.6f}  {e_m:.6f} ± {e_s:.6f}  {n_t:10d}")
 
-    # Сохранение в CSV (дозапись)
-    csv_path = Path(args.csv)
-    save_measurements_to_csv(lengths, cyk_m, ext_m, tree_counts, csv_path)
-    print(f"\nРезультаты сохранены в CSV: {csv_path}")
-
-    # Сохранение графиков в PDF
-    plot_results(lengths, cyk_m, cyk_s, ext_m, ext_s, tree_counts)
-
+    # Построение графиков (используем функцию plot_results, но с полученными агрегатами)
+    # Для совместимости с существующей plot_results передаём ей кортеж из (lengths, cyk_means, cyk_stds, ext_means, ext_stds, tree_counts)
+    # Однако в старой plot_results используется нормировка внутри, поэтому просто передадим те же данные
+    plot_results(lengths, cyk_means, cyk_stds, ext_means, ext_stds, tree_counts)
 
 if __name__ == "__main__":
     main()

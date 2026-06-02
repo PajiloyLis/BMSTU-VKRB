@@ -69,7 +69,7 @@ def plot_results(lengths, cyk_means, cyk_stds, ext_means, ext_stds, output_prefi
     Если output_prefix не указан, формирует имя на основе временной метки.
     """
     if output_prefix is None:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")m/app-unavailable-in-region
         output_prefix = f"{timestamp}_benchmark"
 
     # ----- График 1: Время построения таблицы CYK -----

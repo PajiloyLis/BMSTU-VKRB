@@ -48,10 +48,10 @@ def load_and_aggregate(csv_path: str):
     for L in lengths:
         cyk_vals = data_by_len[L]['cyk']
         ext_vals = data_by_len[L]['ext_per_tree']
-        cyk_means.append(np.mean(cyk_vals))
-        cyk_stds.append(np.std(cyk_vals, ddof=1) if len(cyk_vals) > 1 else 0.0)
-        ext_means.append(np.mean(ext_vals))
-        ext_stds.append(np.std(ext_vals, ddof=1) if len(ext_vals) > 1 else 0.0)
+        cyk_means.append(np.median(cyk_vals))
+        cyk_stds.append(np.percentile(cyk_vals, 0.95) if len(cyk_vals) > 1 else 0.0)
+        ext_means.append(np.median(ext_vals))
+        ext_stds.append(np.percentile(ext_vals, 0.95) if len(ext_vals) > 1 else 0.0)
 
     # Вывод статистики в консоль
     print("\nСтатистика по длинам предложений:")
@@ -69,7 +69,7 @@ def plot_results(lengths, cyk_means, cyk_stds, ext_means, ext_stds, output_prefi
     Если output_prefix не указан, формирует имя на основе временной метки.
     """
     if output_prefix is None:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")m/app-unavailable-in-region
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         output_prefix = f"{timestamp}_benchmark"
 
     # ----- График 1: Время построения таблицы CYK -----

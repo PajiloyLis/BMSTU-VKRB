@@ -1,4 +1,5 @@
 % !TeX spellcheck = ru_RU
+% ========== ВСЕ НАСТРОЙКИ ИЗ preambula.tex (КРОМЕ ЛИСТИНГОВ) ==========
 \usepackage[T1, T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
@@ -6,7 +7,6 @@
 \usepackage{pgfplots}
 \usepackage{graphicx}
 \usepackage{tocloft}
-\usepackage{listings}
 \usepackage{caption}
 \usepackage{longtable}
 \usepackage{tempora}
@@ -18,6 +18,7 @@
 \usepackage{enumerate,letltxmacro}
 \usepackage{threeparttable}
 \usepackage{hyperref}
+\hypersetup{hidelinks}
 \usepackage{flafter}
 \usepackage{enumitem}
 \usepackage{multirow}
@@ -41,34 +42,150 @@
 \usepackage{rotating}
 \usepackage{rotfloat}
 \usepackage{subcaption}
-\usepackage{xcolor}
-\usepackage{etoolbox}
+\usepackage{listings}
 
-% Настройка листингов (переносимые блоки кода)
-\usepackage[listings,breakable,skins]{tcolorbox}
-
-% --- Нумерация листингов в пределах раздела ---
+% Нумерация листингов в пределах раздела
 %\counterwithin{lstlisting}{chapter}
 
-% --- Стиль оформления кода (настройки подсветки) ---
-\lstdefinestyle{myCodeStyle}{
-	language=Python,
-	basicstyle=\small\ttfamily,
+\newcommand{\ssr}[1]{\begin{center}
+		\Large\bfseries{#1}
+		\addcontentsline{toc}{chapter}{#1}\end{center}}
+
+\makeatletter
+\renewcommand\LARGE{\@setfontsize\LARGE{22pt}{20}}
+\renewcommand\Large{\@setfontsize\Large{20pt}{20}}
+\renewcommand\large{\@setfontsize\large{16pt}{20}}
+\makeatother
+\RequirePackage{titlesec}
+\titleformat{\chapter}[block]{\hspace{\parindent}\large\bfseries}{\thechapter}{0.5em}{\large\bfseries\raggedright}
+\titleformat{name=\chapter,numberless}[block]{\hspace{\parindent}}{}{0pt}{\large\bfseries\centering}
+\titleformat{\section}[block]{\hspace{\parindent}\large\bfseries}{\thesection}{0.5em}{\large\bfseries\raggedright}
+\titleformat{\subsection}[block]{\hspace{\parindent}\large\bfseries}{\thesubsection}{0.5em}{\large\bfseries\raggedright}
+\titleformat{\subsubsection}[block]{\hspace{\parindent}\large\bfseries}{\thesubsection}{0.5em}{\large\bfseries\raggedright}
+\titlespacing{\chapter}{12.5mm}{-22pt}{10pt}
+\titlespacing{\section}{12.5mm}{10pt}{10pt}
+\titlespacing{\subsection}{12.5mm}{10pt}{10pt}
+\titlespacing{\subsubsection}{12.5mm}{10pt}{10pt}
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+\titleformat{\chapter}[hang]{\LARGE\bfseries}{\hspace{1.25cm}\thechapter}{1ex}{\LARGE\bfseries}
+\titleformat{\section}[hang]{\Large\bfseries}{\hspace{1.25cm}\thesection}{1ex}{\Large\bfseries}
+\titleformat{name=\section,numberless}[hang]{\Large\bfseries}{\hspace{1.25cm}}{0pt}{\Large\bfseries}
+\titleformat{\subsection}[hang]{\large\bfseries}{\hspace{1.25cm}\thesubsection}{1ex}{\large\bfseries}
+\titlespacing{\chapter}{0pt}{-\baselineskip}{\baselineskip}
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+\titlespacing*{\subsection}{0pt}{\baselineskip}{\baselineskip}
+
+\geometry{left=30mm}
+\geometry{right=10mm}
+\geometry{top=20mm}
+\geometry{bottom=20mm}
+
+\onehalfspacing
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi}\text{)}}
+\renewcommand{\theenumii}{.\arabic{enumii}}
+\renewcommand{\labelenumii}{\asbuk{enumii}\text{)}}
+\renewcommand{\theenumiii}{.\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}
+
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+\addto\captionsrussian{\renewcommand{\figurename}{Рисунок}}
+\DeclareCaptionLabelSeparator{dash}{~---~}
+\captionsetup{labelsep=dash}
+\captionsetup[figure]{justification=centering,labelsep=dash}
+\captionsetup[table]{labelsep=dash,justification=raggedright,singlelinecheck=off}
+\captionsetup[lstlisting]{justification=raggedright,singlelinecheck=off}
+
+\graphicspath{{images/}}
+
+\newcommand{\mytexttilde}{\raisebox{0.5ex}{\texttildelow}}
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+
+\pgfplotsset{width=0.85\linewidth, height=0.5\columnwidth}
+\linespread{1.3}
+\parindent=1.25cm
+
+\def\labelitemi{---}
+\setlist[itemize]{leftmargin=1.25cm, itemindent=0.65cm}
+\setlist[enumerate]{leftmargin=1.25cm, itemindent=0.55cm}
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\frenchspacing
+
+% ========== НАСТРОЙКИ ДЛЯ ЛИСТИНГОВ И ПСЕВДОКОДА (ИЗ settings.tex) ==========
+\usepackage{cmap}
+\usepackage{csquotes}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{ulem}
+\usepackage{verbatim}
+\usepackage{xcolor}
+
+% Дополнительные настройки из settings.tex (не дублируем уже загруженные)
+\newenvironment{signstabular}[1][1]{
+	\renewcommand*{\arraystretch}{#1}
+	\tabular
+}{
+	\endtabular
+}
+
+%\setenumerate[0]{label=\arabic*.)}
+\renewcommand{\labelitemi}{---}
+
+\NewDocumentCommand{\ulinetext}{O{3cm} O{c} m m}{
+	$\underset{\text{#3}}{\uline{\makebox[#1][#2]{#4}}}$
+}
+
+\makeatletter
+\renewcommand*{\l@chapter}[2]{
+	\ifnum \c@tocdepth>\m@ne
+	\addpenalty{-\@highpenalty}
+	\vskip 1em \@plus.2em
+	\@dottedtocline{0}{0pt}{1.5em}{\bfseries #1}{\bfseries #2}
+	\fi
+}
+\renewcommand*{\l@subsubsection}[2]{
+	\ifnum \c@tocdepth>2
+	\@dottedtocline{3}{6.9em}{3.8em}{#1}{#2}
+	\fi
+}
+\makeatother
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% Настройки отображения кода (listings)
+\lstset{
+	basicstyle=\footnotesize\ttfamily,
+	language=SQL,
 	numbers=left,
-	numberstyle=\small,
-	stepnumber=1,
 	numbersep=5pt,
-	showspaces=false,
-	showstringspaces=false,
-	showtabs=false,
-	tabsize=2,
+	stepnumber=1,
+	xleftmargin=17pt,
+	frame=single,
+	tabsize=4,
 	captionpos=t,
 	breaklines=true,
-	breakatwhitespace=false,
+	breakatwhitespace=true,
 	escapeinside={\#*}{*)},
-	extendedchars=true,
-	inputencoding=utf8,
-	literate=                     % Подстановка русских букв
+	inputencoding=utf8x,
+	backgroundcolor=\color{white},
+	numberstyle=\scriptsize,
+	keywordstyle=\color{black},
+	stringstyle=\color{black},
+	commentstyle=\color{black},
+	morekeywords={TO,WITH,SUPERUSER,PRIVILEGES,TABLES,SCHEMA,USER,PASSWORD,public,REFERENCES,UUID,IF}
+}
+\lstset{
+	literate=
+	{~}{{\textasciitilde}}1
 	{а}{{\selectfont\char224}}1
 	{б}{{\selectfont\char225}}1
 	{в}{{\selectfont\char226}}1
@@ -137,125 +254,138 @@
 	{Я}{{\selectfont\char223}}1
 }
 
-% --- Окружение для переносимого листинга с кодом внутри документа ---
-\newtcblisting[auto counter, number within=chapter]{breakablecode}[2][]{
-	listing only,
-	breakable,
+% Настройка листингов с tcolorbox и minted
+\RequirePackage[listings]{tcolorbox}
+\tcbuselibrary{listings,breakable,minted,skins}
+\renewcommand{\theFancyVerbLine}{\scriptsize\arabic{FancyVerbLine}}
+
+\newtcbinputlisting[auto counter,number within=chapter]{\mylisting}[4][]{
 	enhanced,
-	sharp corners,
+	before skip=10pt,
+	arc=0mm,
+	boxrule=1pt,
+	listing only,
+	listing file={chapters/#1},
+	listing engine=minted,
+	minted language=python,
+	minted options = {
+		linenos,
+		breaklines=true,
+		breakbefore=.,
+		fontsize=\small\ttfamily,
+		numbersep=.1mm,
+		firstnumber=1,
+		escapeinside=~~,
+		style = algol,
+		#3
+	},
 	colback=white,
 	colframe=black,
-	boxrule=0.5pt,
-	left=10pt,
-	right=5pt,
-	top=10pt,
-	bottom=5pt,
-	before skip=10pt,
-	after skip=10pt,
-	%title={Листинг~\thetcbcounter~---~#2},
-	listing style=myCodeStyle,
-	#1,
-	% --- Обеспечиваем рисование полных рамок при разрыве ---
+	breakable,
+	title={\parbox{\linewidth}{Листинг~\thetcbcounter~--~#2}},
+	attach boxed title to top left,
+	boxed title style={enhanced jigsaw, opacityfill=1, sharp corners, boxrule=0pt, left=-3pt, right=0pt},
+	coltitle=black,
+	colbacktitle=white,
+	enlarge top at break by=5mm,
 	overlay first={
 		\draw[line width=.5pt] (frame.south west)--(frame.south east);
 	},
 	overlay middle={
 		\draw[line width=.5pt] (frame.south west)--(frame.south east);
 		\draw[line width=.5pt] (frame.north west)--(frame.north east);
+		\node[anchor=south west, inner xsep=0pt, xshift=0pt] at (frame.north west) {\parbox{\linewidth}{Продолжение листинга \thetcbcounter~--~#2}};
 	},
 	overlay last={
 		\draw[line width=.5pt] (frame.north west)--(frame.north east);
+		\node[anchor=south west, inner xsep=0pt, xshift=0pt] at (frame.north west) {\parbox{\linewidth}{Окончание листинга \thetcbcounter~--~#2}};
 	},
-	% --- Если нужно на страницах-продолжениях слово "Продолжение" ---
-	% Раскомментируйте строки ниже, если хотите, чтобы на второй и последующих страницах
-	% вместо полного заголовка было только "Продолжение листинга N".
-	% В этом случае закомментируйте опцию title выше.
-	title={},
-	overlay first={
-		     \node[anchor=north west, xshift=5pt, yshift=-5pt] at (frame.north west) 
-		         {Листинг~\thetcbcounter: #2};
-		 },
-	 overlay middle={
-	     \node[anchor=north west, xshift=5pt, yshift=-5pt] at (frame.north west) 
-	         {Продолжение листинга~\thetcbcounter~---~#2};
-	 }
-	overlay last={
-	    \node[anchor=north west, xshift=5pt, yshift=-5pt] at (frame.north west) 
-	        {Продолжение листинга~\thetcbcounter~---~#2};
-	}
+	label=lst:#1,
+	#4
 }
 
-% ===== Остальные ваши настройки (без изменений) =====
+% Для приложений
+\newcounter{mylistingappcounter}
+\newcommand{\appendixletter}{A}
+\newtcbinputlisting[use counter=mylistingappcounter, list inside=lol, list type=lol]{\mylistingapp}[4][]{
+	enhanced,
+	before skip=10pt,
+	arc=0mm,
+	boxrule=1pt,
+	listing only,
+	listing file={inc/lst/#1},
+	listing engine=minted,
+	minted language=C,
+	minted options = {
+		linenos,
+		breaklines=true,
+		breakbefore=.,
+		fontsize=\small\ttfamily,
+		numbersep=.1mm,
+		firstnumber=1,
+		escapeinside=~~,
+		#3
+	},
+	colback=white,
+	colframe=black,
+	breakable,
+	title={Листинг~\appendixletter.\thetcbcounter~--~#2},
+	attach boxed title to top left,
+	boxed title style={enhanced jigsaw, opacityfill=1, sharp corners, boxrule=0pt, left=-3pt, right=0pt},
+	coltitle=black,
+	colbacktitle=white,
+	enlarge top at break by=5mm,
+	overlay first={
+		\draw[line width=.5pt] (frame.south west)--(frame.south east);
+	},
+	overlay middle={
+		\draw[line width=.5pt] (frame.south west)--(frame.south east);
+		\draw[line width=.5pt] (frame.north west)--(frame.north east);
+		\node[anchor=south west, inner xsep=0pt, xshift=0pt] at (frame.north west) {Продолжение листинга \appendixletter.\thetcbcounter};
+	},
+	overlay last={
+		\draw[line width=.5pt] (frame.north west)--(frame.north east);
+		\node[anchor=south west, inner xsep=0pt, xshift=0pt] at (frame.north west) {Окончание листинга \appendixletter.\thetcbcounter};
+	},
+	label=lst:#1,
+	#4
+}
 
-\newcommand{\ssr}[1]{\begin{center}
-		\Large\bfseries{#1}
-		\addcontentsline{toc}{chapter}{#1}\end{center}}
-
+% Окружение для псевдокода алгоритмов
+\usepackage[ruled,vlined,linesnumbered,noline]{algorithm2e}
+\SetAlgorithmName{Листинг}{листинг}{Список листингов}
 \makeatletter
-\renewcommand\LARGE{\@setfontsize\LARGE{22pt}{20}}
-\renewcommand\Large{\@setfontsize\Large{20pt}{20}}
-\renewcommand\large{\@setfontsize\large{16pt}{20}}
+\renewcommand{\algocf@caption@ruled}{}
+\renewcommand{\algocf@caption@plain}{}
 \makeatother
-\RequirePackage{titlesec}
-\titleformat{\chapter}[block]{\hspace{\parindent}\large\bfseries}{\thechapter}{0.5em}{\large\bfseries\raggedright}
-\titleformat{name=\chapter,numberless}[block]{\hspace{\parindent}}{}{0pt}{\large\bfseries\centering}
-\titleformat{\section}[block]{\hspace{\parindent}\large\bfseries}{\thesection}{0.5em}{\large\bfseries\raggedright}
-\titleformat{\subsection}[block]{\hspace{\parindent}\large\bfseries}{\thesubsection}{0.5em}{\large\bfseries\raggedright}
-\titleformat{\subsubsection}[block]{\hspace{\parindent}\large\bfseries}{\thesubsection}{0.5em}{\large\bfseries\raggedright}
-\titlespacing{\chapter}{12.5mm}{-22pt}{10pt}
-\titlespacing{\section}{12.5mm}{10pt}{10pt}
-\titlespacing{\subsection}{12.5mm}{10pt}{10pt}
-\titlespacing{\subsubsection}{12.5mm}{10pt}{10pt}
-
-\makeatletter
-\renewcommand{\@biblabel}[1]{#1.}
-\makeatother
-
-\titleformat{\chapter}[hang]{\LARGE\bfseries}{\hspace{1.25cm}\thechapter}{1ex}{\LARGE\bfseries}
-\titleformat{\section}[hang]{\Large\bfseries}{\hspace{1.25cm}\thesection}{1ex}{\Large\bfseries}
-\titleformat{name=\section,numberless}[hang]{\Large\bfseries}{\hspace{1.25cm}}{0pt}{\Large\bfseries}
-\titleformat{\subsection}[hang]{\large\bfseries}{\hspace{1.25cm}\thesubsection}{1ex}{\large\bfseries}
-\titlespacing{\chapter}{0pt}{-\baselineskip}{\baselineskip}
-\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
-\titlespacing*{\subsection}{0pt}{\baselineskip}{\baselineskip}
-
-\geometry{left=30mm}
-\geometry{right=10mm}
-\geometry{top=20mm}
-\geometry{bottom=20mm}
-
-\onehalfspacing
-
-\renewcommand{\theenumi}{\arabic{enumi}}
-\renewcommand{\labelenumi}{\arabic{enumi}\text{)}}
-\renewcommand{\theenumii}{.\arabic{enumii}}
-\renewcommand{\labelenumii}{\asbuk{enumii}\text{)}}
-\renewcommand{\theenumiii}{.\arabic{enumiii}}
-\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}
-
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
-
-\addto\captionsrussian{\renewcommand{\figurename}{Рисунок}}
-\DeclareCaptionLabelSeparator{dash}{~---~}
-\captionsetup{labelsep=dash}
-
-\captionsetup[figure]{justification=centering,labelsep=dash}
-\captionsetup[table]{labelsep=dash,justification=raggedright,singlelinecheck=off}
-
-\graphicspath{{images/}}%путь к рисункам
-
-\newcommand{\mytexttilde}{\raisebox{0.5ex}{\texttildelow}}
-\newcommand{\floor}[1]{\lfloor #1 \rfloor}
-
-\pgfplotsset{width=0.85\linewidth, height=0.5\columnwidth}
-\linespread{1.3}
-\parindent=1.25cm
-
-\def\labelitemi{---}
-\setlist[itemize]{leftmargin=1.25cm, itemindent=0.65cm}
-\setlist[enumerate]{leftmargin=1.25cm, itemindent=0.55cm}
-
-\newcommand{\specialcell}[2][c]{%
-	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-
-\frenchspacing
+\SetKwInput{Input}{Вход}
+\SetKwInput{Output}{Выход}
+\SetKw{Return}{вернуть}
+\SetKwBlock{Begin}{начало}{конец}
+\SetKwIF{If}{ElseIf}{Else}{если}{тогда}{иначе если}{иначе}{конец если}
+\SetKwFor{For}{для}{выполнять}{конец цикла}
+\SetKwFor{ForEach}{для каждого}{выполнять}{конец цикла}
+\SetKwFor{While}{пока}{выполнять}{конец цикла}
+\SetNlSty{textbf}{}{}
+\SetAlgoNlRelativeSize{-1}
+\SetNlSkip{0.8em}
+\SetCommentSty{textit}
+\SetKwComment{Comment}{$\triangleright$~}{}
+\RestyleAlgo{boxed}
+\SetAlgoSkip{smallskip}
+\newcounter{myalgocounter}
+\counterwithin{myalgocounter}{chapter}
+\renewcommand{\themyalgocounter}{\thechapter.\arabic{myalgocounter}}
+\newcommand{\algocaption}[2]{%
+	\refstepcounter{myalgocounter}%
+	\label{#1}%
+	\noindent Листинг~\themyalgocounter~-- #2\par%
+	\vspace{2pt}%
+}
+\usepackage{etoolbox}
+\AfterEndEnvironment{algorithm}{\vspace{\baselineskip}}
+\usepackage{totcount}
+\regtotcounter{figure}
+\regtotcounter{table}
+\newtotcounter{citnum}
+%\AtEveryBibitem{\stepcounter{citnum}}

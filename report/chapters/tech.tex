@@ -58,21 +58,6 @@
 
 Для тестирования корректности работы алгоритма построения таблицы составляющих были выделены классы эквивалентности входных данных, представленные в таблице~\ref{tab:cyk_test}.
 
-%\begin{sidewaystable}[H]
-%	\centering
-%	\caption{Классы эквивалентности входных данных алгоритма построения таблицы составляющих}
-%	\begin{tabular}{|p{0.3\textheight}|p{0.3\textheight}|p{0.3\textheight}|}
-%		\hline
-%		Описание класса эквивалентности & Пример входных данных, удовлетворяющих классу эквивалентности & Ожидаемые выходные данные\\\hline
-%		Пустая последовательность токенов & Пустой список $token\_feature\_pairs$ & Пустая таблица составляющих $dp$, размерности  $1\times1$\\\hline
-%		Последовательность токенов из одного элемента, для обработки унарными правилами, с единственным набором морфологических признаков & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<кот>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline \textit{<<number>>}:\textit{<<sg>>},\newline \textit{<<case>>}:\textit{<<nomn>>}\}])$,\newline$unary=\{\textit{<<N>>}: [\textit{<<NP>>}], \textit{<<NP>>}: [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержится ключ $N$ и ключи $NP$, $IP$ полученные выводом из унарных правил, с соответствующими наборами морфологических признаков. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
-%		Последовательность токенов из одного элемента, для обработки унарными правилами, с несколькими наборами морфологических признаков & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<стали>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<case>>}:\textit{<<gent>>}\},
-%		\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<pl>>},\newline\textit{<<tense>>}:\textit{<<past>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержатся ключи $N$, $V$ с соответствующими морфологическими характеристиками. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
-%		Последовательность токенов, из которой выводится корень дерева составляющих, посредством унарных правил & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<бежит>>},\ [\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])\newline unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\textit{<<VP>>}: [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержатся ключи $V$, $VP$ и $IP$ с соответствующими морфологическими характеристиками. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
-%		Последовательность согласованных токенов из которой выводится $IP$ & $token\_feature\_pairs$ содержит пары $(\textit{<<кот>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<case>>}:\textit{<<nomn>>},\newline\textit{<<gender>>}:\textit{<<m>>}\}])\newline unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\textit{<<VP>>}: [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержатся ключи $V$, $VP$ и $IP$ с соответствующими морфологическими характеристиками. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
-%	\end{tabular}
-%	\label{tab:cyk_test}
-%\end{sidewaystable}
 \small
 \begin{longtable}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.3\linewidth}|}
 	\caption{Классы эквивалентности входных данных алгоритма построения таблицы составляющих}
@@ -118,4 +103,97 @@
 	\}])\newline 
 	unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\textit{<<N>>}: [\textit{<<NP>>}]\}\newline
 	binary = \{(\textit{<<NP>>},\ \textit{<<VP>>}): [\textit{<<IP>>}],\newline (\textit{<<V>>},\ \textit{<<NP>>}): [\textit{<<VP>>}]\}$ & Таблица составляющих $dp$ размерности $4 \times 4$. В $dp[0][1]$ и $dp[2][3]$ содержатся ключи $NP$, в $dp[0][3]$ и $dp[0][2]$~---~ключ $IP$, в $dp[1][3]$~---~ключ $VP$, значения определяют морфологические характеристики соответствующих составляющих\\\hline
+\end{longtable}
+\normalsize
+
+Также были выделены классы эквивалентности, представленные в таблице~\ref{tab:extract_trees_test}, для тестирования алгоритма восстановления дерева составляющих по получаемым таблицам.
+
+\small
+\begin{longtable}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.3\linewidth}|}
+	\caption{Классы эквивалентности входных данных алгоритма восстановления дерева составляющих}
+	\label{tab:extract_trees_test}\\
+	\hline
+	Описание класса эквивалентности & Пример входных данных, удовлетворяющих классу эквивалентности & Ожидаемые выходные данные\\\hline
+	\endfirsthead
+	
+	\multicolumn{3}{p{15cm}}{Продолжение таблицы~\thetable~---~Классы эквивалентности входных данных алгоритма восстановления дерева составляющих}\\
+	\hline
+	Описание класса эквивалентности & Пример входных данных, удовлетворяющих классу эквивалентности & Ожидаемые выходные данные\\\hline
+	\endhead
+	
+	\hline
+	\endfoot
+	
+	\hline
+	\endlastfoot
+	
+	Терминал на отрезке длины 1 & $i=0$, $j=1$, $symbol=\textit{<<N>>}$, $word\_chain=[\textit{<<кот>>}]$,\newline
+	$dp[0][1]=\{\textit{<<N>>}: \{\{\textit{<<number>>}:\textit{<<sg>>}\}\}\}$,\newline
+	$target\_feat=None$ &
+	 Список из одного узла-листа:\newline$[\{\textit{<<tag>>}:\textit{<<N>>},\newline
+	 \textit{<<feats>>}:\{\textit{<<pos>>}:\textit{<<N>>},\newline
+	 \textit{<<number>>}:\textit{<<sg>>}\},\newline
+	 \textit{<<word>>}:\textit{<<кот>>}\}]$\\\hline
+	
+	Нетерминальный символ на отрезке длины 1, выведенный посредством унарного правила & $i=0$, $j=1$, $symbol=\textit{<<NP>>}$, $word\_chain=[\textit{<<кот>>}]$,\newline
+	$dp[0][1]=\{\textit{<<N>>}: \{\{\textit{<<number>>}:\textit{<<sg>>}\}\},\newline
+	\textit{<<NP>>}: \{\{\textit{<<number>>}:\textit{<<sg>>}\}\}\}$,\newline
+	$grammar=\{\textit{<<NP>>}: [[\textit{<<N>>}]]\}$,\newline
+	$target\_feat=None$ & 
+	Список из одного узла с единственным потомком-листом:\newline$[\{\textit{<<tag>>}:\textit{<<NP>>},\newline
+	\textit{<<feats>>}:\{\{\textit{<<number>>}:\textit{<<sg>>}\}\},\newline
+	\textit{<<children>>}:[\{\textit{<<tag>>}:\textit{<<N>>},\newline
+	\textit{<<feats>>}:\{\textit{<<number>>}:\textit{<<sg>>}\},\newline
+	\textit{<<word>>}:\textit{<<кот>>}\}]\}]$\\\hline
+	
+	Соответствующий символ отсутствует в ячейке $dp[i][j]$ & $i=0$, $j=1$, $symbol=\textit{<<VP>>}$, $word\_chain=[\textit{<<кот>>}]$,\newline
+	$dp[0][1]=\{\textit{<<N>>}: \{\{\textit{<<number>>}:\textit{<<sg>>}\}\}\}$,\newline$target\_feat=None$ & Пустой список $[\,]$\\\hline
+	
+	Символ в ячейке не согласуется с $target\_feat$ &
+	 $i=0$, $j=1$, $symbol=\textit{<<N>>}$, $word\_chain=[\textit{<<кот>>}]$,\newline
+	$dp[0][1]=\{\textit{<<N>>}: \{\{\textit{<<number>>}:\textit{<<sg>>}\}\}\}$,\newline
+	$target\_feat=\{\textit{<<V>>},\ \textit{<<sg>>},\ \textit{<<past>>}\}$ &
+	Пустой список $[\,]$\\\hline
+	
+	Токен с несколькими наборами морфологических признаков & 
+	$i=0$, $j=1$, $symbol=\textit{<<N>>}$, $word\_chain=[\textit{<<стали>>}]$,\newline
+	$dp[0][1]=\{\textit{<<N>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\newline
+	\textit{<<case>>}:\textit{<<gent>>}\},\newline
+	\textit{<<V>>}: \{\{\textit{<<number>>}:\textit{<<pl>>},\newline
+	\textit{<<tense>>}:\textit{<<past>>}\}\}\}$,\newline
+	$target\_feat=None$ &
+	Список из двух узлов-листьев: $[\{\textit{<<tag>>}:\textit{<<N>>},\newline
+	 \textit{<<feats>>}:\{\textit{<<pos>>}:\textit{<<N>>},\newline
+	 \textit{<<number>>}:\textit{<<sg>>},\newline
+	 \textit{<<case>>}:\textit{<<gent>>}\},\newline
+	 \textit{<<word>>}:\textit{<<стали>>}\},\newline
+	 \{\textit{<<tag>>}:\textit{<<V>>},\newline
+	 \textit{<<feats>>}:\{\textit{<<pos>>}:\textit{<<V>>},\newline
+	 \textit{<<number>>}:\textit{<<pl>>}\},\newline
+	 \textit{<<word>>}:\textit{<<стали>>}\}]$\\\hline
+	
+	Нетерминал на отрезке длины больше одного, выведенный посредством бинарного правила & $i=0$, $j=2$, $symbol=\textit{<<VP>>}$,\newline
+	$word\_chain=[\textit{<<ест>>},\ \textit{<<рыбу>>}]$,\newline
+	$dp[0][1]=\{\textit{<<V>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\newline
+	\textit{<<tense>>}:\textit{<<pres>>}\}\}\}$,\newline
+	$dp[1][2]=\{\textit{<<NP>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\newline
+	\textit{<<case>>}:\textit{<<accs>>}\}\}\}$,\newline
+	$dp[0][2]=\{\textit{<<VP>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\newline
+	\textit{<<tense>>}:\textit{<<pres>>}\}\}\}$,\newline
+	$grammar=\{\textit{<<VP>>}: [[\textit{<<V>>},\ \textit{<<NP>>}]],\newline
+	\textit{<<NP>>}: [[\textit{<<N>>}]]\}$,\newline
+	$target\_feat=None$ &
+	 Список из одного узла $VP$ с двумя потомками $NP$ и $V$ \\\hline
+	
+	Нетерминал на отрезке длины больше одного, выведенный посредством унарного правила & $i=0$, $j=2$, $symbol=\textit{<<IP>>}$,\newline
+	$word\_chain=[\textit{<<кот>>}, \textit{<<спит>>}]$,\newline
+	$dp[0][2]=\{\textit{<<VP>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\newline
+	\textit{<<tense>>}:\textit{<<pres>>}\}\},\newline
+	\textit{<<IP>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\newline
+	\textit{<<gender>>}:\textit{<<m>>}\}\}\}$,\newline$grammar=\{\textit{<<IP>>}: [[\textit{<<VP>>}]],\newline\textit{<<VP>>}: [[\textit{<<NP>>},\ \textit{<<V>>}]],\ \textit{<<NP>>}: [[\textit{<<N>>}]]\}$,\newline$target\_feat=None$ & Список из одного узла $IP$ с единственным потомком-узлом $VP$, у которого в свою очередь два потомка $NP$ и $V$, у первого из которых один потомок $N$\\\hline
+	
+	Символ и значение совпадающее с $target\_feat$ находятся в мемоизации & Повторный вызов с кортежем $(i,\ j,\ symbol,\ target\_feat)$ & Значение $memo[(i,\ j,\ symbol,\newline target\_feat)]$ без повторного обхода $dp$ и грамматики\\\hline
+	
+	Символ является вспомогательным нетерминалом для бинаризации небинарных отношений $\textit{<<\_\_AUX\_>>}$) & $i=0$, $j=2$, $symbol=\textit{<<\_\_AUX\_0>>}$,\newline$dp[0][2]=\{\textit{<<\_\_AUX\_0>>}: \{f_0\}\}$,\newline$grammar$ содержит правило\newline$\textit{<<\_\_AUX\_0>>} \to [\textit{<<NP>>},\ \textit{<<PP>>}]$,\newline$target\_feat=None$ & Список деревьев, узел которых имеет $\textit{<<tag>>}=\textit{<<\_\_AUX\_0>>}$ и двух потомков $NP$, $PP$. При отображении через $tree\_to\_dot$ / $tree\_to\_bracket$ узел $\textit{<<\_\_AUX\_>>}$ разворачивается прозрачно, не добавляя обёртки\\\hline
+	
 \end{longtable}

@@ -194,6 +194,7 @@
 	
 	Символ и значение совпадающее с $target\_feat$ находятся в мемоизации & Повторный вызов с кортежем $(i,\ j,\ symbol,\ target\_feat)$ & Значение $memo[(i,\ j,\ symbol,\newline target\_feat)]$ без повторного обхода $dp$ и грамматики\\\hline
 	
-	Символ является вспомогательным нетерминалом для бинаризации небинарных отношений $\textit{<<\_\_AUX\_>>}$) & $i=0$, $j=2$, $symbol=\textit{<<\_\_AUX\_0>>}$,\newline$dp[0][2]=\{\textit{<<\_\_AUX\_0>>}: \{f_0\}\}$,\newline$grammar$ содержит правило\newline$\textit{<<\_\_AUX\_0>>} \to [\textit{<<NP>>},\ \textit{<<PP>>}]$,\newline$target\_feat=None$ & Список деревьев, узел которых имеет $\textit{<<tag>>}=\textit{<<\_\_AUX\_0>>}$ и двух потомков $NP$, $PP$. При отображении через $tree\_to\_dot$ / $tree\_to\_bracket$ узел $\textit{<<\_\_AUX\_>>}$ разворачивается прозрачно, не добавляя обёртки\\\hline
+	Символ является вспомогательным нетерминалом для бинаризации небинарных отношений $\textit{<<\_\_AUX\_i>>}$ & $i=0$, $j=2$, $symbol=\textit{<<\_\_AUX\_i>>}$,\newline$dp[0][2]=\{\textit{<<\_\_AUX\_i>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\ \textit{<<tense>>}:\textit{<<pres>>}\}\}\}$,\newline$grammar$ содержит правило\newline$\textit{<<\_\_AUX\_i>>} \rightarrow [\textit{<<NP>>},\ \textit{<<PP>>}]$,\newline$target\_feat=None$ & 
+	Список деревьев, узел которых имеет $\textit{<<tag>>}=\textit{<<\_\_AUX\_i>>}$ и двух потомков $NP$ и $PP$
 	
 \end{longtable}

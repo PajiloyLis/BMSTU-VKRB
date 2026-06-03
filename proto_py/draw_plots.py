@@ -48,6 +48,8 @@ def load_and_aggregate(csv_path: str):
     for L in lengths:
         cyk_vals = data_by_len[L]['cyk']
         ext_vals = data_by_len[L]['ext_per_tree']
+        cyk_sorted = np.sort(cyk_vals)
+        ext_sorted = np.sort(ext_vals)
         cyk_means.append(np.median(cyk_vals))
         cyk_stds.append(np.percentile(cyk_vals, 0.95) if len(cyk_vals) > 1 else 0.0)
         ext_means.append(np.median(ext_vals))
@@ -62,19 +64,71 @@ def load_and_aggregate(csv_path: str):
 
     return lengths, cyk_means, cyk_stds, ext_means, ext_stds
 
+def best_poly_degree(x, y, max_degree=10):
+    """
+    Определяет степень полинома (от 1 до max_degree),
+    которая минимизирует AIC.
+    
+    Параметры:
+        x, y: списки или массивы данных
+        max_degree: максимальная степень для проверки
+    
+    Возвращает:
+        best_deg: выбранная степень
+        coefs: коэффициенты полинома этой степени
+    """
+    n = len(x)
+    best_deg = 1
+    best_aic = np.inf
+    best_coefs = None
+    
+    for deg in range(1, max_degree + 1):
+        # Подгоняем полином
+        coefs = np.polyfit(x, y, deg)
+        poly = np.poly1d(coefs)
+        y_pred = poly(x)
+        residuals = y - y_pred
+        mse = np.mean(residuals ** 2)
+        if mse == 0:
+            aic = -np.inf
+        else:
+            # AIC для регрессии: n * ln(MSE) + 2 * k, где k = deg+1
+            aic = n * np.log(mse) + 2 * (deg + 1)
+        
+        if aic < best_aic:
+            best_aic = aic
+            best_deg = deg
+            best_coefs = coefs
+    
+    return best_deg, best_coefs
 
 def plot_results(lengths, cyk_means, cyk_stds, ext_means, ext_stds, output_prefix=None):
     """
     Строит два графика (CYK и дерево) и сохраняет в PDF.
     Если output_prefix не указан, формирует имя на основе временной метки.
     """
+    
+    deg_cyk, coefs_cyk = best_poly_degree(lengths, cyk_means, max_degree=4)
+    deg_ext, coefs_ext = best_poly_degree(lengths, ext_means, max_degree=4)
+
+    print(f"Оптимальная степень для CYK: {deg_cyk}")
+    print(f"Оптимальная степень для извлечения деревьев: {deg_ext}")
+    
     if output_prefix is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         output_prefix = f"{timestamp}_benchmark"
 
     # ----- График 1: Время построения таблицы CYK -----
     plt.figure(figsize=(8, 6))
-    plt.errorbar(lengths, cyk_means, yerr=cyk_stds, fmt='ok-', capsize=3, linewidth=1.5, markersize=6)
+    plt.errorbar(lengths, cyk_means, yerr=cyk_stds, fmt='ok-', capsize=3, linewidth=1.5, markersize=6, label='Экспериментальные данные')
+    
+    # Аппроксимация полиномом 3-й степени для CYK
+    coefs_cyk = np.polyfit(lengths, cyk_means, 3)
+    poly_cyk = np.poly1d(coefs_cyk)
+    n_fit = np.linspace(min(lengths), max(lengths), 100)
+    plt.plot(n_fit, poly_cyk(n_fit), 'k--', linewidth=1.5, label=f'Аппроксимация O(n³)\n{coefs_cyk[0]:.2e}n³ + {coefs_cyk[1]:.2e}n² + {coefs_cyk[2]:.2e}n + {coefs_cyk[3]:.2e}')
+    
+    plt.xticks(lengths)
     plt.xlabel('Количество словоформ в предложении', fontsize=12)
     plt.ylabel('Время (сек)', fontsize=12)
     plt.title('Построение таблицы составляющих', fontsize=14)
@@ -82,12 +136,20 @@ def plot_results(lengths, cyk_means, cyk_stds, ext_means, ext_stds, output_prefi
     cyk_pdf = f"{output_prefix}_cyk.pdf"
     plt.savefig(cyk_pdf, dpi=150, bbox_inches='tight')
     print(f"График CYK сохранён: {cyk_pdf}")
+    plt.legend()
     plt.show()
     plt.close()
 
     # ----- График 2: Среднее время построения одного дерева разбора -----
     plt.figure(figsize=(8, 6))
-    plt.errorbar(lengths, ext_means, yerr=ext_stds, fmt='sk-', capsize=3, linewidth=1.5, markersize=6)
+    plt.errorbar(lengths, ext_means, yerr=ext_stds, fmt='sk-', capsize=3, linewidth=1.5, markersize=6, label='Экспериментальные данные')
+    
+    # Аппроксимация полиномом 2-й степени (можно и 3-й, смотрите по данным)
+    coefs_ext = np.polyfit(lengths, ext_means, 4)  # или 3, если нужно
+    poly_ext = np.poly1d(coefs_ext)
+    plt.plot(n_fit, poly_ext(n_fit), 'k--', linewidth=1.5, label=f'Аппроксимация O(n⁴)\n{coefs_ext[0]:.2e}n⁴ + {coefs_ext[1]:.2e}n³ + {coefs_ext[2]:.2e}n² + {coefs_ext[3]:.2e}n + {coefs_ext[4]:.2e}')
+    
+    plt.xticks(lengths)
     plt.xlabel('Количество словоформ в предложении', fontsize=12)
     plt.ylabel('Среднее время на одно дерево (сек)', fontsize=12)
     plt.title('Построение деревьев разбора', fontsize=14)
@@ -95,6 +157,7 @@ def plot_results(lengths, cyk_means, cyk_stds, ext_means, ext_stds, output_prefi
     trees_pdf = f"{output_prefix}_trees.pdf"
     plt.savefig(trees_pdf, dpi=150, bbox_inches='tight')
     print(f"График деревьев сохранён: {trees_pdf}")
+    plt.legend()
     plt.show()
     plt.close()
 

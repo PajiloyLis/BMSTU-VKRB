@@ -1,0 +1,409 @@
+{
+  "id": "221515_12",
+  "text": "Вернулся во власть после «революции» 2010 года.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP Вернулся [PP во [NP власть]] [PP после « [NP революции » [NP 2010 года]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Вернулся",
+      "lemma": "вернуться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "во",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "власть",
+      "lemma": "власть",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "после",
+      "lemma": "после",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "революции",
+      "lemma": "революция",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "»",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "2010",
+      "lemma": "2010",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "года",
+      "lemma": "год",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "власть"
+        ]
+      ],
+      "head_id": 3,
+      "text": "власть ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "революции"
+        ],
+        [
+          7,
+          "»"
+        ],
+        [
+          8,
+          "2010"
+        ],
+        [
+          9,
+          "года"
+        ]
+      ],
+      "head_id": 6,
+      "text": "революции » 2010 года ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "2010"
+        ],
+        [
+          9,
+          "года"
+        ]
+      ],
+      "head_id": 9,
+      "text": "2010 года ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Вернулся"
+        ],
+        [
+          2,
+          "во"
+        ],
+        [
+          3,
+          "власть"
+        ],
+        [
+          4,
+          "после"
+        ],
+        [
+          5,
+          "«"
+        ],
+        [
+          6,
+          "революции"
+        ],
+        [
+          7,
+          "»"
+        ],
+        [
+          8,
+          "2010"
+        ],
+        [
+          9,
+          "года"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Вернулся во власть после « революции » 2010 года ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "во"
+        ],
+        [
+          3,
+          "власть"
+        ]
+      ],
+      "head_id": 2,
+      "text": "во власть ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "после"
+        ],
+        [
+          5,
+          "«"
+        ],
+        [
+          6,
+          "революции"
+        ],
+        [
+          7,
+          "»"
+        ],
+        [
+          8,
+          "2010"
+        ],
+        [
+          9,
+          "года"
+        ]
+      ],
+      "head_id": 4,
+      "text": "после « революции » 2010 года ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/18/deboshir/"
+}

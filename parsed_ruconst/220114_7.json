@@ -1,0 +1,241 @@
+{
+  "id": "220114_7",
+  "text": "Официально имя обвиняемого не называлось.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Официально] [NP имя [NP обвиняемого]] не называлось] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Официально",
+      "lemma": "официально",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "имя",
+      "lemma": "имя",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "обвиняемого",
+      "lemma": "обвиняемый",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "называлось",
+      "lemma": "называться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "имя"
+        ],
+        [
+          3,
+          "обвиняемого"
+        ]
+      ],
+      "head_id": 2,
+      "text": "имя обвиняемого ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "обвиняемого"
+        ]
+      ],
+      "head_id": 3,
+      "text": "обвиняемого ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Официально"
+        ],
+        [
+          2,
+          "имя"
+        ],
+        [
+          3,
+          "обвиняемого"
+        ],
+        [
+          4,
+          "не"
+        ],
+        [
+          5,
+          "называлось"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Официально имя обвиняемого не называлось ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Официально"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Официально ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/04/embassy/"
+}

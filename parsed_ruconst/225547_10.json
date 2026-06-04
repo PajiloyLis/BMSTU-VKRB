@@ -1,0 +1,356 @@
+{
+  "id": "225547_10",
+  "text": "Реформа вызвала жесткую критику со стороны республиканцев.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Реформа] вызвала [NP жесткую критику [PP со [NP стороны] [NP республиканцев]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Реформа",
+      "lemma": "реформа",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "вызвала",
+      "lemma": "вызвать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "жесткую",
+      "lemma": "жесткий",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "критику",
+      "lemma": "критика",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "со",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "стороны",
+      "lemma": "сторона",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "республиканцев",
+      "lemma": "республиканец",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Реформа"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Реформа ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "жесткую"
+        ],
+        [
+          4,
+          "критику"
+        ],
+        [
+          5,
+          "со"
+        ],
+        [
+          6,
+          "стороны"
+        ],
+        [
+          7,
+          "республиканцев"
+        ]
+      ],
+      "head_id": 4,
+      "text": "жесткую критику со стороны республиканцев ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "стороны"
+        ]
+      ],
+      "head_id": 6,
+      "text": "стороны ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "республиканцев"
+        ]
+      ],
+      "head_id": 7,
+      "text": "республиканцев ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Реформа"
+        ],
+        [
+          2,
+          "вызвала"
+        ],
+        [
+          3,
+          "жесткую"
+        ],
+        [
+          4,
+          "критику"
+        ],
+        [
+          5,
+          "со"
+        ],
+        [
+          6,
+          "стороны"
+        ],
+        [
+          7,
+          "республиканцев"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Реформа вызвала жесткую критику со стороны республиканцев ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "со"
+        ],
+        [
+          6,
+          "стороны"
+        ],
+        [
+          7,
+          "республиканцев"
+        ]
+      ],
+      "head_id": 5,
+      "text": "со стороны республиканцев ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/15/deal/"
+}

@@ -1,0 +1,388 @@
+{
+  "id": "223686_11",
+  "text": "По сообщениям Hamburger Abendblatt, никаких инцидентов не произошло.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [PP По [NP сообщениям [NP Hamburger] [NP Abendblatt]]] , [NP никаких инцидентов] не произошло] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "По",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "сообщениям",
+      "lemma": "сообщение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Hamburger",
+      "lemma": "Hamburger",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Abendblatt",
+      "lemma": "Abendblatt",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "никаких",
+      "lemma": "никакой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Gen",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "инцидентов",
+      "lemma": "инцидент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "произошло",
+      "lemma": "произойти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "сообщениям"
+        ],
+        [
+          3,
+          "Hamburger"
+        ],
+        [
+          4,
+          "Abendblatt"
+        ]
+      ],
+      "head_id": 2,
+      "text": "сообщениям Hamburger Abendblatt ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          3,
+          "Hamburger"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Hamburger ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          4,
+          "Abendblatt"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Abendblatt ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "никаких"
+        ],
+        [
+          7,
+          "инцидентов"
+        ]
+      ],
+      "head_id": 7,
+      "text": "никаких инцидентов ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "сообщениям"
+        ],
+        [
+          3,
+          "Hamburger"
+        ],
+        [
+          4,
+          "Abendblatt"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "никаких"
+        ],
+        [
+          7,
+          "инцидентов"
+        ],
+        [
+          8,
+          "не"
+        ],
+        [
+          9,
+          "произошло"
+        ]
+      ],
+      "head_id": 9,
+      "text": "По сообщениям Hamburger Abendblatt , никаких инцидентов не произошло ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "сообщениям"
+        ],
+        [
+          3,
+          "Hamburger"
+        ],
+        [
+          4,
+          "Abendblatt"
+        ]
+      ],
+      "head_id": 1,
+      "text": "По сообщениям Hamburger Abendblatt ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/02/askfor/"
+}

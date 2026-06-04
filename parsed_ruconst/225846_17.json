@@ -1,0 +1,537 @@
+{
+  "id": "225846_17",
+  "text": "Сообщалось, что оппозиционер при этом хочет сохранить и российский паспорт.",
+  "length": 10,
+  "source": "4",
+  "sentence_tree": " [VP Сообщалось , [VP что [NP оппозиционер] [PP при [NP этом]] хочет [VP сохранить [NP [AP и российский] паспорт]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Сообщалось",
+      "lemma": "сообщать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "оппозиционер",
+      "lemma": "оппозиционер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "при",
+      "lemma": "при",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "этом",
+      "lemma": "это",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "хочет",
+      "lemma": "хотеть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "сохранить",
+      "lemma": "сохранить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "российский",
+      "lemma": "российский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "паспорт",
+      "lemma": "паспорт",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "оппозиционер"
+        ]
+      ],
+      "head_id": 4,
+      "text": "оппозиционер ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "этом"
+        ]
+      ],
+      "head_id": 6,
+      "text": "этом ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "российский"
+        ],
+        [
+          11,
+          "паспорт"
+        ]
+      ],
+      "head_id": 11,
+      "text": "и российский паспорт ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сообщалось"
+        ],
+        [
+          2,
+          ","
+        ],
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "оппозиционер"
+        ],
+        [
+          5,
+          "при"
+        ],
+        [
+          6,
+          "этом"
+        ],
+        [
+          7,
+          "хочет"
+        ],
+        [
+          8,
+          "сохранить"
+        ],
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "российский"
+        ],
+        [
+          11,
+          "паспорт"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Сообщалось , что оппозиционер при этом хочет сохранить и российский паспорт ",
+      "length": 11
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "оппозиционер"
+        ],
+        [
+          5,
+          "при"
+        ],
+        [
+          6,
+          "этом"
+        ],
+        [
+          7,
+          "хочет"
+        ],
+        [
+          8,
+          "сохранить"
+        ],
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "российский"
+        ],
+        [
+          11,
+          "паспорт"
+        ]
+      ],
+      "head_id": 7,
+      "text": "что оппозиционер при этом хочет сохранить и российский паспорт ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          8,
+          "сохранить"
+        ],
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "российский"
+        ],
+        [
+          11,
+          "паспорт"
+        ]
+      ],
+      "head_id": 8,
+      "text": "сохранить и российский паспорт ",
+      "length": 4
+    },
+    {
+      "name": "AP",
+      "id": 6,
+      "tags": [
+        "ADJ",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "российский"
+        ]
+      ],
+      "head_id": 10,
+      "text": "и российский ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "при"
+        ],
+        [
+          6,
+          "этом"
+        ]
+      ],
+      "head_id": 5,
+      "text": "при этом ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/13/rosfinnadzor/"
+}

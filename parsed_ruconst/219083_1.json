@@ -1,0 +1,752 @@
+{
+  "id": "219083_1",
+  "text": "Инцидент произошел на контрольно-пропускном пункте в Мехико-Сити несколько дней назад, сообщает El Universal.",
+  "length": 13,
+  "source": "4",
+  "sentence_tree": " [VP [NP Инцидент] произошел [PP на [NP [AP [AP контрольно] - пропускном] пункте [PP в [NP Мехико-Сити]]]] [NP несколько дней [AdvP назад]] , [VP сообщает [NP El [NP Universal]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Инцидент",
+      "lemma": "инцидент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "произошел",
+      "lemma": "произойти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "контрольно",
+      "lemma": "контрольный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "compound",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "-",
+      "lemma": "-",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "пропускном",
+      "lemma": "пропускной",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "пункте",
+      "lemma": "пункт",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "Мехико-Сити",
+      "lemma": "Мехико-Сити",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "несколько",
+      "lemma": "несколько",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "дней",
+      "lemma": "день",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "назад",
+      "lemma": "назад",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 12
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "сообщает",
+      "lemma": "сообщать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "El",
+      "lemma": "El",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "Universal",
+      "lemma": "Universal",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Инцидент"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Инцидент ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "контрольно"
+        ],
+        [
+          5,
+          "-"
+        ],
+        [
+          6,
+          "пропускном"
+        ],
+        [
+          7,
+          "пункте"
+        ],
+        [
+          8,
+          "в"
+        ],
+        [
+          9,
+          "Мехико-Сити"
+        ]
+      ],
+      "head_id": 7,
+      "text": "контрольно - пропускном пункте в Мехико-Сити ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "Мехико-Сити"
+        ]
+      ],
+      "head_id": 9,
+      "text": "Мехико-Сити ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          10,
+          "несколько"
+        ],
+        [
+          11,
+          "дней"
+        ],
+        [
+          12,
+          "назад"
+        ]
+      ],
+      "head_id": 11,
+      "text": "несколько дней назад ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          15,
+          "El"
+        ],
+        [
+          16,
+          "Universal"
+        ]
+      ],
+      "head_id": 15,
+      "text": "El Universal ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          16,
+          "Universal"
+        ]
+      ],
+      "head_id": 16,
+      "text": "Universal ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Инцидент"
+        ],
+        [
+          2,
+          "произошел"
+        ],
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "контрольно"
+        ],
+        [
+          5,
+          "-"
+        ],
+        [
+          6,
+          "пропускном"
+        ],
+        [
+          7,
+          "пункте"
+        ],
+        [
+          8,
+          "в"
+        ],
+        [
+          9,
+          "Мехико-Сити"
+        ],
+        [
+          10,
+          "несколько"
+        ],
+        [
+          11,
+          "дней"
+        ],
+        [
+          12,
+          "назад"
+        ],
+        [
+          13,
+          ","
+        ],
+        [
+          14,
+          "сообщает"
+        ],
+        [
+          15,
+          "El"
+        ],
+        [
+          16,
+          "Universal"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Инцидент произошел на контрольно - пропускном пункте в Мехико-Сити несколько дней назад , сообщает El Universal ",
+      "length": 16
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          14,
+          "сообщает"
+        ],
+        [
+          15,
+          "El"
+        ],
+        [
+          16,
+          "Universal"
+        ]
+      ],
+      "head_id": 14,
+      "text": "сообщает El Universal ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 8,
+      "tags": [
+        "ADJ",
+        "Case=Loc",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "контрольно"
+        ],
+        [
+          5,
+          "-"
+        ],
+        [
+          6,
+          "пропускном"
+        ]
+      ],
+      "head_id": 6,
+      "text": "контрольно - пропускном ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 9,
+      "tags": [
+        "ADJ",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          4,
+          "контрольно"
+        ]
+      ],
+      "head_id": 4,
+      "text": "контрольно ",
+      "length": 1
+    },
+    {
+      "name": "PP",
+      "id": 10,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "контрольно"
+        ],
+        [
+          5,
+          "-"
+        ],
+        [
+          6,
+          "пропускном"
+        ],
+        [
+          7,
+          "пункте"
+        ],
+        [
+          8,
+          "в"
+        ],
+        [
+          9,
+          "Мехико-Сити"
+        ]
+      ],
+      "head_id": 3,
+      "text": "на контрольно - пропускном пункте в Мехико-Сити ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 11,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "в"
+        ],
+        [
+          9,
+          "Мехико-Сити"
+        ]
+      ],
+      "head_id": 8,
+      "text": "в Мехико-Сити ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 12,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          12,
+          "назад"
+        ]
+      ],
+      "head_id": 12,
+      "text": "назад ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/15/reward/"
+}

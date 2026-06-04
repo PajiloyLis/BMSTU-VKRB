@@ -1,0 +1,366 @@
+{
+  "id": "224332_19",
+  "text": "Боевые самолеты также должны быть малозаметными и сверхманевренными.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [AP [NP Боевые самолеты] [AdvP также] должны [VP быть [AP малозаметными [AP и сверхманевренными]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Боевые",
+      "lemma": "боевой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "самолеты",
+      "lemma": "самолет",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "также",
+      "lemma": "также",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "должны",
+      "lemma": "должен",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "быть",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "малозаметными",
+      "lemma": "малозаметный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "сверхманевренными",
+      "lemma": "сверхманевренный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Боевые"
+        ],
+        [
+          2,
+          "самолеты"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Боевые самолеты ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          5,
+          "быть"
+        ],
+        [
+          6,
+          "малозаметными"
+        ],
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "сверхманевренными"
+        ]
+      ],
+      "head_id": 5,
+      "text": "быть малозаметными и сверхманевренными ",
+      "length": 4
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Боевые"
+        ],
+        [
+          2,
+          "самолеты"
+        ],
+        [
+          3,
+          "также"
+        ],
+        [
+          4,
+          "должны"
+        ],
+        [
+          5,
+          "быть"
+        ],
+        [
+          6,
+          "малозаметными"
+        ],
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "сверхманевренными"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Боевые самолеты также должны быть малозаметными и сверхманевренными ",
+      "length": 8
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "малозаметными"
+        ],
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "сверхманевренными"
+        ]
+      ],
+      "head_id": 6,
+      "text": "малозаметными и сверхманевренными ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "сверхманевренными"
+        ]
+      ],
+      "head_id": 8,
+      "text": "и сверхманевренными ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          3,
+          "также"
+        ]
+      ],
+      "head_id": 3,
+      "text": "также ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/26/milk/"
+}

@@ -1,0 +1,317 @@
+{
+  "id": "224535_1",
+  "text": "отказалось переходить на почтовый клиент Yahoo!",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP отказалось [VP переходить [PP на [NP почтовый клиент [NP Yahoo]]]]] !",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "отказалось",
+      "lemma": "отказаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "переходить",
+      "lemma": "переходить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "почтовый",
+      "lemma": "почтовый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "клиент",
+      "lemma": "клиент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Yahoo",
+      "lemma": "Yahoo",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "!",
+      "lemma": "!",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "почтовый"
+        ],
+        [
+          5,
+          "клиент"
+        ],
+        [
+          6,
+          "Yahoo"
+        ]
+      ],
+      "head_id": 5,
+      "text": "почтовый клиент Yahoo ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          6,
+          "Yahoo"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Yahoo ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "отказалось"
+        ],
+        [
+          2,
+          "переходить"
+        ],
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "почтовый"
+        ],
+        [
+          5,
+          "клиент"
+        ],
+        [
+          6,
+          "Yahoo"
+        ]
+      ],
+      "head_id": 1,
+      "text": "отказалось переходить на почтовый клиент Yahoo ",
+      "length": 6
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          2,
+          "переходить"
+        ],
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "почтовый"
+        ],
+        [
+          5,
+          "клиент"
+        ],
+        [
+          6,
+          "Yahoo"
+        ]
+      ],
+      "head_id": 2,
+      "text": "переходить на почтовый клиент Yahoo ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "почтовый"
+        ],
+        [
+          5,
+          "клиент"
+        ],
+        [
+          6,
+          "Yahoo"
+        ]
+      ],
+      "head_id": 3,
+      "text": "на почтовый клиент Yahoo ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/25/automatic/"
+}

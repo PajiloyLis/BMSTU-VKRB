@@ -1,0 +1,174 @@
+{
+  "id": "219703_5",
+  "text": "Пострадавших осматривает врач.",
+  "length": 3,
+  "source": "4",
+  "sentence_tree": " [VP [NP Пострадавших] осматривает [NP врач]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Пострадавших",
+      "lemma": "пострадавший",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "осматривает",
+      "lemma": "осматривать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "врач",
+      "lemma": "врач",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Пострадавших"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Пострадавших ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "врач"
+        ]
+      ],
+      "head_id": 3,
+      "text": "врач ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Пострадавших"
+        ],
+        [
+          2,
+          "осматривает"
+        ],
+        [
+          3,
+          "врач"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Пострадавших осматривает врач ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/10/vtb/"
+}

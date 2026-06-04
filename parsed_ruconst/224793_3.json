@@ -1,0 +1,299 @@
+{
+  "id": "224793_3",
+  "text": "В городе Уоллсбург проживает 275 человек.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [PP В [NP городе [NP Уоллсбург]]] проживает [NP 275 человек]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "В",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "городе",
+      "lemma": "город",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Уоллсбург",
+      "lemma": "Уоллсбург",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "проживает",
+      "lemma": "проживать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "275",
+      "lemma": "275",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "человек",
+      "lemma": "человек",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "городе"
+        ],
+        [
+          3,
+          "Уоллсбург"
+        ]
+      ],
+      "head_id": 2,
+      "text": "городе Уоллсбург ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Уоллсбург"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Уоллсбург ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "275"
+        ],
+        [
+          6,
+          "человек"
+        ]
+      ],
+      "head_id": 6,
+      "text": "275 человек ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "городе"
+        ],
+        [
+          3,
+          "Уоллсбург"
+        ],
+        [
+          4,
+          "проживает"
+        ],
+        [
+          5,
+          "275"
+        ],
+        [
+          6,
+          "человек"
+        ]
+      ],
+      "head_id": 4,
+      "text": "В городе Уоллсбург проживает 275 человек ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "городе"
+        ],
+        [
+          3,
+          "Уоллсбург"
+        ]
+      ],
+      "head_id": 1,
+      "text": "В городе Уоллсбург ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/21/britons/"
+}

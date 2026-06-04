@@ -1,0 +1,342 @@
+{
+  "id": "221674_12",
+  "text": "Витамином D называют несколько биологически активных веществ.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Витамином [NP D]] называют [NP несколько [AP [AdvP биологически] активных] веществ]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Витамином",
+      "lemma": "витамин",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "D",
+      "lemma": "D",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "называют",
+      "lemma": "называть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "несколько",
+      "lemma": "несколько",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "биологически",
+      "lemma": "биологически",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "активных",
+      "lemma": "активный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "веществ",
+      "lemma": "вещество",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Витамином"
+        ],
+        [
+          2,
+          "D"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Витамином D ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          2,
+          "D"
+        ]
+      ],
+      "head_id": 2,
+      "text": "D ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "несколько"
+        ],
+        [
+          5,
+          "биологически"
+        ],
+        [
+          6,
+          "активных"
+        ],
+        [
+          7,
+          "веществ"
+        ]
+      ],
+      "head_id": 7,
+      "text": "несколько биологически активных веществ ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Витамином"
+        ],
+        [
+          2,
+          "D"
+        ],
+        [
+          3,
+          "называют"
+        ],
+        [
+          4,
+          "несколько"
+        ],
+        [
+          5,
+          "биологически"
+        ],
+        [
+          6,
+          "активных"
+        ],
+        [
+          7,
+          "веществ"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Витамином D называют несколько биологически активных веществ ",
+      "length": 7
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Case=Gen",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "биологически"
+        ],
+        [
+          6,
+          "активных"
+        ]
+      ],
+      "head_id": 6,
+      "text": "биологически активных ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "биологически"
+        ]
+      ],
+      "head_id": 5,
+      "text": "биологически ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/17/amnesty/"
+}

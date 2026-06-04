@@ -1,0 +1,239 @@
+{
+  "id": "219237_5",
+  "text": "Его слова передает Rolling Stone.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP Его слова] передает [NP Rolling [NP Stone]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Его",
+      "lemma": "его",
+      "tagsets": [
+        [
+          "DET",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "слова",
+      "lemma": "слово",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "передает",
+      "lemma": "передавать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Rolling",
+      "lemma": "Rolling",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "Stone",
+      "lemma": "Stone",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Его"
+        ],
+        [
+          2,
+          "слова"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Его слова ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          4,
+          "Rolling"
+        ],
+        [
+          5,
+          "Stone"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Rolling Stone ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          5,
+          "Stone"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Stone ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Его"
+        ],
+        [
+          2,
+          "слова"
+        ],
+        [
+          3,
+          "передает"
+        ],
+        [
+          4,
+          "Rolling"
+        ],
+        [
+          5,
+          "Stone"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Его слова передает Rolling Stone ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/14/base/"
+}

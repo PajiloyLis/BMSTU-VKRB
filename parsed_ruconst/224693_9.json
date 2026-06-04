@@ -1,0 +1,421 @@
+{
+  "id": "224693_9",
+  "text": "Рейнс уехал в Онтарио, где завел семью.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Рейнс] уехал [PP в [NP Онтарио , [VP [AdvP где] завел [NP семью]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Рейнс",
+      "lemma": "Рейнс",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "уехал",
+      "lemma": "уехать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Онтарио",
+      "lemma": "Онтарио",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "где",
+      "lemma": "где",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "завел",
+      "lemma": "завести",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "семью",
+      "lemma": "семья",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Рейнс"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Рейнс ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "Онтарио"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "где"
+        ],
+        [
+          7,
+          "завел"
+        ],
+        [
+          8,
+          "семью"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Онтарио , где завел семью ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "семью"
+        ]
+      ],
+      "head_id": 8,
+      "text": "семью ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Рейнс"
+        ],
+        [
+          2,
+          "уехал"
+        ],
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "Онтарио"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "где"
+        ],
+        [
+          7,
+          "завел"
+        ],
+        [
+          8,
+          "семью"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Рейнс уехал в Онтарио , где завел семью ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          6,
+          "где"
+        ],
+        [
+          7,
+          "завел"
+        ],
+        [
+          8,
+          "семью"
+        ]
+      ],
+      "head_id": 7,
+      "text": "где завел семью ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "Онтарио"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "где"
+        ],
+        [
+          7,
+          "завел"
+        ],
+        [
+          8,
+          "семью"
+        ]
+      ],
+      "head_id": 3,
+      "text": "в Онтарио , где завел семью ",
+      "length": 6
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          6,
+          "где"
+        ]
+      ],
+      "head_id": 6,
+      "text": "где ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/22/thrones/"
+}

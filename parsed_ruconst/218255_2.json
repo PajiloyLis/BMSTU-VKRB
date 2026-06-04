@@ -1,0 +1,232 @@
+{
+  "id": "218255_2",
+  "text": "Записываться предлагается по электронной почте.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP Записываться предлагается [PP по [NP электронной почте]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Записываться",
+      "lemma": "записываться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "csubj:pass",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "предлагается",
+      "lemma": "предлагать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "по",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "электронной",
+      "lemma": "электронный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Dat",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "почте",
+      "lemma": "почта",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "электронной"
+        ],
+        [
+          5,
+          "почте"
+        ]
+      ],
+      "head_id": 5,
+      "text": "электронной почте ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Записываться"
+        ],
+        [
+          2,
+          "предлагается"
+        ],
+        [
+          3,
+          "по"
+        ],
+        [
+          4,
+          "электронной"
+        ],
+        [
+          5,
+          "почте"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Записываться предлагается по электронной почте ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 2,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "по"
+        ],
+        [
+          4,
+          "электронной"
+        ],
+        [
+          5,
+          "почте"
+        ]
+      ],
+      "head_id": 3,
+      "text": "по электронной почте ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/22/reid/"
+}

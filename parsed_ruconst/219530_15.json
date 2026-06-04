@@ -1,0 +1,384 @@
+{
+  "id": "219530_15",
+  "text": "Тем не менее последнему удалось выжить, притворившись мертвым.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Тем не [AdvP менее]] последнему удалось [VP выжить , [VP притворившись мертвым]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Тем",
+      "lemma": "то",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "discourse",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "Polarity=Neg"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "менее",
+      "lemma": "менее",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "последнему",
+      "lemma": "последний",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Dat",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "iobj",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "удалось",
+      "lemma": "удаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "выжить",
+      "lemma": "выжить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "притворившись",
+      "lemma": "притвориться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Tense=Past",
+          "VerbForm=Conv",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "мертвым",
+      "lemma": "мертвый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Тем"
+        ],
+        [
+          2,
+          "не"
+        ],
+        [
+          3,
+          "менее"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Тем не менее ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Тем"
+        ],
+        [
+          2,
+          "не"
+        ],
+        [
+          3,
+          "менее"
+        ],
+        [
+          4,
+          "последнему"
+        ],
+        [
+          5,
+          "удалось"
+        ],
+        [
+          6,
+          "выжить"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "притворившись"
+        ],
+        [
+          9,
+          "мертвым"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Тем не менее последнему удалось выжить , притворившись мертвым ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          6,
+          "выжить"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "притворившись"
+        ],
+        [
+          9,
+          "мертвым"
+        ]
+      ],
+      "head_id": 6,
+      "text": "выжить , притворившись мертвым ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Tense=Past",
+        "VerbForm=Conv",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          8,
+          "притворившись"
+        ],
+        [
+          9,
+          "мертвым"
+        ]
+      ],
+      "head_id": 8,
+      "text": "притворившись мертвым ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          3,
+          "менее"
+        ]
+      ],
+      "head_id": 3,
+      "text": "менее ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/12/wordpress/"
+}

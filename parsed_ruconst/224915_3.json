@@ -1,0 +1,258 @@
+{
+  "id": "224915_3",
+  "text": "Мы требуем Азарова завтра утром.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP Мы] требуем [NP Азарова] [AdvP завтра] [NP утром]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Мы",
+      "lemma": "мы",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Number=Plur",
+          "Person=1"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "требуем",
+      "lemma": "требовать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=1",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Азарова",
+      "lemma": "Азаров",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "завтра",
+      "lemma": "завтра",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "утром",
+      "lemma": "утро",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Number=Plur",
+        "Person=1"
+      ],
+      "tokens": [
+        [
+          1,
+          "Мы"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Мы ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Азарова"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Азарова ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "утром"
+        ]
+      ],
+      "head_id": 5,
+      "text": "утром ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=1",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Мы"
+        ],
+        [
+          2,
+          "требуем"
+        ],
+        [
+          3,
+          "Азарова"
+        ],
+        [
+          4,
+          "завтра"
+        ],
+        [
+          5,
+          "утром"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Мы требуем Азарова завтра утром ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          4,
+          "завтра"
+        ]
+      ],
+      "head_id": 4,
+      "text": "завтра ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/21/girl/"
+}

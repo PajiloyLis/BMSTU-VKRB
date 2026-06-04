@@ -1,0 +1,329 @@
+{
+  "id": "225322_4",
+  "text": "Земфира подпевает Брауну только в русскоязычном припеве.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP Земфира] подпевает [NP Брауну] [NP только [PP в русскоязычном припеве]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Земфира",
+      "lemma": "Земфир",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "подпевает",
+      "lemma": "подпевать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Брауну",
+      "lemma": "Браун",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Dat",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "iobj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "только",
+      "lemma": "только",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "русскоязычном",
+      "lemma": "русскоязычный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "припеве",
+      "lemma": "припево",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Земфира"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Земфира ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Dat",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Брауну"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Брауну ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "только"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "русскоязычном"
+        ],
+        [
+          7,
+          "припеве"
+        ]
+      ],
+      "head_id": 7,
+      "text": "только в русскоязычном припеве ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Земфира"
+        ],
+        [
+          2,
+          "подпевает"
+        ],
+        [
+          3,
+          "Брауну"
+        ],
+        [
+          4,
+          "только"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "русскоязычном"
+        ],
+        [
+          7,
+          "припеве"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Земфира подпевает Брауну только в русскоязычном припеве ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "русскоязычном"
+        ],
+        [
+          7,
+          "припеве"
+        ]
+      ],
+      "head_id": 5,
+      "text": "в русскоязычном припеве ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/18/uralkali/"
+}

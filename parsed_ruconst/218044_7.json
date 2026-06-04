@@ -1,0 +1,333 @@
+{
+  "id": "218044_7",
+  "text": "Клод Моне - один из основоположников импрессионизма.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [NumP [NP Клод [NP Моне]] - один [PP из [NP основоположников [NP импрессионизма]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Клод",
+      "lemma": "Клод",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Моне",
+      "lemma": "Моне",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "-",
+      "lemma": "-",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "один",
+      "lemma": "один",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Nom",
+          "Gender=Masc"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "основоположников",
+      "lemma": "основоположник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "импрессионизма",
+      "lemma": "импрессионизм",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Клод"
+        ],
+        [
+          2,
+          "Моне"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Клод Моне ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Моне"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Моне ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "основоположников"
+        ],
+        [
+          7,
+          "импрессионизма"
+        ]
+      ],
+      "head_id": 6,
+      "text": "основоположников импрессионизма ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "импрессионизма"
+        ]
+      ],
+      "head_id": 7,
+      "text": "импрессионизма ",
+      "length": 1
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "из"
+        ],
+        [
+          6,
+          "основоположников"
+        ],
+        [
+          7,
+          "импрессионизма"
+        ]
+      ],
+      "head_id": 5,
+      "text": "из основоположников импрессионизма ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 5,
+      "tags": [
+        "NUM",
+        "Case=Nom",
+        "Gender=Masc"
+      ],
+      "tokens": [
+        [
+          1,
+          "Клод"
+        ],
+        [
+          2,
+          "Моне"
+        ],
+        [
+          3,
+          "-"
+        ],
+        [
+          4,
+          "один"
+        ],
+        [
+          5,
+          "из"
+        ],
+        [
+          6,
+          "основоположников"
+        ],
+        [
+          7,
+          "импрессионизма"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Клод Моне - один из основоположников импрессионизма ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/23/porcuine/"
+}

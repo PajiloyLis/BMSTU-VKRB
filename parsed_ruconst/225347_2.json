@@ -1,0 +1,360 @@
+{
+  "id": "225347_2",
+  "text": "Женщина стала седьмой жертвой взрыва в автобусе.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Женщина] стала [NP седьмой жертвой [NP взрыва [PP в [NP автобусе]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Женщина",
+      "lemma": "женщина",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "стала",
+      "lemma": "стать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "седьмой",
+      "lemma": "седьмой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "жертвой",
+      "lemma": "жертва",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "взрыва",
+      "lemma": "взрыв",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "автобусе",
+      "lemma": "автобус",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Женщина"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Женщина ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "седьмой"
+        ],
+        [
+          4,
+          "жертвой"
+        ],
+        [
+          5,
+          "взрыва"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "автобусе"
+        ]
+      ],
+      "head_id": 4,
+      "text": "седьмой жертвой взрыва в автобусе ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "взрыва"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "автобусе"
+        ]
+      ],
+      "head_id": 5,
+      "text": "взрыва в автобусе ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "автобусе"
+        ]
+      ],
+      "head_id": 7,
+      "text": "автобусе ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Женщина"
+        ],
+        [
+          2,
+          "стала"
+        ],
+        [
+          3,
+          "седьмой"
+        ],
+        [
+          4,
+          "жертвой"
+        ],
+        [
+          5,
+          "взрыва"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "автобусе"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Женщина стала седьмой жертвой взрыва в автобусе ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "автобусе"
+        ]
+      ],
+      "head_id": 6,
+      "text": "в автобусе ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/18/primesense/"
+}

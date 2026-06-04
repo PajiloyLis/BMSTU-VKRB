@@ -1,0 +1,376 @@
+{
+  "id": "224635_4",
+  "text": "Президент США Барак Обама приветствовал принятие решения.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Президент [NP США] [NP Барак [NP Обама]]] приветствовал [NP принятие [NP решения]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Президент",
+      "lemma": "президент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "США",
+      "lemma": "США",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Барак",
+      "lemma": "Барак",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Обама",
+      "lemma": "Обама",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "приветствовал",
+      "lemma": "приветствовать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "принятие",
+      "lemma": "принятие",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "решения",
+      "lemma": "решение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Президент"
+        ],
+        [
+          2,
+          "США"
+        ],
+        [
+          3,
+          "Барак"
+        ],
+        [
+          4,
+          "Обама"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Президент США Барак Обама ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "США"
+        ]
+      ],
+      "head_id": 2,
+      "text": "США ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Барак"
+        ],
+        [
+          4,
+          "Обама"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Барак Обама ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "Обама"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Обама ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "принятие"
+        ],
+        [
+          7,
+          "решения"
+        ]
+      ],
+      "head_id": 6,
+      "text": "принятие решения ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "решения"
+        ]
+      ],
+      "head_id": 7,
+      "text": "решения ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Президент"
+        ],
+        [
+          2,
+          "США"
+        ],
+        [
+          3,
+          "Барак"
+        ],
+        [
+          4,
+          "Обама"
+        ],
+        [
+          5,
+          "приветствовал"
+        ],
+        [
+          6,
+          "принятие"
+        ],
+        [
+          7,
+          "решения"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Президент США Барак Обама приветствовал принятие решения ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/22/svat/"
+}

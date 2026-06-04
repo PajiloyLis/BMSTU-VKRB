@@ -1,0 +1,367 @@
+{
+  "id": "226492_12",
+  "text": "Браузерная игра Quake Live вышла в 2010 году.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Браузерная игра [NP Quake] [NP Live]] вышла [PP в [NP 2010 году]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Браузерная",
+      "lemma": "браузерный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "игра",
+      "lemma": "игра",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Quake",
+      "lemma": "Quake",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Live",
+      "lemma": "Live",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "вышла",
+      "lemma": "выйти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "2010",
+      "lemma": "2010",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "году",
+      "lemma": "год",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Браузерная"
+        ],
+        [
+          2,
+          "игра"
+        ],
+        [
+          3,
+          "Quake"
+        ],
+        [
+          4,
+          "Live"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Браузерная игра Quake Live ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          3,
+          "Quake"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Quake ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          4,
+          "Live"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Live ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "2010"
+        ],
+        [
+          8,
+          "году"
+        ]
+      ],
+      "head_id": 8,
+      "text": "2010 году ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Браузерная"
+        ],
+        [
+          2,
+          "игра"
+        ],
+        [
+          3,
+          "Quake"
+        ],
+        [
+          4,
+          "Live"
+        ],
+        [
+          5,
+          "вышла"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "2010"
+        ],
+        [
+          8,
+          "году"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Браузерная игра Quake Live вышла в 2010 году ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "2010"
+        ],
+        [
+          8,
+          "году"
+        ]
+      ],
+      "head_id": 6,
+      "text": "в 2010 году ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/08/monuments/"
+}

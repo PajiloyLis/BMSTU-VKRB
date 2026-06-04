@@ -1,0 +1,322 @@
+{
+  "id": "220884_0",
+  "text": "По крышам Эрмитажа начнут водить экскурсии.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [PP По [NP крышам [NP Эрмитажа]]] начнут [VP водить [NP экскурсии]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "По",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "крышам",
+      "lemma": "крыша",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Эрмитажа",
+      "lemma": "Эрмитаж",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "начнут",
+      "lemma": "начать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "водить",
+      "lemma": "водить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "экскурсии",
+      "lemma": "экскурсия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "крышам"
+        ],
+        [
+          3,
+          "Эрмитажа"
+        ]
+      ],
+      "head_id": 2,
+      "text": "крышам Эрмитажа ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Эрмитажа"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Эрмитажа ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "экскурсии"
+        ]
+      ],
+      "head_id": 6,
+      "text": "экскурсии ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "крышам"
+        ],
+        [
+          3,
+          "Эрмитажа"
+        ],
+        [
+          4,
+          "начнут"
+        ],
+        [
+          5,
+          "водить"
+        ],
+        [
+          6,
+          "экскурсии"
+        ]
+      ],
+      "head_id": 4,
+      "text": "По крышам Эрмитажа начнут водить экскурсии ",
+      "length": 6
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          5,
+          "водить"
+        ],
+        [
+          6,
+          "экскурсии"
+        ]
+      ],
+      "head_id": 5,
+      "text": "водить экскурсии ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "крышам"
+        ],
+        [
+          3,
+          "Эрмитажа"
+        ]
+      ],
+      "head_id": 1,
+      "text": "По крышам Эрмитажа ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/24/harrison/"
+}

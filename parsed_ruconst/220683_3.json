@@ -1,0 +1,383 @@
+{
+  "id": "220683_3",
+  "text": "Многие из них не сумели попасть в собор.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NumP Многие [PP из [NP них]]] не сумели [VP попасть [PP в [NP собор]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Многие",
+      "lemma": "много",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "них",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "сумели",
+      "lemma": "уметь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "попасть",
+      "lemma": "попасть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "собор",
+      "lemma": "собор",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Gen",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          3,
+          "них"
+        ]
+      ],
+      "head_id": 3,
+      "text": "них ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "собор"
+        ]
+      ],
+      "head_id": 8,
+      "text": "собор ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Многие"
+        ],
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "них"
+        ],
+        [
+          4,
+          "не"
+        ],
+        [
+          5,
+          "сумели"
+        ],
+        [
+          6,
+          "попасть"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "собор"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Многие из них не сумели попасть в собор ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          6,
+          "попасть"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "собор"
+        ]
+      ],
+      "head_id": 6,
+      "text": "попасть в собор ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "них"
+        ]
+      ],
+      "head_id": 2,
+      "text": "из них ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "собор"
+        ]
+      ],
+      "head_id": 7,
+      "text": "в собор ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 6,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "Многие"
+        ],
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "них"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Многие из них ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/26/dima/"
+}

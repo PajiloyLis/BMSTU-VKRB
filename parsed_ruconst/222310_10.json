@@ -1,0 +1,398 @@
+{
+  "id": "222310_10",
+  "text": "В России фильм выйдет на экраны 18 декабря.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [PP В [NP России]] [NP фильм] выйдет [PP на [NP экраны]] [NumP 18 [NP декабря]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "В",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "России",
+      "lemma": "Россия",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "фильм",
+      "lemma": "фильм",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "выйдет",
+      "lemma": "выйти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "экраны",
+      "lemma": "экран",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "18",
+      "lemma": "18",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "декабря",
+      "lemma": "декабрь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "России"
+        ]
+      ],
+      "head_id": 2,
+      "text": "России ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "фильм"
+        ]
+      ],
+      "head_id": 3,
+      "text": "фильм ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "экраны"
+        ]
+      ],
+      "head_id": 6,
+      "text": "экраны ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "декабря"
+        ]
+      ],
+      "head_id": 8,
+      "text": "декабря ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "России"
+        ],
+        [
+          3,
+          "фильм"
+        ],
+        [
+          4,
+          "выйдет"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "экраны"
+        ],
+        [
+          7,
+          "18"
+        ],
+        [
+          8,
+          "декабря"
+        ]
+      ],
+      "head_id": 4,
+      "text": "В России фильм выйдет на экраны 18 декабря ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "России"
+        ]
+      ],
+      "head_id": 1,
+      "text": "В России ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "экраны"
+        ]
+      ],
+      "head_id": 5,
+      "text": "на экраны ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 7,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "18"
+        ],
+        [
+          8,
+          "декабря"
+        ]
+      ],
+      "head_id": 7,
+      "text": "18 декабря ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/12/drinkingban/"
+}

@@ -1,0 +1,301 @@
+{
+  "id": "218380_9",
+  "text": "Ранее сообщалось о 2,5 тысячи устройств.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Ранее] сообщалось [PP о [NP [NP 2,5 тысячи] устройств]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Ранее",
+      "lemma": "ранее",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "сообщалось",
+      "lemma": "сообщать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "о",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "2,5",
+      "lemma": "2,5",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "тысячи",
+      "lemma": "тысяча",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "устройств",
+      "lemma": "устройство",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "2,5"
+        ],
+        [
+          5,
+          "тысячи"
+        ],
+        [
+          6,
+          "устройств"
+        ]
+      ],
+      "head_id": 6,
+      "text": "2,5 тысячи устройств ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "2,5"
+        ],
+        [
+          5,
+          "тысячи"
+        ]
+      ],
+      "head_id": 5,
+      "text": "2,5 тысячи ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Ранее"
+        ],
+        [
+          2,
+          "сообщалось"
+        ],
+        [
+          3,
+          "о"
+        ],
+        [
+          4,
+          "2,5"
+        ],
+        [
+          5,
+          "тысячи"
+        ],
+        [
+          6,
+          "устройств"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Ранее сообщалось о 2,5 тысячи устройств ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "о"
+        ],
+        [
+          4,
+          "2,5"
+        ],
+        [
+          5,
+          "тысячи"
+        ],
+        [
+          6,
+          "устройств"
+        ]
+      ],
+      "head_id": 3,
+      "text": "о 2,5 тысячи устройств ",
+      "length": 4
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Ранее"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Ранее ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/21/trending/"
+}

@@ -1,0 +1,394 @@
+{
+  "id": "220808_9",
+  "text": "Также нет никаких сведений о состоянии самой лошади.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Также] нет [NP никаких сведений [PP о [NP состоянии [NP самой лошади]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Также",
+      "lemma": "также",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "нет",
+      "lemma": "нет",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "никаких",
+      "lemma": "никакой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Gen",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "сведений",
+      "lemma": "сведение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "о",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "состоянии",
+      "lemma": "состояние",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "самой",
+      "lemma": "самый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "лошади",
+      "lemma": "лошадь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          3,
+          "никаких"
+        ],
+        [
+          4,
+          "сведений"
+        ],
+        [
+          5,
+          "о"
+        ],
+        [
+          6,
+          "состоянии"
+        ],
+        [
+          7,
+          "самой"
+        ],
+        [
+          8,
+          "лошади"
+        ]
+      ],
+      "head_id": 4,
+      "text": "никаких сведений о состоянии самой лошади ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "состоянии"
+        ],
+        [
+          7,
+          "самой"
+        ],
+        [
+          8,
+          "лошади"
+        ]
+      ],
+      "head_id": 6,
+      "text": "состоянии самой лошади ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "самой"
+        ],
+        [
+          8,
+          "лошади"
+        ]
+      ],
+      "head_id": 8,
+      "text": "самой лошади ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Также"
+        ],
+        [
+          2,
+          "нет"
+        ],
+        [
+          3,
+          "никаких"
+        ],
+        [
+          4,
+          "сведений"
+        ],
+        [
+          5,
+          "о"
+        ],
+        [
+          6,
+          "состоянии"
+        ],
+        [
+          7,
+          "самой"
+        ],
+        [
+          8,
+          "лошади"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Также нет никаких сведений о состоянии самой лошади ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "о"
+        ],
+        [
+          6,
+          "состоянии"
+        ],
+        [
+          7,
+          "самой"
+        ],
+        [
+          8,
+          "лошади"
+        ]
+      ],
+      "head_id": 5,
+      "text": "о состоянии самой лошади ",
+      "length": 4
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Также"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Также ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/25/durerdad/"
+}

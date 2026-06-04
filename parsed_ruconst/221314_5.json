@@ -1,0 +1,379 @@
+{
+  "id": "221314_5",
+  "text": "Актер пригласил нового знакомого к себе в квартиру.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Актер] пригласил [NP нового знакомого] [PP к [NP себе]] [PP в [NP квартиру]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Актер",
+      "lemma": "актер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "пригласил",
+      "lemma": "пригласить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "нового",
+      "lemma": "новый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "знакомого",
+      "lemma": "знакомый",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "к",
+      "lemma": "к",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "себе",
+      "lemma": "себя",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Dat"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "квартиру",
+      "lemma": "квартира",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Актер"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Актер ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "нового"
+        ],
+        [
+          4,
+          "знакомого"
+        ]
+      ],
+      "head_id": 4,
+      "text": "нового знакомого ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Dat"
+      ],
+      "tokens": [
+        [
+          6,
+          "себе"
+        ]
+      ],
+      "head_id": 6,
+      "text": "себе ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "квартиру"
+        ]
+      ],
+      "head_id": 8,
+      "text": "квартиру ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Актер"
+        ],
+        [
+          2,
+          "пригласил"
+        ],
+        [
+          3,
+          "нового"
+        ],
+        [
+          4,
+          "знакомого"
+        ],
+        [
+          5,
+          "к"
+        ],
+        [
+          6,
+          "себе"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "квартиру"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Актер пригласил нового знакомого к себе в квартиру ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "к"
+        ],
+        [
+          6,
+          "себе"
+        ]
+      ],
+      "head_id": 5,
+      "text": "к себе ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "квартиру"
+        ]
+      ],
+      "head_id": 7,
+      "text": "в квартиру ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/19/lottery/"
+}

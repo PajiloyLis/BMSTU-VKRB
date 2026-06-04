@@ -1,0 +1,263 @@
+{
+  "id": "220585_7",
+  "text": "Такие опасения, впрочем, не оправдались.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP Такие опасения] , [AdvP впрочем] , не оправдались] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Такие",
+      "lemma": "такой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "опасения",
+      "lemma": "опасение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "впрочем",
+      "lemma": "впрочем",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "оправдались",
+      "lemma": "оправдаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Такие"
+        ],
+        [
+          2,
+          "опасения"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Такие опасения ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Такие"
+        ],
+        [
+          2,
+          "опасения"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "впрочем"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "не"
+        ],
+        [
+          7,
+          "оправдались"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Такие опасения , впрочем , не оправдались ",
+      "length": 7
+    },
+    {
+      "name": "AdvP",
+      "id": 2,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          4,
+          "впрочем"
+        ]
+      ],
+      "head_id": 4,
+      "text": "впрочем ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/26/minb/"
+}

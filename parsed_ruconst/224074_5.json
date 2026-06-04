@@ -1,0 +1,428 @@
+{
+  "id": "224074_5",
+  "text": "Постановкой фильма по Warcraft занимается режиссер Дункан Джонс.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Постановкой [PP [NP фильма по] [NP Warcraft]]] занимается [NP режиссер [NP Дункан [NP Джонс]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Постановкой",
+      "lemma": "постановка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "фильма",
+      "lemma": "фильм",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "по",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Warcraft",
+      "lemma": "Warcraft",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "занимается",
+      "lemma": "заниматься",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "режиссер",
+      "lemma": "режиссер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Дункан",
+      "lemma": "Дункан",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Джонс",
+      "lemma": "Джонс",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Постановкой"
+        ],
+        [
+          2,
+          "фильма"
+        ],
+        [
+          3,
+          "по"
+        ],
+        [
+          4,
+          "Warcraft"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Постановкой фильма по Warcraft ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "фильма"
+        ],
+        [
+          3,
+          "по"
+        ],
+        [
+          4,
+          "Warcraft"
+        ]
+      ],
+      "head_id": 2,
+      "text": "фильма по Warcraft ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          4,
+          "Warcraft"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Warcraft ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "режиссер"
+        ],
+        [
+          7,
+          "Дункан"
+        ],
+        [
+          8,
+          "Джонс"
+        ]
+      ],
+      "head_id": 6,
+      "text": "режиссер Дункан Джонс ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "Дункан"
+        ],
+        [
+          8,
+          "Джонс"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Дункан Джонс ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Джонс"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Джонс ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Постановкой"
+        ],
+        [
+          2,
+          "фильма"
+        ],
+        [
+          3,
+          "по"
+        ],
+        [
+          4,
+          "Warcraft"
+        ],
+        [
+          5,
+          "занимается"
+        ],
+        [
+          6,
+          "режиссер"
+        ],
+        [
+          7,
+          "Дункан"
+        ],
+        [
+          8,
+          "Джонс"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Постановкой фильма по Warcraft занимается режиссер Дункан Джонс ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "фильма"
+        ],
+        [
+          3,
+          "по"
+        ]
+      ],
+      "head_id": 3,
+      "text": "фильма по ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/28/nanocry/"
+}

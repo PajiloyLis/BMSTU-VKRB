@@ -1,0 +1,355 @@
+{
+  "id": "225836_6",
+  "text": "Аппарат будет стоить в Европе 399 евро.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Аппарат] [VP будет стоить [PP в [NP Европе]] [NP 399 евро]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Аппарат",
+      "lemma": "аппарат",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "стоить",
+      "lemma": "стоить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "Европе",
+      "lemma": "Европа",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "399",
+      "lemma": "399",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "евро",
+      "lemma": "евро",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Аппарат"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Аппарат ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "Европе"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Европе ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "399"
+        ],
+        [
+          7,
+          "евро"
+        ]
+      ],
+      "head_id": 7,
+      "text": "399 евро ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Аппарат"
+        ],
+        [
+          2,
+          "будет"
+        ],
+        [
+          3,
+          "стоить"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "Европе"
+        ],
+        [
+          6,
+          "399"
+        ],
+        [
+          7,
+          "евро"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Аппарат будет стоить в Европе 399 евро ",
+      "length": 7
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          2,
+          "будет"
+        ],
+        [
+          3,
+          "стоить"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "Европе"
+        ],
+        [
+          6,
+          "399"
+        ],
+        [
+          7,
+          "евро"
+        ]
+      ],
+      "head_id": 2,
+      "text": "будет стоить в Европе 399 евро ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "Европе"
+        ]
+      ],
+      "head_id": 4,
+      "text": "в Европе ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/13/catch/"
+}

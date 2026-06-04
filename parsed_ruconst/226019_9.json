@@ -1,0 +1,699 @@
+{
+  "id": "226019_9",
+  "text": "По данным EDA, эти самолеты пока не имеют более 40 процентов всех необходимых допусков и сертификатов.",
+  "length": 16,
+  "source": "4",
+  "sentence_tree": " [VP [PP По [NP данным [NP EDA]]] , [NP эти самолеты] [AdvP пока] не имеют [NP [AdvP более] 40 процентов [NP всех необходимых допусков [NP и сертификатов]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "По",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "данным",
+      "lemma": "данные",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "EDA",
+      "lemma": "EDA",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "эти",
+      "lemma": "этот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "самолеты",
+      "lemma": "самолет",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "пока",
+      "lemma": "пока",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "имеют",
+      "lemma": "иметь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "более",
+      "lemma": "более",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "40",
+      "lemma": "40",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "процентов",
+      "lemma": "процент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "всех",
+      "lemma": "весь",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Gen",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "необходимых",
+      "lemma": "необходимый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "допусков",
+      "lemma": "допуск",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 17,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "сертификатов",
+      "lemma": "сертификат",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "данным"
+        ],
+        [
+          3,
+          "EDA"
+        ]
+      ],
+      "head_id": 2,
+      "text": "данным EDA ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          3,
+          "EDA"
+        ]
+      ],
+      "head_id": 3,
+      "text": "EDA ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "эти"
+        ],
+        [
+          6,
+          "самолеты"
+        ]
+      ],
+      "head_id": 6,
+      "text": "эти самолеты ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          10,
+          "более"
+        ],
+        [
+          11,
+          "40"
+        ],
+        [
+          12,
+          "процентов"
+        ],
+        [
+          13,
+          "всех"
+        ],
+        [
+          14,
+          "необходимых"
+        ],
+        [
+          15,
+          "допусков"
+        ],
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "сертификатов"
+        ]
+      ],
+      "head_id": 12,
+      "text": "более 40 процентов всех необходимых допусков и сертификатов ",
+      "length": 8
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          13,
+          "всех"
+        ],
+        [
+          14,
+          "необходимых"
+        ],
+        [
+          15,
+          "допусков"
+        ],
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "сертификатов"
+        ]
+      ],
+      "head_id": 15,
+      "text": "всех необходимых допусков и сертификатов ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "сертификатов"
+        ]
+      ],
+      "head_id": 17,
+      "text": "и сертификатов ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "данным"
+        ],
+        [
+          3,
+          "EDA"
+        ],
+        [
+          4,
+          ","
+        ],
+        [
+          5,
+          "эти"
+        ],
+        [
+          6,
+          "самолеты"
+        ],
+        [
+          7,
+          "пока"
+        ],
+        [
+          8,
+          "не"
+        ],
+        [
+          9,
+          "имеют"
+        ],
+        [
+          10,
+          "более"
+        ],
+        [
+          11,
+          "40"
+        ],
+        [
+          12,
+          "процентов"
+        ],
+        [
+          13,
+          "всех"
+        ],
+        [
+          14,
+          "необходимых"
+        ],
+        [
+          15,
+          "допусков"
+        ],
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "сертификатов"
+        ]
+      ],
+      "head_id": 9,
+      "text": "По данным EDA , эти самолеты пока не имеют более 40 процентов всех необходимых допусков и сертификатов ",
+      "length": 17
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "данным"
+        ],
+        [
+          3,
+          "EDA"
+        ]
+      ],
+      "head_id": 1,
+      "text": "По данным EDA ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 8,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          7,
+          "пока"
+        ]
+      ],
+      "head_id": 7,
+      "text": "пока ",
+      "length": 1
+    },
+    {
+      "name": "AdvP",
+      "id": 9,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          10,
+          "более"
+        ]
+      ],
+      "head_id": 10,
+      "text": "более ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/12/lookoil/"
+}

@@ -1,0 +1,246 @@
+{
+  "id": "220013_9",
+  "text": "«Так они только сделали хуже.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " « [VP [AdvP Так] [NP они] только сделали [AdvP хуже]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Так",
+      "lemma": "так",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "они",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "только",
+      "lemma": "только",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "сделали",
+      "lemma": "делать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "хуже",
+      "lemma": "плохо",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          3,
+          "они"
+        ]
+      ],
+      "head_id": 3,
+      "text": "они ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          2,
+          "Так"
+        ],
+        [
+          3,
+          "они"
+        ],
+        [
+          4,
+          "только"
+        ],
+        [
+          5,
+          "сделали"
+        ],
+        [
+          6,
+          "хуже"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Так они только сделали хуже ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 2,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          2,
+          "Так"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Так ",
+      "length": 1
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          6,
+          "хуже"
+        ]
+      ],
+      "head_id": 6,
+      "text": "хуже ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/06/gender/"
+}

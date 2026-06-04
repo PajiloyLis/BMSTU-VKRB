@@ -1,0 +1,358 @@
+{
+  "id": "223601_4",
+  "text": "Вместо Брызгалова на лед вышел Деван Дубник.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [PP Вместо [NP Брызгалова]] [PP на [NP лед]] вышел [NP Деван [NP Дубник]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Вместо",
+      "lemma": "вместо",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Брызгалова",
+      "lemma": "Брызгалов",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "лед",
+      "lemma": "лед",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "вышел",
+      "lemma": "выйти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Деван",
+      "lemma": "Деван",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Дубник",
+      "lemma": "Дубник",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Брызгалова"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Брызгалова ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "лед"
+        ]
+      ],
+      "head_id": 4,
+      "text": "лед ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "Деван"
+        ],
+        [
+          7,
+          "Дубник"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Деван Дубник ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "Дубник"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Дубник ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Вместо"
+        ],
+        [
+          2,
+          "Брызгалова"
+        ],
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "лед"
+        ],
+        [
+          5,
+          "вышел"
+        ],
+        [
+          6,
+          "Деван"
+        ],
+        [
+          7,
+          "Дубник"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Вместо Брызгалова на лед вышел Деван Дубник ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "Вместо"
+        ],
+        [
+          2,
+          "Брызгалова"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Вместо Брызгалова ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "лед"
+        ]
+      ],
+      "head_id": 3,
+      "text": "на лед ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/02/gravedad/"
+}

@@ -1,0 +1,233 @@
+{
+  "id": "224197_8",
+  "text": "Коммерческие же ожидания оказались завышены.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP [AP Коммерческие же] ожидания] оказались завышены] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Коммерческие",
+      "lemma": "коммерческий",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "же",
+      "lemma": "же",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "ожидания",
+      "lemma": "ожидание",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "оказались",
+      "lemma": "оказаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "завышены",
+      "lemma": "завысить",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Number=Plur",
+          "Tense=Past",
+          "Variant=Short",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Коммерческие"
+        ],
+        [
+          2,
+          "же"
+        ],
+        [
+          3,
+          "ожидания"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Коммерческие же ожидания ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Коммерческие"
+        ],
+        [
+          2,
+          "же"
+        ],
+        [
+          3,
+          "ожидания"
+        ],
+        [
+          4,
+          "оказались"
+        ],
+        [
+          5,
+          "завышены"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Коммерческие же ожидания оказались завышены ",
+      "length": 5
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Case=Nom",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Коммерческие"
+        ],
+        [
+          2,
+          "же"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Коммерческие же ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/27/bbq/"
+}

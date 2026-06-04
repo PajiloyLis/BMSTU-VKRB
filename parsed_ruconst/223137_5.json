@@ -1,0 +1,259 @@
+{
+  "id": "223137_5",
+  "text": "Осужденный генерал своей вины не признал.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP Осужденный генерал] [NP своей вины] не признал] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Осужденный",
+      "lemma": "осудить",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "генерал",
+      "lemma": "генерал",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "своей",
+      "lemma": "свой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "вины",
+      "lemma": "вина",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "признал",
+      "lemma": "признать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Осужденный"
+        ],
+        [
+          2,
+          "генерал"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Осужденный генерал ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "своей"
+        ],
+        [
+          4,
+          "вины"
+        ]
+      ],
+      "head_id": 4,
+      "text": "своей вины ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Осужденный"
+        ],
+        [
+          2,
+          "генерал"
+        ],
+        [
+          3,
+          "своей"
+        ],
+        [
+          4,
+          "вины"
+        ],
+        [
+          5,
+          "не"
+        ],
+        [
+          6,
+          "признал"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Осужденный генерал своей вины не признал ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/05/yuzuru/"
+}

@@ -1,0 +1,387 @@
+{
+  "id": "217643_18",
+  "text": "Чуть позже оппозиция активизировалась и в регионах страны.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP [AdvP Чуть] позже] [NP оппозиция] активизировалась [NP и [PP в регионах [NP страны]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Чуть",
+      "lemma": "чуть",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "позже",
+      "lemma": "поздно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "оппозиция",
+      "lemma": "оппозиция",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "активизировалась",
+      "lemma": "активизироваться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "регионах",
+      "lemma": "регион",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "страны",
+      "lemma": "страна",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "оппозиция"
+        ]
+      ],
+      "head_id": 3,
+      "text": "оппозиция ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "и"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "регионах"
+        ],
+        [
+          8,
+          "страны"
+        ]
+      ],
+      "head_id": 7,
+      "text": "и в регионах страны ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "страны"
+        ]
+      ],
+      "head_id": 8,
+      "text": "страны ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Чуть"
+        ],
+        [
+          2,
+          "позже"
+        ],
+        [
+          3,
+          "оппозиция"
+        ],
+        [
+          4,
+          "активизировалась"
+        ],
+        [
+          5,
+          "и"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "регионах"
+        ],
+        [
+          8,
+          "страны"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Чуть позже оппозиция активизировалась и в регионах страны ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "регионах"
+        ],
+        [
+          8,
+          "страны"
+        ]
+      ],
+      "head_id": 6,
+      "text": "в регионах страны ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          1,
+          "Чуть"
+        ],
+        [
+          2,
+          "позже"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Чуть позже ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Чуть"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Чуть ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/27/goryachev/"
+}

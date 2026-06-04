@@ -1,0 +1,433 @@
+{
+  "id": "221114_5",
+  "text": "По последним данным, в результате землетрясения никто не пострадал.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP [PP По [NP последним данным]] , [PP в [NP результате [NP землетрясения]]] [NP никто] не пострадал] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "По",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "последним",
+      "lemma": "последний",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Dat",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "данным",
+      "lemma": "данные",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "результате",
+      "lemma": "результат",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "землетрясения",
+      "lemma": "землетрясение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "никто",
+      "lemma": "никто",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "пострадал",
+      "lemma": "страдать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "последним"
+        ],
+        [
+          3,
+          "данным"
+        ]
+      ],
+      "head_id": 3,
+      "text": "последним данным ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "результате"
+        ],
+        [
+          7,
+          "землетрясения"
+        ]
+      ],
+      "head_id": 6,
+      "text": "результате землетрясения ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "землетрясения"
+        ]
+      ],
+      "head_id": 7,
+      "text": "землетрясения ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PRON",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          8,
+          "никто"
+        ]
+      ],
+      "head_id": 8,
+      "text": "никто ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "последним"
+        ],
+        [
+          3,
+          "данным"
+        ],
+        [
+          4,
+          ","
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "результате"
+        ],
+        [
+          7,
+          "землетрясения"
+        ],
+        [
+          8,
+          "никто"
+        ],
+        [
+          9,
+          "не"
+        ],
+        [
+          10,
+          "пострадал"
+        ]
+      ],
+      "head_id": 10,
+      "text": "По последним данным , в результате землетрясения никто не пострадал ",
+      "length": 10
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "последним"
+        ],
+        [
+          3,
+          "данным"
+        ]
+      ],
+      "head_id": 1,
+      "text": "По последним данным ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "результате"
+        ],
+        [
+          7,
+          "землетрясения"
+        ]
+      ],
+      "head_id": 5,
+      "text": "в результате землетрясения ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/22/benghazi/"
+}

@@ -1,0 +1,396 @@
+{
+  "id": "218566_3",
+  "text": "Эти знания он накапливает с помощью набора датчиков.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Эти знания] [NP он] накапливает [PP с [NP помощью] [NP набора [NP датчиков]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Эти",
+      "lemma": "этот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Acc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "знания",
+      "lemma": "знание",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "он",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "накапливает",
+      "lemma": "накапливать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "помощью",
+      "lemma": "помощь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "набора",
+      "lemma": "набор",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "датчиков",
+      "lemma": "датчик",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Эти"
+        ],
+        [
+          2,
+          "знания"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Эти знания ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          3,
+          "он"
+        ]
+      ],
+      "head_id": 3,
+      "text": "он ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "помощью"
+        ]
+      ],
+      "head_id": 6,
+      "text": "помощью ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "набора"
+        ],
+        [
+          8,
+          "датчиков"
+        ]
+      ],
+      "head_id": 7,
+      "text": "набора датчиков ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "датчиков"
+        ]
+      ],
+      "head_id": 8,
+      "text": "датчиков ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Эти"
+        ],
+        [
+          2,
+          "знания"
+        ],
+        [
+          3,
+          "он"
+        ],
+        [
+          4,
+          "накапливает"
+        ],
+        [
+          5,
+          "с"
+        ],
+        [
+          6,
+          "помощью"
+        ],
+        [
+          7,
+          "набора"
+        ],
+        [
+          8,
+          "датчиков"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Эти знания он накапливает с помощью набора датчиков ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "с"
+        ],
+        [
+          6,
+          "помощью"
+        ],
+        [
+          7,
+          "набора"
+        ],
+        [
+          8,
+          "датчиков"
+        ]
+      ],
+      "head_id": 5,
+      "text": "с помощью набора датчиков ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/20/bomber/"
+}

@@ -1,0 +1,357 @@
+{
+  "id": "225875_7",
+  "text": "Работы планируется завершить к 18:00.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP Работы] [VP планируется завершить [PP к [NumP 18 : [NumP 00]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Работы",
+      "lemma": "работа",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "планируется",
+      "lemma": "планировать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "завершить",
+      "lemma": "завершить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "csubj:pass",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "к",
+      "lemma": "к",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "18",
+      "lemma": "18",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ":",
+      "lemma": ":",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "00",
+      "lemma": "00",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Работы"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Работы ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Работы"
+        ],
+        [
+          2,
+          "планируется"
+        ],
+        [
+          3,
+          "завершить"
+        ],
+        [
+          4,
+          "к"
+        ],
+        [
+          5,
+          "18"
+        ],
+        [
+          6,
+          ":"
+        ],
+        [
+          7,
+          "00"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Работы планируется завершить к 18 : 00 ",
+      "length": 7
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          2,
+          "планируется"
+        ],
+        [
+          3,
+          "завершить"
+        ],
+        [
+          4,
+          "к"
+        ],
+        [
+          5,
+          "18"
+        ],
+        [
+          6,
+          ":"
+        ],
+        [
+          7,
+          "00"
+        ]
+      ],
+      "head_id": 2,
+      "text": "планируется завершить к 18 : 00 ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "к"
+        ],
+        [
+          5,
+          "18"
+        ],
+        [
+          6,
+          ":"
+        ],
+        [
+          7,
+          "00"
+        ]
+      ],
+      "head_id": 4,
+      "text": "к 18 : 00 ",
+      "length": 4
+    },
+    {
+      "name": "NumP",
+      "id": 4,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "18"
+        ],
+        [
+          6,
+          ":"
+        ],
+        [
+          7,
+          "00"
+        ]
+      ],
+      "head_id": 5,
+      "text": "18 : 00 ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 5,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "00"
+        ]
+      ],
+      "head_id": 7,
+      "text": "00 ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/13/kravchenko/"
+}

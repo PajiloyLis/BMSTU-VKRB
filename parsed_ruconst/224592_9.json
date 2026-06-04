@@ -1,0 +1,390 @@
+{
+  "id": "224592_9",
+  "text": "В женском одиночном катании победила россиянка Юлия Липницкая.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [PP В [NP женском одиночном катании]] победила [NP россиянка [NP Юлия [NP Липницкая]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "В",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "женском",
+      "lemma": "женский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "одиночном",
+      "lemma": "одиночный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "катании",
+      "lemma": "катание",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "победила",
+      "lemma": "победить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "россиянка",
+      "lemma": "россиянка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Юлия",
+      "lemma": "Юлия",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Липницкая",
+      "lemma": "Липницкий",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "женском"
+        ],
+        [
+          3,
+          "одиночном"
+        ],
+        [
+          4,
+          "катании"
+        ]
+      ],
+      "head_id": 4,
+      "text": "женском одиночном катании ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "россиянка"
+        ],
+        [
+          7,
+          "Юлия"
+        ],
+        [
+          8,
+          "Липницкая"
+        ]
+      ],
+      "head_id": 6,
+      "text": "россиянка Юлия Липницкая ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "Юлия"
+        ],
+        [
+          8,
+          "Липницкая"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Юлия Липницкая ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Липницкая"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Липницкая ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "женском"
+        ],
+        [
+          3,
+          "одиночном"
+        ],
+        [
+          4,
+          "катании"
+        ],
+        [
+          5,
+          "победила"
+        ],
+        [
+          6,
+          "россиянка"
+        ],
+        [
+          7,
+          "Юлия"
+        ],
+        [
+          8,
+          "Липницкая"
+        ]
+      ],
+      "head_id": 5,
+      "text": "В женском одиночном катании победила россиянка Юлия Липницкая ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "женском"
+        ],
+        [
+          3,
+          "одиночном"
+        ],
+        [
+          4,
+          "катании"
+        ]
+      ],
+      "head_id": 1,
+      "text": "В женском одиночном катании ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/23/catch/"
+}

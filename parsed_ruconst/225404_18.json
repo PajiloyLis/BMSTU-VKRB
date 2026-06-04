@@ -1,0 +1,362 @@
+{
+  "id": "225404_18",
+  "text": "Она должна поступить в продажу в феврале.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [AP [NP Она] должна [VP поступить [PP в [NP продажу]] [PP в [NP феврале]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Она",
+      "lemma": "она",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "должна",
+      "lemma": "должен",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "поступить",
+      "lemma": "поступить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "продажу",
+      "lemma": "продажа",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "феврале",
+      "lemma": "февраль",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Она"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Она ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "продажу"
+        ]
+      ],
+      "head_id": 5,
+      "text": "продажу ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "феврале"
+        ]
+      ],
+      "head_id": 7,
+      "text": "феврале ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          3,
+          "поступить"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "продажу"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "феврале"
+        ]
+      ],
+      "head_id": 3,
+      "text": "поступить в продажу в феврале ",
+      "length": 5
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Fem",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Она"
+        ],
+        [
+          2,
+          "должна"
+        ],
+        [
+          3,
+          "поступить"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "продажу"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "феврале"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Она должна поступить в продажу в феврале ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "продажу"
+        ]
+      ],
+      "head_id": 4,
+      "text": "в продажу ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "феврале"
+        ]
+      ],
+      "head_id": 6,
+      "text": "в феврале ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/18/hirst/"
+}

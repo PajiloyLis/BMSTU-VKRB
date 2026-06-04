@@ -1,0 +1,397 @@
+{
+  "id": "221815_5",
+  "text": "Город Тикрит расположен в 160 километрах от Багдада.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [AP [NP Город [NP Тикрит]] расположен [PP в [NP 160 километрах [PP от [NP Багдада]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Город",
+      "lemma": "город",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Тикрит",
+      "lemma": "Тикрит",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "расположен",
+      "lemma": "расположенный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "160",
+      "lemma": "160",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "километрах",
+      "lemma": "километр",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "от",
+      "lemma": "от",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Багдада",
+      "lemma": "Багдад",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Город"
+        ],
+        [
+          2,
+          "Тикрит"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Город Тикрит ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Тикрит"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Тикрит ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "160"
+        ],
+        [
+          6,
+          "километрах"
+        ],
+        [
+          7,
+          "от"
+        ],
+        [
+          8,
+          "Багдада"
+        ]
+      ],
+      "head_id": 6,
+      "text": "160 километрах от Багдада ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Багдада"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Багдада ",
+      "length": 1
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Город"
+        ],
+        [
+          2,
+          "Тикрит"
+        ],
+        [
+          3,
+          "расположен"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "160"
+        ],
+        [
+          6,
+          "километрах"
+        ],
+        [
+          7,
+          "от"
+        ],
+        [
+          8,
+          "Багдада"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Город Тикрит расположен в 160 километрах от Багдада ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "160"
+        ],
+        [
+          6,
+          "километрах"
+        ],
+        [
+          7,
+          "от"
+        ],
+        [
+          8,
+          "Багдада"
+        ]
+      ],
+      "head_id": 4,
+      "text": "в 160 километрах от Багдада ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "от"
+        ],
+        [
+          8,
+          "Багдада"
+        ]
+      ],
+      "head_id": 7,
+      "text": "от Багдада ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/16/rest/"
+}

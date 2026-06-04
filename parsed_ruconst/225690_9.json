@@ -1,0 +1,294 @@
+{
+  "id": "225690_9",
+  "text": "Соответствующее решение вынес Мосгорсуд 31 октября.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP Соответствующее решение] вынес [NP Мосгорсуд] [NumP 31 [NP октября]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Соответствующее",
+      "lemma": "соответствующий",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "решение",
+      "lemma": "решение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "вынес",
+      "lemma": "вынести",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Мосгорсуд",
+      "lemma": "Мосгорсуд",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "31",
+      "lemma": "31",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "октября",
+      "lemma": "октябрь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Соответствующее"
+        ],
+        [
+          2,
+          "решение"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Соответствующее решение ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "Мосгорсуд"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Мосгорсуд ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "октября"
+        ]
+      ],
+      "head_id": 6,
+      "text": "октября ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Соответствующее"
+        ],
+        [
+          2,
+          "решение"
+        ],
+        [
+          3,
+          "вынес"
+        ],
+        [
+          4,
+          "Мосгорсуд"
+        ],
+        [
+          5,
+          "31"
+        ],
+        [
+          6,
+          "октября"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Соответствующее решение вынес Мосгорсуд 31 октября ",
+      "length": 6
+    },
+    {
+      "name": "NumP",
+      "id": 4,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "31"
+        ],
+        [
+          6,
+          "октября"
+        ]
+      ],
+      "head_id": 5,
+      "text": "31 октября ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/14/kirgiz/"
+}

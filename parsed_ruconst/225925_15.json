@@ -1,0 +1,420 @@
+{
+  "id": "225925_15",
+  "text": "Приговор вынесут позже, однако дата оглашения не называется.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Приговор] вынесут [AdvP позже] , [VP [AdvP однако] [NP дата [NP оглашения]] не называется]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Приговор",
+      "lemma": "приговор",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "вынесут",
+      "lemma": "вынести",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "позже",
+      "lemma": "поздно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "однако",
+      "lemma": "однако",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "дата",
+      "lemma": "дата",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "оглашения",
+      "lemma": "оглашение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "называется",
+      "lemma": "называться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Приговор"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Приговор ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "дата"
+        ],
+        [
+          7,
+          "оглашения"
+        ]
+      ],
+      "head_id": 6,
+      "text": "дата оглашения ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "оглашения"
+        ]
+      ],
+      "head_id": 7,
+      "text": "оглашения ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Приговор"
+        ],
+        [
+          2,
+          "вынесут"
+        ],
+        [
+          3,
+          "позже"
+        ],
+        [
+          4,
+          ","
+        ],
+        [
+          5,
+          "однако"
+        ],
+        [
+          6,
+          "дата"
+        ],
+        [
+          7,
+          "оглашения"
+        ],
+        [
+          8,
+          "не"
+        ],
+        [
+          9,
+          "называется"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Приговор вынесут позже , однако дата оглашения не называется ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          5,
+          "однако"
+        ],
+        [
+          6,
+          "дата"
+        ],
+        [
+          7,
+          "оглашения"
+        ],
+        [
+          8,
+          "не"
+        ],
+        [
+          9,
+          "называется"
+        ]
+      ],
+      "head_id": 9,
+      "text": "однако дата оглашения не называется ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          3,
+          "позже"
+        ]
+      ],
+      "head_id": 3,
+      "text": "позже ",
+      "length": 1
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "однако"
+        ]
+      ],
+      "head_id": 5,
+      "text": "однако ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/13/prisoners/"
+}

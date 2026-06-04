@@ -1,0 +1,391 @@
+{
+  "id": "224069_8",
+  "text": "Одна из них впоследствии забеременела и родила ребенка.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NumP Одна [PP из [NP них]]] [AdvP впоследствии] забеременела [VP и родила [NP ребенка]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Одна",
+      "lemma": "один",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Nom",
+          "Gender=Fem"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "них",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "впоследствии",
+      "lemma": "впоследствии",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "забеременела",
+      "lemma": "забеременеть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "родила",
+      "lemma": "рождать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "ребенка",
+      "lemma": "ребенок",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Gen",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          3,
+          "них"
+        ]
+      ],
+      "head_id": 3,
+      "text": "них ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "ребенка"
+        ]
+      ],
+      "head_id": 8,
+      "text": "ребенка ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Одна"
+        ],
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "них"
+        ],
+        [
+          4,
+          "впоследствии"
+        ],
+        [
+          5,
+          "забеременела"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "родила"
+        ],
+        [
+          8,
+          "ребенка"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Одна из них впоследствии забеременела и родила ребенка ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "родила"
+        ],
+        [
+          8,
+          "ребенка"
+        ]
+      ],
+      "head_id": 7,
+      "text": "и родила ребенка ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "них"
+        ]
+      ],
+      "head_id": 2,
+      "text": "из них ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          4,
+          "впоследствии"
+        ]
+      ],
+      "head_id": 4,
+      "text": "впоследствии ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 6,
+      "tags": [
+        "NUM",
+        "Case=Nom",
+        "Gender=Fem"
+      ],
+      "tokens": [
+        [
+          1,
+          "Одна"
+        ],
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "них"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Одна из них ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/28/nottrue/"
+}

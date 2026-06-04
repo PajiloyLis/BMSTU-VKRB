@@ -1,0 +1,346 @@
+{
+  "id": "218634_12",
+  "text": "Всегда идет такая борьба, это нормальная обстановка.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Всегда] идет [NP такая борьба] , [NP [NP это] нормальная обстановка]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Всегда",
+      "lemma": "всегда",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "идет",
+      "lemma": "идти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "такая",
+      "lemma": "такой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "борьба",
+      "lemma": "борьба",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "это",
+      "lemma": "это",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "нормальная",
+      "lemma": "нормальный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "обстановка",
+      "lemma": "обстановка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "такая"
+        ],
+        [
+          4,
+          "борьба"
+        ]
+      ],
+      "head_id": 4,
+      "text": "такая борьба ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "это"
+        ],
+        [
+          7,
+          "нормальная"
+        ],
+        [
+          8,
+          "обстановка"
+        ]
+      ],
+      "head_id": 8,
+      "text": "это нормальная обстановка ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "это"
+        ]
+      ],
+      "head_id": 6,
+      "text": "это ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Всегда"
+        ],
+        [
+          2,
+          "идет"
+        ],
+        [
+          3,
+          "такая"
+        ],
+        [
+          4,
+          "борьба"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "это"
+        ],
+        [
+          7,
+          "нормальная"
+        ],
+        [
+          8,
+          "обстановка"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Всегда идет такая борьба , это нормальная обстановка ",
+      "length": 8
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Всегда"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Всегда ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/19/liberally/"
+}

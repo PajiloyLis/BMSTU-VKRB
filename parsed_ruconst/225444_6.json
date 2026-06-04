@@ -1,0 +1,587 @@
+{
+  "id": "225444_6",
+  "text": "Сообщалось, что самолет два или три раза пытался зайти на посадку.",
+  "length": 11,
+  "source": "4",
+  "sentence_tree": " [VP Сообщалось , [VP что [NP самолет] [NP [NumP два [NumP или три]] раза] пытался [VP зайти [PP на [NP посадку]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Сообщалось",
+      "lemma": "сообщать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "самолет",
+      "lemma": "самолет",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "два",
+      "lemma": "два",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "или",
+      "lemma": "или",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "три",
+      "lemma": "три",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "раза",
+      "lemma": "раз",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "пытался",
+      "lemma": "пытаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "зайти",
+      "lemma": "зайти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "посадку",
+      "lemma": "посадка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "самолет"
+        ]
+      ],
+      "head_id": 4,
+      "text": "самолет ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "два"
+        ],
+        [
+          6,
+          "или"
+        ],
+        [
+          7,
+          "три"
+        ],
+        [
+          8,
+          "раза"
+        ]
+      ],
+      "head_id": 8,
+      "text": "два или три раза ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "посадку"
+        ]
+      ],
+      "head_id": 12,
+      "text": "посадку ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сообщалось"
+        ],
+        [
+          2,
+          ","
+        ],
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "самолет"
+        ],
+        [
+          5,
+          "два"
+        ],
+        [
+          6,
+          "или"
+        ],
+        [
+          7,
+          "три"
+        ],
+        [
+          8,
+          "раза"
+        ],
+        [
+          9,
+          "пытался"
+        ],
+        [
+          10,
+          "зайти"
+        ],
+        [
+          11,
+          "на"
+        ],
+        [
+          12,
+          "посадку"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Сообщалось , что самолет два или три раза пытался зайти на посадку ",
+      "length": 12
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "самолет"
+        ],
+        [
+          5,
+          "два"
+        ],
+        [
+          6,
+          "или"
+        ],
+        [
+          7,
+          "три"
+        ],
+        [
+          8,
+          "раза"
+        ],
+        [
+          9,
+          "пытался"
+        ],
+        [
+          10,
+          "зайти"
+        ],
+        [
+          11,
+          "на"
+        ],
+        [
+          12,
+          "посадку"
+        ]
+      ],
+      "head_id": 9,
+      "text": "что самолет два или три раза пытался зайти на посадку ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          10,
+          "зайти"
+        ],
+        [
+          11,
+          "на"
+        ],
+        [
+          12,
+          "посадку"
+        ]
+      ],
+      "head_id": 10,
+      "text": "зайти на посадку ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          11,
+          "на"
+        ],
+        [
+          12,
+          "посадку"
+        ]
+      ],
+      "head_id": 11,
+      "text": "на посадку ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 7,
+      "tags": [
+        "NUM",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc"
+      ],
+      "tokens": [
+        [
+          5,
+          "два"
+        ],
+        [
+          6,
+          "или"
+        ],
+        [
+          7,
+          "три"
+        ]
+      ],
+      "head_id": 5,
+      "text": "два или три ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 8,
+      "tags": [
+        "NUM",
+        "Animacy=Inan",
+        "Case=Acc"
+      ],
+      "tokens": [
+        [
+          6,
+          "или"
+        ],
+        [
+          7,
+          "три"
+        ]
+      ],
+      "head_id": 7,
+      "text": "или три ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/17/tripoli/"
+}

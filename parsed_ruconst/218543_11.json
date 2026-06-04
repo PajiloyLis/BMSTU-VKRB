@@ -1,0 +1,340 @@
+{
+  "id": "218543_11",
+  "text": "Утверждалось, что это поможет экономить электроэнергию.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP Утверждалось , [VP что [NP это] поможет [VP экономить [NP электроэнергию]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Утверждалось",
+      "lemma": "утверждать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "это",
+      "lemma": "это",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "поможет",
+      "lemma": "помочь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "экономить",
+      "lemma": "экономить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "электроэнергию",
+      "lemma": "электроэнергия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "это"
+        ]
+      ],
+      "head_id": 4,
+      "text": "это ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "электроэнергию"
+        ]
+      ],
+      "head_id": 7,
+      "text": "электроэнергию ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Утверждалось"
+        ],
+        [
+          2,
+          ","
+        ],
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "это"
+        ],
+        [
+          5,
+          "поможет"
+        ],
+        [
+          6,
+          "экономить"
+        ],
+        [
+          7,
+          "электроэнергию"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Утверждалось , что это поможет экономить электроэнергию ",
+      "length": 7
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "это"
+        ],
+        [
+          5,
+          "поможет"
+        ],
+        [
+          6,
+          "экономить"
+        ],
+        [
+          7,
+          "электроэнергию"
+        ]
+      ],
+      "head_id": 5,
+      "text": "что это поможет экономить электроэнергию ",
+      "length": 5
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          6,
+          "экономить"
+        ],
+        [
+          7,
+          "электроэнергию"
+        ]
+      ],
+      "head_id": 6,
+      "text": "экономить электроэнергию ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/20/riseofthemachines/"
+}

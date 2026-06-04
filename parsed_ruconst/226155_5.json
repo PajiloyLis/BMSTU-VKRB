@@ -1,0 +1,695 @@
+{
+  "id": "226155_5",
+  "text": "Как выяснилось, охрана заведения повздорила с посетителями, которые отказались платить за вход.",
+  "length": 12,
+  "source": "4",
+  "sentence_tree": " [VP [VP Как выяснилось] , [NP охрана [NP заведения]] повздорила [PP с [NP посетителями , [VP [NP которые] отказались [VP платить [PP за [NP вход]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "выяснилось",
+      "lemma": "выясниться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "охрана",
+      "lemma": "охрана",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "заведения",
+      "lemma": "заведение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "повздорила",
+      "lemma": "повздорить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "посетителями",
+      "lemma": "посетитель",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "которые",
+      "lemma": "который",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "отказались",
+      "lemma": "отказаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "платить",
+      "lemma": "платить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "за",
+      "lemma": "за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "вход",
+      "lemma": "вход",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "охрана"
+        ],
+        [
+          5,
+          "заведения"
+        ]
+      ],
+      "head_id": 4,
+      "text": "охрана заведения ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "заведения"
+        ]
+      ],
+      "head_id": 5,
+      "text": "заведения ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "посетителями"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "отказались"
+        ],
+        [
+          12,
+          "платить"
+        ],
+        [
+          13,
+          "за"
+        ],
+        [
+          14,
+          "вход"
+        ]
+      ],
+      "head_id": 8,
+      "text": "посетителями , которые отказались платить за вход ",
+      "length": 7
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PRON",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          10,
+          "которые"
+        ]
+      ],
+      "head_id": 10,
+      "text": "которые ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "вход"
+        ]
+      ],
+      "head_id": 14,
+      "text": "вход ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Как"
+        ],
+        [
+          2,
+          "выяснилось"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "охрана"
+        ],
+        [
+          5,
+          "заведения"
+        ],
+        [
+          6,
+          "повздорила"
+        ],
+        [
+          7,
+          "с"
+        ],
+        [
+          8,
+          "посетителями"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "отказались"
+        ],
+        [
+          12,
+          "платить"
+        ],
+        [
+          13,
+          "за"
+        ],
+        [
+          14,
+          "вход"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Как выяснилось , охрана заведения повздорила с посетителями , которые отказались платить за вход ",
+      "length": 14
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Как"
+        ],
+        [
+          2,
+          "выяснилось"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Как выяснилось ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "отказались"
+        ],
+        [
+          12,
+          "платить"
+        ],
+        [
+          13,
+          "за"
+        ],
+        [
+          14,
+          "вход"
+        ]
+      ],
+      "head_id": 11,
+      "text": "которые отказались платить за вход ",
+      "length": 5
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          12,
+          "платить"
+        ],
+        [
+          13,
+          "за"
+        ],
+        [
+          14,
+          "вход"
+        ]
+      ],
+      "head_id": 12,
+      "text": "платить за вход ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "с"
+        ],
+        [
+          8,
+          "посетителями"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "отказались"
+        ],
+        [
+          12,
+          "платить"
+        ],
+        [
+          13,
+          "за"
+        ],
+        [
+          14,
+          "вход"
+        ]
+      ],
+      "head_id": 7,
+      "text": "с посетителями , которые отказались платить за вход ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 10,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          13,
+          "за"
+        ],
+        [
+          14,
+          "вход"
+        ]
+      ],
+      "head_id": 13,
+      "text": "за вход ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/11/apple/"
+}

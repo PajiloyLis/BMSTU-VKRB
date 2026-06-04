@@ -1,0 +1,330 @@
+{
+  "id": "224909_7",
+  "text": "Как ожидается, число подозреваемых будет расти.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [VP Как ожидается] , [NP число [NP подозреваемых]] [VP будет расти]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "ожидается",
+      "lemma": "ожидать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "число",
+      "lemma": "число",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "подозреваемых",
+      "lemma": "подозреваемый",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "расти",
+      "lemma": "расти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "число"
+        ],
+        [
+          5,
+          "подозреваемых"
+        ]
+      ],
+      "head_id": 4,
+      "text": "число подозреваемых ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "подозреваемых"
+        ]
+      ],
+      "head_id": 5,
+      "text": "подозреваемых ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Как"
+        ],
+        [
+          2,
+          "ожидается"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "число"
+        ],
+        [
+          5,
+          "подозреваемых"
+        ],
+        [
+          6,
+          "будет"
+        ],
+        [
+          7,
+          "расти"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Как ожидается , число подозреваемых будет расти ",
+      "length": 7
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Как"
+        ],
+        [
+          2,
+          "ожидается"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Как ожидается ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          6,
+          "будет"
+        ],
+        [
+          7,
+          "расти"
+        ]
+      ],
+      "head_id": 6,
+      "text": "будет расти ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/21/dreamlifter/"
+}

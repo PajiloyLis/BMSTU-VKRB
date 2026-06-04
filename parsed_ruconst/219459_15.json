@@ -1,0 +1,322 @@
+{
+  "id": "219459_15",
+  "text": "Компания Speereo разрабатывает системы распознавания речи.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP Компания [NP Speereo]] разрабатывает [NP системы [NP распознавания [NP речи]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Компания",
+      "lemma": "компания",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Speereo",
+      "lemma": "Speereo",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "разрабатывает",
+      "lemma": "разрабатывать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "системы",
+      "lemma": "система",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "распознавания",
+      "lemma": "распознавание",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "речи",
+      "lemma": "речь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Компания"
+        ],
+        [
+          2,
+          "Speereo"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Компания Speereo ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          2,
+          "Speereo"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Speereo ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "системы"
+        ],
+        [
+          5,
+          "распознавания"
+        ],
+        [
+          6,
+          "речи"
+        ]
+      ],
+      "head_id": 4,
+      "text": "системы распознавания речи ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "распознавания"
+        ],
+        [
+          6,
+          "речи"
+        ]
+      ],
+      "head_id": 5,
+      "text": "распознавания речи ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "речи"
+        ]
+      ],
+      "head_id": 6,
+      "text": "речи ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Компания"
+        ],
+        [
+          2,
+          "Speereo"
+        ],
+        [
+          3,
+          "разрабатывает"
+        ],
+        [
+          4,
+          "системы"
+        ],
+        [
+          5,
+          "распознавания"
+        ],
+        [
+          6,
+          "речи"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Компания Speereo разрабатывает системы распознавания речи ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/13/popov/"
+}

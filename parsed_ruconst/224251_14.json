@@ -1,0 +1,382 @@
+{
+  "id": "224251_14",
+  "text": "Самой известной копытной беглянкой можно считать корову Ивонну.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP [AP Самой известной] копытной беглянкой] [AdvP можно считать [NP корову [NP Ивонну]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Самой",
+      "lemma": "самый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "известной",
+      "lemma": "известный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "копытной",
+      "lemma": "копытный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "беглянкой",
+      "lemma": "беглянка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "можно",
+      "lemma": "можно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "считать",
+      "lemma": "считать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "корову",
+      "lemma": "корова",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Ивонну",
+      "lemma": "Ивонна",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Dat",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самой"
+        ],
+        [
+          2,
+          "известной"
+        ],
+        [
+          3,
+          "копытной"
+        ],
+        [
+          4,
+          "беглянкой"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Самой известной копытной беглянкой ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "корову"
+        ],
+        [
+          8,
+          "Ивонну"
+        ]
+      ],
+      "head_id": 7,
+      "text": "корову Ивонну ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Dat",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Ивонну"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Ивонну ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самой"
+        ],
+        [
+          2,
+          "известной"
+        ],
+        [
+          3,
+          "копытной"
+        ],
+        [
+          4,
+          "беглянкой"
+        ],
+        [
+          5,
+          "можно"
+        ],
+        [
+          6,
+          "считать"
+        ],
+        [
+          7,
+          "корову"
+        ],
+        [
+          8,
+          "Ивонну"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Самой известной копытной беглянкой можно считать корову Ивонну ",
+      "length": 8
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самой"
+        ],
+        [
+          2,
+          "известной"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Самой известной ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "можно"
+        ],
+        [
+          6,
+          "считать"
+        ],
+        [
+          7,
+          "корову"
+        ],
+        [
+          8,
+          "Ивонну"
+        ]
+      ],
+      "head_id": 5,
+      "text": "можно считать корову Ивонну ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/26/kucherov/"
+}

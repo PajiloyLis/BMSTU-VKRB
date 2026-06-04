@@ -1,0 +1,252 @@
+{
+  "id": "224481_9",
+  "text": "Их участники перекрывают дорожное движение.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP [NP Их] участники] перекрывают [NP дорожное движение]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Их",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "участники",
+      "lemma": "участник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "перекрывают",
+      "lemma": "перекрывать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "дорожное",
+      "lemma": "дорожный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "движение",
+      "lemma": "движение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Их"
+        ],
+        [
+          2,
+          "участники"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Их участники ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Gen",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Их"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Их ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "дорожное"
+        ],
+        [
+          5,
+          "движение"
+        ]
+      ],
+      "head_id": 5,
+      "text": "дорожное движение ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Их"
+        ],
+        [
+          2,
+          "участники"
+        ],
+        [
+          3,
+          "перекрывают"
+        ],
+        [
+          4,
+          "дорожное"
+        ],
+        [
+          5,
+          "движение"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Их участники перекрывают дорожное движение ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/25/reaper/"
+}

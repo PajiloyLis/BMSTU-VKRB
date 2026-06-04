@@ -1,0 +1,279 @@
+{
+  "id": "222336_6",
+  "text": "Оба подсудимых считаются именно соучастниками преступления.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP Оба подсудимых] считаются [NP именно соучастниками [NP преступления]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Оба",
+      "lemma": "оба",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Nom",
+          "Gender=Masc"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "подсудимых",
+      "lemma": "подсудимый",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "считаются",
+      "lemma": "считать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "именно",
+      "lemma": "именно",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "соучастниками",
+      "lemma": "соучастник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "преступления",
+      "lemma": "преступление",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Оба"
+        ],
+        [
+          2,
+          "подсудимых"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Оба подсудимых ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "именно"
+        ],
+        [
+          5,
+          "соучастниками"
+        ],
+        [
+          6,
+          "преступления"
+        ]
+      ],
+      "head_id": 5,
+      "text": "именно соучастниками преступления ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "преступления"
+        ]
+      ],
+      "head_id": 6,
+      "text": "преступления ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Оба"
+        ],
+        [
+          2,
+          "подсудимых"
+        ],
+        [
+          3,
+          "считаются"
+        ],
+        [
+          4,
+          "именно"
+        ],
+        [
+          5,
+          "соучастниками"
+        ],
+        [
+          6,
+          "преступления"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Оба подсудимых считаются именно соучастниками преступления ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/11/part/"
+}

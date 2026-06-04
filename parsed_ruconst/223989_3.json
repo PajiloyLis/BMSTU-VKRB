@@ -1,0 +1,443 @@
+{
+  "id": "223989_3",
+  "text": "По данным «Ура.ру», горит один из бараков.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [PP По [NP данным « [NP Ура.ру] »]] , горит [NumP один [PP из [NP бараков]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "По",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "данным",
+      "lemma": "данные",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Ура.ру",
+      "lemma": "Ура.р",
+      "tagsets": [
+        [
+          "PROPN",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "»",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "горит",
+      "lemma": "гореть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "один",
+      "lemma": "один",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Nom",
+          "Gender=Masc"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "бараков",
+      "lemma": "барак",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "данным"
+        ],
+        [
+          3,
+          "«"
+        ],
+        [
+          4,
+          "Ура.ру"
+        ],
+        [
+          5,
+          "»"
+        ]
+      ],
+      "head_id": 2,
+      "text": "данным « Ура.ру » ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "Ура.ру"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Ура.ру ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          10,
+          "бараков"
+        ]
+      ],
+      "head_id": 10,
+      "text": "бараков ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "данным"
+        ],
+        [
+          3,
+          "«"
+        ],
+        [
+          4,
+          "Ура.ру"
+        ],
+        [
+          5,
+          "»"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "горит"
+        ],
+        [
+          8,
+          "один"
+        ],
+        [
+          9,
+          "из"
+        ],
+        [
+          10,
+          "бараков"
+        ]
+      ],
+      "head_id": 7,
+      "text": "По данным « Ура.ру » , горит один из бараков ",
+      "length": 10
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "По"
+        ],
+        [
+          2,
+          "данным"
+        ],
+        [
+          3,
+          "«"
+        ],
+        [
+          4,
+          "Ура.ру"
+        ],
+        [
+          5,
+          "»"
+        ]
+      ],
+      "head_id": 1,
+      "text": "По данным « Ура.ру » ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "из"
+        ],
+        [
+          10,
+          "бараков"
+        ]
+      ],
+      "head_id": 9,
+      "text": "из бараков ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 6,
+      "tags": [
+        "NUM",
+        "Case=Nom",
+        "Gender=Masc"
+      ],
+      "tokens": [
+        [
+          8,
+          "один"
+        ],
+        [
+          9,
+          "из"
+        ],
+        [
+          10,
+          "бараков"
+        ]
+      ],
+      "head_id": 8,
+      "text": "один из бараков ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/28/fireballs/"
+}

@@ -1,0 +1,301 @@
+{
+  "id": "218912_10",
+  "text": "Самого мужчину удалось найти довольно быстро.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP Самого мужчину] [VP удалось найти [AdvP [AdvP довольно] быстро]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Самого",
+      "lemma": "сам",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "мужчину",
+      "lemma": "мужчина",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "удалось",
+      "lemma": "удаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "найти",
+      "lemma": "найти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "довольно",
+      "lemma": "довольно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "быстро",
+      "lemma": "быстро",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самого"
+        ],
+        [
+          2,
+          "мужчину"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Самого мужчину ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самого"
+        ],
+        [
+          2,
+          "мужчину"
+        ],
+        [
+          3,
+          "удалось"
+        ],
+        [
+          4,
+          "найти"
+        ],
+        [
+          5,
+          "довольно"
+        ],
+        [
+          6,
+          "быстро"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Самого мужчину удалось найти довольно быстро ",
+      "length": 6
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          3,
+          "удалось"
+        ],
+        [
+          4,
+          "найти"
+        ],
+        [
+          5,
+          "довольно"
+        ],
+        [
+          6,
+          "быстро"
+        ]
+      ],
+      "head_id": 3,
+      "text": "удалось найти довольно быстро ",
+      "length": 4
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "довольно"
+        ],
+        [
+          6,
+          "быстро"
+        ]
+      ],
+      "head_id": 6,
+      "text": "довольно быстро ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "довольно"
+        ]
+      ],
+      "head_id": 5,
+      "text": "довольно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/16/record/"
+}

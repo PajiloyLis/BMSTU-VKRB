@@ -1,0 +1,674 @@
+{
+  "id": "217783_7",
+  "text": "Сегодня же стало известно, что оставить свою должность согласился глава волынского облсовета Владимир Войтович.",
+  "length": 14,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Сегодня же] стало известно , [VP что [VP оставить [NP свою должность]] согласился [NP глава [NP волынского облсовета] [NP Владимир [NP Войтович]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Сегодня",
+      "lemma": "сегодня",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "же",
+      "lemma": "же",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "стало",
+      "lemma": "стать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "известно",
+      "lemma": "известный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "оставить",
+      "lemma": "оставить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "свою",
+      "lemma": "свой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "должность",
+      "lemma": "должность",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "согласился",
+      "lemma": "согласиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "глава",
+      "lemma": "глава",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "волынского",
+      "lemma": "волынский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "облсовета",
+      "lemma": "облсовет",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "Владимир",
+      "lemma": "Владимир",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "Войтович",
+      "lemma": "Войтович",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "свою"
+        ],
+        [
+          9,
+          "должность"
+        ]
+      ],
+      "head_id": 9,
+      "text": "свою должность ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "глава"
+        ],
+        [
+          12,
+          "волынского"
+        ],
+        [
+          13,
+          "облсовета"
+        ],
+        [
+          14,
+          "Владимир"
+        ],
+        [
+          15,
+          "Войтович"
+        ]
+      ],
+      "head_id": 11,
+      "text": "глава волынского облсовета Владимир Войтович ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "волынского"
+        ],
+        [
+          13,
+          "облсовета"
+        ]
+      ],
+      "head_id": 13,
+      "text": "волынского облсовета ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "Владимир"
+        ],
+        [
+          15,
+          "Войтович"
+        ]
+      ],
+      "head_id": 14,
+      "text": "Владимир Войтович ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          15,
+          "Войтович"
+        ]
+      ],
+      "head_id": 15,
+      "text": "Войтович ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сегодня"
+        ],
+        [
+          2,
+          "же"
+        ],
+        [
+          3,
+          "стало"
+        ],
+        [
+          4,
+          "известно"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "что"
+        ],
+        [
+          7,
+          "оставить"
+        ],
+        [
+          8,
+          "свою"
+        ],
+        [
+          9,
+          "должность"
+        ],
+        [
+          10,
+          "согласился"
+        ],
+        [
+          11,
+          "глава"
+        ],
+        [
+          12,
+          "волынского"
+        ],
+        [
+          13,
+          "облсовета"
+        ],
+        [
+          14,
+          "Владимир"
+        ],
+        [
+          15,
+          "Войтович"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Сегодня же стало известно , что оставить свою должность согласился глава волынского облсовета Владимир Войтович ",
+      "length": 15
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          6,
+          "что"
+        ],
+        [
+          7,
+          "оставить"
+        ],
+        [
+          8,
+          "свою"
+        ],
+        [
+          9,
+          "должность"
+        ],
+        [
+          10,
+          "согласился"
+        ],
+        [
+          11,
+          "глава"
+        ],
+        [
+          12,
+          "волынского"
+        ],
+        [
+          13,
+          "облсовета"
+        ],
+        [
+          14,
+          "Владимир"
+        ],
+        [
+          15,
+          "Войтович"
+        ]
+      ],
+      "head_id": 10,
+      "text": "что оставить свою должность согласился глава волынского облсовета Владимир Войтович ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          7,
+          "оставить"
+        ],
+        [
+          8,
+          "свою"
+        ],
+        [
+          9,
+          "должность"
+        ]
+      ],
+      "head_id": 7,
+      "text": "оставить свою должность ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 8,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сегодня"
+        ],
+        [
+          2,
+          "же"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Сегодня же ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/24/pileup/"
+}

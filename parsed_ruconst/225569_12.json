@@ -1,0 +1,293 @@
+{
+  "id": "225569_12",
+  "text": "Обе этих функции можно будет совместить.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [VP [NP Обе этих функции] [AdvP можно будет] совместить]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Обе",
+      "lemma": "оба",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "этих",
+      "lemma": "этот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Gen",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "функции",
+      "lemma": "функция",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "можно",
+      "lemma": "можно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "совместить",
+      "lemma": "совместить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Обе"
+        ],
+        [
+          2,
+          "этих"
+        ],
+        [
+          3,
+          "функции"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Обе этих функции ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Обе"
+        ],
+        [
+          2,
+          "этих"
+        ],
+        [
+          3,
+          "функции"
+        ],
+        [
+          4,
+          "можно"
+        ],
+        [
+          5,
+          "будет"
+        ],
+        [
+          6,
+          "совместить"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Обе этих функции можно будет совместить ",
+      "length": 6
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          1,
+          "Обе"
+        ],
+        [
+          2,
+          "этих"
+        ],
+        [
+          3,
+          "функции"
+        ],
+        [
+          4,
+          "можно"
+        ],
+        [
+          5,
+          "будет"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Обе этих функции можно будет ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          4,
+          "можно"
+        ],
+        [
+          5,
+          "будет"
+        ],
+        [
+          6,
+          "совместить"
+        ]
+      ],
+      "head_id": 4,
+      "text": "можно будет совместить ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/15/ill/"
+}

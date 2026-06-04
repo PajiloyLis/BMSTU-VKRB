@@ -1,0 +1,323 @@
+{
+  "id": "220799_6",
+  "text": "Ноутбук и мобильное устройство можно заряжать одновременно.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Ноутбук [NP и мобильное устройство]] [AdvP можно заряжать [AdvP одновременно]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Ноутбук",
+      "lemma": "ноутбук",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "мобильное",
+      "lemma": "мобильный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "устройство",
+      "lemma": "устройство",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "можно",
+      "lemma": "можно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "заряжать",
+      "lemma": "заряжать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "одновременно",
+      "lemma": "одновременно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Ноутбук"
+        ],
+        [
+          2,
+          "и"
+        ],
+        [
+          3,
+          "мобильное"
+        ],
+        [
+          4,
+          "устройство"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Ноутбук и мобильное устройство ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "и"
+        ],
+        [
+          3,
+          "мобильное"
+        ],
+        [
+          4,
+          "устройство"
+        ]
+      ],
+      "head_id": 4,
+      "text": "и мобильное устройство ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Ноутбук"
+        ],
+        [
+          2,
+          "и"
+        ],
+        [
+          3,
+          "мобильное"
+        ],
+        [
+          4,
+          "устройство"
+        ],
+        [
+          5,
+          "можно"
+        ],
+        [
+          6,
+          "заряжать"
+        ],
+        [
+          7,
+          "одновременно"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Ноутбук и мобильное устройство можно заряжать одновременно ",
+      "length": 7
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "можно"
+        ],
+        [
+          6,
+          "заряжать"
+        ],
+        [
+          7,
+          "одновременно"
+        ]
+      ],
+      "head_id": 5,
+      "text": "можно заряжать одновременно ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          7,
+          "одновременно"
+        ]
+      ],
+      "head_id": 7,
+      "text": "одновременно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/25/credit/"
+}

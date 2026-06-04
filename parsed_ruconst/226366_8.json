@@ -1,0 +1,254 @@
+{
+  "id": "226366_8",
+  "text": "Ее создали Forgotten Empires LLC.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP Ее] создали [NP Forgotten [NP Empires] [NP LLC]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Ее",
+      "lemma": "она",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "создали",
+      "lemma": "создать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Forgotten",
+      "lemma": "Forgotten",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Empires",
+      "lemma": "Empires",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "LLC",
+      "lemma": "LLC",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Ее"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Ее ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          3,
+          "Forgotten"
+        ],
+        [
+          4,
+          "Empires"
+        ],
+        [
+          5,
+          "LLC"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Forgotten Empires LLC ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          4,
+          "Empires"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Empires ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          5,
+          "LLC"
+        ]
+      ],
+      "head_id": 5,
+      "text": "LLC ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Ее"
+        ],
+        [
+          2,
+          "создали"
+        ],
+        [
+          3,
+          "Forgotten"
+        ],
+        [
+          4,
+          "Empires"
+        ],
+        [
+          5,
+          "LLC"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Ее создали Forgotten Empires LLC ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/08/attack/"
+}

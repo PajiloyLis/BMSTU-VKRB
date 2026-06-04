@@ -1,0 +1,282 @@
+{
+  "id": "220015_6",
+  "text": "О самом фараоне известно довольно мало.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [AP [PP О [NP самом фараоне]] известно [AdvP [AdvP довольно] мало]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "О",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "самом",
+      "lemma": "самый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "фараоне",
+      "lemma": "фараон",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "известно",
+      "lemma": "известный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "довольно",
+      "lemma": "довольно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "мало",
+      "lemma": "мало",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "самом"
+        ],
+        [
+          3,
+          "фараоне"
+        ]
+      ],
+      "head_id": 3,
+      "text": "самом фараоне ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 1,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "О"
+        ],
+        [
+          2,
+          "самом"
+        ],
+        [
+          3,
+          "фараоне"
+        ],
+        [
+          4,
+          "известно"
+        ],
+        [
+          5,
+          "довольно"
+        ],
+        [
+          6,
+          "мало"
+        ]
+      ],
+      "head_id": 4,
+      "text": "О самом фараоне известно довольно мало ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 2,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "О"
+        ],
+        [
+          2,
+          "самом"
+        ],
+        [
+          3,
+          "фараоне"
+        ]
+      ],
+      "head_id": 1,
+      "text": "О самом фараоне ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "довольно"
+        ],
+        [
+          6,
+          "мало"
+        ]
+      ],
+      "head_id": 6,
+      "text": "довольно мало ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "довольно"
+        ]
+      ],
+      "head_id": 5,
+      "text": "довольно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/06/zinoviev/"
+}

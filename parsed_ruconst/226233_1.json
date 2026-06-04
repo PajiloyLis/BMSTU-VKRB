@@ -1,0 +1,269 @@
+{
+  "id": "226233_1",
+  "text": "Это самые старые объекты биологического происхождения.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [NP [NP Это] [AP самые старые] объекты [NP биологического происхождения]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Это",
+      "lemma": "это",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "самые",
+      "lemma": "самый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "старые",
+      "lemma": "старый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "объекты",
+      "lemma": "объект",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "биологического",
+      "lemma": "биологический",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "происхождения",
+      "lemma": "происхождение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Это"
+        ],
+        [
+          2,
+          "самые"
+        ],
+        [
+          3,
+          "старые"
+        ],
+        [
+          4,
+          "объекты"
+        ],
+        [
+          5,
+          "биологического"
+        ],
+        [
+          6,
+          "происхождения"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Это самые старые объекты биологического происхождения ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Это"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Это ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "биологического"
+        ],
+        [
+          6,
+          "происхождения"
+        ]
+      ],
+      "head_id": 6,
+      "text": "биологического происхождения ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Case=Nom",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "самые"
+        ],
+        [
+          3,
+          "старые"
+        ]
+      ],
+      "head_id": 3,
+      "text": "самые старые ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/11/borodins/"
+}

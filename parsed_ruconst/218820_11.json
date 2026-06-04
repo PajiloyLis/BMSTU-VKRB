@@ -1,0 +1,360 @@
+{
+  "id": "218820_11",
+  "text": "Возглавлять ее будет опытный полярник Матвей Шпаро.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [VP Возглавлять [NP ее] будет] [NP опытный полярник [NP Матвей [NP Шпаро]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Возглавлять",
+      "lemma": "возглавлять",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "ее",
+      "lemma": "она",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "опытный",
+      "lemma": "опытный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "полярник",
+      "lemma": "полярник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Матвей",
+      "lemma": "Матвей",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Шпаро",
+      "lemma": "Шпаро",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          2,
+          "ее"
+        ]
+      ],
+      "head_id": 2,
+      "text": "ее ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "опытный"
+        ],
+        [
+          5,
+          "полярник"
+        ],
+        [
+          6,
+          "Матвей"
+        ],
+        [
+          7,
+          "Шпаро"
+        ]
+      ],
+      "head_id": 5,
+      "text": "опытный полярник Матвей Шпаро ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "Матвей"
+        ],
+        [
+          7,
+          "Шпаро"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Матвей Шпаро ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "Шпаро"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Шпаро ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          1,
+          "Возглавлять"
+        ],
+        [
+          2,
+          "ее"
+        ],
+        [
+          3,
+          "будет"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Возглавлять ее будет ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Возглавлять"
+        ],
+        [
+          2,
+          "ее"
+        ],
+        [
+          3,
+          "будет"
+        ],
+        [
+          4,
+          "опытный"
+        ],
+        [
+          5,
+          "полярник"
+        ],
+        [
+          6,
+          "Матвей"
+        ],
+        [
+          7,
+          "Шпаро"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Возглавлять ее будет опытный полярник Матвей Шпаро ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/17/justlikenazis/"
+}

@@ -1,0 +1,312 @@
+{
+  "id": "221999_13",
+  "text": "Сейчас она находится на стадии пост-продакшн.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Сейчас] [NP она] находится [PP на [NP стадии [NP пост-продакшн]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Сейчас",
+      "lemma": "сейчас",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "она",
+      "lemma": "она",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "находится",
+      "lemma": "находиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "стадии",
+      "lemma": "стадия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "пост-продакшн",
+      "lemma": "пост-продакшня",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          2,
+          "она"
+        ]
+      ],
+      "head_id": 2,
+      "text": "она ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "стадии"
+        ],
+        [
+          6,
+          "пост-продакшн"
+        ]
+      ],
+      "head_id": 5,
+      "text": "стадии пост-продакшн ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "пост-продакшн"
+        ]
+      ],
+      "head_id": 6,
+      "text": "пост-продакшн ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сейчас"
+        ],
+        [
+          2,
+          "она"
+        ],
+        [
+          3,
+          "находится"
+        ],
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "стадии"
+        ],
+        [
+          6,
+          "пост-продакшн"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Сейчас она находится на стадии пост-продакшн ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "стадии"
+        ],
+        [
+          6,
+          "пост-продакшн"
+        ]
+      ],
+      "head_id": 4,
+      "text": "на стадии пост-продакшн ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сейчас"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Сейчас ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/13/drc/"
+}

@@ -1,0 +1,369 @@
+{
+  "id": "222826_2",
+  "text": "Планируется, что она завершится через 84 дня.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP Планируется , [VP что [NP она] завершится [PP через [NP 84 дня]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Планируется",
+      "lemma": "планировать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "она",
+      "lemma": "она",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "завершится",
+      "lemma": "завершиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "через",
+      "lemma": "через",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "84",
+      "lemma": "84",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "дня",
+      "lemma": "день",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          4,
+          "она"
+        ]
+      ],
+      "head_id": 4,
+      "text": "она ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "84"
+        ],
+        [
+          8,
+          "дня"
+        ]
+      ],
+      "head_id": 8,
+      "text": "84 дня ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Планируется"
+        ],
+        [
+          2,
+          ","
+        ],
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "она"
+        ],
+        [
+          5,
+          "завершится"
+        ],
+        [
+          6,
+          "через"
+        ],
+        [
+          7,
+          "84"
+        ],
+        [
+          8,
+          "дня"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Планируется , что она завершится через 84 дня ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "она"
+        ],
+        [
+          5,
+          "завершится"
+        ],
+        [
+          6,
+          "через"
+        ],
+        [
+          7,
+          "84"
+        ],
+        [
+          8,
+          "дня"
+        ]
+      ],
+      "head_id": 5,
+      "text": "что она завершится через 84 дня ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "через"
+        ],
+        [
+          7,
+          "84"
+        ],
+        [
+          8,
+          "дня"
+        ]
+      ],
+      "head_id": 6,
+      "text": "через 84 дня ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/09/restore/"
+}

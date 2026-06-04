@@ -1,0 +1,409 @@
+{
+  "id": "223119_5",
+  "text": "Родственники надеются получить от них 37,5 миллиона долларов.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Родственники] надеются [VP получить [PP от [NP них]] [NP [NP 37,5 миллиона] долларов]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Родственники",
+      "lemma": "родственник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "надеются",
+      "lemma": "надеяться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "получить",
+      "lemma": "получить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "от",
+      "lemma": "от",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "них",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "37,5",
+      "lemma": "37,5",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "миллиона",
+      "lemma": "миллион",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "долларов",
+      "lemma": "доллар",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Родственники"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Родственники ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Gen",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          5,
+          "них"
+        ]
+      ],
+      "head_id": 5,
+      "text": "них ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "37,5"
+        ],
+        [
+          7,
+          "миллиона"
+        ],
+        [
+          8,
+          "долларов"
+        ]
+      ],
+      "head_id": 8,
+      "text": "37,5 миллиона долларов ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "37,5"
+        ],
+        [
+          7,
+          "миллиона"
+        ]
+      ],
+      "head_id": 7,
+      "text": "37,5 миллиона ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Родственники"
+        ],
+        [
+          2,
+          "надеются"
+        ],
+        [
+          3,
+          "получить"
+        ],
+        [
+          4,
+          "от"
+        ],
+        [
+          5,
+          "них"
+        ],
+        [
+          6,
+          "37,5"
+        ],
+        [
+          7,
+          "миллиона"
+        ],
+        [
+          8,
+          "долларов"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Родственники надеются получить от них 37,5 миллиона долларов ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "получить"
+        ],
+        [
+          4,
+          "от"
+        ],
+        [
+          5,
+          "них"
+        ],
+        [
+          6,
+          "37,5"
+        ],
+        [
+          7,
+          "миллиона"
+        ],
+        [
+          8,
+          "долларов"
+        ]
+      ],
+      "head_id": 3,
+      "text": "получить от них 37,5 миллиона долларов ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "от"
+        ],
+        [
+          5,
+          "них"
+        ]
+      ],
+      "head_id": 4,
+      "text": "от них ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/05/gasoline/"
+}

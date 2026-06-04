@@ -1,0 +1,201 @@
+{
+  "id": "222291_12",
+  "text": "17 раз он проигрывал.",
+  "length": 4,
+  "source": "4",
+  "sentence_tree": " [VP [NP 17 раз] [NP он] проигрывал] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "17",
+      "lemma": "17",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "раз",
+      "lemma": "раз",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "он",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "проигрывал",
+      "lemma": "проигрывать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "17"
+        ],
+        [
+          2,
+          "раз"
+        ]
+      ],
+      "head_id": 2,
+      "text": "17 раз ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          3,
+          "он"
+        ]
+      ],
+      "head_id": 3,
+      "text": "он ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "17"
+        ],
+        [
+          2,
+          "раз"
+        ],
+        [
+          3,
+          "он"
+        ],
+        [
+          4,
+          "проигрывал"
+        ]
+      ],
+      "head_id": 4,
+      "text": "17 раз он проигрывал ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/12/language/"
+}

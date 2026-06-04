@@ -1,0 +1,342 @@
+{
+  "id": "222876_4",
+  "text": "Будьте великодушны!», — написал Кинг.",
+  "length": 4,
+  "source": "4",
+  "sentence_tree": " [VP Будьте [AP великодушны ! » , — [VP написал [NP Кинг]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Будьте",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Imp",
+          "Number=Plur",
+          "Person=2",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "великодушны",
+      "lemma": "великодушный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "!",
+      "lemma": "!",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "»",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "—",
+      "lemma": "—",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "написал",
+      "lemma": "писать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Кинг",
+      "lemma": "Кинг",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Кинг"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Кинг ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Imp",
+        "Number=Plur",
+        "Person=2",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          1,
+          "Будьте"
+        ],
+        [
+          2,
+          "великодушны"
+        ],
+        [
+          3,
+          "!"
+        ],
+        [
+          4,
+          "»"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "—"
+        ],
+        [
+          7,
+          "написал"
+        ],
+        [
+          8,
+          "Кинг"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Будьте великодушны ! » , — написал Кинг ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          7,
+          "написал"
+        ],
+        [
+          8,
+          "Кинг"
+        ]
+      ],
+      "head_id": 7,
+      "text": "написал Кинг ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          2,
+          "великодушны"
+        ],
+        [
+          3,
+          "!"
+        ],
+        [
+          4,
+          "»"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "—"
+        ],
+        [
+          7,
+          "написал"
+        ],
+        [
+          8,
+          "Кинг"
+        ]
+      ],
+      "head_id": 2,
+      "text": "великодушны ! » , — написал Кинг ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/07/demands/"
+}

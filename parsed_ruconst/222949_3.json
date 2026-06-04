@@ -1,0 +1,222 @@
+{
+  "id": "222949_3",
+  "text": "Должны быть выполнены все формальности.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [AP Должны [VP быть выполнены] [NP все формальности]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Должны",
+      "lemma": "должен",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "быть",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "выполнены",
+      "lemma": "выполнить",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Number=Plur",
+          "Tense=Past",
+          "Variant=Short",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "все",
+      "lemma": "весь",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "формальности",
+      "lemma": "формальность",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "все"
+        ],
+        [
+          5,
+          "формальности"
+        ]
+      ],
+      "head_id": 5,
+      "text": "все формальности ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          2,
+          "быть"
+        ],
+        [
+          3,
+          "выполнены"
+        ]
+      ],
+      "head_id": 2,
+      "text": "быть выполнены ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Должны"
+        ],
+        [
+          2,
+          "быть"
+        ],
+        [
+          3,
+          "выполнены"
+        ],
+        [
+          4,
+          "все"
+        ],
+        [
+          5,
+          "формальности"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Должны быть выполнены все формальности ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/06/smolenskiy/"
+}

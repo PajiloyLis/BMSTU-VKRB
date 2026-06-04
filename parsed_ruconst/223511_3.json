@@ -1,0 +1,448 @@
+{
+  "id": "223511_3",
+  "text": "Весь контент будет бесплатным, кроме сериалов «Амедиа».",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [AP [NP Весь контент] [VP будет бесплатным , [NP [PP кроме сериалов « [NP Амедиа]]] »]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Весь",
+      "lemma": "весь",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "контент",
+      "lemma": "контент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "бесплатным",
+      "lemma": "бесплатный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "кроме",
+      "lemma": "кроме",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "сериалов",
+      "lemma": "сериал",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "Амедиа",
+      "lemma": "Амедиа",
+      "tagsets": [
+        [
+          "PROPN",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "»",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Весь"
+        ],
+        [
+          2,
+          "контент"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Весь контент ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "кроме"
+        ],
+        [
+          7,
+          "сериалов"
+        ],
+        [
+          8,
+          "«"
+        ],
+        [
+          9,
+          "Амедиа"
+        ]
+      ],
+      "head_id": 7,
+      "text": "кроме сериалов « Амедиа ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "Амедиа"
+        ]
+      ],
+      "head_id": 9,
+      "text": "Амедиа ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          3,
+          "будет"
+        ],
+        [
+          4,
+          "бесплатным"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "кроме"
+        ],
+        [
+          7,
+          "сериалов"
+        ],
+        [
+          8,
+          "«"
+        ],
+        [
+          9,
+          "Амедиа"
+        ],
+        [
+          10,
+          "»"
+        ]
+      ],
+      "head_id": 3,
+      "text": "будет бесплатным , кроме сериалов « Амедиа » ",
+      "length": 8
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Весь"
+        ],
+        [
+          2,
+          "контент"
+        ],
+        [
+          3,
+          "будет"
+        ],
+        [
+          4,
+          "бесплатным"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "кроме"
+        ],
+        [
+          7,
+          "сериалов"
+        ],
+        [
+          8,
+          "«"
+        ],
+        [
+          9,
+          "Амедиа"
+        ],
+        [
+          10,
+          "»"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Весь контент будет бесплатным , кроме сериалов « Амедиа » ",
+      "length": 10
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "кроме"
+        ],
+        [
+          7,
+          "сериалов"
+        ],
+        [
+          8,
+          "«"
+        ],
+        [
+          9,
+          "Амедиа"
+        ]
+      ],
+      "head_id": 6,
+      "text": "кроме сериалов « Амедиа ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/03/sandwich/"
+}

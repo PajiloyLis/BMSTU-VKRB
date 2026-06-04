@@ -1,0 +1,179 @@
+{
+  "id": "224128_7",
+  "text": "«Сделка по-настоящему революционная.",
+  "length": 3,
+  "source": "4",
+  "sentence_tree": " « [AP [NP Сделка] [AdvP по-настоящему] революционная] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Сделка",
+      "lemma": "сделка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "по-настоящему",
+      "lemma": "по-настоящему",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "революционная",
+      "lemma": "революционный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Сделка"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Сделка ",
+      "length": 1
+    },
+    {
+      "name": "AP",
+      "id": 1,
+      "tags": [
+        "ADJ",
+        "Case=Nom",
+        "Degree=Pos",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Сделка"
+        ],
+        [
+          3,
+          "по-настоящему"
+        ],
+        [
+          4,
+          "революционная"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Сделка по-настоящему революционная ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 2,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          3,
+          "по-настоящему"
+        ]
+      ],
+      "head_id": 3,
+      "text": "по-настоящему ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/27/name/"
+}

@@ -1,0 +1,353 @@
+{
+  "id": "220049_20",
+  "text": "Им управляет Манторов под присмотром сенегальских военных.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Им] управляет [NP Манторов] [PP под [NP присмотром [NP сенегальских военных]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Им",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Dat",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "iobj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "управляет",
+      "lemma": "управлять",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Манторов",
+      "lemma": "Манторов",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "под",
+      "lemma": "под",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "присмотром",
+      "lemma": "присмотр",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "сенегальских",
+      "lemma": "сенегальский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "военных",
+      "lemma": "военный",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Dat",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Им"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Им ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Манторов"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Манторов ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "присмотром"
+        ],
+        [
+          6,
+          "сенегальских"
+        ],
+        [
+          7,
+          "военных"
+        ]
+      ],
+      "head_id": 5,
+      "text": "присмотром сенегальских военных ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "сенегальских"
+        ],
+        [
+          7,
+          "военных"
+        ]
+      ],
+      "head_id": 7,
+      "text": "сенегальских военных ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Им"
+        ],
+        [
+          2,
+          "управляет"
+        ],
+        [
+          3,
+          "Манторов"
+        ],
+        [
+          4,
+          "под"
+        ],
+        [
+          5,
+          "присмотром"
+        ],
+        [
+          6,
+          "сенегальских"
+        ],
+        [
+          7,
+          "военных"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Им управляет Манторов под присмотром сенегальских военных ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "под"
+        ],
+        [
+          5,
+          "присмотром"
+        ],
+        [
+          6,
+          "сенегальских"
+        ],
+        [
+          7,
+          "военных"
+        ]
+      ],
+      "head_id": 4,
+      "text": "под присмотром сенегальских военных ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/05/trowler/"
+}

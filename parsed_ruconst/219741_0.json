@@ -1,0 +1,373 @@
+{
+  "id": "219741_0",
+  "text": "Издательство Sega официально анонсировало хоррор Alien: Isolation.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Издательство [NP Sega]] [AdvP официально] анонсировало [NP хоррор [NP Alien] : [NP Isolation]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Издательство",
+      "lemma": "издательство",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Sega",
+      "lemma": "Sega",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "официально",
+      "lemma": "официально",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "анонсировало",
+      "lemma": "анонсировать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "хоррор",
+      "lemma": "хоррор",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Alien",
+      "lemma": "Alien",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ":",
+      "lemma": ":",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Isolation",
+      "lemma": "Isolation",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Издательство"
+        ],
+        [
+          2,
+          "Sega"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Издательство Sega ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          2,
+          "Sega"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Sega ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "хоррор"
+        ],
+        [
+          6,
+          "Alien"
+        ],
+        [
+          7,
+          ":"
+        ],
+        [
+          8,
+          "Isolation"
+        ]
+      ],
+      "head_id": 5,
+      "text": "хоррор Alien : Isolation ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          6,
+          "Alien"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Alien ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          8,
+          "Isolation"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Isolation ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Издательство"
+        ],
+        [
+          2,
+          "Sega"
+        ],
+        [
+          3,
+          "официально"
+        ],
+        [
+          4,
+          "анонсировало"
+        ],
+        [
+          5,
+          "хоррор"
+        ],
+        [
+          6,
+          "Alien"
+        ],
+        [
+          7,
+          ":"
+        ],
+        [
+          8,
+          "Isolation"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Издательство Sega официально анонсировало хоррор Alien : Isolation ",
+      "length": 8
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          3,
+          "официально"
+        ]
+      ],
+      "head_id": 3,
+      "text": "официально ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/09/fight/"
+}

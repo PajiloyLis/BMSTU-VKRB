@@ -1,0 +1,355 @@
+{
+  "id": "221815_7",
+  "text": "Тикрит известен как место рождения Саддама Хусейна.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [AP [NP Тикрит] известен [NP как место [NP рождения [NP Саддама [NP Хусейна]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Тикрит",
+      "lemma": "тикрит",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "известен",
+      "lemma": "известный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "место",
+      "lemma": "место",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "рождения",
+      "lemma": "рождение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Саддама",
+      "lemma": "Саддам",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Хусейна",
+      "lemma": "Хусейн",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Тикрит"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Тикрит ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "как"
+        ],
+        [
+          4,
+          "место"
+        ],
+        [
+          5,
+          "рождения"
+        ],
+        [
+          6,
+          "Саддама"
+        ],
+        [
+          7,
+          "Хусейна"
+        ]
+      ],
+      "head_id": 4,
+      "text": "как место рождения Саддама Хусейна ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "рождения"
+        ],
+        [
+          6,
+          "Саддама"
+        ],
+        [
+          7,
+          "Хусейна"
+        ]
+      ],
+      "head_id": 5,
+      "text": "рождения Саддама Хусейна ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "Саддама"
+        ],
+        [
+          7,
+          "Хусейна"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Саддама Хусейна ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "Хусейна"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Хусейна ",
+      "length": 1
+    },
+    {
+      "name": "AP",
+      "id": 5,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Тикрит"
+        ],
+        [
+          2,
+          "известен"
+        ],
+        [
+          3,
+          "как"
+        ],
+        [
+          4,
+          "место"
+        ],
+        [
+          5,
+          "рождения"
+        ],
+        [
+          6,
+          "Саддама"
+        ],
+        [
+          7,
+          "Хусейна"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Тикрит известен как место рождения Саддама Хусейна ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/16/rest/"
+}

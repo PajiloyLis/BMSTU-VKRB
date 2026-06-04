@@ -1,0 +1,234 @@
+{
+  "id": "218847_5",
+  "text": "Преподаватели оставили их там одних.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP Преподаватели] оставили [NP их] [AdvP там] одних] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Преподаватели",
+      "lemma": "преподаватель",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "оставили",
+      "lemma": "оставить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "их",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "там",
+      "lemma": "там",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "одних",
+      "lemma": "один",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Acc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Преподаватели"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Преподаватели ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          3,
+          "их"
+        ]
+      ],
+      "head_id": 3,
+      "text": "их ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Преподаватели"
+        ],
+        [
+          2,
+          "оставили"
+        ],
+        [
+          3,
+          "их"
+        ],
+        [
+          4,
+          "там"
+        ],
+        [
+          5,
+          "одних"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Преподаватели оставили их там одних ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          4,
+          "там"
+        ]
+      ],
+      "head_id": 4,
+      "text": "там ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/17/skating/"
+}

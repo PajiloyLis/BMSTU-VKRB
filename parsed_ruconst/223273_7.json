@@ -1,0 +1,299 @@
+{
+  "id": "223273_7",
+  "text": "В нем проживает 4,8 тысячи человек.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [PP В [NP нем]] проживает [NP [NP 4,8 тысячи] человек]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "В",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "нем",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "проживает",
+      "lemma": "проживать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "4,8",
+      "lemma": "4,8",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "тысячи",
+      "lemma": "тысяча",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "человек",
+      "lemma": "человек",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          2,
+          "нем"
+        ]
+      ],
+      "head_id": 2,
+      "text": "нем ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "4,8"
+        ],
+        [
+          5,
+          "тысячи"
+        ],
+        [
+          6,
+          "человек"
+        ]
+      ],
+      "head_id": 6,
+      "text": "4,8 тысячи человек ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "4,8"
+        ],
+        [
+          5,
+          "тысячи"
+        ]
+      ],
+      "head_id": 5,
+      "text": "4,8 тысячи ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "нем"
+        ],
+        [
+          3,
+          "проживает"
+        ],
+        [
+          4,
+          "4,8"
+        ],
+        [
+          5,
+          "тысячи"
+        ],
+        [
+          6,
+          "человек"
+        ]
+      ],
+      "head_id": 3,
+      "text": "В нем проживает 4,8 тысячи человек ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "нем"
+        ]
+      ],
+      "head_id": 1,
+      "text": "В нем ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/04/green/"
+}

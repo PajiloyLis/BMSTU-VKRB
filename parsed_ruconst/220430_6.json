@@ -1,0 +1,494 @@
+{
+  "id": "220430_6",
+  "text": "Участники харьковского Евромайдана попытались прорваться к нападавшим, произошло несколько столкновений.",
+  "length": 10,
+  "source": "4",
+  "sentence_tree": " [VP [NP Участники [NP харьковского Евромайдана]] попытались [VP прорваться [PP к нападавшим]] , [VP произошло [NP несколько столкновений]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Участники",
+      "lemma": "участник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "харьковского",
+      "lemma": "харьковский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Евромайдана",
+      "lemma": "Евромайдан",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "попытались",
+      "lemma": "пытаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "прорваться",
+      "lemma": "прорыться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "к",
+      "lemma": "к",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "нападавшим",
+      "lemma": "нападать",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Dat",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "произошло",
+      "lemma": "произойти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "несколько",
+      "lemma": "несколько",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "столкновений",
+      "lemma": "столкновение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Участники"
+        ],
+        [
+          2,
+          "харьковского"
+        ],
+        [
+          3,
+          "Евромайдана"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Участники харьковского Евромайдана ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "харьковского"
+        ],
+        [
+          3,
+          "Евромайдана"
+        ]
+      ],
+      "head_id": 3,
+      "text": "харьковского Евромайдана ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          10,
+          "несколько"
+        ],
+        [
+          11,
+          "столкновений"
+        ]
+      ],
+      "head_id": 11,
+      "text": "несколько столкновений ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Участники"
+        ],
+        [
+          2,
+          "харьковского"
+        ],
+        [
+          3,
+          "Евромайдана"
+        ],
+        [
+          4,
+          "попытались"
+        ],
+        [
+          5,
+          "прорваться"
+        ],
+        [
+          6,
+          "к"
+        ],
+        [
+          7,
+          "нападавшим"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "произошло"
+        ],
+        [
+          10,
+          "несколько"
+        ],
+        [
+          11,
+          "столкновений"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Участники харьковского Евромайдана попытались прорваться к нападавшим , произошло несколько столкновений ",
+      "length": 11
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          5,
+          "прорваться"
+        ],
+        [
+          6,
+          "к"
+        ],
+        [
+          7,
+          "нападавшим"
+        ]
+      ],
+      "head_id": 5,
+      "text": "прорваться к нападавшим ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          9,
+          "произошло"
+        ],
+        [
+          10,
+          "несколько"
+        ],
+        [
+          11,
+          "столкновений"
+        ]
+      ],
+      "head_id": 9,
+      "text": "произошло несколько столкновений ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "к"
+        ],
+        [
+          7,
+          "нападавшим"
+        ]
+      ],
+      "head_id": 6,
+      "text": "к нападавшим ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/28/orbit/"
+}

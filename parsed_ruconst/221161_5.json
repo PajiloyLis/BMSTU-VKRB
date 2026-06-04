@@ -1,0 +1,283 @@
+{
+  "id": "221161_5",
+  "text": "«Он свободен вернуться в Россию.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " « [AP [NP Он] свободен [VP вернуться [PP в [NP Россию]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Он",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "свободен",
+      "lemma": "свободный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "вернуться",
+      "lemma": "вернуться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Россию",
+      "lemma": "Россия",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          2,
+          "Он"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Он ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "Россию"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Россию ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          4,
+          "вернуться"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "Россию"
+        ]
+      ],
+      "head_id": 4,
+      "text": "вернуться в Россию ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          2,
+          "Он"
+        ],
+        [
+          3,
+          "свободен"
+        ],
+        [
+          4,
+          "вернуться"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "Россию"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Он свободен вернуться в Россию ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "Россию"
+        ]
+      ],
+      "head_id": 5,
+      "text": "в Россию ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/21/press/"
+}

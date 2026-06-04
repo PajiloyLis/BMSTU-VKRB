@@ -1,0 +1,364 @@
+{
+  "id": "220124_2",
+  "text": "«Я был бы счастлив сыграть за вас.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " « [AP [NP Я] был [VP бы счастлив [VP сыграть [PP за [NP вас]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Я",
+      "lemma": "я",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Number=Sing",
+          "Person=1"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "был",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "бы",
+      "lemma": "бы",
+      "tagsets": [
+        [
+          "AUX",
+          "None"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "счастлив",
+      "lemma": "счастливый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "сыграть",
+      "lemma": "сыграть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "за",
+      "lemma": "за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "вас",
+      "lemma": "вы",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Number=Plur",
+          "Person=2"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Number=Sing",
+        "Person=1"
+      ],
+      "tokens": [
+        [
+          2,
+          "Я"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Я ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Number=Plur",
+        "Person=2"
+      ],
+      "tokens": [
+        [
+          8,
+          "вас"
+        ]
+      ],
+      "head_id": 8,
+      "text": "вас ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "AUX",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "бы"
+        ],
+        [
+          5,
+          "счастлив"
+        ],
+        [
+          6,
+          "сыграть"
+        ],
+        [
+          7,
+          "за"
+        ],
+        [
+          8,
+          "вас"
+        ]
+      ],
+      "head_id": 4,
+      "text": "бы счастлив сыграть за вас ",
+      "length": 5
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          6,
+          "сыграть"
+        ],
+        [
+          7,
+          "за"
+        ],
+        [
+          8,
+          "вас"
+        ]
+      ],
+      "head_id": 6,
+      "text": "сыграть за вас ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          2,
+          "Я"
+        ],
+        [
+          3,
+          "был"
+        ],
+        [
+          4,
+          "бы"
+        ],
+        [
+          5,
+          "счастлив"
+        ],
+        [
+          6,
+          "сыграть"
+        ],
+        [
+          7,
+          "за"
+        ],
+        [
+          8,
+          "вас"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Я был бы счастлив сыграть за вас ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "за"
+        ],
+        [
+          8,
+          "вас"
+        ]
+      ],
+      "head_id": 7,
+      "text": "за вас ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/02/slipknot/"
+}

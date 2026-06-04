@@ -1,0 +1,374 @@
+{
+  "id": "219865_1",
+  "text": "Выборы в парламент КНДР пройдут 9 марта.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Выборы [PP в [NP парламент [NP КНДР]]]] пройдут [NumP 9 [NP марта]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Выборы",
+      "lemma": "выборы",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "парламент",
+      "lemma": "парламент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "КНДР",
+      "lemma": "КНДР",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "пройдут",
+      "lemma": "пройти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "9",
+      "lemma": "9",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "марта",
+      "lemma": "март",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Выборы"
+        ],
+        [
+          2,
+          "в"
+        ],
+        [
+          3,
+          "парламент"
+        ],
+        [
+          4,
+          "КНДР"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Выборы в парламент КНДР ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "парламент"
+        ],
+        [
+          4,
+          "КНДР"
+        ]
+      ],
+      "head_id": 3,
+      "text": "парламент КНДР ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "КНДР"
+        ]
+      ],
+      "head_id": 4,
+      "text": "КНДР ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "марта"
+        ]
+      ],
+      "head_id": 7,
+      "text": "марта ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Выборы"
+        ],
+        [
+          2,
+          "в"
+        ],
+        [
+          3,
+          "парламент"
+        ],
+        [
+          4,
+          "КНДР"
+        ],
+        [
+          5,
+          "пройдут"
+        ],
+        [
+          6,
+          "9"
+        ],
+        [
+          7,
+          "марта"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Выборы в парламент КНДР пройдут 9 марта ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "в"
+        ],
+        [
+          3,
+          "парламент"
+        ],
+        [
+          4,
+          "КНДР"
+        ]
+      ],
+      "head_id": 2,
+      "text": "в парламент КНДР ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 6,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "9"
+        ],
+        [
+          7,
+          "марта"
+        ]
+      ],
+      "head_id": 6,
+      "text": "9 марта ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/08/venezuela/"
+}

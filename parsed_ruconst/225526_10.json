@@ -1,0 +1,414 @@
+{
+  "id": "225526_10",
+  "text": "Команда находится на четвертой позиции в Западной конференции.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Команда] находится [PP на [NP четвертой позиции [PP в [NP [NP Западной] конференции]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Команда",
+      "lemma": "команда",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "находится",
+      "lemma": "находиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "четвертой",
+      "lemma": "четвертый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "позиции",
+      "lemma": "позиция",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Западной",
+      "lemma": "Западный",
+      "tagsets": [
+        [
+          "PROPN",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "конференции",
+      "lemma": "конференция",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Команда"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Команда ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "четвертой"
+        ],
+        [
+          5,
+          "позиции"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "Западной"
+        ],
+        [
+          8,
+          "конференции"
+        ]
+      ],
+      "head_id": 5,
+      "text": "четвертой позиции в Западной конференции ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "Западной"
+        ],
+        [
+          8,
+          "конференции"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Западной конференции ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "Западной"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Западной ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Команда"
+        ],
+        [
+          2,
+          "находится"
+        ],
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "четвертой"
+        ],
+        [
+          5,
+          "позиции"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "Западной"
+        ],
+        [
+          8,
+          "конференции"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Команда находится на четвертой позиции в Западной конференции ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "четвертой"
+        ],
+        [
+          5,
+          "позиции"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "Западной"
+        ],
+        [
+          8,
+          "конференции"
+        ]
+      ],
+      "head_id": 3,
+      "text": "на четвертой позиции в Западной конференции ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "Западной"
+        ],
+        [
+          8,
+          "конференции"
+        ]
+      ],
+      "head_id": 6,
+      "text": "в Западной конференции ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/15/committee/"
+}

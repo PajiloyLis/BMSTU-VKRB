@@ -1,0 +1,712 @@
+{
+  "id": "223715_12",
+  "text": "1 декабря демонстранты захватили здание киевской мэрии, а также попытались взять штурмом администрацию президента.",
+  "length": 14,
+  "source": "4",
+  "sentence_tree": " [VP [NumP 1 [NP декабря]] [NP демонстранты] захватили [NP здание [NP киевской мэрии]] , [VP [CCONJP а также] попытались [VP взять [NP штурмом] [NP администрацию [NP президента]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "1",
+      "lemma": "1",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "декабря",
+      "lemma": "декабрь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "демонстранты",
+      "lemma": "демонстрант",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "захватили",
+      "lemma": "захватить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "здание",
+      "lemma": "здание",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "киевской",
+      "lemma": "киевский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "мэрии",
+      "lemma": "мэрия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "а",
+      "lemma": "а",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "CCONJP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "также",
+      "lemma": "также",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "CCONJP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "попытались",
+      "lemma": "пытаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "взять",
+      "lemma": "брать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "штурмом",
+      "lemma": "штурм",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "администрацию",
+      "lemma": "администрация",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "президента",
+      "lemma": "президент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "декабря"
+        ]
+      ],
+      "head_id": 2,
+      "text": "декабря ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          3,
+          "демонстранты"
+        ]
+      ],
+      "head_id": 3,
+      "text": "демонстранты ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "здание"
+        ],
+        [
+          6,
+          "киевской"
+        ],
+        [
+          7,
+          "мэрии"
+        ]
+      ],
+      "head_id": 5,
+      "text": "здание киевской мэрии ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "киевской"
+        ],
+        [
+          7,
+          "мэрии"
+        ]
+      ],
+      "head_id": 7,
+      "text": "киевской мэрии ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          13,
+          "штурмом"
+        ]
+      ],
+      "head_id": 13,
+      "text": "штурмом ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "администрацию"
+        ],
+        [
+          15,
+          "президента"
+        ]
+      ],
+      "head_id": 14,
+      "text": "администрацию президента ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          15,
+          "президента"
+        ]
+      ],
+      "head_id": 15,
+      "text": "президента ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "декабря"
+        ],
+        [
+          3,
+          "демонстранты"
+        ],
+        [
+          4,
+          "захватили"
+        ],
+        [
+          5,
+          "здание"
+        ],
+        [
+          6,
+          "киевской"
+        ],
+        [
+          7,
+          "мэрии"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "а"
+        ],
+        [
+          10,
+          "также"
+        ],
+        [
+          11,
+          "попытались"
+        ],
+        [
+          12,
+          "взять"
+        ],
+        [
+          13,
+          "штурмом"
+        ],
+        [
+          14,
+          "администрацию"
+        ],
+        [
+          15,
+          "президента"
+        ]
+      ],
+      "head_id": 4,
+      "text": "1 декабря демонстранты захватили здание киевской мэрии , а также попытались взять штурмом администрацию президента ",
+      "length": 15
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          9,
+          "а"
+        ],
+        [
+          10,
+          "также"
+        ],
+        [
+          11,
+          "попытались"
+        ],
+        [
+          12,
+          "взять"
+        ],
+        [
+          13,
+          "штурмом"
+        ],
+        [
+          14,
+          "администрацию"
+        ],
+        [
+          15,
+          "президента"
+        ]
+      ],
+      "head_id": 11,
+      "text": "а также попытались взять штурмом администрацию президента ",
+      "length": 7
+    },
+    {
+      "name": "VP",
+      "id": 9,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          12,
+          "взять"
+        ],
+        [
+          13,
+          "штурмом"
+        ],
+        [
+          14,
+          "администрацию"
+        ],
+        [
+          15,
+          "президента"
+        ]
+      ],
+      "head_id": 12,
+      "text": "взять штурмом администрацию президента ",
+      "length": 4
+    },
+    {
+      "name": "CCONJP",
+      "id": 10,
+      "tags": [
+        "CCONJ",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "а"
+        ],
+        [
+          10,
+          "также"
+        ]
+      ],
+      "head_id": 9,
+      "text": "а также ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 11,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "декабря"
+        ]
+      ],
+      "head_id": 1,
+      "text": "1 декабря ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/02/free1/"
+}

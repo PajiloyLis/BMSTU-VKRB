@@ -1,0 +1,372 @@
+{
+  "id": "220488_7",
+  "text": "Их коллеги находятся под подписками о невыезде.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP [NP Их] коллеги] находятся [PP под [NP подписками [PP о [NP невыезде]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Их",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "коллеги",
+      "lemma": "коллега",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "находятся",
+      "lemma": "находиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "под",
+      "lemma": "под",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "подписками",
+      "lemma": "подписк",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "о",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "невыезде",
+      "lemma": "невыезд",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Их"
+        ],
+        [
+          2,
+          "коллеги"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Их коллеги ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Gen",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Их"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Их ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "подписками"
+        ],
+        [
+          6,
+          "о"
+        ],
+        [
+          7,
+          "невыезде"
+        ]
+      ],
+      "head_id": 5,
+      "text": "подписками о невыезде ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "невыезде"
+        ]
+      ],
+      "head_id": 7,
+      "text": "невыезде ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Их"
+        ],
+        [
+          2,
+          "коллеги"
+        ],
+        [
+          3,
+          "находятся"
+        ],
+        [
+          4,
+          "под"
+        ],
+        [
+          5,
+          "подписками"
+        ],
+        [
+          6,
+          "о"
+        ],
+        [
+          7,
+          "невыезде"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Их коллеги находятся под подписками о невыезде ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "под"
+        ],
+        [
+          5,
+          "подписками"
+        ],
+        [
+          6,
+          "о"
+        ],
+        [
+          7,
+          "невыезде"
+        ]
+      ],
+      "head_id": 4,
+      "text": "под подписками о невыезде ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "о"
+        ],
+        [
+          7,
+          "невыезде"
+        ]
+      ],
+      "head_id": 6,
+      "text": "о невыезде ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/27/antifarash/"
+}

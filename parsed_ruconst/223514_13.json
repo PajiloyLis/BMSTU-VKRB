@@ -1,0 +1,436 @@
+{
+  "id": "223514_13",
+  "text": "Самым популярными иностранным политиком среди пользователей Weibo является Лагард.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP [NP [AP Самым популярными] иностранным политиком [PP среди [NP пользователей [NP Weibo]]]] является [NP Лагард]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Самым",
+      "lemma": "самый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "популярными",
+      "lemma": "популярный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "иностранным",
+      "lemma": "иностранный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "политиком",
+      "lemma": "политик",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "среди",
+      "lemma": "среди",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "пользователей",
+      "lemma": "пользователь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Weibo",
+      "lemma": "Weibo",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "является",
+      "lemma": "являться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "Лагард",
+      "lemma": "Лагард",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самым"
+        ],
+        [
+          2,
+          "популярными"
+        ],
+        [
+          3,
+          "иностранным"
+        ],
+        [
+          4,
+          "политиком"
+        ],
+        [
+          5,
+          "среди"
+        ],
+        [
+          6,
+          "пользователей"
+        ],
+        [
+          7,
+          "Weibo"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Самым популярными иностранным политиком среди пользователей Weibo ",
+      "length": 7
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "пользователей"
+        ],
+        [
+          7,
+          "Weibo"
+        ]
+      ],
+      "head_id": 6,
+      "text": "пользователей Weibo ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          7,
+          "Weibo"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Weibo ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "Лагард"
+        ]
+      ],
+      "head_id": 9,
+      "text": "Лагард ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самым"
+        ],
+        [
+          2,
+          "популярными"
+        ],
+        [
+          3,
+          "иностранным"
+        ],
+        [
+          4,
+          "политиком"
+        ],
+        [
+          5,
+          "среди"
+        ],
+        [
+          6,
+          "пользователей"
+        ],
+        [
+          7,
+          "Weibo"
+        ],
+        [
+          8,
+          "является"
+        ],
+        [
+          9,
+          "Лагард"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Самым популярными иностранным политиком среди пользователей Weibo является Лагард ",
+      "length": 9
+    },
+    {
+      "name": "AP",
+      "id": 5,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Самым"
+        ],
+        [
+          2,
+          "популярными"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Самым популярными ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "среди"
+        ],
+        [
+          6,
+          "пользователей"
+        ],
+        [
+          7,
+          "Weibo"
+        ]
+      ],
+      "head_id": 5,
+      "text": "среди пользователей Weibo ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/03/sinaisky/"
+}

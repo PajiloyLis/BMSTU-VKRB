@@ -1,0 +1,450 @@
+{
+  "id": "222353_17",
+  "text": "Некоторые жалобщики сбрасываются с крыш, другие пытаются зарезать себя.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP [NP Некоторые жалобщики] сбрасываются [PP с [NP крыш]] , [VP другие пытаются [VP зарезать [NP себя]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Некоторые",
+      "lemma": "некоторый",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "жалобщики",
+      "lemma": "жалобщик",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "сбрасываются",
+      "lemma": "сбрасывать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "крыш",
+      "lemma": "крыша",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "другие",
+      "lemma": "другой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "пытаются",
+      "lemma": "пытаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "зарезать",
+      "lemma": "зарезать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "себя",
+      "lemma": "себя",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Некоторые"
+        ],
+        [
+          2,
+          "жалобщики"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Некоторые жалобщики ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "крыш"
+        ]
+      ],
+      "head_id": 5,
+      "text": "крыш ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Acc"
+      ],
+      "tokens": [
+        [
+          10,
+          "себя"
+        ]
+      ],
+      "head_id": 10,
+      "text": "себя ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Некоторые"
+        ],
+        [
+          2,
+          "жалобщики"
+        ],
+        [
+          3,
+          "сбрасываются"
+        ],
+        [
+          4,
+          "с"
+        ],
+        [
+          5,
+          "крыш"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "другие"
+        ],
+        [
+          8,
+          "пытаются"
+        ],
+        [
+          9,
+          "зарезать"
+        ],
+        [
+          10,
+          "себя"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Некоторые жалобщики сбрасываются с крыш , другие пытаются зарезать себя ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          7,
+          "другие"
+        ],
+        [
+          8,
+          "пытаются"
+        ],
+        [
+          9,
+          "зарезать"
+        ],
+        [
+          10,
+          "себя"
+        ]
+      ],
+      "head_id": 8,
+      "text": "другие пытаются зарезать себя ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          9,
+          "зарезать"
+        ],
+        [
+          10,
+          "себя"
+        ]
+      ],
+      "head_id": 9,
+      "text": "зарезать себя ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "с"
+        ],
+        [
+          5,
+          "крыш"
+        ]
+      ],
+      "head_id": 4,
+      "text": "с крыш ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/11/cookeillance/"
+}

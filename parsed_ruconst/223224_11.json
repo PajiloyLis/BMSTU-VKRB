@@ -1,0 +1,373 @@
+{
+  "id": "223224_11",
+  "text": "За этот вариант высказались почти 78 процентов проголосовавших.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [PP За [NP этот вариант]] высказались [NP [NumP [AdvP почти] 78] процентов проголосовавших]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "За",
+      "lemma": "за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "этот",
+      "lemma": "этот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "вариант",
+      "lemma": "вариант",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "высказались",
+      "lemma": "высказаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "почти",
+      "lemma": "почти",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "78",
+      "lemma": "78",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "процентов",
+      "lemma": "процент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "проголосовавших",
+      "lemma": "голосовать",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Gen",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "этот"
+        ],
+        [
+          3,
+          "вариант"
+        ]
+      ],
+      "head_id": 3,
+      "text": "этот вариант ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "почти"
+        ],
+        [
+          6,
+          "78"
+        ],
+        [
+          7,
+          "процентов"
+        ],
+        [
+          8,
+          "проголосовавших"
+        ]
+      ],
+      "head_id": 7,
+      "text": "почти 78 процентов проголосовавших ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "За"
+        ],
+        [
+          2,
+          "этот"
+        ],
+        [
+          3,
+          "вариант"
+        ],
+        [
+          4,
+          "высказались"
+        ],
+        [
+          5,
+          "почти"
+        ],
+        [
+          6,
+          "78"
+        ],
+        [
+          7,
+          "процентов"
+        ],
+        [
+          8,
+          "проголосовавших"
+        ]
+      ],
+      "head_id": 4,
+      "text": "За этот вариант высказались почти 78 процентов проголосовавших ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "За"
+        ],
+        [
+          2,
+          "этот"
+        ],
+        [
+          3,
+          "вариант"
+        ]
+      ],
+      "head_id": 1,
+      "text": "За этот вариант ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "почти"
+        ]
+      ],
+      "head_id": 5,
+      "text": "почти ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 5,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "почти"
+        ],
+        [
+          6,
+          "78"
+        ]
+      ],
+      "head_id": 6,
+      "text": "почти 78 ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/04/newsweek/"
+}

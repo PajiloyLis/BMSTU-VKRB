@@ -1,0 +1,453 @@
+{
+  "id": "222921_2",
+  "text": "Потоки плазмы способны стабильно существовать на протяжении нескольких месяцев.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [AP [NP Потоки [NP плазмы]] способны [VP [AdvP стабильно] существовать [PP на [NP протяжении [NP нескольких месяцев]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Потоки",
+      "lemma": "поток",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "плазмы",
+      "lemma": "плазма",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "способны",
+      "lemma": "способный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "стабильно",
+      "lemma": "стабильно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "существовать",
+      "lemma": "существовать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "протяжении",
+      "lemma": "протяжение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "нескольких",
+      "lemma": "несколько",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Gen"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "месяцев",
+      "lemma": "месяц",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Потоки"
+        ],
+        [
+          2,
+          "плазмы"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Потоки плазмы ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "плазмы"
+        ]
+      ],
+      "head_id": 2,
+      "text": "плазмы ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "протяжении"
+        ],
+        [
+          8,
+          "нескольких"
+        ],
+        [
+          9,
+          "месяцев"
+        ]
+      ],
+      "head_id": 7,
+      "text": "протяжении нескольких месяцев ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "нескольких"
+        ],
+        [
+          9,
+          "месяцев"
+        ]
+      ],
+      "head_id": 9,
+      "text": "нескольких месяцев ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          4,
+          "стабильно"
+        ],
+        [
+          5,
+          "существовать"
+        ],
+        [
+          6,
+          "на"
+        ],
+        [
+          7,
+          "протяжении"
+        ],
+        [
+          8,
+          "нескольких"
+        ],
+        [
+          9,
+          "месяцев"
+        ]
+      ],
+      "head_id": 5,
+      "text": "стабильно существовать на протяжении нескольких месяцев ",
+      "length": 6
+    },
+    {
+      "name": "AP",
+      "id": 5,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Потоки"
+        ],
+        [
+          2,
+          "плазмы"
+        ],
+        [
+          3,
+          "способны"
+        ],
+        [
+          4,
+          "стабильно"
+        ],
+        [
+          5,
+          "существовать"
+        ],
+        [
+          6,
+          "на"
+        ],
+        [
+          7,
+          "протяжении"
+        ],
+        [
+          8,
+          "нескольких"
+        ],
+        [
+          9,
+          "месяцев"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Потоки плазмы способны стабильно существовать на протяжении нескольких месяцев ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "на"
+        ],
+        [
+          7,
+          "протяжении"
+        ],
+        [
+          8,
+          "нескольких"
+        ],
+        [
+          9,
+          "месяцев"
+        ]
+      ],
+      "head_id": 6,
+      "text": "на протяжении нескольких месяцев ",
+      "length": 4
+    },
+    {
+      "name": "AdvP",
+      "id": 7,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          4,
+          "стабильно"
+        ]
+      ],
+      "head_id": 4,
+      "text": "стабильно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/06/medvedev/"
+}

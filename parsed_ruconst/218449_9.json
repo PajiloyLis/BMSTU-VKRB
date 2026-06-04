@@ -1,0 +1,407 @@
+{
+  "id": "218449_9",
+  "text": "Именно их удалось обнаружить в ходе эксперимента RAVE.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Именно их] [VP удалось обнаружить [PP в [NP ходе] [NP эксперимента [NP RAVE]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Именно",
+      "lemma": "именно",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "их",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "удалось",
+      "lemma": "удаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "обнаружить",
+      "lemma": "обнаружить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "ходе",
+      "lemma": "ход",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "эксперимента",
+      "lemma": "эксперимент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "RAVE",
+      "lemma": "RAVE",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Именно"
+        ],
+        [
+          2,
+          "их"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Именно их ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "ходе"
+        ]
+      ],
+      "head_id": 6,
+      "text": "ходе ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "эксперимента"
+        ],
+        [
+          8,
+          "RAVE"
+        ]
+      ],
+      "head_id": 7,
+      "text": "эксперимента RAVE ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          8,
+          "RAVE"
+        ]
+      ],
+      "head_id": 8,
+      "text": "RAVE ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Именно"
+        ],
+        [
+          2,
+          "их"
+        ],
+        [
+          3,
+          "удалось"
+        ],
+        [
+          4,
+          "обнаружить"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "ходе"
+        ],
+        [
+          7,
+          "эксперимента"
+        ],
+        [
+          8,
+          "RAVE"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Именно их удалось обнаружить в ходе эксперимента RAVE ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          3,
+          "удалось"
+        ],
+        [
+          4,
+          "обнаружить"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "ходе"
+        ],
+        [
+          7,
+          "эксперимента"
+        ],
+        [
+          8,
+          "RAVE"
+        ]
+      ],
+      "head_id": 3,
+      "text": "удалось обнаружить в ходе эксперимента RAVE ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "ходе"
+        ],
+        [
+          7,
+          "эксперимента"
+        ],
+        [
+          8,
+          "RAVE"
+        ]
+      ],
+      "head_id": 5,
+      "text": "в ходе эксперимента RAVE ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/21/twittercanada/"
+}

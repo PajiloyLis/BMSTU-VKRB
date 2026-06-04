@@ -1,0 +1,414 @@
+{
+  "id": "225027_0",
+  "text": "ЛДПР будет постепенно переходить к вегетарианскому образу жизни.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP ЛДПР] [VP будет [AdvP постепенно] переходить [PP к [NP вегетарианскому образу [NP жизни]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "ЛДПР",
+      "lemma": "лдпр",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "постепенно",
+      "lemma": "постепенно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "переходить",
+      "lemma": "переходить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "к",
+      "lemma": "к",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "вегетарианскому",
+      "lemma": "вегетарианский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Dat",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "образу",
+      "lemma": "образ",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "жизни",
+      "lemma": "жизнь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "ЛДПР"
+        ]
+      ],
+      "head_id": 1,
+      "text": "ЛДПР ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "вегетарианскому"
+        ],
+        [
+          7,
+          "образу"
+        ],
+        [
+          8,
+          "жизни"
+        ]
+      ],
+      "head_id": 7,
+      "text": "вегетарианскому образу жизни ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "жизни"
+        ]
+      ],
+      "head_id": 8,
+      "text": "жизни ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "ЛДПР"
+        ],
+        [
+          2,
+          "будет"
+        ],
+        [
+          3,
+          "постепенно"
+        ],
+        [
+          4,
+          "переходить"
+        ],
+        [
+          5,
+          "к"
+        ],
+        [
+          6,
+          "вегетарианскому"
+        ],
+        [
+          7,
+          "образу"
+        ],
+        [
+          8,
+          "жизни"
+        ]
+      ],
+      "head_id": 4,
+      "text": "ЛДПР будет постепенно переходить к вегетарианскому образу жизни ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          2,
+          "будет"
+        ],
+        [
+          3,
+          "постепенно"
+        ],
+        [
+          4,
+          "переходить"
+        ],
+        [
+          5,
+          "к"
+        ],
+        [
+          6,
+          "вегетарианскому"
+        ],
+        [
+          7,
+          "образу"
+        ],
+        [
+          8,
+          "жизни"
+        ]
+      ],
+      "head_id": 2,
+      "text": "будет постепенно переходить к вегетарианскому образу жизни ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "к"
+        ],
+        [
+          6,
+          "вегетарианскому"
+        ],
+        [
+          7,
+          "образу"
+        ],
+        [
+          8,
+          "жизни"
+        ]
+      ],
+      "head_id": 5,
+      "text": "к вегетарианскому образу жизни ",
+      "length": 4
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          3,
+          "постепенно"
+        ]
+      ],
+      "head_id": 3,
+      "text": "постепенно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/20/davidssling/"
+}

@@ -1,0 +1,241 @@
+{
+  "id": "217597_1",
+  "text": "Получившуюся таблицу можно посмотреть здесь.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [NP Получившуюся таблицу] [AdvP можно посмотреть [AdvP здесь]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Получившуюся",
+      "lemma": "получиться",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Mid"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "таблицу",
+      "lemma": "таблица",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "можно",
+      "lemma": "можно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "посмотреть",
+      "lemma": "смотреть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "здесь",
+      "lemma": "здесь",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Получившуюся"
+        ],
+        [
+          2,
+          "таблицу"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Получившуюся таблицу ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Получившуюся"
+        ],
+        [
+          2,
+          "таблицу"
+        ],
+        [
+          3,
+          "можно"
+        ],
+        [
+          4,
+          "посмотреть"
+        ],
+        [
+          5,
+          "здесь"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Получившуюся таблицу можно посмотреть здесь ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 2,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          3,
+          "можно"
+        ],
+        [
+          4,
+          "посмотреть"
+        ],
+        [
+          5,
+          "здесь"
+        ]
+      ],
+      "head_id": 3,
+      "text": "можно посмотреть здесь ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 3,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "здесь"
+        ]
+      ],
+      "head_id": 5,
+      "text": "здесь ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/27/raingate/"
+}

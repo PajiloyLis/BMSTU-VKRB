@@ -1,0 +1,174 @@
+{
+  "id": "220884_2",
+  "text": "Экскурсии будут платными.",
+  "length": 3,
+  "source": "4",
+  "sentence_tree": " [AP [NP Экскурсии] [VP будут платными]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Экскурсии",
+      "lemma": "экскурсия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "будут",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "платными",
+      "lemma": "платный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Экскурсии"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Экскурсии ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          2,
+          "будут"
+        ],
+        [
+          3,
+          "платными"
+        ]
+      ],
+      "head_id": 2,
+      "text": "будут платными ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Экскурсии"
+        ],
+        [
+          2,
+          "будут"
+        ],
+        [
+          3,
+          "платными"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Экскурсии будут платными ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/24/harrison/"
+}

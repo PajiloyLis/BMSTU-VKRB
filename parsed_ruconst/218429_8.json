@@ -1,0 +1,400 @@
+{
+  "id": "218429_8",
+  "text": "Аварийные бригады продолжают работы на поврежденном участке теплотрассы.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Аварийные бригады] продолжают [NP работы [PP на [NP поврежденном участке [NP теплотрассы]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Аварийные",
+      "lemma": "аварийный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "бригады",
+      "lemma": "бригада",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "продолжают",
+      "lemma": "продолжать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "работы",
+      "lemma": "работа",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "поврежденном",
+      "lemma": "повречь",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "участке",
+      "lemma": "участок",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "теплотрассы",
+      "lemma": "теплотрасса",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Аварийные"
+        ],
+        [
+          2,
+          "бригады"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Аварийные бригады ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "работы"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "поврежденном"
+        ],
+        [
+          7,
+          "участке"
+        ],
+        [
+          8,
+          "теплотрассы"
+        ]
+      ],
+      "head_id": 4,
+      "text": "работы на поврежденном участке теплотрассы ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "поврежденном"
+        ],
+        [
+          7,
+          "участке"
+        ],
+        [
+          8,
+          "теплотрассы"
+        ]
+      ],
+      "head_id": 7,
+      "text": "поврежденном участке теплотрассы ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "теплотрассы"
+        ]
+      ],
+      "head_id": 8,
+      "text": "теплотрассы ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Аварийные"
+        ],
+        [
+          2,
+          "бригады"
+        ],
+        [
+          3,
+          "продолжают"
+        ],
+        [
+          4,
+          "работы"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "поврежденном"
+        ],
+        [
+          7,
+          "участке"
+        ],
+        [
+          8,
+          "теплотрассы"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Аварийные бригады продолжают работы на поврежденном участке теплотрассы ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "поврежденном"
+        ],
+        [
+          7,
+          "участке"
+        ],
+        [
+          8,
+          "теплотрассы"
+        ]
+      ],
+      "head_id": 5,
+      "text": "на поврежденном участке теплотрассы ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/21/vice/"
+}

@@ -1,0 +1,229 @@
+{
+  "id": "217554_7",
+  "text": "«Странно, что не 101% !",
+  "length": 4,
+  "source": "4",
+  "sentence_tree": " « [AP Странно , что [NumP не 101] %] !",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Странно",
+      "lemma": "странный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "101",
+      "lemma": "101",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "%",
+      "lemma": "%",
+      "tagsets": [
+        [
+          "SYM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "!",
+      "lemma": "!",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "AP",
+      "id": 0,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          2,
+          "Странно"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "что"
+        ],
+        [
+          5,
+          "не"
+        ],
+        [
+          6,
+          "101"
+        ],
+        [
+          7,
+          "%"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Странно , что не 101 % ",
+      "length": 6
+    },
+    {
+      "name": "NumP",
+      "id": 1,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "не"
+        ],
+        [
+          6,
+          "101"
+        ]
+      ],
+      "head_id": 6,
+      "text": "не 101 ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/28/gun/"
+}

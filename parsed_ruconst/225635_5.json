@@ -1,0 +1,160 @@
+{
+  "id": "225635_5",
+  "text": "Пространство слишком велико.",
+  "length": 3,
+  "source": "4",
+  "sentence_tree": " [AP [NP Пространство] [AdvP слишком] велико] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Пространство",
+      "lemma": "пространство",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "слишком",
+      "lemma": "слишком",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "велико",
+      "lemma": "большой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Пространство"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Пространство ",
+      "length": 1
+    },
+    {
+      "name": "AP",
+      "id": 1,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Пространство"
+        ],
+        [
+          2,
+          "слишком"
+        ],
+        [
+          3,
+          "велико"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Пространство слишком велико ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 2,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          2,
+          "слишком"
+        ]
+      ],
+      "head_id": 2,
+      "text": "слишком ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/15/fsb/"
+}

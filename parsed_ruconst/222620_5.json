@@ -1,0 +1,286 @@
+{
+  "id": "222620_5",
+  "text": "Станция способна обеспечить полный круговой обзор.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [AP [NP Станция] способна [VP обеспечить [NP полный круговой обзор]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Станция",
+      "lemma": "станция",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "способна",
+      "lemma": "способный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "обеспечить",
+      "lemma": "обеспечить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "полный",
+      "lemma": "полный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "круговой",
+      "lemma": "круговой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "обзор",
+      "lemma": "обзор",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Станция"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Станция ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "полный"
+        ],
+        [
+          5,
+          "круговой"
+        ],
+        [
+          6,
+          "обзор"
+        ]
+      ],
+      "head_id": 6,
+      "text": "полный круговой обзор ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "обеспечить"
+        ],
+        [
+          4,
+          "полный"
+        ],
+        [
+          5,
+          "круговой"
+        ],
+        [
+          6,
+          "обзор"
+        ]
+      ],
+      "head_id": 3,
+      "text": "обеспечить полный круговой обзор ",
+      "length": 4
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Fem",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Станция"
+        ],
+        [
+          2,
+          "способна"
+        ],
+        [
+          3,
+          "обеспечить"
+        ],
+        [
+          4,
+          "полный"
+        ],
+        [
+          5,
+          "круговой"
+        ],
+        [
+          6,
+          "обзор"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Станция способна обеспечить полный круговой обзор ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/10/nationalists/"
+}

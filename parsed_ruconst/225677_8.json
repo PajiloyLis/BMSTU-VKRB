@@ -1,0 +1,380 @@
+{
+  "id": "225677_8",
+  "text": "Он же и сообщил о произошедшем в милицию.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Он же] и сообщил [PP о [PartP произошедшем [PP в [NP милицию]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Он",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "же",
+      "lemma": "же",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "сообщил",
+      "lemma": "сообщить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "о",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "произошедшем",
+      "lemma": "произойти",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "PartP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "милицию",
+      "lemma": "милиция",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Он"
+        ],
+        [
+          2,
+          "же"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Он же ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "милицию"
+        ]
+      ],
+      "head_id": 8,
+      "text": "милицию ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Он"
+        ],
+        [
+          2,
+          "же"
+        ],
+        [
+          3,
+          "и"
+        ],
+        [
+          4,
+          "сообщил"
+        ],
+        [
+          5,
+          "о"
+        ],
+        [
+          6,
+          "произошедшем"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "милицию"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Он же и сообщил о произошедшем в милицию ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "о"
+        ],
+        [
+          6,
+          "произошедшем"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "милицию"
+        ]
+      ],
+      "head_id": 5,
+      "text": "о произошедшем в милицию ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "милицию"
+        ]
+      ],
+      "head_id": 7,
+      "text": "в милицию ",
+      "length": 2
+    },
+    {
+      "name": "PartP",
+      "id": 5,
+      "tags": [
+        "PTCPL",
+        "Aspect=Perf",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Part",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          6,
+          "произошедшем"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "милицию"
+        ]
+      ],
+      "head_id": 6,
+      "text": "произошедшем в милицию ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/14/migrants/"
+}

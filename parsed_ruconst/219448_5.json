@@ -1,0 +1,418 @@
+{
+  "id": "219448_5",
+  "text": "Сбой на Сокольнической линии метро произошел около 20:00.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Сбой [PP на [NP Сокольнической линии [NP метро]]]] произошел [PP около [NumP 20: 00.]]]",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Сбой",
+      "lemma": "сбой",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Сокольнической",
+      "lemma": "сокольнический",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "линии",
+      "lemma": "линия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "метро",
+      "lemma": "метро",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "произошел",
+      "lemma": "произойти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "около",
+      "lemma": "около",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "20:",
+      "lemma": "20:",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "00.",
+      "lemma": "00.",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сбой"
+        ],
+        [
+          2,
+          "на"
+        ],
+        [
+          3,
+          "Сокольнической"
+        ],
+        [
+          4,
+          "линии"
+        ],
+        [
+          5,
+          "метро"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Сбой на Сокольнической линии метро ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Сокольнической"
+        ],
+        [
+          4,
+          "линии"
+        ],
+        [
+          5,
+          "метро"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Сокольнической линии метро ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "метро"
+        ]
+      ],
+      "head_id": 5,
+      "text": "метро ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сбой"
+        ],
+        [
+          2,
+          "на"
+        ],
+        [
+          3,
+          "Сокольнической"
+        ],
+        [
+          4,
+          "линии"
+        ],
+        [
+          5,
+          "метро"
+        ],
+        [
+          6,
+          "произошел"
+        ],
+        [
+          7,
+          "около"
+        ],
+        [
+          8,
+          "20:"
+        ],
+        [
+          9,
+          "00."
+        ]
+      ],
+      "head_id": 6,
+      "text": "Сбой на Сокольнической линии метро произошел около 20: 00. ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "на"
+        ],
+        [
+          3,
+          "Сокольнической"
+        ],
+        [
+          4,
+          "линии"
+        ],
+        [
+          5,
+          "метро"
+        ]
+      ],
+      "head_id": 2,
+      "text": "на Сокольнической линии метро ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "около"
+        ],
+        [
+          8,
+          "20:"
+        ],
+        [
+          9,
+          "00."
+        ]
+      ],
+      "head_id": 7,
+      "text": "около 20: 00. ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 6,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "20:"
+        ],
+        [
+          9,
+          "00."
+        ]
+      ],
+      "head_id": 8,
+      "text": "20: 00. ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/13/lucenko/"
+}

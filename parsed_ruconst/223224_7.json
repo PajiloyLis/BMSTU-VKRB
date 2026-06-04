@@ -1,0 +1,363 @@
+{
+  "id": "223224_7",
+  "text": "Изменения по сравнению с другими мячами минимальны.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [AP [NP Изменения [PP [PP по [NP сравнению] с] [NP другими мячами]]] минимальны] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Изменения",
+      "lemma": "изменение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "по",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "сравнению",
+      "lemma": "сравнение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "другими",
+      "lemma": "другой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "мячами",
+      "lemma": "мяча",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "минимальны",
+      "lemma": "минимальный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Изменения"
+        ],
+        [
+          2,
+          "по"
+        ],
+        [
+          3,
+          "сравнению"
+        ],
+        [
+          4,
+          "с"
+        ],
+        [
+          5,
+          "другими"
+        ],
+        [
+          6,
+          "мячами"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Изменения по сравнению с другими мячами ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "сравнению"
+        ]
+      ],
+      "head_id": 3,
+      "text": "сравнению ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "другими"
+        ],
+        [
+          6,
+          "мячами"
+        ]
+      ],
+      "head_id": 6,
+      "text": "другими мячами ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Изменения"
+        ],
+        [
+          2,
+          "по"
+        ],
+        [
+          3,
+          "сравнению"
+        ],
+        [
+          4,
+          "с"
+        ],
+        [
+          5,
+          "другими"
+        ],
+        [
+          6,
+          "мячами"
+        ],
+        [
+          7,
+          "минимальны"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Изменения по сравнению с другими мячами минимальны ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "по"
+        ],
+        [
+          3,
+          "сравнению"
+        ],
+        [
+          4,
+          "с"
+        ]
+      ],
+      "head_id": 4,
+      "text": "по сравнению с ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "по"
+        ],
+        [
+          3,
+          "сравнению"
+        ],
+        [
+          4,
+          "с"
+        ],
+        [
+          5,
+          "другими"
+        ],
+        [
+          6,
+          "мячами"
+        ]
+      ],
+      "head_id": 2,
+      "text": "по сравнению с другими мячами ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/04/newsweek/"
+}

@@ -1,0 +1,599 @@
+{
+  "id": "221101_12",
+  "text": "Он рассказывает о художественной жизни Москвы, Санкт-Петербурга и других городов России.",
+  "length": 11,
+  "source": "4",
+  "sentence_tree": " [VP [NP Он] рассказывает [PP о [NP художественной жизни [NP Москвы , [NP Санкт-Петербурга] [NP и других городов [NP России]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Он",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "рассказывает",
+      "lemma": "рассказывать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "о",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "художественной",
+      "lemma": "художественный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "жизни",
+      "lemma": "жизнь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Москвы",
+      "lemma": "Москва",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Санкт-Петербурга",
+      "lemma": "Санкт-Петербург",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "других",
+      "lemma": "другой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "городов",
+      "lemma": "город",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "России",
+      "lemma": "Россия",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Он"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Он ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "художественной"
+        ],
+        [
+          5,
+          "жизни"
+        ],
+        [
+          6,
+          "Москвы"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "Санкт-Петербурга"
+        ],
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "других"
+        ],
+        [
+          11,
+          "городов"
+        ],
+        [
+          12,
+          "России"
+        ]
+      ],
+      "head_id": 5,
+      "text": "художественной жизни Москвы , Санкт-Петербурга и других городов России ",
+      "length": 9
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "Москвы"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "Санкт-Петербурга"
+        ],
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "других"
+        ],
+        [
+          11,
+          "городов"
+        ],
+        [
+          12,
+          "России"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Москвы , Санкт-Петербурга и других городов России ",
+      "length": 7
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Санкт-Петербурга"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Санкт-Петербурга ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "других"
+        ],
+        [
+          11,
+          "городов"
+        ],
+        [
+          12,
+          "России"
+        ]
+      ],
+      "head_id": 11,
+      "text": "и других городов России ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "России"
+        ]
+      ],
+      "head_id": 12,
+      "text": "России ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Он"
+        ],
+        [
+          2,
+          "рассказывает"
+        ],
+        [
+          3,
+          "о"
+        ],
+        [
+          4,
+          "художественной"
+        ],
+        [
+          5,
+          "жизни"
+        ],
+        [
+          6,
+          "Москвы"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "Санкт-Петербурга"
+        ],
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "других"
+        ],
+        [
+          11,
+          "городов"
+        ],
+        [
+          12,
+          "России"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Он рассказывает о художественной жизни Москвы , Санкт-Петербурга и других городов России ",
+      "length": 12
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "о"
+        ],
+        [
+          4,
+          "художественной"
+        ],
+        [
+          5,
+          "жизни"
+        ],
+        [
+          6,
+          "Москвы"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "Санкт-Петербурга"
+        ],
+        [
+          9,
+          "и"
+        ],
+        [
+          10,
+          "других"
+        ],
+        [
+          11,
+          "городов"
+        ],
+        [
+          12,
+          "России"
+        ]
+      ],
+      "head_id": 3,
+      "text": "о художественной жизни Москвы , Санкт-Петербурга и других городов России ",
+      "length": 10
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/23/fingertv/"
+}

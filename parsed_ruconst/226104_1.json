@@ -1,0 +1,415 @@
+{
+  "id": "226104_1",
+  "text": "Запуск произошел в 3:46 по московскому времени.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Запуск] произошел [PP в [NumP 3 : [NumP 46]]] [PP по [NP московскому времени]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Запуск",
+      "lemma": "запуск",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "произошел",
+      "lemma": "произойти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "3",
+      "lemma": "3",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ":",
+      "lemma": ":",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "46",
+      "lemma": "46",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "по",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "московскому",
+      "lemma": "московский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Dat",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "времени",
+      "lemma": "время",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Запуск"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Запуск ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "московскому"
+        ],
+        [
+          9,
+          "времени"
+        ]
+      ],
+      "head_id": 9,
+      "text": "московскому времени ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Запуск"
+        ],
+        [
+          2,
+          "произошел"
+        ],
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "3"
+        ],
+        [
+          5,
+          ":"
+        ],
+        [
+          6,
+          "46"
+        ],
+        [
+          7,
+          "по"
+        ],
+        [
+          8,
+          "московскому"
+        ],
+        [
+          9,
+          "времени"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Запуск произошел в 3 : 46 по московскому времени ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "3"
+        ],
+        [
+          5,
+          ":"
+        ],
+        [
+          6,
+          "46"
+        ]
+      ],
+      "head_id": 3,
+      "text": "в 3 : 46 ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "по"
+        ],
+        [
+          8,
+          "московскому"
+        ],
+        [
+          9,
+          "времени"
+        ]
+      ],
+      "head_id": 7,
+      "text": "по московскому времени ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 5,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "3"
+        ],
+        [
+          5,
+          ":"
+        ],
+        [
+          6,
+          "46"
+        ]
+      ],
+      "head_id": 4,
+      "text": "3 : 46 ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 6,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "46"
+        ]
+      ],
+      "head_id": 6,
+      "text": "46 ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/12/rusvolley/"
+}

@@ -1,0 +1,534 @@
+{
+  "id": "220299_5",
+  "text": "Известно, что родители Павла Печенкина предпринимали неоднократные попытки вернуть сына.",
+  "length": 10,
+  "source": "4",
+  "sentence_tree": " [AP Известно , [VP что [NP родители [NP Павла [NP Печенкина]]] предпринимали [NP неоднократные попытки [VP вернуть [NP сына]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Известно",
+      "lemma": "известный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "родители",
+      "lemma": "родитель",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "Павла",
+      "lemma": "Павел",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Печенкина",
+      "lemma": "Печенкина",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "предпринимали",
+      "lemma": "предпринимать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "неоднократные",
+      "lemma": "неоднократный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "попытки",
+      "lemma": "попытка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "вернуть",
+      "lemma": "вернуть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "сына",
+      "lemma": "сын",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "родители"
+        ],
+        [
+          5,
+          "Павла"
+        ],
+        [
+          6,
+          "Печенкина"
+        ]
+      ],
+      "head_id": 4,
+      "text": "родители Павла Печенкина ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "Павла"
+        ],
+        [
+          6,
+          "Печенкина"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Павла Печенкина ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "Печенкина"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Печенкина ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "неоднократные"
+        ],
+        [
+          9,
+          "попытки"
+        ],
+        [
+          10,
+          "вернуть"
+        ],
+        [
+          11,
+          "сына"
+        ]
+      ],
+      "head_id": 9,
+      "text": "неоднократные попытки вернуть сына ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "сына"
+        ]
+      ],
+      "head_id": 11,
+      "text": "сына ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "родители"
+        ],
+        [
+          5,
+          "Павла"
+        ],
+        [
+          6,
+          "Печенкина"
+        ],
+        [
+          7,
+          "предпринимали"
+        ],
+        [
+          8,
+          "неоднократные"
+        ],
+        [
+          9,
+          "попытки"
+        ],
+        [
+          10,
+          "вернуть"
+        ],
+        [
+          11,
+          "сына"
+        ]
+      ],
+      "head_id": 7,
+      "text": "что родители Павла Печенкина предпринимали неоднократные попытки вернуть сына ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          10,
+          "вернуть"
+        ],
+        [
+          11,
+          "сына"
+        ]
+      ],
+      "head_id": 10,
+      "text": "вернуть сына ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 7,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Известно"
+        ],
+        [
+          2,
+          ","
+        ],
+        [
+          3,
+          "что"
+        ],
+        [
+          4,
+          "родители"
+        ],
+        [
+          5,
+          "Павла"
+        ],
+        [
+          6,
+          "Печенкина"
+        ],
+        [
+          7,
+          "предпринимали"
+        ],
+        [
+          8,
+          "неоднократные"
+        ],
+        [
+          9,
+          "попытки"
+        ],
+        [
+          10,
+          "вернуть"
+        ],
+        [
+          11,
+          "сына"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Известно , что родители Павла Печенкина предпринимали неоднократные попытки вернуть сына ",
+      "length": 11
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/30/help/"
+}

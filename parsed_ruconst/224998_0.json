@@ -1,0 +1,304 @@
+{
+  "id": "224998_0",
+  "text": "Тайваньская компания MediaTek представила мобильный процессор MT6592.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Тайваньская компания [NP MediaTek]] представила [NP мобильный процессор [NP MT6592.]]]",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Тайваньская",
+      "lemma": "тайваньский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "компания",
+      "lemma": "компания",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "MediaTek",
+      "lemma": "MediaTek",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "представила",
+      "lemma": "представить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "мобильный",
+      "lemma": "мобильный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "процессор",
+      "lemma": "процессор",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "MT6592.",
+      "lemma": "MT6592.",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Тайваньская"
+        ],
+        [
+          2,
+          "компания"
+        ],
+        [
+          3,
+          "MediaTek"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Тайваньская компания MediaTek ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          3,
+          "MediaTek"
+        ]
+      ],
+      "head_id": 3,
+      "text": "MediaTek ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "мобильный"
+        ],
+        [
+          6,
+          "процессор"
+        ],
+        [
+          7,
+          "MT6592."
+        ]
+      ],
+      "head_id": 6,
+      "text": "мобильный процессор MT6592. ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          7,
+          "MT6592."
+        ]
+      ],
+      "head_id": 7,
+      "text": "MT6592. ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Тайваньская"
+        ],
+        [
+          2,
+          "компания"
+        ],
+        [
+          3,
+          "MediaTek"
+        ],
+        [
+          4,
+          "представила"
+        ],
+        [
+          5,
+          "мобильный"
+        ],
+        [
+          6,
+          "процессор"
+        ],
+        [
+          7,
+          "MT6592."
+        ]
+      ],
+      "head_id": 4,
+      "text": "Тайваньская компания MediaTek представила мобильный процессор MT6592. ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/20/pakfa/"
+}

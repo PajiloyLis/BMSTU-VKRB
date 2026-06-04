@@ -1,0 +1,615 @@
+{
+  "id": "220489_15",
+  "text": "Как выяснилось, хуже подарки выбирают те, кто менее заинтересованы в социальных связях.",
+  "length": 12,
+  "source": "4",
+  "sentence_tree": " [VP [VP Как выяснилось] , хуже [NP подарки] выбирают [NP те , [AP [NP кто] [AdvP менее] заинтересованы [PP в [NP социальных связях]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "выяснилось",
+      "lemma": "выясниться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "хуже",
+      "lemma": "плохой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "подарки",
+      "lemma": "подарок",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "выбирают",
+      "lemma": "выбирать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "те",
+      "lemma": "тот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "кто",
+      "lemma": "кто",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "менее",
+      "lemma": "менее",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "заинтересованы",
+      "lemma": "заинтересованный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "социальных",
+      "lemma": "социальный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "связях",
+      "lemma": "связь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "подарки"
+        ]
+      ],
+      "head_id": 5,
+      "text": "подарки ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "DET",
+        "Case=Nom",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "те"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "кто"
+        ],
+        [
+          10,
+          "менее"
+        ],
+        [
+          11,
+          "заинтересованы"
+        ],
+        [
+          12,
+          "в"
+        ],
+        [
+          13,
+          "социальных"
+        ],
+        [
+          14,
+          "связях"
+        ]
+      ],
+      "head_id": 7,
+      "text": "те , кто менее заинтересованы в социальных связях ",
+      "length": 8
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          9,
+          "кто"
+        ]
+      ],
+      "head_id": 9,
+      "text": "кто ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          13,
+          "социальных"
+        ],
+        [
+          14,
+          "связях"
+        ]
+      ],
+      "head_id": 14,
+      "text": "социальных связях ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Как"
+        ],
+        [
+          2,
+          "выяснилось"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "хуже"
+        ],
+        [
+          5,
+          "подарки"
+        ],
+        [
+          6,
+          "выбирают"
+        ],
+        [
+          7,
+          "те"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "кто"
+        ],
+        [
+          10,
+          "менее"
+        ],
+        [
+          11,
+          "заинтересованы"
+        ],
+        [
+          12,
+          "в"
+        ],
+        [
+          13,
+          "социальных"
+        ],
+        [
+          14,
+          "связях"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Как выяснилось , хуже подарки выбирают те , кто менее заинтересованы в социальных связях ",
+      "length": 14
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Как"
+        ],
+        [
+          2,
+          "выяснилось"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Как выяснилось ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 6,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          9,
+          "кто"
+        ],
+        [
+          10,
+          "менее"
+        ],
+        [
+          11,
+          "заинтересованы"
+        ],
+        [
+          12,
+          "в"
+        ],
+        [
+          13,
+          "социальных"
+        ],
+        [
+          14,
+          "связях"
+        ]
+      ],
+      "head_id": 11,
+      "text": "кто менее заинтересованы в социальных связях ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          12,
+          "в"
+        ],
+        [
+          13,
+          "социальных"
+        ],
+        [
+          14,
+          "связях"
+        ]
+      ],
+      "head_id": 12,
+      "text": "в социальных связях ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 8,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          10,
+          "менее"
+        ]
+      ],
+      "head_id": 10,
+      "text": "менее ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/27/akopov/"
+}

@@ -1,0 +1,252 @@
+{
+  "id": "224313_10",
+  "text": "Про беспилотник Burraq известно немного.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [AP [PP Про [NP беспилотник [NP Burraq]]] известно [AdvP немного]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Про",
+      "lemma": "про",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "беспилотник",
+      "lemma": "беспилотник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Burraq",
+      "lemma": "Burraq",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "известно",
+      "lemma": "известный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "немного",
+      "lemma": "немного",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "беспилотник"
+        ],
+        [
+          3,
+          "Burraq"
+        ]
+      ],
+      "head_id": 2,
+      "text": "беспилотник Burraq ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          3,
+          "Burraq"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Burraq ",
+      "length": 1
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Про"
+        ],
+        [
+          2,
+          "беспилотник"
+        ],
+        [
+          3,
+          "Burraq"
+        ],
+        [
+          4,
+          "известно"
+        ],
+        [
+          5,
+          "немного"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Про беспилотник Burraq известно немного ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "Про"
+        ],
+        [
+          2,
+          "беспилотник"
+        ],
+        [
+          3,
+          "Burraq"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Про беспилотник Burraq ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          5,
+          "немного"
+        ]
+      ],
+      "head_id": 5,
+      "text": "немного ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/26/gas/"
+}

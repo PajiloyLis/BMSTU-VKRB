@@ -1,0 +1,754 @@
+{
+  "id": "226644_19",
+  "text": "«Роды нелегалов происходят за счет налогов, которые платят российские граждане», — подчеркнул Мельников.",
+  "length": 12,
+  "source": "4",
+  "sentence_tree": " « [VP [NP Роды [NP нелегалов]] происходят [PP за [NP счет] [NP налогов , [VP [NP которые] платят [NP российские граждане]]]] » , — [VP подчеркнул [NP Мельников]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Роды",
+      "lemma": "род",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "нелегалов",
+      "lemma": "нелегал",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "происходят",
+      "lemma": "происходить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "за",
+      "lemma": "за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "счет",
+      "lemma": "счет",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "налогов",
+      "lemma": "налог",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "которые",
+      "lemma": "который",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "платят",
+      "lemma": "платить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "российские",
+      "lemma": "российский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "граждане",
+      "lemma": "гражданин",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "»",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "—",
+      "lemma": "—",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "подчеркнул",
+      "lemma": "подчеркнуть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "Мельников",
+      "lemma": "Мельников",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "Роды"
+        ],
+        [
+          3,
+          "нелегалов"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Роды нелегалов ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          3,
+          "нелегалов"
+        ]
+      ],
+      "head_id": 3,
+      "text": "нелегалов ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "счет"
+        ]
+      ],
+      "head_id": 6,
+      "text": "счет ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "налогов"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "которые"
+        ],
+        [
+          10,
+          "платят"
+        ],
+        [
+          11,
+          "российские"
+        ],
+        [
+          12,
+          "граждане"
+        ]
+      ],
+      "head_id": 7,
+      "text": "налогов , которые платят российские граждане ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PRON",
+        "Case=Acc"
+      ],
+      "tokens": [
+        [
+          9,
+          "которые"
+        ]
+      ],
+      "head_id": 9,
+      "text": "которые ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          11,
+          "российские"
+        ],
+        [
+          12,
+          "граждане"
+        ]
+      ],
+      "head_id": 12,
+      "text": "российские граждане ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          17,
+          "Мельников"
+        ]
+      ],
+      "head_id": 17,
+      "text": "Мельников ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          2,
+          "Роды"
+        ],
+        [
+          3,
+          "нелегалов"
+        ],
+        [
+          4,
+          "происходят"
+        ],
+        [
+          5,
+          "за"
+        ],
+        [
+          6,
+          "счет"
+        ],
+        [
+          7,
+          "налогов"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "которые"
+        ],
+        [
+          10,
+          "платят"
+        ],
+        [
+          11,
+          "российские"
+        ],
+        [
+          12,
+          "граждане"
+        ],
+        [
+          13,
+          "»"
+        ],
+        [
+          14,
+          ","
+        ],
+        [
+          15,
+          "—"
+        ],
+        [
+          16,
+          "подчеркнул"
+        ],
+        [
+          17,
+          "Мельников"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Роды нелегалов происходят за счет налогов , которые платят российские граждане » , — подчеркнул Мельников ",
+      "length": 16
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          9,
+          "которые"
+        ],
+        [
+          10,
+          "платят"
+        ],
+        [
+          11,
+          "российские"
+        ],
+        [
+          12,
+          "граждане"
+        ]
+      ],
+      "head_id": 10,
+      "text": "которые платят российские граждане ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 9,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          16,
+          "подчеркнул"
+        ],
+        [
+          17,
+          "Мельников"
+        ]
+      ],
+      "head_id": 16,
+      "text": "подчеркнул Мельников ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 10,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "за"
+        ],
+        [
+          6,
+          "счет"
+        ],
+        [
+          7,
+          "налогов"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "которые"
+        ],
+        [
+          10,
+          "платят"
+        ],
+        [
+          11,
+          "российские"
+        ],
+        [
+          12,
+          "граждане"
+        ]
+      ],
+      "head_id": 5,
+      "text": "за счет налогов , которые платят российские граждане ",
+      "length": 8
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/07/signatures/"
+}

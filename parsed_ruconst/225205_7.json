@@ -1,0 +1,454 @@
+{
+  "id": "225205_7",
+  "text": "Работает лишь обогатительная фабрика, где имеются запасы руды.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP Работает [NP [AP лишь обогатительная] фабрика , [VP [AdvP где] имеются [NP запасы [NP руды]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Работает",
+      "lemma": "работать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "лишь",
+      "lemma": "лишь",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "обогатительная",
+      "lemma": "обогатительный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "фабрика",
+      "lemma": "фабрика",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "где",
+      "lemma": "где",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "имеются",
+      "lemma": "иметься",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "запасы",
+      "lemma": "запас",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "руды",
+      "lemma": "руда",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "лишь"
+        ],
+        [
+          3,
+          "обогатительная"
+        ],
+        [
+          4,
+          "фабрика"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "где"
+        ],
+        [
+          7,
+          "имеются"
+        ],
+        [
+          8,
+          "запасы"
+        ],
+        [
+          9,
+          "руды"
+        ]
+      ],
+      "head_id": 4,
+      "text": "лишь обогатительная фабрика , где имеются запасы руды ",
+      "length": 8
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "запасы"
+        ],
+        [
+          9,
+          "руды"
+        ]
+      ],
+      "head_id": 8,
+      "text": "запасы руды ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "руды"
+        ]
+      ],
+      "head_id": 9,
+      "text": "руды ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Работает"
+        ],
+        [
+          2,
+          "лишь"
+        ],
+        [
+          3,
+          "обогатительная"
+        ],
+        [
+          4,
+          "фабрика"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "где"
+        ],
+        [
+          7,
+          "имеются"
+        ],
+        [
+          8,
+          "запасы"
+        ],
+        [
+          9,
+          "руды"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Работает лишь обогатительная фабрика , где имеются запасы руды ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          6,
+          "где"
+        ],
+        [
+          7,
+          "имеются"
+        ],
+        [
+          8,
+          "запасы"
+        ],
+        [
+          9,
+          "руды"
+        ]
+      ],
+      "head_id": 7,
+      "text": "где имеются запасы руды ",
+      "length": 4
+    },
+    {
+      "name": "AP",
+      "id": 5,
+      "tags": [
+        "ADJ",
+        "Case=Nom",
+        "Degree=Pos",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "лишь"
+        ],
+        [
+          3,
+          "обогатительная"
+        ]
+      ],
+      "head_id": 3,
+      "text": "лишь обогатительная ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          6,
+          "где"
+        ]
+      ],
+      "head_id": 6,
+      "text": "где ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/19/priest/"
+}

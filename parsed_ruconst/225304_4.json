@@ -1,0 +1,631 @@
+{
+  "id": "225304_4",
+  "text": "Современный человек перемещается в прошлое, где его принимают за Санчо Пансу.",
+  "length": 11,
+  "source": "4",
+  "sentence_tree": " [VP [NP Современный человек] перемещается [PP в [NP прошлое , [VP [AdvP где] [NP его] принимают [PP за [NP Санчо [NP Пансу]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Современный",
+      "lemma": "современный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "человек",
+      "lemma": "человек",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "перемещается",
+      "lemma": "перемещать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "прошлое",
+      "lemma": "прошлое",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "где",
+      "lemma": "где",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "его",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "принимают",
+      "lemma": "принимать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "за",
+      "lemma": "за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "Санчо",
+      "lemma": "Санчо",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "Пансу",
+      "lemma": "Панс",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Современный"
+        ],
+        [
+          2,
+          "человек"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Современный человек ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "прошлое"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "где"
+        ],
+        [
+          8,
+          "его"
+        ],
+        [
+          9,
+          "принимают"
+        ],
+        [
+          10,
+          "за"
+        ],
+        [
+          11,
+          "Санчо"
+        ],
+        [
+          12,
+          "Пансу"
+        ]
+      ],
+      "head_id": 5,
+      "text": "прошлое , где его принимают за Санчо Пансу ",
+      "length": 8
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          8,
+          "его"
+        ]
+      ],
+      "head_id": 8,
+      "text": "его ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "Санчо"
+        ],
+        [
+          12,
+          "Пансу"
+        ]
+      ],
+      "head_id": 11,
+      "text": "Санчо Пансу ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "Пансу"
+        ]
+      ],
+      "head_id": 12,
+      "text": "Пансу ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Современный"
+        ],
+        [
+          2,
+          "человек"
+        ],
+        [
+          3,
+          "перемещается"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "прошлое"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "где"
+        ],
+        [
+          8,
+          "его"
+        ],
+        [
+          9,
+          "принимают"
+        ],
+        [
+          10,
+          "за"
+        ],
+        [
+          11,
+          "Санчо"
+        ],
+        [
+          12,
+          "Пансу"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Современный человек перемещается в прошлое , где его принимают за Санчо Пансу ",
+      "length": 12
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          7,
+          "где"
+        ],
+        [
+          8,
+          "его"
+        ],
+        [
+          9,
+          "принимают"
+        ],
+        [
+          10,
+          "за"
+        ],
+        [
+          11,
+          "Санчо"
+        ],
+        [
+          12,
+          "Пансу"
+        ]
+      ],
+      "head_id": 9,
+      "text": "где его принимают за Санчо Пансу ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "прошлое"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "где"
+        ],
+        [
+          8,
+          "его"
+        ],
+        [
+          9,
+          "принимают"
+        ],
+        [
+          10,
+          "за"
+        ],
+        [
+          11,
+          "Санчо"
+        ],
+        [
+          12,
+          "Пансу"
+        ]
+      ],
+      "head_id": 4,
+      "text": "в прошлое , где его принимают за Санчо Пансу ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 8,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          10,
+          "за"
+        ],
+        [
+          11,
+          "Санчо"
+        ],
+        [
+          12,
+          "Пансу"
+        ]
+      ],
+      "head_id": 10,
+      "text": "за Санчо Пансу ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 9,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          7,
+          "где"
+        ]
+      ],
+      "head_id": 7,
+      "text": "где ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/18/whocaresaboutscience/"
+}

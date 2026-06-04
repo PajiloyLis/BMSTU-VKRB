@@ -1,0 +1,504 @@
+{
+  "id": "220732_2",
+  "text": "Каждый киловатт установленной мощности будет стоить примерно 5,8 тысячи долларов.",
+  "length": 10,
+  "source": "4",
+  "sentence_tree": " [VP [NP Каждый киловатт [NP установленной мощности]] [VP будет стоить [NP [NP [NumP [AdvP примерно] 5,8] тысячи] долларов]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Каждый",
+      "lemma": "каждый",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "киловатт",
+      "lemma": "киловатт",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "установленной",
+      "lemma": "установить",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "мощности",
+      "lemma": "мощность",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "стоить",
+      "lemma": "стоить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "примерно",
+      "lemma": "примерно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "5,8",
+      "lemma": "5,8",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "тысячи",
+      "lemma": "тысяча",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "долларов",
+      "lemma": "доллар",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Каждый"
+        ],
+        [
+          2,
+          "киловатт"
+        ],
+        [
+          3,
+          "установленной"
+        ],
+        [
+          4,
+          "мощности"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Каждый киловатт установленной мощности ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "установленной"
+        ],
+        [
+          4,
+          "мощности"
+        ]
+      ],
+      "head_id": 4,
+      "text": "установленной мощности ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "примерно"
+        ],
+        [
+          8,
+          "5,8"
+        ],
+        [
+          9,
+          "тысячи"
+        ],
+        [
+          10,
+          "долларов"
+        ]
+      ],
+      "head_id": 10,
+      "text": "примерно 5,8 тысячи долларов ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "примерно"
+        ],
+        [
+          8,
+          "5,8"
+        ],
+        [
+          9,
+          "тысячи"
+        ]
+      ],
+      "head_id": 9,
+      "text": "примерно 5,8 тысячи ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Каждый"
+        ],
+        [
+          2,
+          "киловатт"
+        ],
+        [
+          3,
+          "установленной"
+        ],
+        [
+          4,
+          "мощности"
+        ],
+        [
+          5,
+          "будет"
+        ],
+        [
+          6,
+          "стоить"
+        ],
+        [
+          7,
+          "примерно"
+        ],
+        [
+          8,
+          "5,8"
+        ],
+        [
+          9,
+          "тысячи"
+        ],
+        [
+          10,
+          "долларов"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Каждый киловатт установленной мощности будет стоить примерно 5,8 тысячи долларов ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          5,
+          "будет"
+        ],
+        [
+          6,
+          "стоить"
+        ],
+        [
+          7,
+          "примерно"
+        ],
+        [
+          8,
+          "5,8"
+        ],
+        [
+          9,
+          "тысячи"
+        ],
+        [
+          10,
+          "долларов"
+        ]
+      ],
+      "head_id": 5,
+      "text": "будет стоить примерно 5,8 тысячи долларов ",
+      "length": 6
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          7,
+          "примерно"
+        ]
+      ],
+      "head_id": 7,
+      "text": "примерно ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 7,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "примерно"
+        ],
+        [
+          8,
+          "5,8"
+        ]
+      ],
+      "head_id": 8,
+      "text": "примерно 5,8 ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/25/embassy/"
+}

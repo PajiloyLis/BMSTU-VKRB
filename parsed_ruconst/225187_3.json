@@ -1,0 +1,407 @@
+{
+  "id": "225187_3",
+  "text": "Приложения стали доступны для пользователей iOS и Android.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Приложения] стали [AP доступны [PP для [NP пользователей [NP iOS] и [NP Android]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Приложения",
+      "lemma": "приложение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "стали",
+      "lemma": "стать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "доступны",
+      "lemma": "доступный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "для",
+      "lemma": "для",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "пользователей",
+      "lemma": "пользователь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "iOS",
+      "lemma": "iOS",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Android",
+      "lemma": "Android",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Приложения"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Приложения ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "пользователей"
+        ],
+        [
+          6,
+          "iOS"
+        ],
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "Android"
+        ]
+      ],
+      "head_id": 5,
+      "text": "пользователей iOS и Android ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          6,
+          "iOS"
+        ]
+      ],
+      "head_id": 6,
+      "text": "iOS ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          8,
+          "Android"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Android ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Приложения"
+        ],
+        [
+          2,
+          "стали"
+        ],
+        [
+          3,
+          "доступны"
+        ],
+        [
+          4,
+          "для"
+        ],
+        [
+          5,
+          "пользователей"
+        ],
+        [
+          6,
+          "iOS"
+        ],
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "Android"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Приложения стали доступны для пользователей iOS и Android ",
+      "length": 8
+    },
+    {
+      "name": "AP",
+      "id": 5,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          3,
+          "доступны"
+        ],
+        [
+          4,
+          "для"
+        ],
+        [
+          5,
+          "пользователей"
+        ],
+        [
+          6,
+          "iOS"
+        ],
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "Android"
+        ]
+      ],
+      "head_id": 3,
+      "text": "доступны для пользователей iOS и Android ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "для"
+        ],
+        [
+          5,
+          "пользователей"
+        ],
+        [
+          6,
+          "iOS"
+        ],
+        [
+          7,
+          "и"
+        ],
+        [
+          8,
+          "Android"
+        ]
+      ],
+      "head_id": 4,
+      "text": "для пользователей iOS и Android ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/19/bloomberg/"
+}

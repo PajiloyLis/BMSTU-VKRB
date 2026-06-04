@@ -1,0 +1,343 @@
+{
+  "id": "225588_6",
+  "text": "Мой сын ни в чем не был виноват.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [AP [NP Мой сын] [NP ни [PP в чем]] не [VP был виноват]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Мой",
+      "lemma": "мой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "сын",
+      "lemma": "сын",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "ни",
+      "lemma": "ни",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "чем",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Loc"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "был",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "виноват",
+      "lemma": "виноватый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Мой"
+        ],
+        [
+          2,
+          "сын"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Мой сын ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Loc"
+      ],
+      "tokens": [
+        [
+          3,
+          "ни"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "чем"
+        ]
+      ],
+      "head_id": 5,
+      "text": "ни в чем ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          7,
+          "был"
+        ],
+        [
+          8,
+          "виноват"
+        ]
+      ],
+      "head_id": 7,
+      "text": "был виноват ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Мой"
+        ],
+        [
+          2,
+          "сын"
+        ],
+        [
+          3,
+          "ни"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "чем"
+        ],
+        [
+          6,
+          "не"
+        ],
+        [
+          7,
+          "был"
+        ],
+        [
+          8,
+          "виноват"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Мой сын ни в чем не был виноват ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "чем"
+        ]
+      ],
+      "head_id": 4,
+      "text": "в чем ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/15/gaga/"
+}

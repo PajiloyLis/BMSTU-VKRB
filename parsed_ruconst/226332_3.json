@@ -1,0 +1,421 @@
+{
+  "id": "226332_3",
+  "text": "Совместными усилиями планируется собрать не менее 300 тысяч рублей.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP [NP Совместными усилиями] планируется [VP собрать [NP [AdvP не менее] 300 тысяч [NP рублей]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Совместными",
+      "lemma": "совместный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "усилиями",
+      "lemma": "усилие",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "планируется",
+      "lemma": "планировать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "собрать",
+      "lemma": "собрать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "csubj:pass",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "менее",
+      "lemma": "менее",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "300",
+      "lemma": "300",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "тысяч",
+      "lemma": "тысяча",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "рублей",
+      "lemma": "рубль",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Совместными"
+        ],
+        [
+          2,
+          "усилиями"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Совместными усилиями ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "не"
+        ],
+        [
+          6,
+          "менее"
+        ],
+        [
+          7,
+          "300"
+        ],
+        [
+          8,
+          "тысяч"
+        ],
+        [
+          9,
+          "рублей"
+        ]
+      ],
+      "head_id": 8,
+      "text": "не менее 300 тысяч рублей ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          9,
+          "рублей"
+        ]
+      ],
+      "head_id": 9,
+      "text": "рублей ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Совместными"
+        ],
+        [
+          2,
+          "усилиями"
+        ],
+        [
+          3,
+          "планируется"
+        ],
+        [
+          4,
+          "собрать"
+        ],
+        [
+          5,
+          "не"
+        ],
+        [
+          6,
+          "менее"
+        ],
+        [
+          7,
+          "300"
+        ],
+        [
+          8,
+          "тысяч"
+        ],
+        [
+          9,
+          "рублей"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Совместными усилиями планируется собрать не менее 300 тысяч рублей ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          4,
+          "собрать"
+        ],
+        [
+          5,
+          "не"
+        ],
+        [
+          6,
+          "менее"
+        ],
+        [
+          7,
+          "300"
+        ],
+        [
+          8,
+          "тысяч"
+        ],
+        [
+          9,
+          "рублей"
+        ]
+      ],
+      "head_id": 4,
+      "text": "собрать не менее 300 тысяч рублей ",
+      "length": 6
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          5,
+          "не"
+        ],
+        [
+          6,
+          "менее"
+        ]
+      ],
+      "head_id": 6,
+      "text": "не менее ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/09/epishino/"
+}

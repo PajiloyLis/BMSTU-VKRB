@@ -1,0 +1,745 @@
+{
+  "id": "221887_5",
+  "text": "Благодаря этому пользователь может узнать, например, о новом письме, не включая основной экран.",
+  "length": 13,
+  "source": "4",
+  "sentence_tree": " [VP [PP Благодаря [NP этому]] [NP пользователь] может [VP узнать , [NP [AdvP например] , [PP о новом письме , [AdvP не включая [NP основной экран]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Благодаря",
+      "lemma": "благодаря",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "этому",
+      "lemma": "это",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "пользователь",
+      "lemma": "пользователь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "может",
+      "lemma": "мочь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "узнать",
+      "lemma": "узнать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "например",
+      "lemma": "например",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "о",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "новом",
+      "lemma": "новый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "письме",
+      "lemma": "письмо",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "включая",
+      "lemma": "включая",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "основной",
+      "lemma": "основной",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "экран",
+      "lemma": "экран",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "этому"
+        ]
+      ],
+      "head_id": 2,
+      "text": "этому ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "пользователь"
+        ]
+      ],
+      "head_id": 3,
+      "text": "пользователь ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "например"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "о"
+        ],
+        [
+          10,
+          "новом"
+        ],
+        [
+          11,
+          "письме"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "не"
+        ],
+        [
+          14,
+          "включая"
+        ],
+        [
+          15,
+          "основной"
+        ],
+        [
+          16,
+          "экран"
+        ]
+      ],
+      "head_id": 11,
+      "text": "например , о новом письме , не включая основной экран ",
+      "length": 10
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          15,
+          "основной"
+        ],
+        [
+          16,
+          "экран"
+        ]
+      ],
+      "head_id": 16,
+      "text": "основной экран ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Благодаря"
+        ],
+        [
+          2,
+          "этому"
+        ],
+        [
+          3,
+          "пользователь"
+        ],
+        [
+          4,
+          "может"
+        ],
+        [
+          5,
+          "узнать"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "например"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "о"
+        ],
+        [
+          10,
+          "новом"
+        ],
+        [
+          11,
+          "письме"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "не"
+        ],
+        [
+          14,
+          "включая"
+        ],
+        [
+          15,
+          "основной"
+        ],
+        [
+          16,
+          "экран"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Благодаря этому пользователь может узнать , например , о новом письме , не включая основной экран ",
+      "length": 16
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          5,
+          "узнать"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "например"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "о"
+        ],
+        [
+          10,
+          "новом"
+        ],
+        [
+          11,
+          "письме"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "не"
+        ],
+        [
+          14,
+          "включая"
+        ],
+        [
+          15,
+          "основной"
+        ],
+        [
+          16,
+          "экран"
+        ]
+      ],
+      "head_id": 5,
+      "text": "узнать , например , о новом письме , не включая основной экран ",
+      "length": 12
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "Благодаря"
+        ],
+        [
+          2,
+          "этому"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Благодаря этому ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "о"
+        ],
+        [
+          10,
+          "новом"
+        ],
+        [
+          11,
+          "письме"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "не"
+        ],
+        [
+          14,
+          "включая"
+        ],
+        [
+          15,
+          "основной"
+        ],
+        [
+          16,
+          "экран"
+        ]
+      ],
+      "head_id": 9,
+      "text": "о новом письме , не включая основной экран ",
+      "length": 8
+    },
+    {
+      "name": "AdvP",
+      "id": 8,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          7,
+          "например"
+        ]
+      ],
+      "head_id": 7,
+      "text": "например ",
+      "length": 1
+    },
+    {
+      "name": "AdvP",
+      "id": 9,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          13,
+          "не"
+        ],
+        [
+          14,
+          "включая"
+        ],
+        [
+          15,
+          "основной"
+        ],
+        [
+          16,
+          "экран"
+        ]
+      ],
+      "head_id": 14,
+      "text": "не включая основной экран ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/16/syrianaid/"
+}

@@ -1,0 +1,628 @@
+{
+  "id": "226410_3",
+  "text": "Проблема расстановки заправок, как показали исследователи, относится к классу NP-сложных.",
+  "length": 10,
+  "source": "4",
+  "sentence_tree": " [VP [NP Проблема [NP расстановки [NP заправок]]] , [VP как показали [NP исследователи]] , относится [PP к [NP классу [NP NP] - [AP сложных]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Проблема",
+      "lemma": "проблема",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "расстановки",
+      "lemma": "расстановка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "заправок",
+      "lemma": "заправка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "показали",
+      "lemma": "показать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "исследователи",
+      "lemma": "исследователь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "относится",
+      "lemma": "относиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "к",
+      "lemma": "к",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "классу",
+      "lemma": "класс",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "NP",
+      "lemma": "NP",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "-",
+      "lemma": "-",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "сложных",
+      "lemma": "сложный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Проблема"
+        ],
+        [
+          2,
+          "расстановки"
+        ],
+        [
+          3,
+          "заправок"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Проблема расстановки заправок ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "расстановки"
+        ],
+        [
+          3,
+          "заправок"
+        ]
+      ],
+      "head_id": 2,
+      "text": "расстановки заправок ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          3,
+          "заправок"
+        ]
+      ],
+      "head_id": 3,
+      "text": "заправок ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "исследователи"
+        ]
+      ],
+      "head_id": 7,
+      "text": "исследователи ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "классу"
+        ],
+        [
+          12,
+          "NP"
+        ],
+        [
+          13,
+          "-"
+        ],
+        [
+          14,
+          "сложных"
+        ]
+      ],
+      "head_id": 11,
+      "text": "классу NP - сложных ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          12,
+          "NP"
+        ]
+      ],
+      "head_id": 12,
+      "text": "NP ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Проблема"
+        ],
+        [
+          2,
+          "расстановки"
+        ],
+        [
+          3,
+          "заправок"
+        ],
+        [
+          4,
+          ","
+        ],
+        [
+          5,
+          "как"
+        ],
+        [
+          6,
+          "показали"
+        ],
+        [
+          7,
+          "исследователи"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "относится"
+        ],
+        [
+          10,
+          "к"
+        ],
+        [
+          11,
+          "классу"
+        ],
+        [
+          12,
+          "NP"
+        ],
+        [
+          13,
+          "-"
+        ],
+        [
+          14,
+          "сложных"
+        ]
+      ],
+      "head_id": 9,
+      "text": "Проблема расстановки заправок , как показали исследователи , относится к классу NP - сложных ",
+      "length": 14
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          5,
+          "как"
+        ],
+        [
+          6,
+          "показали"
+        ],
+        [
+          7,
+          "исследователи"
+        ]
+      ],
+      "head_id": 6,
+      "text": "как показали исследователи ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 8,
+      "tags": [
+        "ADJ",
+        "Case=Gen",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          14,
+          "сложных"
+        ]
+      ],
+      "head_id": 14,
+      "text": "сложных ",
+      "length": 1
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          10,
+          "к"
+        ],
+        [
+          11,
+          "классу"
+        ],
+        [
+          12,
+          "NP"
+        ],
+        [
+          13,
+          "-"
+        ],
+        [
+          14,
+          "сложных"
+        ]
+      ],
+      "head_id": 10,
+      "text": "к классу NP - сложных ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/08/abduction/"
+}

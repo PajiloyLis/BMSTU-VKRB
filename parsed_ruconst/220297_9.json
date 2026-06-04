@@ -1,0 +1,423 @@
+{
+  "id": "220297_9",
+  "text": "ДРК является одной из самых неспокойных стран Африки.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP ДРК] является [NumP одной [PP из [NP [AP самых неспокойных] стран [NP Африки]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "ДРК",
+      "lemma": "ДРК",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "является",
+      "lemma": "являться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "одной",
+      "lemma": "один",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Ins",
+          "Gender=Fem"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "самых",
+      "lemma": "самый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "неспокойных",
+      "lemma": "неспокойный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "стран",
+      "lemma": "страна",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Африки",
+      "lemma": "Африка",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "ДРК"
+        ]
+      ],
+      "head_id": 1,
+      "text": "ДРК ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "самых"
+        ],
+        [
+          6,
+          "неспокойных"
+        ],
+        [
+          7,
+          "стран"
+        ],
+        [
+          8,
+          "Африки"
+        ]
+      ],
+      "head_id": 7,
+      "text": "самых неспокойных стран Африки ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Африки"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Африки ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "ДРК"
+        ],
+        [
+          2,
+          "является"
+        ],
+        [
+          3,
+          "одной"
+        ],
+        [
+          4,
+          "из"
+        ],
+        [
+          5,
+          "самых"
+        ],
+        [
+          6,
+          "неспокойных"
+        ],
+        [
+          7,
+          "стран"
+        ],
+        [
+          8,
+          "Африки"
+        ]
+      ],
+      "head_id": 2,
+      "text": "ДРК является одной из самых неспокойных стран Африки ",
+      "length": 8
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Case=Gen",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "самых"
+        ],
+        [
+          6,
+          "неспокойных"
+        ]
+      ],
+      "head_id": 6,
+      "text": "самых неспокойных ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "из"
+        ],
+        [
+          5,
+          "самых"
+        ],
+        [
+          6,
+          "неспокойных"
+        ],
+        [
+          7,
+          "стран"
+        ],
+        [
+          8,
+          "Африки"
+        ]
+      ],
+      "head_id": 4,
+      "text": "из самых неспокойных стран Африки ",
+      "length": 5
+    },
+    {
+      "name": "NumP",
+      "id": 6,
+      "tags": [
+        "NUM",
+        "Case=Ins",
+        "Gender=Fem"
+      ],
+      "tokens": [
+        [
+          3,
+          "одной"
+        ],
+        [
+          4,
+          "из"
+        ],
+        [
+          5,
+          "самых"
+        ],
+        [
+          6,
+          "неспокойных"
+        ],
+        [
+          7,
+          "стран"
+        ],
+        [
+          8,
+          "Африки"
+        ]
+      ],
+      "head_id": 3,
+      "text": "одной из самых неспокойных стран Африки ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/30/id/"
+}

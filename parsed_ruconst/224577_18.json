@@ -1,0 +1,495 @@
+{
+  "id": "224577_18",
+  "text": "Предположительно Декар пытался покончить с собой с помощью сильнодействующих лекарств.",
+  "length": 10,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Предположительно] [NP Декар] пытался [VP покончить [PP с [NP собой]] [PP с [NP помощью] [NP сильнодействующих лекарств]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Предположительно",
+      "lemma": "предположительно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Декар",
+      "lemma": "Декар",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "пытался",
+      "lemma": "пытаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "покончить",
+      "lemma": "покончить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "собой",
+      "lemma": "себя",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Ins"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "помощью",
+      "lemma": "помощь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "сильнодействующих",
+      "lemma": "сильнодействующий",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "лекарств",
+      "lemma": "лекарство",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Декар"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Декар ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Ins"
+      ],
+      "tokens": [
+        [
+          6,
+          "собой"
+        ]
+      ],
+      "head_id": 6,
+      "text": "собой ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "помощью"
+        ]
+      ],
+      "head_id": 8,
+      "text": "помощью ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          9,
+          "сильнодействующих"
+        ],
+        [
+          10,
+          "лекарств"
+        ]
+      ],
+      "head_id": 10,
+      "text": "сильнодействующих лекарств ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Предположительно"
+        ],
+        [
+          2,
+          "Декар"
+        ],
+        [
+          3,
+          "пытался"
+        ],
+        [
+          4,
+          "покончить"
+        ],
+        [
+          5,
+          "с"
+        ],
+        [
+          6,
+          "собой"
+        ],
+        [
+          7,
+          "с"
+        ],
+        [
+          8,
+          "помощью"
+        ],
+        [
+          9,
+          "сильнодействующих"
+        ],
+        [
+          10,
+          "лекарств"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Предположительно Декар пытался покончить с собой с помощью сильнодействующих лекарств ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          4,
+          "покончить"
+        ],
+        [
+          5,
+          "с"
+        ],
+        [
+          6,
+          "собой"
+        ],
+        [
+          7,
+          "с"
+        ],
+        [
+          8,
+          "помощью"
+        ],
+        [
+          9,
+          "сильнодействующих"
+        ],
+        [
+          10,
+          "лекарств"
+        ]
+      ],
+      "head_id": 4,
+      "text": "покончить с собой с помощью сильнодействующих лекарств ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "с"
+        ],
+        [
+          6,
+          "собой"
+        ]
+      ],
+      "head_id": 5,
+      "text": "с собой ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "с"
+        ],
+        [
+          8,
+          "помощью"
+        ],
+        [
+          9,
+          "сильнодействующих"
+        ],
+        [
+          10,
+          "лекарств"
+        ]
+      ],
+      "head_id": 7,
+      "text": "с помощью сильнодействующих лекарств ",
+      "length": 4
+    },
+    {
+      "name": "AdvP",
+      "id": 8,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Предположительно"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Предположительно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/24/progon/"
+}

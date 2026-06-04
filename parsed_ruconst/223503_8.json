@@ -1,0 +1,617 @@
+{
+  "id": "223503_8",
+  "text": "Игроки смогут биться как на стороне космодесанта, так и за орков.",
+  "length": 11,
+  "source": "4",
+  "sentence_tree": " [VP [NP Игроки] смогут [VP биться [NP как [PP на стороне [NP космодесанта] , [NP [AdvP так и] [PP за орков]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Игроки",
+      "lemma": "игрок",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "смогут",
+      "lemma": "мочь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "биться",
+      "lemma": "биться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "стороне",
+      "lemma": "сторона",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "космодесанта",
+      "lemma": "космодесант",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "так",
+      "lemma": "так",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "за",
+      "lemma": "за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "орков",
+      "lemma": "орк",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Игроки"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Игроки ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "как"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "стороне"
+        ],
+        [
+          7,
+          "космодесанта"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "так"
+        ],
+        [
+          10,
+          "и"
+        ],
+        [
+          11,
+          "за"
+        ],
+        [
+          12,
+          "орков"
+        ]
+      ],
+      "head_id": 6,
+      "text": "как на стороне космодесанта , так и за орков ",
+      "length": 9
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "космодесанта"
+        ]
+      ],
+      "head_id": 7,
+      "text": "космодесанта ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          9,
+          "так"
+        ],
+        [
+          10,
+          "и"
+        ],
+        [
+          11,
+          "за"
+        ],
+        [
+          12,
+          "орков"
+        ]
+      ],
+      "head_id": 12,
+      "text": "так и за орков ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Игроки"
+        ],
+        [
+          2,
+          "смогут"
+        ],
+        [
+          3,
+          "биться"
+        ],
+        [
+          4,
+          "как"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "стороне"
+        ],
+        [
+          7,
+          "космодесанта"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "так"
+        ],
+        [
+          10,
+          "и"
+        ],
+        [
+          11,
+          "за"
+        ],
+        [
+          12,
+          "орков"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Игроки смогут биться как на стороне космодесанта , так и за орков ",
+      "length": 12
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          3,
+          "биться"
+        ],
+        [
+          4,
+          "как"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "стороне"
+        ],
+        [
+          7,
+          "космодесанта"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "так"
+        ],
+        [
+          10,
+          "и"
+        ],
+        [
+          11,
+          "за"
+        ],
+        [
+          12,
+          "орков"
+        ]
+      ],
+      "head_id": 3,
+      "text": "биться как на стороне космодесанта , так и за орков ",
+      "length": 10
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "стороне"
+        ],
+        [
+          7,
+          "космодесанта"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "так"
+        ],
+        [
+          10,
+          "и"
+        ],
+        [
+          11,
+          "за"
+        ],
+        [
+          12,
+          "орков"
+        ]
+      ],
+      "head_id": 5,
+      "text": "на стороне космодесанта , так и за орков ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          11,
+          "за"
+        ],
+        [
+          12,
+          "орков"
+        ]
+      ],
+      "head_id": 11,
+      "text": "за орков ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 8,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          9,
+          "так"
+        ],
+        [
+          10,
+          "и"
+        ]
+      ],
+      "head_id": 9,
+      "text": "так и ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/03/meat/"
+}

@@ -1,0 +1,799 @@
+{
+  "id": "226522_7",
+  "text": "Финал Кубка Бразилии будет состоять из двух игр, которые пройдут 20 и 27 ноября.",
+  "length": 14,
+  "source": "4",
+  "sentence_tree": " [VP [NP Финал [NP Кубка [NP Бразилии]]] [VP будет состоять [PP из [NP двух игр , [VP [NP которые] пройдут [NumP 20 [NumP и 27] [NP ноября]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Финал",
+      "lemma": "финал",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Кубка",
+      "lemma": "Кубок",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Бразилии",
+      "lemma": "Бразилия",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "будет",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "состоять",
+      "lemma": "состоять",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "двух",
+      "lemma": "два",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Gen"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "игр",
+      "lemma": "игра",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "которые",
+      "lemma": "который",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "пройдут",
+      "lemma": "пройти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "20",
+      "lemma": "20",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "27",
+      "lemma": "27",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "ноября",
+      "lemma": "ноябрь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Финал"
+        ],
+        [
+          2,
+          "Кубка"
+        ],
+        [
+          3,
+          "Бразилии"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Финал Кубка Бразилии ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Кубка"
+        ],
+        [
+          3,
+          "Бразилии"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Кубка Бразилии ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Бразилии"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Бразилии ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "двух"
+        ],
+        [
+          8,
+          "игр"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "пройдут"
+        ],
+        [
+          12,
+          "20"
+        ],
+        [
+          13,
+          "и"
+        ],
+        [
+          14,
+          "27"
+        ],
+        [
+          15,
+          "ноября"
+        ]
+      ],
+      "head_id": 8,
+      "text": "двух игр , которые пройдут 20 и 27 ноября ",
+      "length": 9
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PRON",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          10,
+          "которые"
+        ]
+      ],
+      "head_id": 10,
+      "text": "которые ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          15,
+          "ноября"
+        ]
+      ],
+      "head_id": 15,
+      "text": "ноября ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Финал"
+        ],
+        [
+          2,
+          "Кубка"
+        ],
+        [
+          3,
+          "Бразилии"
+        ],
+        [
+          4,
+          "будет"
+        ],
+        [
+          5,
+          "состоять"
+        ],
+        [
+          6,
+          "из"
+        ],
+        [
+          7,
+          "двух"
+        ],
+        [
+          8,
+          "игр"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "пройдут"
+        ],
+        [
+          12,
+          "20"
+        ],
+        [
+          13,
+          "и"
+        ],
+        [
+          14,
+          "27"
+        ],
+        [
+          15,
+          "ноября"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Финал Кубка Бразилии будет состоять из двух игр , которые пройдут 20 и 27 ноября ",
+      "length": 15
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          4,
+          "будет"
+        ],
+        [
+          5,
+          "состоять"
+        ],
+        [
+          6,
+          "из"
+        ],
+        [
+          7,
+          "двух"
+        ],
+        [
+          8,
+          "игр"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "пройдут"
+        ],
+        [
+          12,
+          "20"
+        ],
+        [
+          13,
+          "и"
+        ],
+        [
+          14,
+          "27"
+        ],
+        [
+          15,
+          "ноября"
+        ]
+      ],
+      "head_id": 4,
+      "text": "будет состоять из двух игр , которые пройдут 20 и 27 ноября ",
+      "length": 12
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "пройдут"
+        ],
+        [
+          12,
+          "20"
+        ],
+        [
+          13,
+          "и"
+        ],
+        [
+          14,
+          "27"
+        ],
+        [
+          15,
+          "ноября"
+        ]
+      ],
+      "head_id": 11,
+      "text": "которые пройдут 20 и 27 ноября ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "из"
+        ],
+        [
+          7,
+          "двух"
+        ],
+        [
+          8,
+          "игр"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "которые"
+        ],
+        [
+          11,
+          "пройдут"
+        ],
+        [
+          12,
+          "20"
+        ],
+        [
+          13,
+          "и"
+        ],
+        [
+          14,
+          "27"
+        ],
+        [
+          15,
+          "ноября"
+        ]
+      ],
+      "head_id": 6,
+      "text": "из двух игр , которые пройдут 20 и 27 ноября ",
+      "length": 10
+    },
+    {
+      "name": "NumP",
+      "id": 10,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          12,
+          "20"
+        ],
+        [
+          13,
+          "и"
+        ],
+        [
+          14,
+          "27"
+        ],
+        [
+          15,
+          "ноября"
+        ]
+      ],
+      "head_id": 12,
+      "text": "20 и 27 ноября ",
+      "length": 4
+    },
+    {
+      "name": "NumP",
+      "id": 11,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          13,
+          "и"
+        ],
+        [
+          14,
+          "27"
+        ]
+      ],
+      "head_id": 14,
+      "text": "и 27 ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/07/shot/"
+}

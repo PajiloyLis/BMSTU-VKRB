@@ -1,0 +1,233 @@
+{
+  "id": "221021_4",
+  "text": "От меня ничего не зависело.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [PP От [NP меня]] [NP ничего] не зависело] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "От",
+      "lemma": "от",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "меня",
+      "lemma": "я",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen",
+          "Number=Sing",
+          "Person=1"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "ничего",
+      "lemma": "ничто",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "зависело",
+      "lemma": "зависеть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Gen",
+        "Number=Sing",
+        "Person=1"
+      ],
+      "tokens": [
+        [
+          2,
+          "меня"
+        ]
+      ],
+      "head_id": 2,
+      "text": "меня ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Gen"
+      ],
+      "tokens": [
+        [
+          3,
+          "ничего"
+        ]
+      ],
+      "head_id": 3,
+      "text": "ничего ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "От"
+        ],
+        [
+          2,
+          "меня"
+        ],
+        [
+          3,
+          "ничего"
+        ],
+        [
+          4,
+          "не"
+        ],
+        [
+          5,
+          "зависело"
+        ]
+      ],
+      "head_id": 5,
+      "text": "От меня ничего не зависело ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "От"
+        ],
+        [
+          2,
+          "меня"
+        ]
+      ],
+      "head_id": 1,
+      "text": "От меня ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/23/home/"
+}

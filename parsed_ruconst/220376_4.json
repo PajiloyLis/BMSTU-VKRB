@@ -1,0 +1,359 @@
+{
+  "id": "220376_4",
+  "text": "Нельзя делить преступников на хороших и плохих.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [AdvP Нельзя [VP делить [NP преступников] [PP на [AP хороших [AP и плохих]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Нельзя",
+      "lemma": "нельзя",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "делить",
+      "lemma": "делить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "преступников",
+      "lemma": "преступник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "хороших",
+      "lemma": "хороший",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Anim",
+          "Case=Loc",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "плохих",
+      "lemma": "плохой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Anim",
+          "Case=Loc",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          3,
+          "преступников"
+        ]
+      ],
+      "head_id": 3,
+      "text": "преступников ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          2,
+          "делить"
+        ],
+        [
+          3,
+          "преступников"
+        ],
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "хороших"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "плохих"
+        ]
+      ],
+      "head_id": 2,
+      "text": "делить преступников на хороших и плохих ",
+      "length": 6
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Animacy=Anim",
+        "Case=Loc",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "хороших"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "плохих"
+        ]
+      ],
+      "head_id": 5,
+      "text": "хороших и плохих ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Animacy=Anim",
+        "Case=Loc",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "плохих"
+        ]
+      ],
+      "head_id": 7,
+      "text": "и плохих ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "хороших"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "плохих"
+        ]
+      ],
+      "head_id": 4,
+      "text": "на хороших и плохих ",
+      "length": 4
+    },
+    {
+      "name": "AdvP",
+      "id": 5,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Нельзя"
+        ],
+        [
+          2,
+          "делить"
+        ],
+        [
+          3,
+          "преступников"
+        ],
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "хороших"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "плохих"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Нельзя делить преступников на хороших и плохих ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/29/ten/"
+}

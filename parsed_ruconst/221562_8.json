@@ -1,0 +1,955 @@
+{
+  "id": "221562_8",
+  "text": "А те, кто голодает в связи с 223-1 статьей, голодают напрасно, потому что политика не изменится.",
+  "length": 16,
+  "source": "4",
+  "sentence_tree": " [VP А [NP те , [VP [NP кто] голодает [PP [PP в [NP связи] с] [NP [NumP 223 - [NumP 1]] статьей]]]] , голодают [AdvP напрасно] , [VP [AdvP потому что] [NP политика] не изменится]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "А",
+      "lemma": "а",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "те",
+      "lemma": "тот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Nom",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "кто",
+      "lemma": "кто",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "голодает",
+      "lemma": "голодать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "связи",
+      "lemma": "связь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "223",
+      "lemma": "223",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 12
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "-",
+      "lemma": "-",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 12
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "1",
+      "lemma": "1",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 13
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "статьей",
+      "lemma": "статья",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "голодают",
+      "lemma": "голодать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "напрасно",
+      "lemma": "напрасно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 21,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "потому",
+      "lemma": "потому",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 21,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 17,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 19,
+      "token": "политика",
+      "lemma": "политика",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 21,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 20,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 21,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 21,
+      "token": "изменится",
+      "lemma": "измениться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 22,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "DET",
+        "Case=Nom",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "те"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "кто"
+        ],
+        [
+          5,
+          "голодает"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "связи"
+        ],
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "223"
+        ],
+        [
+          10,
+          "-"
+        ],
+        [
+          11,
+          "1"
+        ],
+        [
+          12,
+          "статьей"
+        ]
+      ],
+      "head_id": 2,
+      "text": "те , кто голодает в связи с 223 - 1 статьей ",
+      "length": 11
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          4,
+          "кто"
+        ]
+      ],
+      "head_id": 4,
+      "text": "кто ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "связи"
+        ]
+      ],
+      "head_id": 7,
+      "text": "связи ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "223"
+        ],
+        [
+          10,
+          "-"
+        ],
+        [
+          11,
+          "1"
+        ],
+        [
+          12,
+          "статьей"
+        ]
+      ],
+      "head_id": 12,
+      "text": "223 - 1 статьей ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          19,
+          "политика"
+        ]
+      ],
+      "head_id": 19,
+      "text": "политика ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "А"
+        ],
+        [
+          2,
+          "те"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "кто"
+        ],
+        [
+          5,
+          "голодает"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "связи"
+        ],
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "223"
+        ],
+        [
+          10,
+          "-"
+        ],
+        [
+          11,
+          "1"
+        ],
+        [
+          12,
+          "статьей"
+        ],
+        [
+          13,
+          ","
+        ],
+        [
+          14,
+          "голодают"
+        ],
+        [
+          15,
+          "напрасно"
+        ],
+        [
+          16,
+          ","
+        ],
+        [
+          17,
+          "потому"
+        ],
+        [
+          18,
+          "что"
+        ],
+        [
+          19,
+          "политика"
+        ],
+        [
+          20,
+          "не"
+        ],
+        [
+          21,
+          "изменится"
+        ]
+      ],
+      "head_id": 14,
+      "text": "А те , кто голодает в связи с 223 - 1 статьей , голодают напрасно , потому что политика не изменится ",
+      "length": 21
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          4,
+          "кто"
+        ],
+        [
+          5,
+          "голодает"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "связи"
+        ],
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "223"
+        ],
+        [
+          10,
+          "-"
+        ],
+        [
+          11,
+          "1"
+        ],
+        [
+          12,
+          "статьей"
+        ]
+      ],
+      "head_id": 5,
+      "text": "кто голодает в связи с 223 - 1 статьей ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          17,
+          "потому"
+        ],
+        [
+          18,
+          "что"
+        ],
+        [
+          19,
+          "политика"
+        ],
+        [
+          20,
+          "не"
+        ],
+        [
+          21,
+          "изменится"
+        ]
+      ],
+      "head_id": 21,
+      "text": "потому что политика не изменится ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 8,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "связи"
+        ],
+        [
+          8,
+          "с"
+        ]
+      ],
+      "head_id": 8,
+      "text": "в связи с ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "связи"
+        ],
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "223"
+        ],
+        [
+          10,
+          "-"
+        ],
+        [
+          11,
+          "1"
+        ],
+        [
+          12,
+          "статьей"
+        ]
+      ],
+      "head_id": 6,
+      "text": "в связи с 223 - 1 статьей ",
+      "length": 7
+    },
+    {
+      "name": "AdvP",
+      "id": 10,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          15,
+          "напрасно"
+        ]
+      ],
+      "head_id": 15,
+      "text": "напрасно ",
+      "length": 1
+    },
+    {
+      "name": "AdvP",
+      "id": 11,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          17,
+          "потому"
+        ],
+        [
+          18,
+          "что"
+        ]
+      ],
+      "head_id": 17,
+      "text": "потому что ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 12,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "223"
+        ],
+        [
+          10,
+          "-"
+        ],
+        [
+          11,
+          "1"
+        ]
+      ],
+      "head_id": 9,
+      "text": "223 - 1 ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 13,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          11,
+          "1"
+        ]
+      ],
+      "head_id": 11,
+      "text": "1 ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/18/ellips/"
+}

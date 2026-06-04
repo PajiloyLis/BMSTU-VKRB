@@ -1,0 +1,425 @@
+{
+  "id": "225535_2",
+  "text": "Программу можно использовать в бесплатном и платном режимах.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Программу] [AdvP можно использовать [PP в [NP [AP бесплатном [AP и платном]] режимах]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Программу",
+      "lemma": "Программа",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "можно",
+      "lemma": "можно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "использовать",
+      "lemma": "использовать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "бесплатном",
+      "lemma": "бесплатный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "платном",
+      "lemma": "платный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "режимах",
+      "lemma": "режим",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Программу"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Программу ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "бесплатном"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "платном"
+        ],
+        [
+          8,
+          "режимах"
+        ]
+      ],
+      "head_id": 8,
+      "text": "бесплатном и платном режимах ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Программу"
+        ],
+        [
+          2,
+          "можно"
+        ],
+        [
+          3,
+          "использовать"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "бесплатном"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "платном"
+        ],
+        [
+          8,
+          "режимах"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Программу можно использовать в бесплатном и платном режимах ",
+      "length": 8
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Case=Loc",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "бесплатном"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "платном"
+        ]
+      ],
+      "head_id": 5,
+      "text": "бесплатном и платном ",
+      "length": 3
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Case=Loc",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "платном"
+        ]
+      ],
+      "head_id": 7,
+      "text": "и платном ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "бесплатном"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "платном"
+        ],
+        [
+          8,
+          "режимах"
+        ]
+      ],
+      "head_id": 4,
+      "text": "в бесплатном и платном режимах ",
+      "length": 5
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          2,
+          "можно"
+        ],
+        [
+          3,
+          "использовать"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "бесплатном"
+        ],
+        [
+          6,
+          "и"
+        ],
+        [
+          7,
+          "платном"
+        ],
+        [
+          8,
+          "режимах"
+        ]
+      ],
+      "head_id": 2,
+      "text": "можно использовать в бесплатном и платном режимах ",
+      "length": 7
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/15/albano/"
+}

@@ -1,0 +1,252 @@
+{
+  "id": "223800_3",
+  "text": "Трех остальных Деннелинг назвать отказался.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [AP Трех остальных] [VP [NP Деннелинг] назвать] отказался] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Трех",
+      "lemma": "три",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Anim",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "остальных",
+      "lemma": "остальной",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Деннелинг",
+      "lemma": "Деннелинг",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "назвать",
+      "lemma": "назвать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "отказался",
+      "lemma": "отказаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Деннелинг"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Деннелинг ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Трех"
+        ],
+        [
+          2,
+          "остальных"
+        ],
+        [
+          3,
+          "Деннелинг"
+        ],
+        [
+          4,
+          "назвать"
+        ],
+        [
+          5,
+          "отказался"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Трех остальных Деннелинг назвать отказался ",
+      "length": 5
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "Деннелинг"
+        ],
+        [
+          4,
+          "назвать"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Деннелинг назвать ",
+      "length": 2
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Degree=Pos",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Трех"
+        ],
+        [
+          2,
+          "остальных"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Трех остальных ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/29/nets/"
+}

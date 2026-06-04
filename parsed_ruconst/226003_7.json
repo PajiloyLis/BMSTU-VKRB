@@ -1,0 +1,455 @@
+{
+  "id": "226003_7",
+  "text": "Суд в Мурманске постановил арестовать их на два месяца.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP Суд [PP в [NP Мурманске]]] постановил [VP арестовать [NP их] [PP на [NP два месяца]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Суд",
+      "lemma": "суд",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "Мурманске",
+      "lemma": "Мурманск",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "постановил",
+      "lemma": "постановить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "арестовать",
+      "lemma": "арестовывать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "их",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "два",
+      "lemma": "два",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "месяца",
+      "lemma": "месяц",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Суд"
+        ],
+        [
+          2,
+          "в"
+        ],
+        [
+          3,
+          "Мурманске"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Суд в Мурманске ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "Мурманске"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Мурманске ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          6,
+          "их"
+        ]
+      ],
+      "head_id": 6,
+      "text": "их ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "два"
+        ],
+        [
+          9,
+          "месяца"
+        ]
+      ],
+      "head_id": 9,
+      "text": "два месяца ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Суд"
+        ],
+        [
+          2,
+          "в"
+        ],
+        [
+          3,
+          "Мурманске"
+        ],
+        [
+          4,
+          "постановил"
+        ],
+        [
+          5,
+          "арестовать"
+        ],
+        [
+          6,
+          "их"
+        ],
+        [
+          7,
+          "на"
+        ],
+        [
+          8,
+          "два"
+        ],
+        [
+          9,
+          "месяца"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Суд в Мурманске постановил арестовать их на два месяца ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          5,
+          "арестовать"
+        ],
+        [
+          6,
+          "их"
+        ],
+        [
+          7,
+          "на"
+        ],
+        [
+          8,
+          "два"
+        ],
+        [
+          9,
+          "месяца"
+        ]
+      ],
+      "head_id": 5,
+      "text": "арестовать их на два месяца ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "в"
+        ],
+        [
+          3,
+          "Мурманске"
+        ]
+      ],
+      "head_id": 2,
+      "text": "в Мурманске ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "на"
+        ],
+        [
+          8,
+          "два"
+        ],
+        [
+          9,
+          "месяца"
+        ]
+      ],
+      "head_id": 7,
+      "text": "на два месяца ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/12/vasilyeva/"
+}

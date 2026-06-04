@@ -1,0 +1,657 @@
+{
+  "id": "218560_7",
+  "text": "Рада приняла этот документ 24 октября, а президент  Виктор Янукович подписал 8 ноября.",
+  "length": 13,
+  "source": "4",
+  "sentence_tree": " [VP [NP Рада] приняла [NP этот документ] [NumP 24 [NP октября]] , [VP а [NP президент [NP Виктор [NP Янукович]]] подписал [NumP 8 [NP ноября]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Рада",
+      "lemma": "рада",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "приняла",
+      "lemma": "принять",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "этот",
+      "lemma": "этот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "документ",
+      "lemma": "документ",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "24",
+      "lemma": "24",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "октября",
+      "lemma": "октябрь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "а",
+      "lemma": "а",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "президент",
+      "lemma": "президент",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "Виктор",
+      "lemma": "Виктор",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "Янукович",
+      "lemma": "янукович",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "подписал",
+      "lemma": "подписать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "8",
+      "lemma": "8",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "ноября",
+      "lemma": "ноябрь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Рада"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Рада ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "этот"
+        ],
+        [
+          4,
+          "документ"
+        ]
+      ],
+      "head_id": 4,
+      "text": "этот документ ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "октября"
+        ]
+      ],
+      "head_id": 6,
+      "text": "октября ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "президент"
+        ],
+        [
+          10,
+          "Виктор"
+        ],
+        [
+          11,
+          "Янукович"
+        ]
+      ],
+      "head_id": 9,
+      "text": "президент Виктор Янукович ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          10,
+          "Виктор"
+        ],
+        [
+          11,
+          "Янукович"
+        ]
+      ],
+      "head_id": 10,
+      "text": "Виктор Янукович ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "Янукович"
+        ]
+      ],
+      "head_id": 11,
+      "text": "Янукович ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "ноября"
+        ]
+      ],
+      "head_id": 14,
+      "text": "ноября ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Рада"
+        ],
+        [
+          2,
+          "приняла"
+        ],
+        [
+          3,
+          "этот"
+        ],
+        [
+          4,
+          "документ"
+        ],
+        [
+          5,
+          "24"
+        ],
+        [
+          6,
+          "октября"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "а"
+        ],
+        [
+          9,
+          "президент"
+        ],
+        [
+          10,
+          "Виктор"
+        ],
+        [
+          11,
+          "Янукович"
+        ],
+        [
+          12,
+          "подписал"
+        ],
+        [
+          13,
+          "8"
+        ],
+        [
+          14,
+          "ноября"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Рада приняла этот документ 24 октября , а президент Виктор Янукович подписал 8 ноября ",
+      "length": 14
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          8,
+          "а"
+        ],
+        [
+          9,
+          "президент"
+        ],
+        [
+          10,
+          "Виктор"
+        ],
+        [
+          11,
+          "Янукович"
+        ],
+        [
+          12,
+          "подписал"
+        ],
+        [
+          13,
+          "8"
+        ],
+        [
+          14,
+          "ноября"
+        ]
+      ],
+      "head_id": 12,
+      "text": "а президент Виктор Янукович подписал 8 ноября ",
+      "length": 7
+    },
+    {
+      "name": "NumP",
+      "id": 9,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "24"
+        ],
+        [
+          6,
+          "октября"
+        ]
+      ],
+      "head_id": 5,
+      "text": "24 октября ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 10,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          13,
+          "8"
+        ],
+        [
+          14,
+          "ноября"
+        ]
+      ],
+      "head_id": 13,
+      "text": "8 ноября ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/20/mourinho/"
+}

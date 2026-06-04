@@ -1,0 +1,594 @@
+{
+  "id": "225448_9",
+  "text": "Родственников погибших проводили в терминал 2, где с ними работают психологи.",
+  "length": 11,
+  "source": "4",
+  "sentence_tree": " [VP [NP Родственников погибших] проводили [PP в [NP терминал 2 , [VP [AdvP где] [PP с [NP ними]] работают [NP психологи]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Родственников",
+      "lemma": "родственник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "погибших",
+      "lemma": "погибнуть",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Gen",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "проводили",
+      "lemma": "проводить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "терминал",
+      "lemma": "терминал",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "2",
+      "lemma": "2",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "где",
+      "lemma": "где",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "ними",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Ins",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "работают",
+      "lemma": "работать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "психологи",
+      "lemma": "психолог",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Родственников"
+        ],
+        [
+          2,
+          "погибших"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Родственников погибших ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "терминал"
+        ],
+        [
+          6,
+          "2"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "где"
+        ],
+        [
+          9,
+          "с"
+        ],
+        [
+          10,
+          "ними"
+        ],
+        [
+          11,
+          "работают"
+        ],
+        [
+          12,
+          "психологи"
+        ]
+      ],
+      "head_id": 5,
+      "text": "терминал 2 , где с ними работают психологи ",
+      "length": 8
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Ins",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          10,
+          "ними"
+        ]
+      ],
+      "head_id": 10,
+      "text": "ними ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          12,
+          "психологи"
+        ]
+      ],
+      "head_id": 12,
+      "text": "психологи ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Родственников"
+        ],
+        [
+          2,
+          "погибших"
+        ],
+        [
+          3,
+          "проводили"
+        ],
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "терминал"
+        ],
+        [
+          6,
+          "2"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "где"
+        ],
+        [
+          9,
+          "с"
+        ],
+        [
+          10,
+          "ними"
+        ],
+        [
+          11,
+          "работают"
+        ],
+        [
+          12,
+          "психологи"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Родственников погибших проводили в терминал 2 , где с ними работают психологи ",
+      "length": 12
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          8,
+          "где"
+        ],
+        [
+          9,
+          "с"
+        ],
+        [
+          10,
+          "ними"
+        ],
+        [
+          11,
+          "работают"
+        ],
+        [
+          12,
+          "психологи"
+        ]
+      ],
+      "head_id": 11,
+      "text": "где с ними работают психологи ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "в"
+        ],
+        [
+          5,
+          "терминал"
+        ],
+        [
+          6,
+          "2"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "где"
+        ],
+        [
+          9,
+          "с"
+        ],
+        [
+          10,
+          "ними"
+        ],
+        [
+          11,
+          "работают"
+        ],
+        [
+          12,
+          "психологи"
+        ]
+      ],
+      "head_id": 4,
+      "text": "в терминал 2 , где с ними работают психологи ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "с"
+        ],
+        [
+          10,
+          "ними"
+        ]
+      ],
+      "head_id": 9,
+      "text": "с ними ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 8,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          8,
+          "где"
+        ]
+      ],
+      "head_id": 8,
+      "text": "где ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/17/serenko/"
+}

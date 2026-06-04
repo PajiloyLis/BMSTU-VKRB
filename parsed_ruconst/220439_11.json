@@ -1,0 +1,565 @@
+{
+  "id": "220439_11",
+  "text": "Драка возникла, когда на празднике остались примерно 50 из 500 гостей.",
+  "length": 11,
+  "source": "4",
+  "sentence_tree": " [VP [NP Драка] возникла , [VP когда [PP на [NP празднике]] остались [NumP [AdvP примерно] 50 [PP из [NP 500 гостей]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Драка",
+      "lemma": "драка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "возникла",
+      "lemma": "возникнуть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "когда",
+      "lemma": "когда",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "празднике",
+      "lemma": "праздник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "остались",
+      "lemma": "остаться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "примерно",
+      "lemma": "примерно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "50",
+      "lemma": "50",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "500",
+      "lemma": "500",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "гостей",
+      "lemma": "гость",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Драка"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Драка ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "празднике"
+        ]
+      ],
+      "head_id": 6,
+      "text": "празднике ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          11,
+          "500"
+        ],
+        [
+          12,
+          "гостей"
+        ]
+      ],
+      "head_id": 12,
+      "text": "500 гостей ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Драка"
+        ],
+        [
+          2,
+          "возникла"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "когда"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "празднике"
+        ],
+        [
+          7,
+          "остались"
+        ],
+        [
+          8,
+          "примерно"
+        ],
+        [
+          9,
+          "50"
+        ],
+        [
+          10,
+          "из"
+        ],
+        [
+          11,
+          "500"
+        ],
+        [
+          12,
+          "гостей"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Драка возникла , когда на празднике остались примерно 50 из 500 гостей ",
+      "length": 12
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          4,
+          "когда"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "празднике"
+        ],
+        [
+          7,
+          "остались"
+        ],
+        [
+          8,
+          "примерно"
+        ],
+        [
+          9,
+          "50"
+        ],
+        [
+          10,
+          "из"
+        ],
+        [
+          11,
+          "500"
+        ],
+        [
+          12,
+          "гостей"
+        ]
+      ],
+      "head_id": 7,
+      "text": "когда на празднике остались примерно 50 из 500 гостей ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "празднике"
+        ]
+      ],
+      "head_id": 5,
+      "text": "на празднике ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          10,
+          "из"
+        ],
+        [
+          11,
+          "500"
+        ],
+        [
+          12,
+          "гостей"
+        ]
+      ],
+      "head_id": 10,
+      "text": "из 500 гостей ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 7,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          8,
+          "примерно"
+        ]
+      ],
+      "head_id": 8,
+      "text": "примерно ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 8,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "примерно"
+        ],
+        [
+          9,
+          "50"
+        ],
+        [
+          10,
+          "из"
+        ],
+        [
+          11,
+          "500"
+        ],
+        [
+          12,
+          "гостей"
+        ]
+      ],
+      "head_id": 9,
+      "text": "примерно 50 из 500 гостей ",
+      "length": 5
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/27/pa/"
+}

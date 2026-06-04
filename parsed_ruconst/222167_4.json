@@ -1,0 +1,436 @@
+{
+  "id": "222167_4",
+  "text": "Путин пообещал отдельно рассмотреть возможность амнистии для Кривова.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Путин] пообещал [VP [AdvP отдельно] рассмотреть [NP возможность [NP амнистии [PP для [NP Кривова]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Путин",
+      "lemma": "Путин",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "пообещал",
+      "lemma": "пообещать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "отдельно",
+      "lemma": "отдельно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "рассмотреть",
+      "lemma": "рассмотреть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "возможность",
+      "lemma": "возможность",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "амнистии",
+      "lemma": "амнистия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "для",
+      "lemma": "для",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Кривова",
+      "lemma": "Кривов",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Путин"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Путин ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "возможность"
+        ],
+        [
+          6,
+          "амнистии"
+        ],
+        [
+          7,
+          "для"
+        ],
+        [
+          8,
+          "Кривова"
+        ]
+      ],
+      "head_id": 5,
+      "text": "возможность амнистии для Кривова ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "амнистии"
+        ],
+        [
+          7,
+          "для"
+        ],
+        [
+          8,
+          "Кривова"
+        ]
+      ],
+      "head_id": 6,
+      "text": "амнистии для Кривова ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "Кривова"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Кривова ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Путин"
+        ],
+        [
+          2,
+          "пообещал"
+        ],
+        [
+          3,
+          "отдельно"
+        ],
+        [
+          4,
+          "рассмотреть"
+        ],
+        [
+          5,
+          "возможность"
+        ],
+        [
+          6,
+          "амнистии"
+        ],
+        [
+          7,
+          "для"
+        ],
+        [
+          8,
+          "Кривова"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Путин пообещал отдельно рассмотреть возможность амнистии для Кривова ",
+      "length": 8
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "отдельно"
+        ],
+        [
+          4,
+          "рассмотреть"
+        ],
+        [
+          5,
+          "возможность"
+        ],
+        [
+          6,
+          "амнистии"
+        ],
+        [
+          7,
+          "для"
+        ],
+        [
+          8,
+          "Кривова"
+        ]
+      ],
+      "head_id": 4,
+      "text": "отдельно рассмотреть возможность амнистии для Кривова ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "для"
+        ],
+        [
+          8,
+          "Кривова"
+        ]
+      ],
+      "head_id": 7,
+      "text": "для Кривова ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 7,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          3,
+          "отдельно"
+        ]
+      ],
+      "head_id": 3,
+      "text": "отдельно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/12/mallorka/"
+}

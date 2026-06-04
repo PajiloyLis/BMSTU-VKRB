@@ -1,0 +1,428 @@
+{
+  "id": "220391_5",
+  "text": "Для начисления пенсии необходимо набрать не менее 30 баллов.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [AP [PP Для [NP начисления [NP пенсии]]] необходимо [VP набрать [NP [AdvP не менее] 30 баллов]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Для",
+      "lemma": "для",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "начисления",
+      "lemma": "начисление",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "пенсии",
+      "lemma": "пенсия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "необходимо",
+      "lemma": "необходимый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "набрать",
+      "lemma": "набрать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "менее",
+      "lemma": "менее",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "30",
+      "lemma": "30",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "баллов",
+      "lemma": "балл",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "начисления"
+        ],
+        [
+          3,
+          "пенсии"
+        ]
+      ],
+      "head_id": 2,
+      "text": "начисления пенсии ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "пенсии"
+        ]
+      ],
+      "head_id": 3,
+      "text": "пенсии ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "не"
+        ],
+        [
+          7,
+          "менее"
+        ],
+        [
+          8,
+          "30"
+        ],
+        [
+          9,
+          "баллов"
+        ]
+      ],
+      "head_id": 9,
+      "text": "не менее 30 баллов ",
+      "length": 4
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          5,
+          "набрать"
+        ],
+        [
+          6,
+          "не"
+        ],
+        [
+          7,
+          "менее"
+        ],
+        [
+          8,
+          "30"
+        ],
+        [
+          9,
+          "баллов"
+        ]
+      ],
+      "head_id": 5,
+      "text": "набрать не менее 30 баллов ",
+      "length": 5
+    },
+    {
+      "name": "AP",
+      "id": 4,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Для"
+        ],
+        [
+          2,
+          "начисления"
+        ],
+        [
+          3,
+          "пенсии"
+        ],
+        [
+          4,
+          "необходимо"
+        ],
+        [
+          5,
+          "набрать"
+        ],
+        [
+          6,
+          "не"
+        ],
+        [
+          7,
+          "менее"
+        ],
+        [
+          8,
+          "30"
+        ],
+        [
+          9,
+          "баллов"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Для начисления пенсии необходимо набрать не менее 30 баллов ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "Для"
+        ],
+        [
+          2,
+          "начисления"
+        ],
+        [
+          3,
+          "пенсии"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Для начисления пенсии ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          6,
+          "не"
+        ],
+        [
+          7,
+          "менее"
+        ]
+      ],
+      "head_id": 7,
+      "text": "не менее ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/29/dagestan/"
+}

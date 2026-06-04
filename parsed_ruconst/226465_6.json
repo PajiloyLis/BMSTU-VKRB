@@ -1,0 +1,426 @@
+{
+  "id": "226465_6",
+  "text": "Двое мужчин подожгли помещение, воспользовавшись канистрами с бензином.",
+  "length": 8,
+  "source": "4",
+  "sentence_tree": " [VP [NP Двое мужчин] подожгли [NP помещение] , [VP воспользовавшись [NP канистрами [PP с [NP бензином]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Двое",
+      "lemma": "двое",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "мужчин",
+      "lemma": "мужчина",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "подожгли",
+      "lemma": "поджечь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "помещение",
+      "lemma": "помещение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "воспользовавшись",
+      "lemma": "пользоваться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Tense=Past",
+          "VerbForm=Conv",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "канистрами",
+      "lemma": "канистр",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "бензином",
+      "lemma": "бензин",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Двое"
+        ],
+        [
+          2,
+          "мужчин"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Двое мужчин ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "помещение"
+        ]
+      ],
+      "head_id": 4,
+      "text": "помещение ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "канистрами"
+        ],
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "бензином"
+        ]
+      ],
+      "head_id": 7,
+      "text": "канистрами с бензином ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "бензином"
+        ]
+      ],
+      "head_id": 9,
+      "text": "бензином ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Двое"
+        ],
+        [
+          2,
+          "мужчин"
+        ],
+        [
+          3,
+          "подожгли"
+        ],
+        [
+          4,
+          "помещение"
+        ],
+        [
+          5,
+          ","
+        ],
+        [
+          6,
+          "воспользовавшись"
+        ],
+        [
+          7,
+          "канистрами"
+        ],
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "бензином"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Двое мужчин подожгли помещение , воспользовавшись канистрами с бензином ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Tense=Past",
+        "VerbForm=Conv",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          6,
+          "воспользовавшись"
+        ],
+        [
+          7,
+          "канистрами"
+        ],
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "бензином"
+        ]
+      ],
+      "head_id": 6,
+      "text": "воспользовавшись канистрами с бензином ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "с"
+        ],
+        [
+          9,
+          "бензином"
+        ]
+      ],
+      "head_id": 8,
+      "text": "с бензином ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/08/but/"
+}

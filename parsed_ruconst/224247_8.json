@@ -1,0 +1,691 @@
+{
+  "id": "224247_8",
+  "text": "Изначально сумма контракта оценивалась в десять миллионов долларов, однако позднее сократилась до 1,25 миллиона.",
+  "length": 14,
+  "source": "4",
+  "sentence_tree": " [VP [AdvP Изначально] [NP сумма [NP контракта]] оценивалась [PP в [NP десять миллионов [NP долларов]]] , [VP [AdvP однако] [AdvP позднее] сократилась [PP до [NP 1,25 миллиона]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Изначально",
+      "lemma": "изначально",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "сумма",
+      "lemma": "сумма",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "контракта",
+      "lemma": "контракт",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "оценивалась",
+      "lemma": "оценивать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "десять",
+      "lemma": "десять",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "миллионов",
+      "lemma": "миллион",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "долларов",
+      "lemma": "доллар",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "однако",
+      "lemma": "однако",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "позднее",
+      "lemma": "поздно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Cmp"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "сократилась",
+      "lemma": "сократиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "до",
+      "lemma": "до",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "1,25",
+      "lemma": "1,25",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "миллиона",
+      "lemma": "миллион",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "сумма"
+        ],
+        [
+          3,
+          "контракта"
+        ]
+      ],
+      "head_id": 2,
+      "text": "сумма контракта ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "контракта"
+        ]
+      ],
+      "head_id": 3,
+      "text": "контракта ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "десять"
+        ],
+        [
+          7,
+          "миллионов"
+        ],
+        [
+          8,
+          "долларов"
+        ]
+      ],
+      "head_id": 7,
+      "text": "десять миллионов долларов ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "долларов"
+        ]
+      ],
+      "head_id": 8,
+      "text": "долларов ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "1,25"
+        ],
+        [
+          15,
+          "миллиона"
+        ]
+      ],
+      "head_id": 15,
+      "text": "1,25 миллиона ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Изначально"
+        ],
+        [
+          2,
+          "сумма"
+        ],
+        [
+          3,
+          "контракта"
+        ],
+        [
+          4,
+          "оценивалась"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "десять"
+        ],
+        [
+          7,
+          "миллионов"
+        ],
+        [
+          8,
+          "долларов"
+        ],
+        [
+          9,
+          ","
+        ],
+        [
+          10,
+          "однако"
+        ],
+        [
+          11,
+          "позднее"
+        ],
+        [
+          12,
+          "сократилась"
+        ],
+        [
+          13,
+          "до"
+        ],
+        [
+          14,
+          "1,25"
+        ],
+        [
+          15,
+          "миллиона"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Изначально сумма контракта оценивалась в десять миллионов долларов , однако позднее сократилась до 1,25 миллиона ",
+      "length": 15
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          10,
+          "однако"
+        ],
+        [
+          11,
+          "позднее"
+        ],
+        [
+          12,
+          "сократилась"
+        ],
+        [
+          13,
+          "до"
+        ],
+        [
+          14,
+          "1,25"
+        ],
+        [
+          15,
+          "миллиона"
+        ]
+      ],
+      "head_id": 12,
+      "text": "однако позднее сократилась до 1,25 миллиона ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "десять"
+        ],
+        [
+          7,
+          "миллионов"
+        ],
+        [
+          8,
+          "долларов"
+        ]
+      ],
+      "head_id": 5,
+      "text": "в десять миллионов долларов ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 8,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          13,
+          "до"
+        ],
+        [
+          14,
+          "1,25"
+        ],
+        [
+          15,
+          "миллиона"
+        ]
+      ],
+      "head_id": 13,
+      "text": "до 1,25 миллиона ",
+      "length": 3
+    },
+    {
+      "name": "AdvP",
+      "id": 9,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Изначально"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Изначально ",
+      "length": 1
+    },
+    {
+      "name": "AdvP",
+      "id": 10,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          10,
+          "однако"
+        ]
+      ],
+      "head_id": 10,
+      "text": "однако ",
+      "length": 1
+    },
+    {
+      "name": "AdvP",
+      "id": 11,
+      "tags": [
+        "ADV",
+        "Degree=Cmp"
+      ],
+      "tokens": [
+        [
+          11,
+          "позднее"
+        ]
+      ],
+      "head_id": 11,
+      "text": "позднее ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/26/rzd/"
+}

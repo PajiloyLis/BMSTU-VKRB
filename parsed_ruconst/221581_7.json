@@ -1,0 +1,714 @@
+{
+  "id": "221581_7",
+  "text": "Город Рино является четвертым крупнейшим в Неваде, в нем проживает около 250 тысяч человек.",
+  "length": 14,
+  "source": "4",
+  "sentence_tree": " [VP [NP Город [NP Рино]] является четвертым [AP крупнейшим [PP в [NP Неваде]]] , [VP [PP в [NP нем]] проживает [PP около [NP 250 тысяч [NP человек]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Город",
+      "lemma": "город",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Рино",
+      "lemma": "Рино",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "является",
+      "lemma": "являться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "четвертым",
+      "lemma": "четвертый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "крупнейшим",
+      "lemma": "крупный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Sup",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "Неваде",
+      "lemma": "Невада",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "нем",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "проживает",
+      "lemma": "проживать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "около",
+      "lemma": "около",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "250",
+      "lemma": "250",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "тысяч",
+      "lemma": "тысяча",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "человек",
+      "lemma": "человек",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Город"
+        ],
+        [
+          2,
+          "Рино"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Город Рино ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Рино"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Рино ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "Неваде"
+        ]
+      ],
+      "head_id": 7,
+      "text": "Неваде ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PRON",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          10,
+          "нем"
+        ]
+      ],
+      "head_id": 10,
+      "text": "нем ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          13,
+          "250"
+        ],
+        [
+          14,
+          "тысяч"
+        ],
+        [
+          15,
+          "человек"
+        ]
+      ],
+      "head_id": 14,
+      "text": "250 тысяч человек ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          15,
+          "человек"
+        ]
+      ],
+      "head_id": 15,
+      "text": "человек ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Город"
+        ],
+        [
+          2,
+          "Рино"
+        ],
+        [
+          3,
+          "является"
+        ],
+        [
+          4,
+          "четвертым"
+        ],
+        [
+          5,
+          "крупнейшим"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "Неваде"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "нем"
+        ],
+        [
+          11,
+          "проживает"
+        ],
+        [
+          12,
+          "около"
+        ],
+        [
+          13,
+          "250"
+        ],
+        [
+          14,
+          "тысяч"
+        ],
+        [
+          15,
+          "человек"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Город Рино является четвертым крупнейшим в Неваде , в нем проживает около 250 тысяч человек ",
+      "length": 15
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "нем"
+        ],
+        [
+          11,
+          "проживает"
+        ],
+        [
+          12,
+          "около"
+        ],
+        [
+          13,
+          "250"
+        ],
+        [
+          14,
+          "тысяч"
+        ],
+        [
+          15,
+          "человек"
+        ]
+      ],
+      "head_id": 11,
+      "text": "в нем проживает около 250 тысяч человек ",
+      "length": 7
+    },
+    {
+      "name": "AP",
+      "id": 8,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Sup",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "крупнейшим"
+        ],
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "Неваде"
+        ]
+      ],
+      "head_id": 5,
+      "text": "крупнейшим в Неваде ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "в"
+        ],
+        [
+          7,
+          "Неваде"
+        ]
+      ],
+      "head_id": 6,
+      "text": "в Неваде ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 10,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "нем"
+        ]
+      ],
+      "head_id": 9,
+      "text": "в нем ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 11,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          12,
+          "около"
+        ],
+        [
+          13,
+          "250"
+        ],
+        [
+          14,
+          "тысяч"
+        ],
+        [
+          15,
+          "человек"
+        ]
+      ],
+      "head_id": 12,
+      "text": "около 250 тысяч человек ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/18/migrants1/"
+}

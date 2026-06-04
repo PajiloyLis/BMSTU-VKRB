@@ -1,0 +1,743 @@
+{
+  "id": "220306_9",
+  "text": "Немец дебютировал в Формуле-1 в 1991 году, выиграв через три года первый чемпионский титул.",
+  "length": 14,
+  "source": "4",
+  "sentence_tree": " [VP [NP Немец] дебютировал [PP в [NP Формуле - [NumP 1]]] [PP в [NP 1991 году]] , [VP выиграв [PP через [NP три года]] [NP первый чемпионский титул]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Немец",
+      "lemma": "немец",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "дебютировал",
+      "lemma": "дебютировать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "Формуле",
+      "lemma": "Формула",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "-",
+      "lemma": "-",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "1",
+      "lemma": "1",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "1991",
+      "lemma": "1991",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "году",
+      "lemma": "год",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "выиграв",
+      "lemma": "выиграть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Tense=Past",
+          "VerbForm=Conv",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "через",
+      "lemma": "через",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "три",
+      "lemma": "три",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "года",
+      "lemma": "год",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "первый",
+      "lemma": "первый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 17,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "чемпионский",
+      "lemma": "чемпионский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 17,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "титул",
+      "lemma": "титул",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Немец"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Немец ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "Формуле"
+        ],
+        [
+          5,
+          "-"
+        ],
+        [
+          6,
+          "1"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Формуле - 1 ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "1991"
+        ],
+        [
+          9,
+          "году"
+        ]
+      ],
+      "head_id": 9,
+      "text": "1991 году ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          13,
+          "три"
+        ],
+        [
+          14,
+          "года"
+        ]
+      ],
+      "head_id": 14,
+      "text": "три года ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          15,
+          "первый"
+        ],
+        [
+          16,
+          "чемпионский"
+        ],
+        [
+          17,
+          "титул"
+        ]
+      ],
+      "head_id": 17,
+      "text": "первый чемпионский титул ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Немец"
+        ],
+        [
+          2,
+          "дебютировал"
+        ],
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "Формуле"
+        ],
+        [
+          5,
+          "-"
+        ],
+        [
+          6,
+          "1"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "1991"
+        ],
+        [
+          9,
+          "году"
+        ],
+        [
+          10,
+          ","
+        ],
+        [
+          11,
+          "выиграв"
+        ],
+        [
+          12,
+          "через"
+        ],
+        [
+          13,
+          "три"
+        ],
+        [
+          14,
+          "года"
+        ],
+        [
+          15,
+          "первый"
+        ],
+        [
+          16,
+          "чемпионский"
+        ],
+        [
+          17,
+          "титул"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Немец дебютировал в Формуле - 1 в 1991 году , выиграв через три года первый чемпионский титул ",
+      "length": 17
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Tense=Past",
+        "VerbForm=Conv",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          11,
+          "выиграв"
+        ],
+        [
+          12,
+          "через"
+        ],
+        [
+          13,
+          "три"
+        ],
+        [
+          14,
+          "года"
+        ],
+        [
+          15,
+          "первый"
+        ],
+        [
+          16,
+          "чемпионский"
+        ],
+        [
+          17,
+          "титул"
+        ]
+      ],
+      "head_id": 11,
+      "text": "выиграв через три года первый чемпионский титул ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "Формуле"
+        ],
+        [
+          5,
+          "-"
+        ],
+        [
+          6,
+          "1"
+        ]
+      ],
+      "head_id": 3,
+      "text": "в Формуле - 1 ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 8,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "1991"
+        ],
+        [
+          9,
+          "году"
+        ]
+      ],
+      "head_id": 7,
+      "text": "в 1991 году ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          12,
+          "через"
+        ],
+        [
+          13,
+          "три"
+        ],
+        [
+          14,
+          "года"
+        ]
+      ],
+      "head_id": 12,
+      "text": "через три года ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 10,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "1"
+        ]
+      ],
+      "head_id": 6,
+      "text": "1 ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/30/sochi/"
+}

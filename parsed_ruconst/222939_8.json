@@ -1,0 +1,647 @@
+{
+  "id": "222939_8",
+  "text": "Добавить такую клавишу пришлось из-за того, что Typo Keyboard заслоняет собой кнопку.",
+  "length": 12,
+  "source": "4",
+  "sentence_tree": " [VP [VP Добавить [NP такую клавишу]] пришлось [PP из-за [NP того , [VP что [NP Typo [NP Keyboard]] заслоняет [NP собой] [NP кнопку]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Добавить",
+      "lemma": "добавить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "такую",
+      "lemma": "такой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "клавишу",
+      "lemma": "клавиша",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "пришлось",
+      "lemma": "прийтись",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "из-за",
+      "lemma": "из-за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "того",
+      "lemma": "то",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "Typo",
+      "lemma": "Typo",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "Keyboard",
+      "lemma": "Keyboard",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "заслоняет",
+      "lemma": "заслонять",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "acl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "собой",
+      "lemma": "себя",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Ins"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "кнопку",
+      "lemma": "кнопка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "такую"
+        ],
+        [
+          3,
+          "клавишу"
+        ]
+      ],
+      "head_id": 3,
+      "text": "такую клавишу ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "того"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "что"
+        ],
+        [
+          9,
+          "Typo"
+        ],
+        [
+          10,
+          "Keyboard"
+        ],
+        [
+          11,
+          "заслоняет"
+        ],
+        [
+          12,
+          "собой"
+        ],
+        [
+          13,
+          "кнопку"
+        ]
+      ],
+      "head_id": 6,
+      "text": "того , что Typo Keyboard заслоняет собой кнопку ",
+      "length": 8
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          9,
+          "Typo"
+        ],
+        [
+          10,
+          "Keyboard"
+        ]
+      ],
+      "head_id": 9,
+      "text": "Typo Keyboard ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          10,
+          "Keyboard"
+        ]
+      ],
+      "head_id": 10,
+      "text": "Keyboard ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PRON",
+        "Case=Ins"
+      ],
+      "tokens": [
+        [
+          12,
+          "собой"
+        ]
+      ],
+      "head_id": 12,
+      "text": "собой ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          13,
+          "кнопку"
+        ]
+      ],
+      "head_id": 13,
+      "text": "кнопку ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Добавить"
+        ],
+        [
+          2,
+          "такую"
+        ],
+        [
+          3,
+          "клавишу"
+        ],
+        [
+          4,
+          "пришлось"
+        ],
+        [
+          5,
+          "из-за"
+        ],
+        [
+          6,
+          "того"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "что"
+        ],
+        [
+          9,
+          "Typo"
+        ],
+        [
+          10,
+          "Keyboard"
+        ],
+        [
+          11,
+          "заслоняет"
+        ],
+        [
+          12,
+          "собой"
+        ],
+        [
+          13,
+          "кнопку"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Добавить такую клавишу пришлось из-за того , что Typo Keyboard заслоняет собой кнопку ",
+      "length": 13
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Добавить"
+        ],
+        [
+          2,
+          "такую"
+        ],
+        [
+          3,
+          "клавишу"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Добавить такую клавишу ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          8,
+          "что"
+        ],
+        [
+          9,
+          "Typo"
+        ],
+        [
+          10,
+          "Keyboard"
+        ],
+        [
+          11,
+          "заслоняет"
+        ],
+        [
+          12,
+          "собой"
+        ],
+        [
+          13,
+          "кнопку"
+        ]
+      ],
+      "head_id": 11,
+      "text": "что Typo Keyboard заслоняет собой кнопку ",
+      "length": 6
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "из-за"
+        ],
+        [
+          6,
+          "того"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "что"
+        ],
+        [
+          9,
+          "Typo"
+        ],
+        [
+          10,
+          "Keyboard"
+        ],
+        [
+          11,
+          "заслоняет"
+        ],
+        [
+          12,
+          "собой"
+        ],
+        [
+          13,
+          "кнопку"
+        ]
+      ],
+      "head_id": 5,
+      "text": "из-за того , что Typo Keyboard заслоняет собой кнопку ",
+      "length": 9
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/06/post/"
+}

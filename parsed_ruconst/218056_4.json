@@ -1,0 +1,483 @@
+{
+  "id": "218056_4",
+  "text": "Таким образом, планируемые сокращения должны затронуть примерно каждого девятого работника.",
+  "length": 10,
+  "source": "4",
+  "sentence_tree": " [AP [NP Таким образом] , [NP планируемые сокращения] должны [VP затронуть [NP [NP [AdvP примерно] каждого] девятого работника]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Таким",
+      "lemma": "такой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "образом",
+      "lemma": "образ",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "parataxis",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "планируемые",
+      "lemma": "планировать",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Imp",
+          "Case=Nom",
+          "Number=Plur",
+          "Tense=Pres",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "сокращения",
+      "lemma": "сокращение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Neut",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "должны",
+      "lemma": "должен",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Number=Plur",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "затронуть",
+      "lemma": "затронуть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "примерно",
+      "lemma": "примерно",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "каждого",
+      "lemma": "каждый",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "девятого",
+      "lemma": "девятый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "работника",
+      "lemma": "работник",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Таким"
+        ],
+        [
+          2,
+          "образом"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Таким образом ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Neut",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "планируемые"
+        ],
+        [
+          5,
+          "сокращения"
+        ]
+      ],
+      "head_id": 5,
+      "text": "планируемые сокращения ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "примерно"
+        ],
+        [
+          9,
+          "каждого"
+        ],
+        [
+          10,
+          "девятого"
+        ],
+        [
+          11,
+          "работника"
+        ]
+      ],
+      "head_id": 11,
+      "text": "примерно каждого девятого работника ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "DET",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "примерно"
+        ],
+        [
+          9,
+          "каждого"
+        ]
+      ],
+      "head_id": 9,
+      "text": "примерно каждого ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          7,
+          "затронуть"
+        ],
+        [
+          8,
+          "примерно"
+        ],
+        [
+          9,
+          "каждого"
+        ],
+        [
+          10,
+          "девятого"
+        ],
+        [
+          11,
+          "работника"
+        ]
+      ],
+      "head_id": 7,
+      "text": "затронуть примерно каждого девятого работника ",
+      "length": 5
+    },
+    {
+      "name": "AP",
+      "id": 5,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Number=Plur",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Таким"
+        ],
+        [
+          2,
+          "образом"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "планируемые"
+        ],
+        [
+          5,
+          "сокращения"
+        ],
+        [
+          6,
+          "должны"
+        ],
+        [
+          7,
+          "затронуть"
+        ],
+        [
+          8,
+          "примерно"
+        ],
+        [
+          9,
+          "каждого"
+        ],
+        [
+          10,
+          "девятого"
+        ],
+        [
+          11,
+          "работника"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Таким образом , планируемые сокращения должны затронуть примерно каждого девятого работника ",
+      "length": 11
+    },
+    {
+      "name": "AdvP",
+      "id": 6,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          8,
+          "примерно"
+        ]
+      ],
+      "head_id": 8,
+      "text": "примерно ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/23/nagrada/"
+}

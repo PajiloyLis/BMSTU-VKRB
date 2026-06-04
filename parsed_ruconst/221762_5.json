@@ -1,0 +1,758 @@
+{
+  "id": "221762_5",
+  "text": "При этом десятки складывались двоичным образом, в то время как числа меньше десяти - обычным десятичным.",
+  "length": 15,
+  "source": "4",
+  "sentence_tree": " [VP [PP При [NP этом]] [NP десятки] складывались [NP двоичным образом] , [NumP [PP в то [NP время] как [NP числа] меньше [AP десяти - [AP обычным] десятичным]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "При",
+      "lemma": "при",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "этом",
+      "lemma": "это",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "десятки",
+      "lemma": "десяток",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "складывались",
+      "lemma": "складываться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "двоичным",
+      "lemma": "двоичный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "образом",
+      "lemma": "образ",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "то",
+      "lemma": "тот",
+      "tagsets": [
+        [
+          "DET",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "время",
+      "lemma": "время",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "числа",
+      "lemma": "число",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "меньше",
+      "lemma": "мало",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "десяти",
+      "lemma": "десять",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Gen"
+        ]
+      ],
+      "parent_token_index": 17,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "-",
+      "lemma": "-",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "обычным",
+      "lemma": "обычный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 17,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "десятичным",
+      "lemma": "десятичный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "этом"
+        ]
+      ],
+      "head_id": 2,
+      "text": "этом ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          3,
+          "десятки"
+        ]
+      ],
+      "head_id": 3,
+      "text": "десятки ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "двоичным"
+        ],
+        [
+          6,
+          "образом"
+        ]
+      ],
+      "head_id": 6,
+      "text": "двоичным образом ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          10,
+          "время"
+        ]
+      ],
+      "head_id": 10,
+      "text": "время ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "числа"
+        ]
+      ],
+      "head_id": 12,
+      "text": "числа ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "При"
+        ],
+        [
+          2,
+          "этом"
+        ],
+        [
+          3,
+          "десятки"
+        ],
+        [
+          4,
+          "складывались"
+        ],
+        [
+          5,
+          "двоичным"
+        ],
+        [
+          6,
+          "образом"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "в"
+        ],
+        [
+          9,
+          "то"
+        ],
+        [
+          10,
+          "время"
+        ],
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "числа"
+        ],
+        [
+          13,
+          "меньше"
+        ],
+        [
+          14,
+          "десяти"
+        ],
+        [
+          15,
+          "-"
+        ],
+        [
+          16,
+          "обычным"
+        ],
+        [
+          17,
+          "десятичным"
+        ]
+      ],
+      "head_id": 4,
+      "text": "При этом десятки складывались двоичным образом , в то время как числа меньше десяти - обычным десятичным ",
+      "length": 17
+    },
+    {
+      "name": "AP",
+      "id": 6,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "десяти"
+        ],
+        [
+          15,
+          "-"
+        ],
+        [
+          16,
+          "обычным"
+        ],
+        [
+          17,
+          "десятичным"
+        ]
+      ],
+      "head_id": 17,
+      "text": "десяти - обычным десятичным ",
+      "length": 4
+    },
+    {
+      "name": "AP",
+      "id": 7,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          16,
+          "обычным"
+        ]
+      ],
+      "head_id": 16,
+      "text": "обычным ",
+      "length": 1
+    },
+    {
+      "name": "PP",
+      "id": 8,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "При"
+        ],
+        [
+          2,
+          "этом"
+        ]
+      ],
+      "head_id": 1,
+      "text": "При этом ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "в"
+        ],
+        [
+          9,
+          "то"
+        ],
+        [
+          10,
+          "время"
+        ],
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "числа"
+        ],
+        [
+          13,
+          "меньше"
+        ],
+        [
+          14,
+          "десяти"
+        ],
+        [
+          15,
+          "-"
+        ],
+        [
+          16,
+          "обычным"
+        ],
+        [
+          17,
+          "десятичным"
+        ]
+      ],
+      "head_id": 8,
+      "text": "в то время как числа меньше десяти - обычным десятичным ",
+      "length": 10
+    },
+    {
+      "name": "NumP",
+      "id": 10,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "в"
+        ],
+        [
+          9,
+          "то"
+        ],
+        [
+          10,
+          "время"
+        ],
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "числа"
+        ],
+        [
+          13,
+          "меньше"
+        ],
+        [
+          14,
+          "десяти"
+        ],
+        [
+          15,
+          "-"
+        ],
+        [
+          16,
+          "обычным"
+        ],
+        [
+          17,
+          "десятичным"
+        ]
+      ],
+      "head_id": 13,
+      "text": "в то время как числа меньше десяти - обычным десятичным ",
+      "length": 10
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/17/migrants/"
+}

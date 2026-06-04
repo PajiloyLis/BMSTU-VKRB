@@ -1,0 +1,467 @@
+{
+  "id": "219822_0",
+  "text": "Штат Нью-Йорк намерен разрешить использование марихуаны в медицинских целях.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [AP [NP Штат [NP Нью-Йорк]] намерен [VP разрешить [NP использование [NP марихуаны] [PP в [NP медицинских целях]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Штат",
+      "lemma": "штат",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Нью-Йорк",
+      "lemma": "Нью-Йорк",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "намерен",
+      "lemma": "намерен",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "разрешить",
+      "lemma": "разрешить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "использование",
+      "lemma": "использование",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "марихуаны",
+      "lemma": "марихуана",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "медицинских",
+      "lemma": "медицинский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Loc",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "целях",
+      "lemma": "цель",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Штат"
+        ],
+        [
+          2,
+          "Нью-Йорк"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Штат Нью-Йорк ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "Нью-Йорк"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Нью-Йорк ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "использование"
+        ],
+        [
+          6,
+          "марихуаны"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "медицинских"
+        ],
+        [
+          9,
+          "целях"
+        ]
+      ],
+      "head_id": 5,
+      "text": "использование марихуаны в медицинских целях ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "марихуаны"
+        ]
+      ],
+      "head_id": 6,
+      "text": "марихуаны ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "медицинских"
+        ],
+        [
+          9,
+          "целях"
+        ]
+      ],
+      "head_id": 9,
+      "text": "медицинских целях ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          4,
+          "разрешить"
+        ],
+        [
+          5,
+          "использование"
+        ],
+        [
+          6,
+          "марихуаны"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "медицинских"
+        ],
+        [
+          9,
+          "целях"
+        ]
+      ],
+      "head_id": 4,
+      "text": "разрешить использование марихуаны в медицинских целях ",
+      "length": 6
+    },
+    {
+      "name": "AP",
+      "id": 6,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Штат"
+        ],
+        [
+          2,
+          "Нью-Йорк"
+        ],
+        [
+          3,
+          "намерен"
+        ],
+        [
+          4,
+          "разрешить"
+        ],
+        [
+          5,
+          "использование"
+        ],
+        [
+          6,
+          "марихуаны"
+        ],
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "медицинских"
+        ],
+        [
+          9,
+          "целях"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Штат Нью-Йорк намерен разрешить использование марихуаны в медицинских целях ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "в"
+        ],
+        [
+          8,
+          "медицинских"
+        ],
+        [
+          9,
+          "целях"
+        ]
+      ],
+      "head_id": 7,
+      "text": "в медицинских целях ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/09/stanica/"
+}

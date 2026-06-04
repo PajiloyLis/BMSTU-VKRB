@@ -1,0 +1,369 @@
+{
+  "id": "217527_5",
+  "text": "Замкнул пятерку еще один китайский производитель — Lenovo.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP Замкнул [NP пятерку] [NP [NumP [AdvP еще] один] китайский производитель — [NP Lenovo]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Замкнул",
+      "lemma": "замкнуть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "пятерку",
+      "lemma": "пятерка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "еще",
+      "lemma": "еще",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "один",
+      "lemma": "один",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Nom",
+          "Gender=Masc"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "китайский",
+      "lemma": "китайский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "производитель",
+      "lemma": "производитель",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "—",
+      "lemma": "—",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Lenovo",
+      "lemma": "Lenovo",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "пятерку"
+        ]
+      ],
+      "head_id": 2,
+      "text": "пятерку ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "еще"
+        ],
+        [
+          4,
+          "один"
+        ],
+        [
+          5,
+          "китайский"
+        ],
+        [
+          6,
+          "производитель"
+        ],
+        [
+          7,
+          "—"
+        ],
+        [
+          8,
+          "Lenovo"
+        ]
+      ],
+      "head_id": 6,
+      "text": "еще один китайский производитель — Lenovo ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          8,
+          "Lenovo"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Lenovo ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Замкнул"
+        ],
+        [
+          2,
+          "пятерку"
+        ],
+        [
+          3,
+          "еще"
+        ],
+        [
+          4,
+          "один"
+        ],
+        [
+          5,
+          "китайский"
+        ],
+        [
+          6,
+          "производитель"
+        ],
+        [
+          7,
+          "—"
+        ],
+        [
+          8,
+          "Lenovo"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Замкнул пятерку еще один китайский производитель — Lenovo ",
+      "length": 8
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          3,
+          "еще"
+        ]
+      ],
+      "head_id": 3,
+      "text": "еще ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 5,
+      "tags": [
+        "NUM",
+        "Case=Nom",
+        "Gender=Masc"
+      ],
+      "tokens": [
+        [
+          3,
+          "еще"
+        ],
+        [
+          4,
+          "один"
+        ]
+      ],
+      "head_id": 4,
+      "text": "еще один ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/28/children/"
+}

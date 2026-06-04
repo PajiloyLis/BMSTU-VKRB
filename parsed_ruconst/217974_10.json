@@ -1,0 +1,485 @@
+{
+  "id": "217974_10",
+  "text": "Спят они на высоте от шести до десяти метров.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP Спят [NP они] [PP на [NP высоте [PP от [NumP шести [PP до [NP десяти метров]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Спят",
+      "lemma": "спить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "они",
+      "lemma": "они",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Number=Plur",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "высоте",
+      "lemma": "высота",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "от",
+      "lemma": "от",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "шести",
+      "lemma": "шесть",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Gen"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "до",
+      "lemma": "до",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "десяти",
+      "lemma": "десять",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Gen"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "метров",
+      "lemma": "метр",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Number=Plur",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          2,
+          "они"
+        ]
+      ],
+      "head_id": 2,
+      "text": "они ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "высоте"
+        ],
+        [
+          5,
+          "от"
+        ],
+        [
+          6,
+          "шести"
+        ],
+        [
+          7,
+          "до"
+        ],
+        [
+          8,
+          "десяти"
+        ],
+        [
+          9,
+          "метров"
+        ]
+      ],
+      "head_id": 4,
+      "text": "высоте от шести до десяти метров ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          8,
+          "десяти"
+        ],
+        [
+          9,
+          "метров"
+        ]
+      ],
+      "head_id": 9,
+      "text": "десяти метров ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Спят"
+        ],
+        [
+          2,
+          "они"
+        ],
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "высоте"
+        ],
+        [
+          5,
+          "от"
+        ],
+        [
+          6,
+          "шести"
+        ],
+        [
+          7,
+          "до"
+        ],
+        [
+          8,
+          "десяти"
+        ],
+        [
+          9,
+          "метров"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Спят они на высоте от шести до десяти метров ",
+      "length": 9
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "на"
+        ],
+        [
+          4,
+          "высоте"
+        ],
+        [
+          5,
+          "от"
+        ],
+        [
+          6,
+          "шести"
+        ],
+        [
+          7,
+          "до"
+        ],
+        [
+          8,
+          "десяти"
+        ],
+        [
+          9,
+          "метров"
+        ]
+      ],
+      "head_id": 3,
+      "text": "на высоте от шести до десяти метров ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "от"
+        ],
+        [
+          6,
+          "шести"
+        ],
+        [
+          7,
+          "до"
+        ],
+        [
+          8,
+          "десяти"
+        ],
+        [
+          9,
+          "метров"
+        ]
+      ],
+      "head_id": 5,
+      "text": "от шести до десяти метров ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "до"
+        ],
+        [
+          8,
+          "десяти"
+        ],
+        [
+          9,
+          "метров"
+        ]
+      ],
+      "head_id": 7,
+      "text": "до десяти метров ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 7,
+      "tags": [
+        "NUM",
+        "Case=Gen"
+      ],
+      "tokens": [
+        [
+          6,
+          "шести"
+        ],
+        [
+          7,
+          "до"
+        ],
+        [
+          8,
+          "десяти"
+        ],
+        [
+          9,
+          "метров"
+        ]
+      ],
+      "head_id": 6,
+      "text": "шести до десяти метров ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/23/fund/"
+}

@@ -1,0 +1,827 @@
+{
+  "id": "222713_4",
+  "text": "Игра выйдет в США 28 января, а европейские геймеры смогут приобрести ее начиная с 31 января.",
+  "length": 16,
+  "source": "4",
+  "sentence_tree": " [VP [NP Игра] выйдет [PP в [NP США]] [NumP 28 [NP января]] , [VP а [NP европейские геймеры] смогут [VP приобрести [NP ее] [VP начиная [PP с [NumP 31 [NP января]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Игра",
+      "lemma": "игра",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "выйдет",
+      "lemma": "выйти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "США",
+      "lemma": "США",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "28",
+      "lemma": "28",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 12
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "января",
+      "lemma": "январь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "а",
+      "lemma": "а",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "европейские",
+      "lemma": "европейский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "геймеры",
+      "lemma": "геймер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "смогут",
+      "lemma": "мочь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "приобрести",
+      "lemma": "приобрести",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "ее",
+      "lemma": "она",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "начиная",
+      "lemma": "начинать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Tense=Pres",
+          "VerbForm=Conv",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "31",
+      "lemma": "31",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 13
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "января",
+      "lemma": "январь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "flat",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Игра"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Игра ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          4,
+          "США"
+        ]
+      ],
+      "head_id": 4,
+      "text": "США ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "января"
+        ]
+      ],
+      "head_id": 6,
+      "text": "января ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          9,
+          "европейские"
+        ],
+        [
+          10,
+          "геймеры"
+        ]
+      ],
+      "head_id": 10,
+      "text": "европейские геймеры ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PRON",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          13,
+          "ее"
+        ]
+      ],
+      "head_id": 13,
+      "text": "ее ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          17,
+          "января"
+        ]
+      ],
+      "head_id": 17,
+      "text": "января ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Игра"
+        ],
+        [
+          2,
+          "выйдет"
+        ],
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "США"
+        ],
+        [
+          5,
+          "28"
+        ],
+        [
+          6,
+          "января"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "а"
+        ],
+        [
+          9,
+          "европейские"
+        ],
+        [
+          10,
+          "геймеры"
+        ],
+        [
+          11,
+          "смогут"
+        ],
+        [
+          12,
+          "приобрести"
+        ],
+        [
+          13,
+          "ее"
+        ],
+        [
+          14,
+          "начиная"
+        ],
+        [
+          15,
+          "с"
+        ],
+        [
+          16,
+          "31"
+        ],
+        [
+          17,
+          "января"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Игра выйдет в США 28 января , а европейские геймеры смогут приобрести ее начиная с 31 января ",
+      "length": 17
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          8,
+          "а"
+        ],
+        [
+          9,
+          "европейские"
+        ],
+        [
+          10,
+          "геймеры"
+        ],
+        [
+          11,
+          "смогут"
+        ],
+        [
+          12,
+          "приобрести"
+        ],
+        [
+          13,
+          "ее"
+        ],
+        [
+          14,
+          "начиная"
+        ],
+        [
+          15,
+          "с"
+        ],
+        [
+          16,
+          "31"
+        ],
+        [
+          17,
+          "января"
+        ]
+      ],
+      "head_id": 11,
+      "text": "а европейские геймеры смогут приобрести ее начиная с 31 января ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          12,
+          "приобрести"
+        ],
+        [
+          13,
+          "ее"
+        ],
+        [
+          14,
+          "начиная"
+        ],
+        [
+          15,
+          "с"
+        ],
+        [
+          16,
+          "31"
+        ],
+        [
+          17,
+          "января"
+        ]
+      ],
+      "head_id": 12,
+      "text": "приобрести ее начиная с 31 января ",
+      "length": 6
+    },
+    {
+      "name": "VP",
+      "id": 9,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Tense=Pres",
+        "VerbForm=Conv",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          14,
+          "начиная"
+        ],
+        [
+          15,
+          "с"
+        ],
+        [
+          16,
+          "31"
+        ],
+        [
+          17,
+          "января"
+        ]
+      ],
+      "head_id": 14,
+      "text": "начиная с 31 января ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 10,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "в"
+        ],
+        [
+          4,
+          "США"
+        ]
+      ],
+      "head_id": 3,
+      "text": "в США ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 11,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          15,
+          "с"
+        ],
+        [
+          16,
+          "31"
+        ],
+        [
+          17,
+          "января"
+        ]
+      ],
+      "head_id": 15,
+      "text": "с 31 января ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 12,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "28"
+        ],
+        [
+          6,
+          "января"
+        ]
+      ],
+      "head_id": 5,
+      "text": "28 января ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 13,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          16,
+          "31"
+        ],
+        [
+          17,
+          "января"
+        ]
+      ],
+      "head_id": 16,
+      "text": "31 января ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/09/sp/"
+}

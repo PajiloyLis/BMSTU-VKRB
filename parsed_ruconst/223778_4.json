@@ -1,0 +1,680 @@
+{
+  "id": "223778_4",
+  "text": "В сообщении уточняется, что еще несколько десятков человек получили травмы различной степени тяжести.",
+  "length": 13,
+  "source": "4",
+  "sentence_tree": " [VP [PP В [NP сообщении]] уточняется , [VP что [NP [NumP [AdvP еще] несколько] десятков [NP человек]] получили [NP травмы [NP различной степени [NP тяжести]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "В",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "сообщении",
+      "lemma": "сообщение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "уточняется",
+      "lemma": "уточнять",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "еще",
+      "lemma": "еще",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "несколько",
+      "lemma": "несколько",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "десятков",
+      "lemma": "десяток",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "человек",
+      "lemma": "человек",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "получили",
+      "lemma": "получить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "травмы",
+      "lemma": "травма",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "различной",
+      "lemma": "различный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "степени",
+      "lemma": "степень",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "тяжести",
+      "lemma": "тяжесть",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "сообщении"
+        ]
+      ],
+      "head_id": 2,
+      "text": "сообщении ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          6,
+          "еще"
+        ],
+        [
+          7,
+          "несколько"
+        ],
+        [
+          8,
+          "десятков"
+        ],
+        [
+          9,
+          "человек"
+        ]
+      ],
+      "head_id": 8,
+      "text": "еще несколько десятков человек ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          9,
+          "человек"
+        ]
+      ],
+      "head_id": 9,
+      "text": "человек ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          11,
+          "травмы"
+        ],
+        [
+          12,
+          "различной"
+        ],
+        [
+          13,
+          "степени"
+        ],
+        [
+          14,
+          "тяжести"
+        ]
+      ],
+      "head_id": 11,
+      "text": "травмы различной степени тяжести ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "различной"
+        ],
+        [
+          13,
+          "степени"
+        ],
+        [
+          14,
+          "тяжести"
+        ]
+      ],
+      "head_id": 13,
+      "text": "различной степени тяжести ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "тяжести"
+        ]
+      ],
+      "head_id": 14,
+      "text": "тяжести ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "сообщении"
+        ],
+        [
+          3,
+          "уточняется"
+        ],
+        [
+          4,
+          ","
+        ],
+        [
+          5,
+          "что"
+        ],
+        [
+          6,
+          "еще"
+        ],
+        [
+          7,
+          "несколько"
+        ],
+        [
+          8,
+          "десятков"
+        ],
+        [
+          9,
+          "человек"
+        ],
+        [
+          10,
+          "получили"
+        ],
+        [
+          11,
+          "травмы"
+        ],
+        [
+          12,
+          "различной"
+        ],
+        [
+          13,
+          "степени"
+        ],
+        [
+          14,
+          "тяжести"
+        ]
+      ],
+      "head_id": 3,
+      "text": "В сообщении уточняется , что еще несколько десятков человек получили травмы различной степени тяжести ",
+      "length": 14
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          5,
+          "что"
+        ],
+        [
+          6,
+          "еще"
+        ],
+        [
+          7,
+          "несколько"
+        ],
+        [
+          8,
+          "десятков"
+        ],
+        [
+          9,
+          "человек"
+        ],
+        [
+          10,
+          "получили"
+        ],
+        [
+          11,
+          "травмы"
+        ],
+        [
+          12,
+          "различной"
+        ],
+        [
+          13,
+          "степени"
+        ],
+        [
+          14,
+          "тяжести"
+        ]
+      ],
+      "head_id": 10,
+      "text": "что еще несколько десятков человек получили травмы различной степени тяжести ",
+      "length": 10
+    },
+    {
+      "name": "PP",
+      "id": 8,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "В"
+        ],
+        [
+          2,
+          "сообщении"
+        ]
+      ],
+      "head_id": 1,
+      "text": "В сообщении ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 9,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          6,
+          "еще"
+        ]
+      ],
+      "head_id": 6,
+      "text": "еще ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 10,
+      "tags": [
+        "NUM",
+        "Animacy=Inan",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          6,
+          "еще"
+        ],
+        [
+          7,
+          "несколько"
+        ]
+      ],
+      "head_id": 7,
+      "text": "еще несколько ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/30/temple/"
+}

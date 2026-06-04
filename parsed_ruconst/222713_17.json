@@ -1,0 +1,650 @@
+{
+  "id": "222713_17",
+  "text": "Главной героине нужно приспособиться выжить, а также спасти от гибели своих друзей.",
+  "length": 12,
+  "source": "4",
+  "sentence_tree": " [AP [NP Главной героине] нужно [VP приспособиться [VP выжить , [VP [CCONJP а также] спасти [PP от [NP гибели [NP своих друзей]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Главной",
+      "lemma": "главный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Dat",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "героине",
+      "lemma": "героин",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Dat",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "iobj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "нужно",
+      "lemma": "нужный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "приспособиться",
+      "lemma": "приспособиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "выжить",
+      "lemma": "выжить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "а",
+      "lemma": "а",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "CCONJP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "также",
+      "lemma": "также",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "fixed",
+      "constituent": {
+        "name": "CCONJP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "спасти",
+      "lemma": "спасти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "от",
+      "lemma": "от",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "гибели",
+      "lemma": "гибель",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "своих",
+      "lemma": "свой",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Gen",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "друзей",
+      "lemma": "друг",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Dat",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Главной"
+        ],
+        [
+          2,
+          "героине"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Главной героине ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "гибели"
+        ],
+        [
+          12,
+          "своих"
+        ],
+        [
+          13,
+          "друзей"
+        ]
+      ],
+      "head_id": 11,
+      "text": "гибели своих друзей ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          12,
+          "своих"
+        ],
+        [
+          13,
+          "друзей"
+        ]
+      ],
+      "head_id": 13,
+      "text": "своих друзей ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          4,
+          "приспособиться"
+        ],
+        [
+          5,
+          "выжить"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "а"
+        ],
+        [
+          8,
+          "также"
+        ],
+        [
+          9,
+          "спасти"
+        ],
+        [
+          10,
+          "от"
+        ],
+        [
+          11,
+          "гибели"
+        ],
+        [
+          12,
+          "своих"
+        ],
+        [
+          13,
+          "друзей"
+        ]
+      ],
+      "head_id": 4,
+      "text": "приспособиться выжить , а также спасти от гибели своих друзей ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          5,
+          "выжить"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "а"
+        ],
+        [
+          8,
+          "также"
+        ],
+        [
+          9,
+          "спасти"
+        ],
+        [
+          10,
+          "от"
+        ],
+        [
+          11,
+          "гибели"
+        ],
+        [
+          12,
+          "своих"
+        ],
+        [
+          13,
+          "друзей"
+        ]
+      ],
+      "head_id": 5,
+      "text": "выжить , а также спасти от гибели своих друзей ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          7,
+          "а"
+        ],
+        [
+          8,
+          "также"
+        ],
+        [
+          9,
+          "спасти"
+        ],
+        [
+          10,
+          "от"
+        ],
+        [
+          11,
+          "гибели"
+        ],
+        [
+          12,
+          "своих"
+        ],
+        [
+          13,
+          "друзей"
+        ]
+      ],
+      "head_id": 9,
+      "text": "а также спасти от гибели своих друзей ",
+      "length": 7
+    },
+    {
+      "name": "AP",
+      "id": 6,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Главной"
+        ],
+        [
+          2,
+          "героине"
+        ],
+        [
+          3,
+          "нужно"
+        ],
+        [
+          4,
+          "приспособиться"
+        ],
+        [
+          5,
+          "выжить"
+        ],
+        [
+          6,
+          ","
+        ],
+        [
+          7,
+          "а"
+        ],
+        [
+          8,
+          "также"
+        ],
+        [
+          9,
+          "спасти"
+        ],
+        [
+          10,
+          "от"
+        ],
+        [
+          11,
+          "гибели"
+        ],
+        [
+          12,
+          "своих"
+        ],
+        [
+          13,
+          "друзей"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Главной героине нужно приспособиться выжить , а также спасти от гибели своих друзей ",
+      "length": 13
+    },
+    {
+      "name": "PP",
+      "id": 7,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          10,
+          "от"
+        ],
+        [
+          11,
+          "гибели"
+        ],
+        [
+          12,
+          "своих"
+        ],
+        [
+          13,
+          "друзей"
+        ]
+      ],
+      "head_id": 10,
+      "text": "от гибели своих друзей ",
+      "length": 4
+    },
+    {
+      "name": "CCONJP",
+      "id": 8,
+      "tags": [
+        "CCONJ",
+        "None"
+      ],
+      "tokens": [
+        [
+          7,
+          "а"
+        ],
+        [
+          8,
+          "также"
+        ]
+      ],
+      "head_id": 7,
+      "text": "а также ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/09/sp/"
+}

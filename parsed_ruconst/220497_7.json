@@ -1,0 +1,217 @@
+{
+  "id": "220497_7",
+  "text": "О погибших ничего не сообщалось.",
+  "length": 5,
+  "source": "4",
+  "sentence_tree": " [VP [PP О погибших] [NP ничего] не сообщалось] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "О",
+      "lemma": "о",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "погибших",
+      "lemma": "погибнуть",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Case=Loc",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Part",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "ничего",
+      "lemma": "ничто",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Gen"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "сообщалось",
+      "lemma": "сообщать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Gen"
+      ],
+      "tokens": [
+        [
+          3,
+          "ничего"
+        ]
+      ],
+      "head_id": 3,
+      "text": "ничего ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "О"
+        ],
+        [
+          2,
+          "погибших"
+        ],
+        [
+          3,
+          "ничего"
+        ],
+        [
+          4,
+          "не"
+        ],
+        [
+          5,
+          "сообщалось"
+        ]
+      ],
+      "head_id": 5,
+      "text": "О погибших ничего не сообщалось ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 2,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          1,
+          "О"
+        ],
+        [
+          2,
+          "погибших"
+        ]
+      ],
+      "head_id": 1,
+      "text": "О погибших ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/27/gusev/"
+}

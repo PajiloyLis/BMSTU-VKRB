@@ -1,0 +1,680 @@
+{
+  "id": "225034_8",
+  "text": "Он пообещал заплатить киллеру 1 миллион рублей после того, как продаст квартиру.",
+  "length": 12,
+  "source": "4",
+  "sentence_tree": " [VP [NP Он] пообещал [VP заплатить [NP киллеру] [NP [NP 1 миллион] рублей] [PP после [NP того , [VP [AdvP как] продаст [NP квартиру]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Он",
+      "lemma": "он",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "пообещал",
+      "lemma": "пообещать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "заплатить",
+      "lemma": "платить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "киллеру",
+      "lemma": "киллер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Dat",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "iobj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "1",
+      "lemma": "1",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "миллион",
+      "lemma": "миллион",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "рублей",
+      "lemma": "рубль",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "после",
+      "lemma": "после",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "того",
+      "lemma": "то",
+      "tagsets": [
+        [
+          "PRON",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "как",
+      "lemma": "как",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "продаст",
+      "lemma": "продать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "acl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "квартиру",
+      "lemma": "квартира",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          1,
+          "Он"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Он ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Dat",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "киллеру"
+        ]
+      ],
+      "head_id": 4,
+      "text": "киллеру ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "1"
+        ],
+        [
+          6,
+          "миллион"
+        ],
+        [
+          7,
+          "рублей"
+        ]
+      ],
+      "head_id": 7,
+      "text": "1 миллион рублей ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "1"
+        ],
+        [
+          6,
+          "миллион"
+        ]
+      ],
+      "head_id": 6,
+      "text": "1 миллион ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PRON",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "того"
+        ],
+        [
+          10,
+          ","
+        ],
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "продаст"
+        ],
+        [
+          13,
+          "квартиру"
+        ]
+      ],
+      "head_id": 9,
+      "text": "того , как продаст квартиру ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          13,
+          "квартиру"
+        ]
+      ],
+      "head_id": 13,
+      "text": "квартиру ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Он"
+        ],
+        [
+          2,
+          "пообещал"
+        ],
+        [
+          3,
+          "заплатить"
+        ],
+        [
+          4,
+          "киллеру"
+        ],
+        [
+          5,
+          "1"
+        ],
+        [
+          6,
+          "миллион"
+        ],
+        [
+          7,
+          "рублей"
+        ],
+        [
+          8,
+          "после"
+        ],
+        [
+          9,
+          "того"
+        ],
+        [
+          10,
+          ","
+        ],
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "продаст"
+        ],
+        [
+          13,
+          "квартиру"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Он пообещал заплатить киллеру 1 миллион рублей после того , как продаст квартиру ",
+      "length": 13
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "заплатить"
+        ],
+        [
+          4,
+          "киллеру"
+        ],
+        [
+          5,
+          "1"
+        ],
+        [
+          6,
+          "миллион"
+        ],
+        [
+          7,
+          "рублей"
+        ],
+        [
+          8,
+          "после"
+        ],
+        [
+          9,
+          "того"
+        ],
+        [
+          10,
+          ","
+        ],
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "продаст"
+        ],
+        [
+          13,
+          "квартиру"
+        ]
+      ],
+      "head_id": 3,
+      "text": "заплатить киллеру 1 миллион рублей после того , как продаст квартиру ",
+      "length": 11
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "продаст"
+        ],
+        [
+          13,
+          "квартиру"
+        ]
+      ],
+      "head_id": 12,
+      "text": "как продаст квартиру ",
+      "length": 3
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "после"
+        ],
+        [
+          9,
+          "того"
+        ],
+        [
+          10,
+          ","
+        ],
+        [
+          11,
+          "как"
+        ],
+        [
+          12,
+          "продаст"
+        ],
+        [
+          13,
+          "квартиру"
+        ]
+      ],
+      "head_id": 8,
+      "text": "после того , как продаст квартиру ",
+      "length": 6
+    },
+    {
+      "name": "AdvP",
+      "id": 10,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          11,
+          "как"
+        ]
+      ],
+      "head_id": 11,
+      "text": "как ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/20/t129/"
+}

@@ -1,0 +1,313 @@
+{
+  "id": "226075_8",
+  "text": "Никого из протестующих не пустили внутрь больницы.",
+  "length": 7,
+  "source": "4",
+  "sentence_tree": " [VP [NP Никого [PP из протестующих]] не пустили [PP внутрь [NP больницы]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Никого",
+      "lemma": "никто",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Acc"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "из",
+      "lemma": "из",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "протестующих",
+      "lemma": "протестовать",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Imp",
+          "Case=Gen",
+          "Number=Plur",
+          "Tense=Pres",
+          "VerbForm=Part",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "не",
+      "lemma": "не",
+      "tagsets": [
+        [
+          "PART",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "пустили",
+      "lemma": "пустить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "внутрь",
+      "lemma": "внутрь",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "больницы",
+      "lemma": "больница",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Acc"
+      ],
+      "tokens": [
+        [
+          1,
+          "Никого"
+        ],
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "протестующих"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Никого из протестующих ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          7,
+          "больницы"
+        ]
+      ],
+      "head_id": 7,
+      "text": "больницы ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 2,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Никого"
+        ],
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "протестующих"
+        ],
+        [
+          4,
+          "не"
+        ],
+        [
+          5,
+          "пустили"
+        ],
+        [
+          6,
+          "внутрь"
+        ],
+        [
+          7,
+          "больницы"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Никого из протестующих не пустили внутрь больницы ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "из"
+        ],
+        [
+          3,
+          "протестующих"
+        ]
+      ],
+      "head_id": 2,
+      "text": "из протестующих ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "внутрь"
+        ],
+        [
+          7,
+          "больницы"
+        ]
+      ],
+      "head_id": 6,
+      "text": "внутрь больницы ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/12/fat/"
+}

@@ -1,0 +1,452 @@
+{
+  "id": "226508_8",
+  "text": "Индексы семейства MSCI рассчитываются структурами американского банка Morgan Stanley.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP [NP Индексы [NP семейства [NP MSCI]]] рассчитываются [NP структурами [NP американского банка [NP Morgan] [NP Stanley]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Индексы",
+      "lemma": "индекс",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj:pass",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "семейства",
+      "lemma": "семейство",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "MSCI",
+      "lemma": "MSCI",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "рассчитываются",
+      "lemma": "рассчитываться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Pass",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "структурами",
+      "lemma": "структура",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "американского",
+      "lemma": "американский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "банка",
+      "lemma": "банк",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "Morgan",
+      "lemma": "Morgan",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "Stanley",
+      "lemma": "Stanley",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Индексы"
+        ],
+        [
+          2,
+          "семейства"
+        ],
+        [
+          3,
+          "MSCI"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Индексы семейства MSCI ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "семейства"
+        ],
+        [
+          3,
+          "MSCI"
+        ]
+      ],
+      "head_id": 2,
+      "text": "семейства MSCI ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          3,
+          "MSCI"
+        ]
+      ],
+      "head_id": 3,
+      "text": "MSCI ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          5,
+          "структурами"
+        ],
+        [
+          6,
+          "американского"
+        ],
+        [
+          7,
+          "банка"
+        ],
+        [
+          8,
+          "Morgan"
+        ],
+        [
+          9,
+          "Stanley"
+        ]
+      ],
+      "head_id": 5,
+      "text": "структурами американского банка Morgan Stanley ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "американского"
+        ],
+        [
+          7,
+          "банка"
+        ],
+        [
+          8,
+          "Morgan"
+        ],
+        [
+          9,
+          "Stanley"
+        ]
+      ],
+      "head_id": 7,
+      "text": "американского банка Morgan Stanley ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          8,
+          "Morgan"
+        ]
+      ],
+      "head_id": 8,
+      "text": "Morgan ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          9,
+          "Stanley"
+        ]
+      ],
+      "head_id": 9,
+      "text": "Stanley ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Pass",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Индексы"
+        ],
+        [
+          2,
+          "семейства"
+        ],
+        [
+          3,
+          "MSCI"
+        ],
+        [
+          4,
+          "рассчитываются"
+        ],
+        [
+          5,
+          "структурами"
+        ],
+        [
+          6,
+          "американского"
+        ],
+        [
+          7,
+          "банка"
+        ],
+        [
+          8,
+          "Morgan"
+        ],
+        [
+          9,
+          "Stanley"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Индексы семейства MSCI рассчитываются структурами американского банка Morgan Stanley ",
+      "length": 9
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/08/dyson/"
+}

@@ -1,0 +1,316 @@
+{
+  "id": "224221_3",
+  "text": "Диск доступен для предзаказа на iTunes.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [PartP [NP Диск] доступен [PP для [PP [NP предзаказа на] [NP iTunes]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Диск",
+      "lemma": "диск",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "доступен",
+      "lemma": "доступный",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Number=Sing",
+          "Tense=Past",
+          "Variant=Short",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "PartP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "для",
+      "lemma": "для",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "предзаказа",
+      "lemma": "предзаказ",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "iTunes",
+      "lemma": "Itunes",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Диск"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Диск ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "предзаказа"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "iTunes"
+        ]
+      ],
+      "head_id": 4,
+      "text": "предзаказа на iTunes ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          6,
+          "iTunes"
+        ]
+      ],
+      "head_id": 6,
+      "text": "iTunes ",
+      "length": 1
+    },
+    {
+      "name": "PP",
+      "id": 3,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "для"
+        ],
+        [
+          4,
+          "предзаказа"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "iTunes"
+        ]
+      ],
+      "head_id": 3,
+      "text": "для предзаказа на iTunes ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "предзаказа"
+        ],
+        [
+          5,
+          "на"
+        ]
+      ],
+      "head_id": 5,
+      "text": "предзаказа на ",
+      "length": 2
+    },
+    {
+      "name": "PartP",
+      "id": 5,
+      "tags": [
+        "PTCPL",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Number=Sing",
+        "Tense=Past",
+        "Variant=Short",
+        "VerbForm=Part",
+        "Voice=Pass"
+      ],
+      "tokens": [
+        [
+          1,
+          "Диск"
+        ],
+        [
+          2,
+          "доступен"
+        ],
+        [
+          3,
+          "для"
+        ],
+        [
+          4,
+          "предзаказа"
+        ],
+        [
+          5,
+          "на"
+        ],
+        [
+          6,
+          "iTunes"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Диск доступен для предзаказа на iTunes ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/27/viet/"
+}

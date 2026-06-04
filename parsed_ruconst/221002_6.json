@@ -1,0 +1,962 @@
+{
+  "id": "221002_6",
+  "text": "Также известно, что в ленте снялись американский актер Рон Перлман, британец Малкольм Макдауэлл и французская актриса Сара Дюмон.",
+  "length": 16,
+  "source": "4",
+  "sentence_tree": " [AP [AdvP Также] известно , [VP что [PP в [NP ленте]] снялись [NP американский актер [NP Рон [NP Перлман]] , [NP британец [NP Малкольм [NP Макдауэлл]]] [NP и французская актриса [NP Сара [NP Дюмон]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Также",
+      "lemma": "также",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 13
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "известно",
+      "lemma": "известный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "AP",
+        "is_head": false,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 12
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "ленте",
+      "lemma": "лента",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "снялись",
+      "lemma": "сняться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "американский",
+      "lemma": "американский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "актер",
+      "lemma": "актер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "Рон",
+      "lemma": "Рон",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "Перлман",
+      "lemma": "Перлман",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "британец",
+      "lemma": "британец",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "Малкольм",
+      "lemma": "Малкольм",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "Макдауэлл",
+      "lemma": "Макдауэлл",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 18,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "французская",
+      "lemma": "французский",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 18,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": "актриса",
+      "lemma": "актрис",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 19,
+      "token": "Сара",
+      "lemma": "Сара",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 18,
+      "edge_type": "appos",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 20,
+      "token": "Дюмон",
+      "lemma": "Дюмон",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 19,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 21,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "ленте"
+        ]
+      ],
+      "head_id": 6,
+      "text": "ленте ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "американский"
+        ],
+        [
+          9,
+          "актер"
+        ],
+        [
+          10,
+          "Рон"
+        ],
+        [
+          11,
+          "Перлман"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "британец"
+        ],
+        [
+          14,
+          "Малкольм"
+        ],
+        [
+          15,
+          "Макдауэлл"
+        ],
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "французская"
+        ],
+        [
+          18,
+          "актриса"
+        ],
+        [
+          19,
+          "Сара"
+        ],
+        [
+          20,
+          "Дюмон"
+        ]
+      ],
+      "head_id": 9,
+      "text": "американский актер Рон Перлман , британец Малкольм Макдауэлл и французская актриса Сара Дюмон ",
+      "length": 13
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          10,
+          "Рон"
+        ],
+        [
+          11,
+          "Перлман"
+        ]
+      ],
+      "head_id": 10,
+      "text": "Рон Перлман ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "Перлман"
+        ]
+      ],
+      "head_id": 11,
+      "text": "Перлман ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          13,
+          "британец"
+        ],
+        [
+          14,
+          "Малкольм"
+        ],
+        [
+          15,
+          "Макдауэлл"
+        ]
+      ],
+      "head_id": 13,
+      "text": "британец Малкольм Макдауэлл ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          14,
+          "Малкольм"
+        ],
+        [
+          15,
+          "Макдауэлл"
+        ]
+      ],
+      "head_id": 14,
+      "text": "Малкольм Макдауэлл ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          15,
+          "Макдауэлл"
+        ]
+      ],
+      "head_id": 15,
+      "text": "Макдауэлл ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 7,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "французская"
+        ],
+        [
+          18,
+          "актриса"
+        ],
+        [
+          19,
+          "Сара"
+        ],
+        [
+          20,
+          "Дюмон"
+        ]
+      ],
+      "head_id": 18,
+      "text": "и французская актриса Сара Дюмон ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 8,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          19,
+          "Сара"
+        ],
+        [
+          20,
+          "Дюмон"
+        ]
+      ],
+      "head_id": 19,
+      "text": "Сара Дюмон ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 9,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          20,
+          "Дюмон"
+        ]
+      ],
+      "head_id": 20,
+      "text": "Дюмон ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 10,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          4,
+          "что"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "ленте"
+        ],
+        [
+          7,
+          "снялись"
+        ],
+        [
+          8,
+          "американский"
+        ],
+        [
+          9,
+          "актер"
+        ],
+        [
+          10,
+          "Рон"
+        ],
+        [
+          11,
+          "Перлман"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "британец"
+        ],
+        [
+          14,
+          "Малкольм"
+        ],
+        [
+          15,
+          "Макдауэлл"
+        ],
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "французская"
+        ],
+        [
+          18,
+          "актриса"
+        ],
+        [
+          19,
+          "Сара"
+        ],
+        [
+          20,
+          "Дюмон"
+        ]
+      ],
+      "head_id": 7,
+      "text": "что в ленте снялись американский актер Рон Перлман , британец Малкольм Макдауэлл и французская актриса Сара Дюмон ",
+      "length": 17
+    },
+    {
+      "name": "AP",
+      "id": 11,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Также"
+        ],
+        [
+          2,
+          "известно"
+        ],
+        [
+          3,
+          ","
+        ],
+        [
+          4,
+          "что"
+        ],
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "ленте"
+        ],
+        [
+          7,
+          "снялись"
+        ],
+        [
+          8,
+          "американский"
+        ],
+        [
+          9,
+          "актер"
+        ],
+        [
+          10,
+          "Рон"
+        ],
+        [
+          11,
+          "Перлман"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "британец"
+        ],
+        [
+          14,
+          "Малкольм"
+        ],
+        [
+          15,
+          "Макдауэлл"
+        ],
+        [
+          16,
+          "и"
+        ],
+        [
+          17,
+          "французская"
+        ],
+        [
+          18,
+          "актриса"
+        ],
+        [
+          19,
+          "Сара"
+        ],
+        [
+          20,
+          "Дюмон"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Также известно , что в ленте снялись американский актер Рон Перлман , британец Малкольм Макдауэлл и французская актриса Сара Дюмон ",
+      "length": 20
+    },
+    {
+      "name": "PP",
+      "id": 12,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "в"
+        ],
+        [
+          6,
+          "ленте"
+        ]
+      ],
+      "head_id": 5,
+      "text": "в ленте ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 13,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Также"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Также ",
+      "length": 1
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/23/second/"
+}

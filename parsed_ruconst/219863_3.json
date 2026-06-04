@@ -1,0 +1,596 @@
+{
+  "id": "219863_3",
+  "text": "Горели 4 и 5 этажи пятиэтажного здания, в котором расположилась фабрика.",
+  "length": 11,
+  "source": "4",
+  "sentence_tree": " [VP Горели [NP [NumP 4 [NumP и 5]] этажи [NP пятиэтажного здания , [VP [PP в [NP котором]] расположилась [NP фабрика]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Горели",
+      "lemma": "гореть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "4",
+      "lemma": "4",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "5",
+      "lemma": "5",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "этажи",
+      "lemma": "этаж",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "пятиэтажного",
+      "lemma": "пятиэтажный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "здания",
+      "lemma": "здание",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "в",
+      "lemma": "в",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "котором",
+      "lemma": "который",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Loc"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "расположилась",
+      "lemma": "расположиться",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "фабрика",
+      "lemma": "фабрика",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          2,
+          "4"
+        ],
+        [
+          3,
+          "и"
+        ],
+        [
+          4,
+          "5"
+        ],
+        [
+          5,
+          "этажи"
+        ],
+        [
+          6,
+          "пятиэтажного"
+        ],
+        [
+          7,
+          "здания"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "котором"
+        ],
+        [
+          11,
+          "расположилась"
+        ],
+        [
+          12,
+          "фабрика"
+        ]
+      ],
+      "head_id": 5,
+      "text": "4 и 5 этажи пятиэтажного здания , в котором расположилась фабрика ",
+      "length": 11
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "пятиэтажного"
+        ],
+        [
+          7,
+          "здания"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "котором"
+        ],
+        [
+          11,
+          "расположилась"
+        ],
+        [
+          12,
+          "фабрика"
+        ]
+      ],
+      "head_id": 7,
+      "text": "пятиэтажного здания , в котором расположилась фабрика ",
+      "length": 7
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Loc"
+      ],
+      "tokens": [
+        [
+          10,
+          "котором"
+        ]
+      ],
+      "head_id": 10,
+      "text": "котором ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "фабрика"
+        ]
+      ],
+      "head_id": 12,
+      "text": "фабрика ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Горели"
+        ],
+        [
+          2,
+          "4"
+        ],
+        [
+          3,
+          "и"
+        ],
+        [
+          4,
+          "5"
+        ],
+        [
+          5,
+          "этажи"
+        ],
+        [
+          6,
+          "пятиэтажного"
+        ],
+        [
+          7,
+          "здания"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "котором"
+        ],
+        [
+          11,
+          "расположилась"
+        ],
+        [
+          12,
+          "фабрика"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Горели 4 и 5 этажи пятиэтажного здания , в котором расположилась фабрика ",
+      "length": 12
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "котором"
+        ],
+        [
+          11,
+          "расположилась"
+        ],
+        [
+          12,
+          "фабрика"
+        ]
+      ],
+      "head_id": 11,
+      "text": "в котором расположилась фабрика ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          9,
+          "в"
+        ],
+        [
+          10,
+          "котором"
+        ]
+      ],
+      "head_id": 9,
+      "text": "в котором ",
+      "length": 2
+    },
+    {
+      "name": "NumP",
+      "id": 7,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "4"
+        ],
+        [
+          3,
+          "и"
+        ],
+        [
+          4,
+          "5"
+        ]
+      ],
+      "head_id": 2,
+      "text": "4 и 5 ",
+      "length": 3
+    },
+    {
+      "name": "NumP",
+      "id": 8,
+      "tags": [
+        "NUM",
+        "None"
+      ],
+      "tokens": [
+        [
+          3,
+          "и"
+        ],
+        [
+          4,
+          "5"
+        ]
+      ],
+      "head_id": 4,
+      "text": "и 5 ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/08/brothel/"
+}

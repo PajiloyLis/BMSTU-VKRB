@@ -1,0 +1,450 @@
+{
+  "id": "221287_6",
+  "text": "Смартфоны будут работать на базе операционной системы BlackBerry 10.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP [NP Смартфоны] [VP будут работать [PP на [NP базе [NP операционной системы [NP BlackBerry] 10.]]]]]",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Смартфоны",
+      "lemma": "смартфон",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "будут",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "работать",
+      "lemma": "работать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "базе",
+      "lemma": "база",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "операционной",
+      "lemma": "операционный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "системы",
+      "lemma": "система",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "BlackBerry",
+      "lemma": "BlackBerry",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "10.",
+      "lemma": "10.",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Смартфоны"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Смартфоны ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "базе"
+        ],
+        [
+          6,
+          "операционной"
+        ],
+        [
+          7,
+          "системы"
+        ],
+        [
+          8,
+          "BlackBerry"
+        ],
+        [
+          9,
+          "10."
+        ]
+      ],
+      "head_id": 5,
+      "text": "базе операционной системы BlackBerry 10. ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "операционной"
+        ],
+        [
+          7,
+          "системы"
+        ],
+        [
+          8,
+          "BlackBerry"
+        ],
+        [
+          9,
+          "10."
+        ]
+      ],
+      "head_id": 7,
+      "text": "операционной системы BlackBerry 10. ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          8,
+          "BlackBerry"
+        ]
+      ],
+      "head_id": 8,
+      "text": "BlackBerry ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Смартфоны"
+        ],
+        [
+          2,
+          "будут"
+        ],
+        [
+          3,
+          "работать"
+        ],
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "базе"
+        ],
+        [
+          6,
+          "операционной"
+        ],
+        [
+          7,
+          "системы"
+        ],
+        [
+          8,
+          "BlackBerry"
+        ],
+        [
+          9,
+          "10."
+        ]
+      ],
+      "head_id": 3,
+      "text": "Смартфоны будут работать на базе операционной системы BlackBerry 10. ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 5,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          2,
+          "будут"
+        ],
+        [
+          3,
+          "работать"
+        ],
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "базе"
+        ],
+        [
+          6,
+          "операционной"
+        ],
+        [
+          7,
+          "системы"
+        ],
+        [
+          8,
+          "BlackBerry"
+        ],
+        [
+          9,
+          "10."
+        ]
+      ],
+      "head_id": 2,
+      "text": "будут работать на базе операционной системы BlackBerry 10. ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "на"
+        ],
+        [
+          5,
+          "базе"
+        ],
+        [
+          6,
+          "операционной"
+        ],
+        [
+          7,
+          "системы"
+        ],
+        [
+          8,
+          "BlackBerry"
+        ],
+        [
+          9,
+          "10."
+        ]
+      ],
+      "head_id": 4,
+      "text": "на базе операционной системы BlackBerry 10. ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/20/antigay/"
+}

@@ -1,0 +1,897 @@
+{
+  "id": "222454_2",
+  "text": "Creative Assembly объяснила, что ей пришлось отложить релиз из-за патча, который выйдет вместе с дополнением.",
+  "length": 15,
+  "source": "4",
+  "sentence_tree": " [VP [NP Creative [NP Assembly]] объяснила , [VP что [NP ей] пришлось [VP отложить [NP релиз] [PP из-за [NP патча , [VP [NP который] выйдет [AdvP вместе [PP с [NP дополнением]]]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Creative",
+      "lemma": "Creative",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Assembly",
+      "lemma": "Assembly",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "объяснила",
+      "lemma": "объяснить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Fem",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "что",
+      "lemma": "что",
+      "tagsets": [
+        [
+          "SCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "mark",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "ей",
+      "lemma": "она",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Dat",
+          "Gender=Fem",
+          "Number=Sing",
+          "Person=3"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "iobj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "пришлось",
+      "lemma": "прийтись",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Neut",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "ccomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "отложить",
+      "lemma": "отложить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "csubj",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "релиз",
+      "lemma": "релиз",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "из-за",
+      "lemma": "из-за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "патча",
+      "lemma": "патч",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "который",
+      "lemma": "который",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "выйдет",
+      "lemma": "выйти",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "вместе",
+      "lemma": "вместе",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": true,
+        "id": 13
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "с",
+      "lemma": "с",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 12
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "дополнением",
+      "lemma": "дополнение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          1,
+          "Creative"
+        ],
+        [
+          2,
+          "Assembly"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Creative Assembly ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          2,
+          "Assembly"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Assembly ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PRON",
+        "Case=Dat",
+        "Gender=Fem",
+        "Number=Sing",
+        "Person=3"
+      ],
+      "tokens": [
+        [
+          6,
+          "ей"
+        ]
+      ],
+      "head_id": 6,
+      "text": "ей ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          9,
+          "релиз"
+        ]
+      ],
+      "head_id": 9,
+      "text": "релиз ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "патча"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "который"
+        ],
+        [
+          14,
+          "выйдет"
+        ],
+        [
+          15,
+          "вместе"
+        ],
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 11,
+      "text": "патча , который выйдет вместе с дополнением ",
+      "length": 7
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PRON",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          13,
+          "который"
+        ]
+      ],
+      "head_id": 13,
+      "text": "который ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 17,
+      "text": "дополнением ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Fem",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Creative"
+        ],
+        [
+          2,
+          "Assembly"
+        ],
+        [
+          3,
+          "объяснила"
+        ],
+        [
+          4,
+          ","
+        ],
+        [
+          5,
+          "что"
+        ],
+        [
+          6,
+          "ей"
+        ],
+        [
+          7,
+          "пришлось"
+        ],
+        [
+          8,
+          "отложить"
+        ],
+        [
+          9,
+          "релиз"
+        ],
+        [
+          10,
+          "из-за"
+        ],
+        [
+          11,
+          "патча"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "который"
+        ],
+        [
+          14,
+          "выйдет"
+        ],
+        [
+          15,
+          "вместе"
+        ],
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Creative Assembly объяснила , что ей пришлось отложить релиз из-за патча , который выйдет вместе с дополнением ",
+      "length": 17
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Neut",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          5,
+          "что"
+        ],
+        [
+          6,
+          "ей"
+        ],
+        [
+          7,
+          "пришлось"
+        ],
+        [
+          8,
+          "отложить"
+        ],
+        [
+          9,
+          "релиз"
+        ],
+        [
+          10,
+          "из-за"
+        ],
+        [
+          11,
+          "патча"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "который"
+        ],
+        [
+          14,
+          "выйдет"
+        ],
+        [
+          15,
+          "вместе"
+        ],
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 7,
+      "text": "что ей пришлось отложить релиз из-за патча , который выйдет вместе с дополнением ",
+      "length": 13
+    },
+    {
+      "name": "VP",
+      "id": 9,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          8,
+          "отложить"
+        ],
+        [
+          9,
+          "релиз"
+        ],
+        [
+          10,
+          "из-за"
+        ],
+        [
+          11,
+          "патча"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "который"
+        ],
+        [
+          14,
+          "выйдет"
+        ],
+        [
+          15,
+          "вместе"
+        ],
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 8,
+      "text": "отложить релиз из-за патча , который выйдет вместе с дополнением ",
+      "length": 10
+    },
+    {
+      "name": "VP",
+      "id": 10,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          13,
+          "который"
+        ],
+        [
+          14,
+          "выйдет"
+        ],
+        [
+          15,
+          "вместе"
+        ],
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 14,
+      "text": "который выйдет вместе с дополнением ",
+      "length": 5
+    },
+    {
+      "name": "PP",
+      "id": 11,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          10,
+          "из-за"
+        ],
+        [
+          11,
+          "патча"
+        ],
+        [
+          12,
+          ","
+        ],
+        [
+          13,
+          "который"
+        ],
+        [
+          14,
+          "выйдет"
+        ],
+        [
+          15,
+          "вместе"
+        ],
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 10,
+      "text": "из-за патча , который выйдет вместе с дополнением ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 12,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 16,
+      "text": "с дополнением ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 13,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          15,
+          "вместе"
+        ],
+        [
+          16,
+          "с"
+        ],
+        [
+          17,
+          "дополнением"
+        ]
+      ],
+      "head_id": 15,
+      "text": "вместе с дополнением ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/11/honda/"
+}

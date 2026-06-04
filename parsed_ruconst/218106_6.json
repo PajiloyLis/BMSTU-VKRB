@@ -1,0 +1,438 @@
+{
+  "id": "218106_6",
+  "text": "IBM продолжит выпускать программное обеспечение для серверов на x86.",
+  "length": 9,
+  "source": "4",
+  "sentence_tree": " [VP [NP IBM] продолжит [VP выпускать [NP программное обеспечение [PP для [NP серверов [PP на x86.]]]]]]",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "IBM",
+      "lemma": "ИБМ",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "продолжит",
+      "lemma": "продолжить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Fut",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "выпускать",
+      "lemma": "выпускать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "программное",
+      "lemma": "программный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "обеспечение",
+      "lemma": "обеспечение",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "для",
+      "lemma": "для",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "серверов",
+      "lemma": "сервер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "x86.",
+      "lemma": "x86.",
+      "tagsets": [
+        [
+          "NUM",
+          "None"
+        ]
+      ],
+      "parent_token_index": 8,
+      "edge_type": "nummod",
+      "constituent": {
+        "name": "PP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          1,
+          "IBM"
+        ]
+      ],
+      "head_id": 1,
+      "text": "IBM ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "программное"
+        ],
+        [
+          5,
+          "обеспечение"
+        ],
+        [
+          6,
+          "для"
+        ],
+        [
+          7,
+          "серверов"
+        ],
+        [
+          8,
+          "на"
+        ],
+        [
+          9,
+          "x86."
+        ]
+      ],
+      "head_id": 5,
+      "text": "программное обеспечение для серверов на x86. ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          7,
+          "серверов"
+        ],
+        [
+          8,
+          "на"
+        ],
+        [
+          9,
+          "x86."
+        ]
+      ],
+      "head_id": 7,
+      "text": "серверов на x86. ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Fut",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "IBM"
+        ],
+        [
+          2,
+          "продолжит"
+        ],
+        [
+          3,
+          "выпускать"
+        ],
+        [
+          4,
+          "программное"
+        ],
+        [
+          5,
+          "обеспечение"
+        ],
+        [
+          6,
+          "для"
+        ],
+        [
+          7,
+          "серверов"
+        ],
+        [
+          8,
+          "на"
+        ],
+        [
+          9,
+          "x86."
+        ]
+      ],
+      "head_id": 2,
+      "text": "IBM продолжит выпускать программное обеспечение для серверов на x86. ",
+      "length": 9
+    },
+    {
+      "name": "VP",
+      "id": 4,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          3,
+          "выпускать"
+        ],
+        [
+          4,
+          "программное"
+        ],
+        [
+          5,
+          "обеспечение"
+        ],
+        [
+          6,
+          "для"
+        ],
+        [
+          7,
+          "серверов"
+        ],
+        [
+          8,
+          "на"
+        ],
+        [
+          9,
+          "x86."
+        ]
+      ],
+      "head_id": 3,
+      "text": "выпускать программное обеспечение для серверов на x86. ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 5,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          6,
+          "для"
+        ],
+        [
+          7,
+          "серверов"
+        ],
+        [
+          8,
+          "на"
+        ],
+        [
+          9,
+          "x86."
+        ]
+      ],
+      "head_id": 6,
+      "text": "для серверов на x86. ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 6,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          8,
+          "на"
+        ],
+        [
+          9,
+          "x86."
+        ]
+      ],
+      "head_id": 8,
+      "text": "на x86. ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/23/dagestan/"
+}

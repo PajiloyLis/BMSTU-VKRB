@@ -1,0 +1,318 @@
+{
+  "id": "225196_5",
+  "text": "Еще одну шайбу забросил Энтони Манта.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [VP [NP [NumP [AdvP Еще] одну] шайбу] забросил [NP Энтони [NP Манта]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Еще",
+      "lemma": "еще",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "одну",
+      "lemma": "один",
+      "tagsets": [
+        [
+          "NUM",
+          "Case=Acc",
+          "Gender=Fem"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "шайбу",
+      "lemma": "шайба",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "забросил",
+      "lemma": "забросить",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Mood=Ind",
+          "Number=Sing",
+          "Tense=Past",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "Энтони",
+      "lemma": "Энтони",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Манта",
+      "lemma": "Манта",
+      "tagsets": [
+        [
+          "PROPN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "flat:name",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Еще"
+        ],
+        [
+          2,
+          "одну"
+        ],
+        [
+          3,
+          "шайбу"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Еще одну шайбу ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "Энтони"
+        ],
+        [
+          6,
+          "Манта"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Энтони Манта ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "PROPN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "Манта"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Манта ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 3,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Mood=Ind",
+        "Number=Sing",
+        "Tense=Past",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Еще"
+        ],
+        [
+          2,
+          "одну"
+        ],
+        [
+          3,
+          "шайбу"
+        ],
+        [
+          4,
+          "забросил"
+        ],
+        [
+          5,
+          "Энтони"
+        ],
+        [
+          6,
+          "Манта"
+        ]
+      ],
+      "head_id": 4,
+      "text": "Еще одну шайбу забросил Энтони Манта ",
+      "length": 6
+    },
+    {
+      "name": "AdvP",
+      "id": 4,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          1,
+          "Еще"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Еще ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 5,
+      "tags": [
+        "NUM",
+        "Case=Acc",
+        "Gender=Fem"
+      ],
+      "tokens": [
+        [
+          1,
+          "Еще"
+        ],
+        [
+          2,
+          "одну"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Еще одну ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/19/newcoach/"
+}

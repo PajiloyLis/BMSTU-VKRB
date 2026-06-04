@@ -1,0 +1,758 @@
+{
+  "id": "220002_8",
+  "text": "Активисты занимают первые два этажа городской администрации, организовав там место для отдыха и пункты обогрева.",
+  "length": 15,
+  "source": "4",
+  "sentence_tree": " [VP [NP Активисты] занимают [NP [NumP первые два] этажа [NP городской администрации]] , [VP организовав [AdvP там] [NP место [PP для [NP отдыха]] [NP и пункты [NP обогрева]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Активисты",
+      "lemma": "активист",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "занимают",
+      "lemma": "занимать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Plur",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "первые",
+      "lemma": "первый",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NumP",
+        "is_head": false,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "два",
+      "lemma": "два",
+      "tagsets": [
+        [
+          "NUM",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nummod:gov",
+      "constituent": {
+        "name": "NumP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "этажа",
+      "lemma": "этаж",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "городской",
+      "lemma": "городской",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Gen",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "администрации",
+      "lemma": "администрация",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "организовав",
+      "lemma": "организовывать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Perf",
+          "Tense=Past",
+          "VerbForm=Conv",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "там",
+      "lemma": "там",
+      "tagsets": [
+        [
+          "ADV",
+          "Degree=Pos"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "advmod",
+      "constituent": {
+        "name": "AdvP",
+        "is_head": false,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "место",
+      "lemma": "место",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Neut",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "для",
+      "lemma": "для",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "отдыха",
+      "lemma": "отдых",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "и",
+      "lemma": "и",
+      "tagsets": [
+        [
+          "CCONJ",
+          "None"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "cc",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "пункты",
+      "lemma": "пункт",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "conj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "обогрева",
+      "lemma": "обогрев",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 15,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          1,
+          "Активисты"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Активисты ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "первые"
+        ],
+        [
+          4,
+          "два"
+        ],
+        [
+          5,
+          "этажа"
+        ],
+        [
+          6,
+          "городской"
+        ],
+        [
+          7,
+          "администрации"
+        ]
+      ],
+      "head_id": 5,
+      "text": "первые два этажа городской администрации ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "городской"
+        ],
+        [
+          7,
+          "администрации"
+        ]
+      ],
+      "head_id": 7,
+      "text": "городской администрации ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Neut",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          11,
+          "место"
+        ],
+        [
+          12,
+          "для"
+        ],
+        [
+          13,
+          "отдыха"
+        ],
+        [
+          14,
+          "и"
+        ],
+        [
+          15,
+          "пункты"
+        ],
+        [
+          16,
+          "обогрева"
+        ]
+      ],
+      "head_id": 11,
+      "text": "место для отдыха и пункты обогрева ",
+      "length": 6
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          13,
+          "отдыха"
+        ]
+      ],
+      "head_id": 13,
+      "text": "отдыха ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          14,
+          "и"
+        ],
+        [
+          15,
+          "пункты"
+        ],
+        [
+          16,
+          "обогрева"
+        ]
+      ],
+      "head_id": 15,
+      "text": "и пункты обогрева ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          16,
+          "обогрева"
+        ]
+      ],
+      "head_id": 16,
+      "text": "обогрева ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Plur",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Активисты"
+        ],
+        [
+          2,
+          "занимают"
+        ],
+        [
+          3,
+          "первые"
+        ],
+        [
+          4,
+          "два"
+        ],
+        [
+          5,
+          "этажа"
+        ],
+        [
+          6,
+          "городской"
+        ],
+        [
+          7,
+          "администрации"
+        ],
+        [
+          8,
+          ","
+        ],
+        [
+          9,
+          "организовав"
+        ],
+        [
+          10,
+          "там"
+        ],
+        [
+          11,
+          "место"
+        ],
+        [
+          12,
+          "для"
+        ],
+        [
+          13,
+          "отдыха"
+        ],
+        [
+          14,
+          "и"
+        ],
+        [
+          15,
+          "пункты"
+        ],
+        [
+          16,
+          "обогрева"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Активисты занимают первые два этажа городской администрации , организовав там место для отдыха и пункты обогрева ",
+      "length": 16
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Perf",
+        "Tense=Past",
+        "VerbForm=Conv",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          9,
+          "организовав"
+        ],
+        [
+          10,
+          "там"
+        ],
+        [
+          11,
+          "место"
+        ],
+        [
+          12,
+          "для"
+        ],
+        [
+          13,
+          "отдыха"
+        ],
+        [
+          14,
+          "и"
+        ],
+        [
+          15,
+          "пункты"
+        ],
+        [
+          16,
+          "обогрева"
+        ]
+      ],
+      "head_id": 9,
+      "text": "организовав там место для отдыха и пункты обогрева ",
+      "length": 8
+    },
+    {
+      "name": "PP",
+      "id": 9,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          12,
+          "для"
+        ],
+        [
+          13,
+          "отдыха"
+        ]
+      ],
+      "head_id": 12,
+      "text": "для отдыха ",
+      "length": 2
+    },
+    {
+      "name": "AdvP",
+      "id": 10,
+      "tags": [
+        "ADV",
+        "Degree=Pos"
+      ],
+      "tokens": [
+        [
+          10,
+          "там"
+        ]
+      ],
+      "head_id": 10,
+      "text": "там ",
+      "length": 1
+    },
+    {
+      "name": "NumP",
+      "id": 11,
+      "tags": [
+        "NUM",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc"
+      ],
+      "tokens": [
+        [
+          3,
+          "первые"
+        ],
+        [
+          4,
+          "два"
+        ]
+      ],
+      "head_id": 4,
+      "text": "первые два ",
+      "length": 2
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/06/l159/"
+}

@@ -1,0 +1,743 @@
+{
+  "id": "224311_10",
+  "text": "Разработкой проекта занимается студия Traveller’s Tales, которая выпускает серию игр про человечков LEGO.",
+  "length": 13,
+  "source": "4",
+  "sentence_tree": " [VP [NP Разработкой [NP проекта]] занимается [NP студия [NP Traveller’s] [NP Tales] , [VP [NP которая] выпускает [NP серию [NP игр [PP про [NP человечков [NP LEGO]]]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Разработкой",
+      "lemma": "разработка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "проекта",
+      "lemma": "проект",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "занимается",
+      "lemma": "заниматься",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Mid",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "студия",
+      "lemma": "студия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "Traveller’s",
+      "lemma": "Traveller’s",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "Tales",
+      "lemma": "Tales",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "которая",
+      "lemma": "который",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Nom"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "выпускает",
+      "lemma": "выпускать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "acl:relcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": "серию",
+      "lemma": "серия",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "игр",
+      "lemma": "игра",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 10,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "про",
+      "lemma": "про",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 12
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "человечков",
+      "lemma": "человечек",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 12,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "LEGO",
+      "lemma": "LEGO",
+      "tagsets": [
+        [
+          "PROPN",
+          "Foreign=Yes"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "flat:foreign",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Разработкой"
+        ],
+        [
+          2,
+          "проекта"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Разработкой проекта ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          2,
+          "проекта"
+        ]
+      ],
+      "head_id": 2,
+      "text": "проекта ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "студия"
+        ],
+        [
+          5,
+          "Traveller’s"
+        ],
+        [
+          6,
+          "Tales"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "которая"
+        ],
+        [
+          9,
+          "выпускает"
+        ],
+        [
+          10,
+          "серию"
+        ],
+        [
+          11,
+          "игр"
+        ],
+        [
+          12,
+          "про"
+        ],
+        [
+          13,
+          "человечков"
+        ],
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 4,
+      "text": "студия Traveller’s Tales , которая выпускает серию игр про человечков LEGO ",
+      "length": 11
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          5,
+          "Traveller’s"
+        ]
+      ],
+      "head_id": 5,
+      "text": "Traveller’s ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          6,
+          "Tales"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Tales ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "PRON",
+        "Case=Nom"
+      ],
+      "tokens": [
+        [
+          8,
+          "которая"
+        ]
+      ],
+      "head_id": 8,
+      "text": "которая ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 6,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          10,
+          "серию"
+        ],
+        [
+          11,
+          "игр"
+        ],
+        [
+          12,
+          "про"
+        ],
+        [
+          13,
+          "человечков"
+        ],
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 10,
+      "text": "серию игр про человечков LEGO ",
+      "length": 5
+    },
+    {
+      "name": "NP",
+      "id": 7,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          11,
+          "игр"
+        ],
+        [
+          12,
+          "про"
+        ],
+        [
+          13,
+          "человечков"
+        ],
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 11,
+      "text": "игр про человечков LEGO ",
+      "length": 4
+    },
+    {
+      "name": "NP",
+      "id": 8,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          13,
+          "человечков"
+        ],
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 13,
+      "text": "человечков LEGO ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 9,
+      "tags": [
+        "PROPN",
+        "Foreign=Yes"
+      ],
+      "tokens": [
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 14,
+      "text": "LEGO ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 10,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Mid",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Разработкой"
+        ],
+        [
+          2,
+          "проекта"
+        ],
+        [
+          3,
+          "занимается"
+        ],
+        [
+          4,
+          "студия"
+        ],
+        [
+          5,
+          "Traveller’s"
+        ],
+        [
+          6,
+          "Tales"
+        ],
+        [
+          7,
+          ","
+        ],
+        [
+          8,
+          "которая"
+        ],
+        [
+          9,
+          "выпускает"
+        ],
+        [
+          10,
+          "серию"
+        ],
+        [
+          11,
+          "игр"
+        ],
+        [
+          12,
+          "про"
+        ],
+        [
+          13,
+          "человечков"
+        ],
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Разработкой проекта занимается студия Traveller’s Tales , которая выпускает серию игр про человечков LEGO ",
+      "length": 14
+    },
+    {
+      "name": "VP",
+      "id": 11,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          8,
+          "которая"
+        ],
+        [
+          9,
+          "выпускает"
+        ],
+        [
+          10,
+          "серию"
+        ],
+        [
+          11,
+          "игр"
+        ],
+        [
+          12,
+          "про"
+        ],
+        [
+          13,
+          "человечков"
+        ],
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 9,
+      "text": "которая выпускает серию игр про человечков LEGO ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 12,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          12,
+          "про"
+        ],
+        [
+          13,
+          "человечков"
+        ],
+        [
+          14,
+          "LEGO"
+        ]
+      ],
+      "head_id": 12,
+      "text": "про человечков LEGO ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/26/lawyer/"
+}

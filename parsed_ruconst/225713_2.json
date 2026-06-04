@@ -1,0 +1,336 @@
+{
+  "id": "225713_2",
+  "text": "«Хорошо быть добреньким за чужой счет.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " « [AP Хорошо [VP быть [AP добреньким [PP за [NP чужой счет]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "«",
+      "lemma": "\"",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "Хорошо",
+      "lemma": "хороший",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Neut",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "быть",
+      "lemma": "быть",
+      "tagsets": [
+        [
+          "AUX",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "добреньким",
+      "lemma": "добренький",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "cop",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "за",
+      "lemma": "за",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "чужой",
+      "lemma": "чужой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "счет",
+      "lemma": "счет",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 5,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          6,
+          "чужой"
+        ],
+        [
+          7,
+          "счет"
+        ]
+      ],
+      "head_id": 7,
+      "text": "чужой счет ",
+      "length": 2
+    },
+    {
+      "name": "VP",
+      "id": 1,
+      "tags": [
+        "AUX",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act"
+      ],
+      "tokens": [
+        [
+          3,
+          "быть"
+        ],
+        [
+          4,
+          "добреньким"
+        ],
+        [
+          5,
+          "за"
+        ],
+        [
+          6,
+          "чужой"
+        ],
+        [
+          7,
+          "счет"
+        ]
+      ],
+      "head_id": 3,
+      "text": "быть добреньким за чужой счет ",
+      "length": 5
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Neut",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          2,
+          "Хорошо"
+        ],
+        [
+          3,
+          "быть"
+        ],
+        [
+          4,
+          "добреньким"
+        ],
+        [
+          5,
+          "за"
+        ],
+        [
+          6,
+          "чужой"
+        ],
+        [
+          7,
+          "счет"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Хорошо быть добреньким за чужой счет ",
+      "length": 6
+    },
+    {
+      "name": "AP",
+      "id": 3,
+      "tags": [
+        "ADJ",
+        "Case=Ins",
+        "Degree=Pos",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          4,
+          "добреньким"
+        ],
+        [
+          5,
+          "за"
+        ],
+        [
+          6,
+          "чужой"
+        ],
+        [
+          7,
+          "счет"
+        ]
+      ],
+      "head_id": 4,
+      "text": "добреньким за чужой счет ",
+      "length": 4
+    },
+    {
+      "name": "PP",
+      "id": 4,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          5,
+          "за"
+        ],
+        [
+          6,
+          "чужой"
+        ],
+        [
+          7,
+          "счет"
+        ]
+      ],
+      "head_id": 5,
+      "text": "за чужой счет ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/14/waters/"
+}

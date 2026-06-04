@@ -1,0 +1,279 @@
+{
+  "id": "218154_6",
+  "text": "Сам мессенджер доступен по этой ссылке.",
+  "length": 6,
+  "source": "4",
+  "sentence_tree": " [PartP [NP Сам мессенджер] доступен [PP по [NP этой ссылке]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Сам",
+      "lemma": "сам",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Nom",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "мессенджер",
+      "lemma": "мессенджер",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "доступен",
+      "lemma": "доступный",
+      "tagsets": [
+        [
+          "PTCPL",
+          "Aspect=Perf",
+          "Gender=Masc",
+          "Number=Sing",
+          "Tense=Past",
+          "Variant=Short",
+          "VerbForm=Part",
+          "Voice=Pass"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "PartP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": "по",
+      "lemma": "по",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "этой",
+      "lemma": "этот",
+      "tagsets": [
+        [
+          "DET",
+          "Case=Dat",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "det",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "ссылке",
+      "lemma": "ссылка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Dat",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 4,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 3,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сам"
+        ],
+        [
+          2,
+          "мессенджер"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Сам мессенджер ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Dat",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "этой"
+        ],
+        [
+          6,
+          "ссылке"
+        ]
+      ],
+      "head_id": 6,
+      "text": "этой ссылке ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 2,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          4,
+          "по"
+        ],
+        [
+          5,
+          "этой"
+        ],
+        [
+          6,
+          "ссылке"
+        ]
+      ],
+      "head_id": 4,
+      "text": "по этой ссылке ",
+      "length": 3
+    },
+    {
+      "name": "PartP",
+      "id": 3,
+      "tags": [
+        "PTCPL",
+        "Aspect=Perf",
+        "Gender=Masc",
+        "Number=Sing",
+        "Tense=Past",
+        "Variant=Short",
+        "VerbForm=Part",
+        "Voice=Pass"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сам"
+        ],
+        [
+          2,
+          "мессенджер"
+        ],
+        [
+          3,
+          "доступен"
+        ],
+        [
+          4,
+          "по"
+        ],
+        [
+          5,
+          "этой"
+        ],
+        [
+          6,
+          "ссылке"
+        ]
+      ],
+      "head_id": 3,
+      "text": "Сам мессенджер доступен по этой ссылке ",
+      "length": 6
+    }
+  ],
+  "url": "https://lenta.ru/news/2014/01/22/mandates/"
+}

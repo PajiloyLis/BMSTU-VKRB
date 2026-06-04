@@ -1,0 +1,809 @@
+{
+  "id": "223153_2",
+  "text": "Сидя на стуле, пользователь может передвигать игрового персонажа, надавливая собственным весом на разные части платформы.",
+  "length": 15,
+  "source": "4",
+  "sentence_tree": " [VP [VP Сидя [PP на [NP стуле]]] , [NP пользователь] может [VP передвигать [NP игрового персонажа] , [VP надавливая [NP собственным весом] [PP на [NP разные части [NP платформы]]]]]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Сидя",
+      "lemma": "сидеть",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Tense=Pres",
+          "VerbForm=Conv",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 7
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 10
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "стуле",
+      "lemma": "стул",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Loc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 1,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 5,
+      "token": "пользователь",
+      "lemma": "пользователь",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Nom",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 6,
+      "token": "может",
+      "lemma": "мочь",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Mood=Ind",
+          "Number=Sing",
+          "Person=3",
+          "Tense=Pres",
+          "VerbForm=Fin",
+          "Voice=Act",
+          "intran"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 6
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 7,
+      "token": "передвигать",
+      "lemma": "передвигать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "VerbForm=Inf",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "xcomp",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 8,
+      "token": "игрового",
+      "lemma": "игровой",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 9,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 9,
+      "token": "персонажа",
+      "lemma": "персонаж",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Anim",
+          "Case=Acc",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "obj",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 10,
+      "token": ",",
+      "lemma": ",",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "VP",
+        "is_head": false,
+        "id": 8
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 11,
+      "token": "надавливая",
+      "lemma": "надавливать",
+      "tagsets": [
+        [
+          "VERB",
+          "Aspect=Imp",
+          "Tense=Pres",
+          "VerbForm=Conv",
+          "Voice=Act",
+          "tran"
+        ]
+      ],
+      "parent_token_index": 7,
+      "edge_type": "advcl",
+      "constituent": {
+        "name": "VP",
+        "is_head": true,
+        "id": 9
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 12,
+      "token": "собственным",
+      "lemma": "собственный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Case=Ins",
+          "Degree=Pos",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 13,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 13,
+      "token": "весом",
+      "lemma": "вес",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Ins",
+          "Gender=Masc",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 3
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 14,
+      "token": "на",
+      "lemma": "на",
+      "tagsets": [
+        [
+          "ADP",
+          "None"
+        ]
+      ],
+      "parent_token_index": 11,
+      "edge_type": "case",
+      "constituent": {
+        "name": "PP",
+        "is_head": true,
+        "id": 11
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 15,
+      "token": "разные",
+      "lemma": "разный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Degree=Pos",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "amod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 16,
+      "token": "части",
+      "lemma": "часть",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Acc",
+          "Gender=Fem",
+          "Number=Plur"
+        ]
+      ],
+      "parent_token_index": 14,
+      "edge_type": "obl",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 4
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 17,
+      "token": "платформы",
+      "lemma": "платформа",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Gen",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 16,
+      "edge_type": "nmod",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 5
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 18,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 6,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Loc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "стуле"
+        ]
+      ],
+      "head_id": 3,
+      "text": "стуле ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Nom",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          5,
+          "пользователь"
+        ]
+      ],
+      "head_id": 5,
+      "text": "пользователь ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 2,
+      "tags": [
+        "NOUN",
+        "Animacy=Anim",
+        "Case=Acc",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          8,
+          "игрового"
+        ],
+        [
+          9,
+          "персонажа"
+        ]
+      ],
+      "head_id": 9,
+      "text": "игрового персонажа ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 3,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Ins",
+        "Gender=Masc",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          12,
+          "собственным"
+        ],
+        [
+          13,
+          "весом"
+        ]
+      ],
+      "head_id": 13,
+      "text": "собственным весом ",
+      "length": 2
+    },
+    {
+      "name": "NP",
+      "id": 4,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Acc",
+        "Gender=Fem",
+        "Number=Plur"
+      ],
+      "tokens": [
+        [
+          15,
+          "разные"
+        ],
+        [
+          16,
+          "части"
+        ],
+        [
+          17,
+          "платформы"
+        ]
+      ],
+      "head_id": 16,
+      "text": "разные части платформы ",
+      "length": 3
+    },
+    {
+      "name": "NP",
+      "id": 5,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Gen",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          17,
+          "платформы"
+        ]
+      ],
+      "head_id": 17,
+      "text": "платформы ",
+      "length": 1
+    },
+    {
+      "name": "VP",
+      "id": 6,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Mood=Ind",
+        "Number=Sing",
+        "Person=3",
+        "Tense=Pres",
+        "VerbForm=Fin",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сидя"
+        ],
+        [
+          2,
+          "на"
+        ],
+        [
+          3,
+          "стуле"
+        ],
+        [
+          4,
+          ","
+        ],
+        [
+          5,
+          "пользователь"
+        ],
+        [
+          6,
+          "может"
+        ],
+        [
+          7,
+          "передвигать"
+        ],
+        [
+          8,
+          "игрового"
+        ],
+        [
+          9,
+          "персонажа"
+        ],
+        [
+          10,
+          ","
+        ],
+        [
+          11,
+          "надавливая"
+        ],
+        [
+          12,
+          "собственным"
+        ],
+        [
+          13,
+          "весом"
+        ],
+        [
+          14,
+          "на"
+        ],
+        [
+          15,
+          "разные"
+        ],
+        [
+          16,
+          "части"
+        ],
+        [
+          17,
+          "платформы"
+        ]
+      ],
+      "head_id": 6,
+      "text": "Сидя на стуле , пользователь может передвигать игрового персонажа , надавливая собственным весом на разные части платформы ",
+      "length": 17
+    },
+    {
+      "name": "VP",
+      "id": 7,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Tense=Pres",
+        "VerbForm=Conv",
+        "Voice=Act",
+        "intran"
+      ],
+      "tokens": [
+        [
+          1,
+          "Сидя"
+        ],
+        [
+          2,
+          "на"
+        ],
+        [
+          3,
+          "стуле"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Сидя на стуле ",
+      "length": 3
+    },
+    {
+      "name": "VP",
+      "id": 8,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "VerbForm=Inf",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          7,
+          "передвигать"
+        ],
+        [
+          8,
+          "игрового"
+        ],
+        [
+          9,
+          "персонажа"
+        ],
+        [
+          10,
+          ","
+        ],
+        [
+          11,
+          "надавливая"
+        ],
+        [
+          12,
+          "собственным"
+        ],
+        [
+          13,
+          "весом"
+        ],
+        [
+          14,
+          "на"
+        ],
+        [
+          15,
+          "разные"
+        ],
+        [
+          16,
+          "части"
+        ],
+        [
+          17,
+          "платформы"
+        ]
+      ],
+      "head_id": 7,
+      "text": "передвигать игрового персонажа , надавливая собственным весом на разные части платформы ",
+      "length": 11
+    },
+    {
+      "name": "VP",
+      "id": 9,
+      "tags": [
+        "VERB",
+        "Aspect=Imp",
+        "Tense=Pres",
+        "VerbForm=Conv",
+        "Voice=Act",
+        "tran"
+      ],
+      "tokens": [
+        [
+          11,
+          "надавливая"
+        ],
+        [
+          12,
+          "собственным"
+        ],
+        [
+          13,
+          "весом"
+        ],
+        [
+          14,
+          "на"
+        ],
+        [
+          15,
+          "разные"
+        ],
+        [
+          16,
+          "части"
+        ],
+        [
+          17,
+          "платформы"
+        ]
+      ],
+      "head_id": 11,
+      "text": "надавливая собственным весом на разные части платформы ",
+      "length": 7
+    },
+    {
+      "name": "PP",
+      "id": 10,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          2,
+          "на"
+        ],
+        [
+          3,
+          "стуле"
+        ]
+      ],
+      "head_id": 2,
+      "text": "на стуле ",
+      "length": 2
+    },
+    {
+      "name": "PP",
+      "id": 11,
+      "tags": [
+        "ADP",
+        "None"
+      ],
+      "tokens": [
+        [
+          14,
+          "на"
+        ],
+        [
+          15,
+          "разные"
+        ],
+        [
+          16,
+          "части"
+        ],
+        [
+          17,
+          "платформы"
+        ]
+      ],
+      "head_id": 14,
+      "text": "на разные части платформы ",
+      "length": 4
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/12/05/summa/"
+}

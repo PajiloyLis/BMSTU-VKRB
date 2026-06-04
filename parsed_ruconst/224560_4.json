@@ -1,0 +1,164 @@
+{
+  "id": "224560_4",
+  "text": "Мне нужна передышка.",
+  "length": 3,
+  "source": "4",
+  "sentence_tree": " [AP [NP Мне] нужна [NP передышка]] .",
+  "russian_text": "",
+  "tokens": [
+    {
+      "itoken": 1,
+      "token": "Мне",
+      "lemma": "я",
+      "tagsets": [
+        [
+          "PRON",
+          "Case=Dat",
+          "Number=Sing",
+          "Person=1"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "iobj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 0
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 2,
+      "token": "нужна",
+      "lemma": "нужный",
+      "tagsets": [
+        [
+          "ADJ",
+          "Degree=Pos",
+          "Gender=Fem",
+          "Number=Sing",
+          "Variant=Short"
+        ]
+      ],
+      "parent_token_index": 0,
+      "edge_type": "root",
+      "constituent": {
+        "name": "AP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 3,
+      "token": "передышка",
+      "lemma": "передышка",
+      "tagsets": [
+        [
+          "NOUN",
+          "Animacy=Inan",
+          "Case=Nom",
+          "Gender=Fem",
+          "Number=Sing"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "nsubj",
+      "constituent": {
+        "name": "NP",
+        "is_head": false,
+        "id": 1
+      },
+      "translation": ""
+    },
+    {
+      "itoken": 4,
+      "token": ".",
+      "lemma": ".",
+      "tagsets": [
+        [
+          "PUNCT",
+          "None"
+        ]
+      ],
+      "parent_token_index": 2,
+      "edge_type": "punct",
+      "constituent": {
+        "name": "NP",
+        "is_head": true,
+        "id": 2
+      },
+      "translation": ""
+    }
+  ],
+  "constituents": [
+    {
+      "name": "NP",
+      "id": 0,
+      "tags": [
+        "PRON",
+        "Case=Dat",
+        "Number=Sing",
+        "Person=1"
+      ],
+      "tokens": [
+        [
+          1,
+          "Мне"
+        ]
+      ],
+      "head_id": 1,
+      "text": "Мне ",
+      "length": 1
+    },
+    {
+      "name": "NP",
+      "id": 1,
+      "tags": [
+        "NOUN",
+        "Animacy=Inan",
+        "Case=Nom",
+        "Gender=Fem",
+        "Number=Sing"
+      ],
+      "tokens": [
+        [
+          3,
+          "передышка"
+        ]
+      ],
+      "head_id": 3,
+      "text": "передышка ",
+      "length": 1
+    },
+    {
+      "name": "AP",
+      "id": 2,
+      "tags": [
+        "ADJ",
+        "Degree=Pos",
+        "Gender=Fem",
+        "Number=Sing",
+        "Variant=Short"
+      ],
+      "tokens": [
+        [
+          1,
+          "Мне"
+        ],
+        [
+          2,
+          "нужна"
+        ],
+        [
+          3,
+          "передышка"
+        ]
+      ],
+      "head_id": 2,
+      "text": "Мне нужна передышка ",
+      "length": 3
+    }
+  ],
+  "url": "https://lenta.ru/news/2013/11/24/boxing/"
+}

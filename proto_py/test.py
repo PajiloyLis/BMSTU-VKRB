@@ -129,7 +129,7 @@ class TestMultipleInterpretations:
         assert fs(pos="N", number="sg", case="gent") in n_feats
 
     def test_verb_feats_correct(self, dp):
-        v_feats = dp[0][        1]["V"]
+        v_feats = dp[0][1]["V"]
         assert fs(pos="V", number="pl", tense="past", verb_form="fin") in v_feats
 
 
@@ -273,38 +273,57 @@ class TestNestedStructure:
     def test_ip_in_root(self, dp):
         assert has_symbol(dp, 0, 3, "IP")
 
-    def test_no_ip_in_wrong_span(self, dp):
-        # Первые два слова не образуют IP
-        assert not has_symbol(dp, 0, 2, "IP")
+    def test_no_ip_in_verb_only_span(self, dp):
+        # Один глагол «ест» без объекта не образует IP (только VP)
+        assert has_symbol(dp, 1, 2, "VP")
+        assert not has_symbol(dp, 1, 2, "IP")
 
 
-# # ---------------------------------------------------------------------------
-# # КЭ-8  Токен отсутствует в индексах
-# # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# КЭ-8  Токен отсутствует в индексах
+# ---------------------------------------------------------------------------
 
-# class TestTokenNotInIndexes:
-#     """КЭ-8: токен с pos='X' (неизвестное слово) не участвует ни в каких правилах.
+class TestTokenNotInIndexes:
+    """КЭ-8: токен с pos='X' (неизвестное слово) не участвует ни в каких правилах.
 
-#     Таблица строится без ошибок; IP не возникает.
-#     """
+    Таблица строится без ошибок; IP не возникает.
+    """
 
-#     @pytest.fixture
-#     def dp(self):
-#         pairs = [("хрумзик", [{"pos": "X"}])]
-#         unary  = {"N": ["NP"], "NP": ["IP"]}   # 'X' здесь нет
-#         binary = {("NP", "VP"): ["IP"]}
-#         return build_cyk_table(pairs, unary, binary)
+    @pytest.fixture
+    def dp(self):
+        pairs = [("хрумзик", [{"pos": "X"}])]
+        unary = {"N": ["NP"], "NP": ["IP"]}  # 'X' здесь нет
+        binary = {("NP", "VP"): ["IP"]}
+        return build_cyk_table(pairs, unary, binary)
 
-#     def test_no_exception(self):
-#         pairs = [("хрумзик", [{"pos": "X"}])]
-#         dp = build_cyk_table(pairs, {"N": ["NP"]}, {})
-#         assert dp is not None
+    def test_no_exception(self):
+        pairs = [("хрумзик", [{"pos": "X"}])]
+        dp = build_cyk_table(pairs, {"N": ["NP"]}, {})
+        assert dp is not None
 
-#     def test_only_pos_x_in_cell(self, dp):
-#         assert "X" in dp[0][1]
+    def test_only_pos_x_in_cell(self, dp):
+        assert "X" in dp[0][1]
 
-#     def test_no_np_derived(self, dp):
-#         assert not has_symbol(dp, 0, 1, "NP")
+    def test_no_np_derived(self, dp):
+        assert not has_symbol(dp, 0, 1, "NP")
 
-#     def test_no_ip_derived(self, dp):
-#         assert not has_symbol(dp, 0, 1, "IP")
+    def test_no_ip_derived(self, dp):
+        assert not has_symbol(dp, 0, 1, "IP")
+
+
+# ---------------------------------------------------------------------------
+# Вспомогательные функции cyk (прямой вызов)
+# ---------------------------------------------------------------------------
+
+class TestCykHelpers:
+    def test_dict_from_frozenset(self):
+        from cyk import dict_from_frozenset
+
+        d = dict_from_frozenset(fs(pos="N", number="sg"))
+        assert d == {"pos": "N", "number": "sg"}
+
+    def test_agreement_check_unary_ip_np(self):
+        from cyk import agreement_check_unary
+
+        feat = fs(pos="N", number="sg", case="nomn")
+        assert agreement_check_unary("IP", "NP", feat)

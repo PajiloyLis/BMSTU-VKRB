@@ -120,44 +120,46 @@ def plot_results(lengths, cyk_means, cyk_stds, ext_means, ext_stds, output_prefi
 
     # ----- График 1: Время построения таблицы CYK -----
     plt.figure(figsize=(8, 6))
-    plt.errorbar(lengths, cyk_means, yerr=cyk_stds, fmt='ok-', capsize=3, linewidth=1.5, markersize=6, label='Экспериментальные данные')
+    plt.rcParams["pdf.fonttype"] = 42
+    plt.rcParams["ps.fonttype"] = 42
+    plt.errorbar(lengths, cyk_means, yerr=cyk_stds, fmt='ok-', capsize=3, linewidth=1.5, markersize=6, label='Полученные данные')
     
     # Аппроксимация полиномом 3-й степени для CYK
     coefs_cyk = np.polyfit(lengths, cyk_means, 3)
     poly_cyk = np.poly1d(coefs_cyk)
     n_fit = np.linspace(min(lengths), max(lengths), 100)
-    plt.plot(n_fit, poly_cyk(n_fit), 'k--', linewidth=1.5, label=f'Аппроксимация O(n³)\n{coefs_cyk[0]:.2e}n³ + {coefs_cyk[1]:.2e}n² + {coefs_cyk[2]:.2e}n + {coefs_cyk[3]:.2e}')
+    plt.plot(n_fit, poly_cyk(n_fit), 'k--', linewidth=1.5, label=f'Аппроксимация \n{coefs_cyk[0]:.2e}n³ + {coefs_cyk[1]:.2e}n² + {coefs_cyk[2]:.2e}n + {coefs_cyk[3]:.2e}')
     
     plt.xticks(lengths)
     plt.xlabel('Количество словоформ в предложении', fontsize=12)
-    plt.ylabel('Время (сек)', fontsize=12)
+    plt.ylabel('Медианное время (сек)', fontsize=12)
     plt.title('Построение таблицы составляющих', fontsize=14)
     plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend()
     cyk_pdf = f"{output_prefix}_cyk.pdf"
     plt.savefig(cyk_pdf, dpi=150, bbox_inches='tight')
     print(f"График CYK сохранён: {cyk_pdf}")
-    plt.legend()
     plt.show()
     plt.close()
 
     # ----- График 2: Среднее время построения одного дерева разбора -----
     plt.figure(figsize=(8, 6))
-    plt.errorbar(lengths, ext_means, yerr=ext_stds, fmt='sk-', capsize=3, linewidth=1.5, markersize=6, label='Экспериментальные данные')
+    plt.errorbar(lengths, ext_means, yerr=ext_stds, fmt='sk-', capsize=3, linewidth=1.5, markersize=6, label='Полученные данные')
     
     # Аппроксимация полиномом 2-й степени (можно и 3-й, смотрите по данным)
     coefs_ext = np.polyfit(lengths, ext_means, 4)  # или 3, если нужно
     poly_ext = np.poly1d(coefs_ext)
-    plt.plot(n_fit, poly_ext(n_fit), 'k--', linewidth=1.5, label=f'Аппроксимация O(n⁴)\n{coefs_ext[0]:.2e}n⁴ + {coefs_ext[1]:.2e}n³ + {coefs_ext[2]:.2e}n² + {coefs_ext[3]:.2e}n + {coefs_ext[4]:.2e}')
+    plt.plot(n_fit, poly_ext(n_fit), 'k--', linewidth=1.5, label=f'Аппроксимация \n{coefs_ext[0]:.2e}n⁴ + {coefs_ext[1]:.2e}n³ + {coefs_ext[2]:.2e}n² + {coefs_ext[3]:.2e}n + {coefs_ext[4]:.2e}')
     
     plt.xticks(lengths)
     plt.xlabel('Количество словоформ в предложении', fontsize=12)
-    plt.ylabel('Среднее время на одно дерево (сек)', fontsize=12)
-    plt.title('Построение деревьев разбора', fontsize=14)
+    plt.ylabel('Медианное время восстановления одного дерева (сек)', fontsize=12)
+    plt.title('Восстановление деревьев разбора', fontsize=14)
     plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend()
     trees_pdf = f"{output_prefix}_trees.pdf"
     plt.savefig(trees_pdf, dpi=150, bbox_inches='tight')
     print(f"График деревьев сохранён: {trees_pdf}")
-    plt.legend()
     plt.show()
     plt.close()
 

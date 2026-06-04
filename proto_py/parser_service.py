@@ -34,6 +34,10 @@ class ParserEngine:
         self.root_symbol = root_symbol
 
     def parse_sentence(self, text: str, max_trees: int = 5) -> ParseResult:
+        result = self.parse_sentence_all(text, max_trees=max_trees)
+        return result
+
+    def parse_sentence_all(self, text: str, max_trees: int | None = 500) -> ParseResult:
         normalized = text.strip()
         tokens = tokenize_input(normalized)
         token_feature_pairs = preprocess_tokens(tokens)
@@ -46,7 +50,8 @@ class ParserEngine:
         if parsed:
             all_trees = extract_trees(0, len(tokens), self.root_symbol, tokens, dp, self.grammar, {})
             tree_count = len(all_trees)
-            for index, tree in enumerate(all_trees[:max_trees], start=1):
+            selected = all_trees if max_trees is None else all_trees[:max_trees]
+            for index, tree in enumerate(selected, start=1):
                 trees.append(ParsedTree(index=index, bracket=tree_to_bracket(tree), tree=tree))
 
         return ParseResult(

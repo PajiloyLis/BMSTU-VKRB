@@ -10,7 +10,7 @@ export function ParseResult({ result }: ParseResultProps) {
   if (result === null) {
     return (
       <section className="panel muted">
-        Введите предложение и запустите разбор. Результаты будут сохранены в публичной папке артефактов.
+        Введите предложение и запустите разбор.
       </section>
     );
   }

@@ -8,12 +8,8 @@ export function App() {
   return (
     <main className="app">
       <section className="hero">
-        <p className="eyebrow">CYK + русская морфология</p>
         <h1>Разбор предложения</h1>
-        <p>
-          Введите предложение, получите токены, скобочную запись, DOT/PNG дерева и JSON,
-          сохранённые по публичным URL.
-        </p>
+        <p>Введите предложение и запустите разбор.</p>
       </section>
 
       <div className="layout">

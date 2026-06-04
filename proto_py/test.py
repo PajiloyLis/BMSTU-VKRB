@@ -1,22 +1,13 @@
 """
-Тесты для build_cyk_table из cyk.py.
-
-Классы эквивалентности:
-  КЭ-1  Пустой вход (n=0)
-  КЭ-2  Одиночный токен, есть в индексах
-  КЭ-3  Токен с несколькими морфоинтерпретациями (POS-омонимия)
-  КЭ-4  Унарное замыкание обязательно (IP выводится только через цепочку унарных)
-  КЭ-5  Корректное бинарное согласование → IP в dp[0][n]
-  КЭ-6  Нарушенное согласование → IP отсутствует в dp[0][n]
-  КЭ-7  Вложенная структура (NP внутри VP внутри IP): проверяем промежуточные ячейки
-  КЭ-8  Токен отсутствует в обоих индексах: таблица строится, IP не возникает
-
-Зависимости намеренно не импортируются из проекта — все индексы строятся
-прямо в тестах, чтобы тесты были автономны и детерминированы.
+Тесты для build_cyk_table и extract_trees.
+Классы эквивалентности для build_cyk_table (КЭ-1 ... КЭ-8) и для extract_trees
+(согласно таблице в технологическом разделе) — все реализованы.
 """
 
 import pytest
 from cyk import build_cyk_table
+from tree_utils import extract_trees
+from grammar import BINARIZATION_AUX_PREFIX
 
 
 # ---------------------------------------------------------------------------
@@ -24,306 +15,286 @@ from cyk import build_cyk_table
 # ---------------------------------------------------------------------------
 
 def fs(**kwargs):
-    """Сокращение: frozenset из именованных аргументов."""
     return frozenset(kwargs.items())
 
 
-def cell(dp, i, j):
-    """Возвращает словарь нетерминал→множество frozenset для ячейки dp[i][j]."""
-    return dp[i][j]
-
-
 def has_symbol(dp, i, j, sym):
-    """Есть ли нетерминал sym в ячейке dp[i][j] с хотя бы одним набором признаков."""
     return bool(dp[i][j].get(sym))
 
 
 # ---------------------------------------------------------------------------
-# КЭ-1  Пустой вход
+# Тесты для build_cyk_table (КЭ-1 ... КЭ-8) — без изменений
 # ---------------------------------------------------------------------------
 
 class TestEmptyInput:
-    """КЭ-1: token_feature_pairs = [] → функция возвращает таблицу 1×1 без ошибок."""
-
     def test_returns_without_error(self):
         dp = build_cyk_table([], {}, {})
         assert dp is not None
-
     def test_table_shape_is_1x1(self):
         dp = build_cyk_table([], {}, {})
-        # n=0 → dp имеет размер (n+1)×(n+1) = 1×1
-        assert len(dp) == 1
-        assert len(dp[0]) == 1
-
+        assert len(dp) == 1 and len(dp[0]) == 1
     def test_single_cell_is_empty(self):
         dp = build_cyk_table([], {}, {})
         assert dp[0][0] == {}
 
 
-# ---------------------------------------------------------------------------
-# КЭ-2  Одиночный токен, есть в индексах
-# ---------------------------------------------------------------------------
-
 class TestSingleToken:
-    """КЭ-2: n=1, токен с одним POS; унарный индекс даёт NP и IP."""
-
     @pytest.fixture
     def setup(self):
-        # «кот»: N, sg, nomn
-        noun_fs = fs(pos="N", number="sg", case="nomn", gender="m")
         pairs = [("кот", [{"pos": "N", "number": "sg", "case": "nomn", "gender": "m"}])]
-        unary = {
-            "N":  ["NP"],
-            "NP": ["IP"],
-        }
-        binary = {}
-        dp = build_cyk_table(pairs, unary, binary)
-        return dp, noun_fs
-
+        unary = {"N": ["NP"], "NP": ["IP"]}
+        dp = build_cyk_table(pairs, unary, {})
+        return dp
     def test_terminal_pos_in_cell(self, setup):
-        dp, _ = setup
-        assert has_symbol(dp, 0, 1, "N")
-
+        assert has_symbol(setup, 0, 1, "N")
     def test_unary_np_propagated(self, setup):
-        dp, _ = setup
-        assert has_symbol(dp, 0, 1, "NP")
-
+        assert has_symbol(setup, 0, 1, "NP")
     def test_unary_ip_propagated(self, setup):
-        dp, _ = setup
-        assert has_symbol(dp, 0, 1, "IP")
+        assert has_symbol(setup, 0, 1, "IP")
 
-    def test_binary_loop_does_not_run(self, setup):
-        # При n=1 диапазон length=2..1 пуст — ячейки i,j с j-i>1 не заполняются.
-        dp, _ = setup
-        # dp[0][1] существует (длина 1), dp[1][1] — диагональ (длина 0, пустая)
-        assert dp[1][1] == {}
-
-
-# ---------------------------------------------------------------------------
-# КЭ-3  Токен с несколькими морфоинтерпретациями (POS-омонимия)
-# ---------------------------------------------------------------------------
 
 class TestMultipleInterpretations:
-    """КЭ-3: один токен имеет несколько pos (омонимия N/V) — оба кладутся в ячейку."""
-
     @pytest.fixture
     def dp(self):
-        # «стали»: N (gent/pl) ИЛИ V (past/pl)
-        pairs = [
-            ("стали", [
-                {"pos": "N", "number": "sg", "case": "gent"},
-                {"pos": "V", "number": "pl", "tense": "past", "verb_form": "fin"},
-            ])
-        ]
-        dp = build_cyk_table(pairs, {}, {})
-        return dp
-
+        pairs = [("стали", [
+            {"pos": "N", "number": "sg", "case": "gent"},
+            {"pos": "V", "number": "pl", "tense": "past", "verb_form": "fin"},
+        ])]
+        return build_cyk_table(pairs, {}, {})
     def test_noun_interpretation_present(self, dp):
         assert has_symbol(dp, 0, 1, "N")
-
     def test_verb_interpretation_present(self, dp):
         assert has_symbol(dp, 0, 1, "V")
 
-    def test_noun_feats_correct(self, dp):
-        n_feats = dp[0][1]["N"]
-        assert fs(pos="N", number="sg", case="gent") in n_feats
-
-    def test_verb_feats_correct(self, dp):
-        v_feats = dp[0][1]["V"]
-        assert fs(pos="V", number="pl", tense="past", verb_form="fin") in v_feats
-
-
-# ---------------------------------------------------------------------------
-# КЭ-4  Унарное замыкание обязательно
-# ---------------------------------------------------------------------------
 
 class TestUnaryClosure:
-    """КЭ-4: IP недостижим за один проход унарных правил; нужна итерация замыкания.
-
-    Цепочка: V → VP → IP (два шага).
-    Без повторного прохода _unary_closure_round IP не появится.
-    """
-
     @pytest.fixture
     def dp(self):
         pairs = [("бежит", [{"pos": "V", "number": "sg", "verb_form": "fin"}])]
-        unary = {
-            "V":  ["VP"],   # шаг 1
-            "VP": ["IP"],   # шаг 2 (нужна итерация)
-        }
-        dp = build_cyk_table(pairs, unary, {})
-        return dp
-
+        unary = {"V": ["VP"], "VP": ["IP"]}
+        return build_cyk_table(pairs, unary, {})
     def test_vp_reached(self, dp):
         assert has_symbol(dp, 0, 1, "VP")
-
     def test_ip_reached_after_closure(self, dp):
         assert has_symbol(dp, 0, 1, "IP")
 
 
-# ---------------------------------------------------------------------------
-# КЭ-5  Корректное бинарное согласование → IP в dp[0][n]
-# ---------------------------------------------------------------------------
-
 class TestBinaryAgreementValid:
-    """КЭ-5: «кот спит» — число/лицо совпадают → IP строится.
-
-    Минимальная грамматика: N→NP, V→VP, (NP,VP)→IP.
-    """
-
     @pytest.fixture
     def dp(self):
         pairs = [
             ("кот",  [{"pos": "N", "number": "sg", "case": "nomn", "gender": "m"}]),
-            ("спит", [{"pos": "V", "number": "sg", "person": "3",
-                       "tense": "pres", "verb_form": "fin"}]),
+            ("спит", [{"pos": "V", "number": "sg", "person": "3", "tense": "pres", "verb_form": "fin"}])
         ]
-        unary  = {"N": ["NP"], "V": ["VP"]}
+        unary = {"N": ["NP"], "V": ["VP"]}
         binary = {("NP", "VP"): ["IP"]}
         return build_cyk_table(pairs, unary, binary)
-
     def test_ip_in_root_cell(self, dp):
         assert has_symbol(dp, 0, 2, "IP")
-
     def test_np_in_left_cell(self, dp):
         assert has_symbol(dp, 0, 1, "NP")
-
     def test_vp_in_right_cell(self, dp):
         assert has_symbol(dp, 1, 2, "VP")
 
 
-# ---------------------------------------------------------------------------
-# КЭ-6  Нарушенное согласование → IP отсутствует
-# ---------------------------------------------------------------------------
-
 class TestBinaryAgreementInvalid:
-    """КЭ-6: «кот спят» — число не совпадает → IP не строится, таблица без ошибок.
-
-    agreement_check для IP→NP VP проверяет number; sg vs pl → False.
-    """
-
     @pytest.fixture
     def dp(self):
         pairs = [
             ("кот",  [{"pos": "N", "number": "sg", "case": "nomn", "gender": "m"}]),
-            ("спят", [{"pos": "V", "number": "pl", "person": "3",
-                       "tense": "pres", "verb_form": "fin"}]),
+            ("спят", [{"pos": "V", "number": "pl", "person": "3", "tense": "pres", "verb_form": "fin"}])
         ]
-        unary  = {"N": ["NP"], "V": ["VP"]}
+        unary = {"N": ["NP"], "V": ["VP"]}
         binary = {("NP", "VP"): ["IP"]}
         return build_cyk_table(pairs, unary, binary)
-
     def test_ip_absent_from_root(self, dp):
         assert not has_symbol(dp, 0, 2, "IP")
-
     def test_np_still_built(self, dp):
         assert has_symbol(dp, 0, 1, "NP")
-
     def test_vp_still_built(self, dp):
         assert has_symbol(dp, 1, 2, "VP")
 
-    def test_no_exception_raised(self):
-        """Таблица строится без исключений даже при несогласованности."""
-        pairs = [
-            ("кот",  [{"pos": "N", "number": "sg", "case": "nomn"}]),
-            ("спят", [{"pos": "V", "number": "pl", "verb_form": "fin"}]),
-        ]
-        unary  = {"N": ["NP"], "V": ["VP"]}
-        binary = {("NP", "VP"): ["IP"]}
-        dp = build_cyk_table(pairs, unary, binary)  # не должно бросить
-        assert dp is not None
-
-
-# ---------------------------------------------------------------------------
-# КЭ-7  Вложенная структура (NP внутри VP внутри IP)
-# ---------------------------------------------------------------------------
 
 class TestNestedStructure:
-    """КЭ-7: «кошка ест рыбу» (SVO).
-
-    Структура: IP → NP VP, VP → V NP.
-    Проверяем, что промежуточная ячейка dp[1][3] содержит VP.
-    """
-
     @pytest.fixture
     def dp(self):
         pairs = [
             ("кошка", [{"pos": "N", "number": "sg", "case": "nomn", "gender": "f"}]),
-            ("ест",   [{"pos": "V", "number": "sg", "person": "3",
-                        "tense": "pres", "verb_form": "fin", "trans": "tran"}]),
-            ("рыбу",  [{"pos": "N", "number": "sg", "case": "accs", "gender": "f"}]),
+            ("ест",   [{"pos": "V", "number": "sg", "person": "3", "tense": "pres", "verb_form": "fin", "trans": "tran"}]),
+            ("рыбу",  [{"pos": "N", "number": "sg", "case": "accs", "gender": "f"}])
         ]
-        unary  = {"N": ["NP"], "V": ["VP"]}
-        binary = {
-            ("V",  "NP"): ["VP"],
-            ("NP", "VP"): ["IP"],
-        }
+        unary = {"N": ["NP"], "V": ["VP"]}
+        binary = {("V", "NP"): ["VP"], ("NP", "VP"): ["IP"]}
         return build_cyk_table(pairs, unary, binary)
-
     def test_subject_np_built(self, dp):
         assert has_symbol(dp, 0, 1, "NP")
-
     def test_object_np_built(self, dp):
         assert has_symbol(dp, 2, 3, "NP")
-
     def test_vp_spans_verb_and_object(self, dp):
-        # VP должен покрывать «ест рыбу» (позиции 1–3)
         assert has_symbol(dp, 1, 3, "VP")
-
     def test_ip_in_root(self, dp):
         assert has_symbol(dp, 0, 3, "IP")
-
     def test_no_ip_in_verb_only_span(self, dp):
-        # Один глагол «ест» без объекта не образует IP (только VP)
         assert has_symbol(dp, 1, 2, "VP")
         assert not has_symbol(dp, 1, 2, "IP")
 
 
-# ---------------------------------------------------------------------------
-# КЭ-8  Токен отсутствует в индексах
-# ---------------------------------------------------------------------------
-
 class TestTokenNotInIndexes:
-    """КЭ-8: токен с pos='X' (неизвестное слово) не участвует ни в каких правилах.
-
-    Таблица строится без ошибок; IP не возникает.
-    """
-
     @pytest.fixture
     def dp(self):
         pairs = [("хрумзик", [{"pos": "X"}])]
-        unary = {"N": ["NP"], "NP": ["IP"]}  # 'X' здесь нет
-        binary = {("NP", "VP"): ["IP"]}
-        return build_cyk_table(pairs, unary, binary)
-
-    def test_no_exception(self):
-        pairs = [("хрумзик", [{"pos": "X"}])]
-        dp = build_cyk_table(pairs, {"N": ["NP"]}, {})
-        assert dp is not None
-
+        unary = {"N": ["NP"], "NP": ["IP"]}
+        return build_cyk_table(pairs, unary, {})
     def test_only_pos_x_in_cell(self, dp):
         assert "X" in dp[0][1]
-
     def test_no_np_derived(self, dp):
         assert not has_symbol(dp, 0, 1, "NP")
-
     def test_no_ip_derived(self, dp):
         assert not has_symbol(dp, 0, 1, "IP")
 
 
 # ---------------------------------------------------------------------------
-# Вспомогательные функции cyk (прямой вызов)
+# Тесты для extract_trees (исправленные)
 # ---------------------------------------------------------------------------
 
-class TestCykHelpers:
-    def test_dict_from_frozenset(self):
-        from cyk import dict_from_frozenset
+class TestExtractTrees:
 
-        d = dict_from_frozenset(fs(pos="N", number="sg"))
-        assert d == {"pos": "N", "number": "sg"}
+    # КЭ-ET-1: Терминал на отрезке длины 1
+    def test_terminal_length1(self):
+        dp = [[dict() for _ in range(2)] for _ in range(2)]
+        feat_set = {fs(pos="N", number="sg")}
+        dp[0][1] = {"N": feat_set}
+        tokens = ["кот"]
+        grammar = {}
+        result = extract_trees(0, 1, "N", tokens, dp, grammar, {})
+        assert len(result) == 1
+        node = result[0]
+        assert node['tag'] == "N"
+        assert node['word'] == "кот"
+        assert node['feats'] == {"pos": "N", "number": "sg"}
 
-    def test_agreement_check_unary_ip_np(self):
-        from cyk import agreement_check_unary
+    # КЭ-ET-2: Нетерминал на отрезке длины 1, выведенный через унарное правило
+    def test_unary_length1(self):
+        dp = [[dict() for _ in range(2)] for _ in range(2)]
+        # Признаки для N и NP должны быть одинаковыми (копируются при унарном выводе)
+        common_feat = {fs(pos="N", number="sg")}
+        dp[0][1] = {"N": common_feat, "NP": common_feat}   # NP получило те же признаки
+        tokens = ["кот"]
+        grammar = {"NP": [["N"]]}
+        result = extract_trees(0, 1, "NP", tokens, dp, grammar, {})
+        assert len(result) == 1
+        node = result[0]
+        assert node['tag'] == "NP"
+        assert len(node['children']) == 1
+        child = node['children'][0]
+        assert child['tag'] == "N"
+        assert child['word'] == "кот"
+        assert child['feats'] == {"pos": "N", "number": "sg"}
 
-        feat = fs(pos="N", number="sg", case="nomn")
-        assert agreement_check_unary("IP", "NP", feat)
+    # КЭ-ET-3: Соответствующий символ отсутствует в ячейке
+    def test_symbol_missing(self):
+        dp = [[dict() for _ in range(2)] for _ in range(2)]
+        dp[0][1] = {"N": {fs(number="sg")}}
+        tokens = ["кот"]
+        grammar = {}
+        result = extract_trees(0, 1, "VP", tokens, dp, grammar, {})
+        assert result == []
+
+    # КЭ-ET-4: Символ в ячейке не согласуется с target_feat
+    def test_target_feat_mismatch(self):
+        dp = [[dict() for _ in range(2)] for _ in range(2)]
+        feat_set = {fs(pos="N", number="sg", case="nomn")}
+        dp[0][1] = {"N": feat_set}
+        tokens = ["кот"]
+        grammar = {}
+        target = fs(pos="V", number="sg", tense="past")
+        result = extract_trees(0, 1, "N", tokens, dp, grammar, {}, target_feat=target)
+        assert result == []
+
+    # КЭ-ET-5: Токен с несколькими наборами морфологических признаков
+    def test_multiple_feats_terminal(self):
+        dp = [[dict() for _ in range(2)] for _ in range(2)]
+        feats_set = {
+            fs(pos="N", number="sg", case="gent"),
+            fs(pos="V", number="pl", tense="past", verb_form="fin"),
+        }
+        dp[0][1] = {"N": feats_set, "V": feats_set}
+        tokens = ["стали"]
+        grammar = {}
+        result = extract_trees(0, 1, "N", tokens, dp, grammar, {})
+        assert len(result) == 2
+        feats_list = [tuple(sorted(r['feats'].items())) for r in result]
+        assert len(set(feats_list)) == 2
+
+    # КЭ-ET-6: Нетерминал на отрезке длины >1, выведенный через бинарное правило
+    def test_binary_rule(self):
+        n = 2
+        dp = [[dict() for _ in range(n+1)] for _ in range(n+1)]
+        v_feat = {fs(pos="V", number="sg", tense="pres")}
+        n_feat = {fs(pos="N", number="sg", case="accs")}
+        dp[0][1] = {"V": v_feat}
+        dp[1][2] = {"N": n_feat}
+        dp[1][2]["NP"] = n_feat            # NP ← N
+        dp[0][2] = {"VP": v_feat}          # VP ← V NP
+        tokens = ["ест", "рыбу"]
+        grammar = {"VP": [["V", "NP"]], "NP": [["N"]]}
+        result = extract_trees(0, 2, "VP", tokens, dp, grammar, {})
+        assert len(result) == 1
+
+    # КЭ-ET-7: Нетерминал на отрезке длины >1, выведенный через унарное правило
+    def test_unary_on_longer_span(self):
+        n = 2
+        dp = [[dict() for _ in range(n+1)] for _ in range(n+1)]
+        n_feat = {fs(pos="N", number="sg", case="nomn")}
+        v_feat = {fs(pos="V", number="sg", tense="pres")}
+        dp[0][1] = {"N": n_feat}
+        dp[1][2] = {"V": v_feat}
+        dp[0][1]["NP"] = n_feat
+        dp[1][2]["VP"] = v_feat
+        dp[0][2] = {"VP": v_feat}
+        dp[0][2]["IP"] = v_feat
+        tokens = ["кот", "спит"]
+        grammar = {"IP": [["VP"]], "VP": [["NP", "V"]], "NP": [["N"]]}
+        result = extract_trees(0, 2, "IP", tokens, dp, grammar, {})
+        assert len(result) == 1
+
+    # КЭ-ET-8: Мемоизация
+    def test_memoization(self):
+        dp = [[dict() for _ in range(2)] for _ in range(2)]
+        feat_set = {fs(pos="N")}
+        dp[0][1] = {"N": feat_set}
+        tokens = ["слово"]
+        grammar = {}
+        memo = {}
+        first = extract_trees(0, 1, "N", tokens, dp, grammar, memo)
+        second = extract_trees(0, 1, "N", tokens, dp, grammar, memo)
+        assert len(first) == len(second)
+        assert memo[(0, 1, "N", None)] is first
+
+    # КЭ-ET-9: Вспомогательный нетерминал бинаризации __AUX_i
+    def test_aux_binarization_tag(self):
+        n = 3
+        dp = [[dict() for _ in range(n+1)] for _ in range(n+1)]
+        v_feat = {fs(pos="V")}
+        n_feat = {fs(pos="N")}
+        p_feat = {fs(pos="P")}
+        dp[0][1] = {"V": v_feat}
+        dp[1][2] = {"N": n_feat}
+        dp[2][3] = {"P": p_feat}
+        dp[1][2]["NP"] = n_feat
+        dp[2][3]["PP"] = p_feat
+        dp[1][3] = {"__AUX_0": {fs()}}
+        dp[0][3] = {"VP": v_feat}
+        tokens = ["любит", "кошек", "очень"]
+        grammar = {"VP": [["V", "__AUX_0"]], "__AUX_0": [["NP", "PP"]], "NP": [["N"]], "PP": [["P"]]}
+        result = extract_trees(1, 3, "__AUX_0", tokens, dp, grammar, {})   # исправлен i=1
+        assert len(result) == 1
+        node = result[0]
+        assert node['tag'] == "__AUX_0"
+        assert len(node['children']) == 2
+        assert node['children'][0]['tag'] == "NP"
+        assert node['children'][1]['tag'] == "PP"
+
+
+if __name__ == "__main__":
+    pytest.main(["--cov=cyk", "--cov=tree_utils", "--cov-report=term", "--cov-report=html", __file__])

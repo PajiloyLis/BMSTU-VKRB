@@ -7,10 +7,11 @@ import argparse
 import csv
 import json
 import signal
+import tempfile
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterator
 
 from eval.span_utils import (
     DEFAULT_LABELS,
@@ -18,7 +19,8 @@ from eval.span_utils import (
     format_spans,
     gold_content_tokens,
     gold_spans,
-    pick_best_tree,
+    pred_spans,
+    score_spans,
     tokens_match,
 )
 from parser_service import ParserEngine
@@ -66,6 +68,7 @@ class EvalSummary:
     unparsed: int = 0
     token_mismatch: int = 0
     timeout: int = 0
+    too_long: int = 0
     exact_match_count: int = 0
     micro_tp: int = 0
     micro_fp: int = 0
@@ -91,13 +94,15 @@ class EvalSummary:
                 self.exact_match_count += 1
         elif row.status == "unparsed":
             self.unparsed += 1
-            gold_count = row.fn
-            self.micro_fn += gold_count
+            self.micro_fn += row.fn
         elif row.status == "token_mismatch":
             self.token_mismatch += 1
             self.micro_fn += row.fn
         elif row.status == "timeout":
             self.timeout += 1
+            self.micro_fn += row.fn
+        elif row.status == "too_long":
+            self.too_long += 1
             self.micro_fn += row.fn
 
         src = row.source or "unknown"
@@ -139,6 +144,7 @@ class EvalSummary:
             "unparsed": self.unparsed,
             "token_mismatch": self.token_mismatch,
             "timeout": self.timeout,
+            "too_long": self.too_long,
             "exact_match_count": self.exact_match_count,
             "corpus_exact_match_rate": self.exact_match_count / self.total if self.total else 0.0,
             "micro": {
@@ -158,6 +164,105 @@ class EvalSummary:
         }
 
 
+def _process_trees_iterator(
+    tree_iter: Iterator[Any],
+    gold: set[tuple[str, int, int]],
+    gold_content: list[str],
+    labels: frozenset[str],
+) -> tuple[int, int, int | None, set[tuple[str, int, int]], SpanScores]:
+    """Итерируется по деревьям (каждое имеет .tree), возвращает метрики."""
+    tree_count = 0
+    trees_evaluated = 0
+    best_idx = None
+    best_pred = set()
+    best_scores = SpanScores(tp=-1, fp=0, fn=0)
+    best_f1 = -1.0
+
+    for idx, parse in enumerate(tree_iter, start=1):
+        tree_count += 1
+        tree_dict = parse.tree
+        pred = pred_spans(tree_dict, gold_content, labels=labels)
+        scores = score_spans(gold, pred)
+        trees_evaluated += 1
+        f1 = scores.f1
+        if f1 > best_f1 or (f1 == best_f1 and scores.tp > best_scores.tp):
+            best_f1 = f1
+            best_idx = idx
+            best_pred = pred
+            best_scores = scores
+
+    return tree_count, trees_evaluated, best_idx, best_pred, best_scores
+
+
+def _process_trees_list(
+    tree_list: list[Any],
+    gold: set[tuple[str, int, int]],
+    gold_content: list[str],
+    labels: frozenset[str],
+) -> tuple[int, int, int | None, set[tuple[str, int, int]], SpanScores]:
+    """Обрабатывает список деревьев без создания копий."""
+    tree_count = len(tree_list)
+    trees_evaluated = 0
+    best_idx = None
+    best_pred = set()
+    best_scores = SpanScores(tp=-1, fp=0, fn=0)
+    best_f1 = -1.0
+
+    for idx, parse in enumerate(tree_list, start=1):
+        tree_dict = parse.tree
+        pred = pred_spans(tree_dict, gold_content, labels=labels)
+        scores = score_spans(gold, pred)
+        trees_evaluated += 1
+        f1 = scores.f1
+        if f1 > best_f1 or (f1 == best_f1 and scores.tp > best_scores.tp):
+            best_f1 = f1
+            best_idx = idx
+            best_pred = pred
+            best_scores = scores
+
+    return tree_count, trees_evaluated, best_idx, best_pred, best_scores
+
+
+def _process_trees_with_tempfile(
+    tree_list: list[Any],
+    gold: set[tuple[str, int, int]],
+    gold_content: list[str],
+    labels: frozenset[str],
+) -> tuple[int, int, int | None, set[tuple[str, int, int]], SpanScores]:
+    """Записывает деревья во временный файл и обрабатывает построчно."""
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.jsonl', delete=False) as tmp:
+        tmp_path = Path(tmp.name)
+        for parse in tree_list:
+            json.dump(parse.tree, tmp, ensure_ascii=False)
+            tmp.write('\n')
+
+    tree_count = 0
+    trees_evaluated = 0
+    best_idx = None
+    best_pred = set()
+    best_scores = SpanScores(tp=-1, fp=0, fn=0)
+    best_f1 = -1.0
+
+    try:
+        with tmp_path.open(encoding='utf-8') as f:
+            for idx, line in enumerate(f, start=1):
+                tree_dict = json.loads(line)
+                tree_count += 1
+                pred = pred_spans(tree_dict, gold_content, labels=labels)
+                scores = score_spans(gold, pred)
+                trees_evaluated += 1
+                f1 = scores.f1
+                if f1 > best_f1 or (f1 == best_f1 and scores.tp > best_scores.tp):
+                    best_f1 = f1
+                    best_idx = idx
+                    best_pred = pred
+                    best_scores = scores
+    finally:
+        tmp_path.unlink()
+
+    return tree_count, trees_evaluated, best_idx, best_pred, best_scores
+
+
 def evaluate_sentence(
     data: dict[str, Any],
     engine: ParserEngine,
@@ -166,6 +271,7 @@ def evaluate_sentence(
     include_punct: bool,
     timeout_sec: float | None,
     labels: frozenset[str],
+    max_length: int,
 ) -> SentenceResult:
     sent_id = str(data.get("id", ""))
     text = data.get("text", "")
@@ -175,7 +281,31 @@ def evaluate_sentence(
 
     gold_content = gold_content_tokens(tokens, include_punct=include_punct)
     gold = gold_spans(constituents, tokens, labels=labels, include_punct=include_punct)
-    empty_scores = SpanScores(tp=0, fp=0, fn=len(gold))
+
+    # Фильтрация по длине предложения (количество словоформ)
+    if len(gold_content) > max_length:
+        return SentenceResult(
+            id=sent_id,
+            text=text,
+            source=source,
+            gold_token_count=len(gold_content),
+            parser_token_count=0,
+            parsed=False,
+            tree_count=0,
+            trees_evaluated=0,
+            best_tree_index=None,
+            gold_spans_str=format_spans(gold),
+            pred_spans_str="",
+            tp=0,
+            fp=0,
+            fn=len(gold),
+            precision=0.0,
+            recall=0.0,
+            f1=0.0,
+            exact_match=False,
+            status="too_long",
+            elapsed_ms=0.0,
+        )
 
     start = time.perf_counter()
     old_handler = None
@@ -184,7 +314,59 @@ def evaluate_sentence(
         signal.setitimer(signal.ITIMER_REAL, timeout_sec)
 
     try:
-        parse_result = engine.parse_sentence_all(text, max_trees=max_trees)
+        if hasattr(engine, 'parse_sentence_iter'):
+            tree_iter = engine.parse_sentence_iter(text, max_trees=max_trees)
+            first = next(tree_iter, None)
+            if first is None:
+                parse_success = False
+                parser_tokens = []
+                tree_count = 0
+                trees_evaluated = 0
+                best_idx = None
+                best_pred = set()
+                best_scores = SpanScores(tp=0, fp=0, fn=len(gold))
+            else:
+                parse_success = True
+                parser_tokens = first.tokens
+                tree_count = 1
+                pred = pred_spans(first.tree, gold_content, labels=labels)
+                scores = score_spans(gold, pred)
+                best_f1 = scores.f1
+                best_idx = 1
+                best_pred = pred
+                best_scores = scores
+                trees_evaluated = 1
+                for idx, parse in enumerate(tree_iter, start=2):
+                    tree_count += 1
+                    pred = pred_spans(parse.tree, gold_content, labels=labels)
+                    scores = score_spans(gold, pred)
+                    trees_evaluated += 1
+                    f1 = scores.f1
+                    if f1 > best_f1 or (f1 == best_f1 and scores.tp > best_scores.tp):
+                        best_f1 = f1
+                        best_idx = idx
+                        best_pred = pred
+                        best_scores = scores
+        else:
+            parse_result = engine.parse_sentence_all(text, max_trees=max_trees)
+            parser_tokens = parse_result.tokens
+            parse_success = parse_result.parsed
+            if not parse_success or not parse_result.trees:
+                tree_count = 0
+                trees_evaluated = 0
+                best_idx = None
+                best_pred = set()
+                best_scores = SpanScores(tp=0, fp=0, fn=len(gold))
+            else:
+                tree_list = parse_result.trees
+                if len(tree_list) <= 10000:
+                    tree_count, trees_evaluated, best_idx, best_pred, best_scores = _process_trees_list(
+                        tree_list, gold, gold_content, labels
+                    )
+                else:
+                    tree_count, trees_evaluated, best_idx, best_pred, best_scores = _process_trees_with_tempfile(
+                        tree_list, gold, gold_content, labels
+                    )
     except ParseTimeout:
         elapsed_ms = (time.perf_counter() - start) * 1000
         return SentenceResult(
@@ -216,7 +398,7 @@ def evaluate_sentence(
                 signal.signal(signal.SIGALRM, old_handler)
 
     elapsed_ms = (time.perf_counter() - start) * 1000
-    parser_tokens = parse_result.tokens
+
     if not include_punct:
         parser_content = [t for t in parser_tokens if t not in {".", ",", ";", ":"}]
     else:
@@ -229,9 +411,9 @@ def evaluate_sentence(
             source=source,
             gold_token_count=len(gold_content),
             parser_token_count=len(parser_content),
-            parsed=parse_result.parsed,
-            tree_count=parse_result.tree_count,
-            trees_evaluated=len(parse_result.trees),
+            parsed=parse_success,
+            tree_count=tree_count,
+            trees_evaluated=trees_evaluated,
             best_tree_index=None,
             gold_spans_str=format_spans(gold),
             pred_spans_str="",
@@ -246,15 +428,15 @@ def evaluate_sentence(
             elapsed_ms=elapsed_ms,
         )
 
-    if not parse_result.parsed:
+    if not parse_success or trees_evaluated == 0:
         return SentenceResult(
             id=sent_id,
             text=text,
             source=source,
             gold_token_count=len(gold_content),
             parser_token_count=len(parser_content),
-            parsed=False,
-            tree_count=0,
+            parsed=parse_success,
+            tree_count=tree_count,
             trees_evaluated=0,
             best_tree_index=None,
             gold_spans_str=format_spans(gold),
@@ -270,9 +452,6 @@ def evaluate_sentence(
             elapsed_ms=elapsed_ms,
         )
 
-    tree_dicts = [t.tree for t in parse_result.trees]
-    best_idx, best_pred, scores = pick_best_tree(tree_dicts, gold, gold_content, labels=labels)
-
     return SentenceResult(
         id=sent_id,
         text=text,
@@ -280,18 +459,18 @@ def evaluate_sentence(
         gold_token_count=len(gold_content),
         parser_token_count=len(parser_content),
         parsed=True,
-        tree_count=parse_result.tree_count,
-        trees_evaluated=len(parse_result.trees),
+        tree_count=tree_count,
+        trees_evaluated=trees_evaluated,
         best_tree_index=best_idx,
         gold_spans_str=format_spans(gold),
         pred_spans_str=format_spans(best_pred),
-        tp=scores.tp,
-        fp=scores.fp,
-        fn=scores.fn,
-        precision=scores.precision,
-        recall=scores.recall,
-        f1=scores.f1,
-        exact_match=scores.exact_match,
+        tp=best_scores.tp,
+        fp=best_scores.fp,
+        fn=best_scores.fn,
+        precision=best_scores.precision,
+        recall=best_scores.recall,
+        f1=best_scores.f1,
+        exact_match=best_scores.exact_match,
         status="ok",
         elapsed_ms=elapsed_ms,
     )
@@ -366,7 +545,7 @@ def run_evaluation(args: argparse.Namespace) -> EvalSummary:
 
     try:
         from tqdm import tqdm
-        iterator: Any = tqdm(files, desc="Evaluating")
+        iterator = tqdm(files, desc="Evaluating")
     except ImportError:
         iterator = files
 
@@ -380,6 +559,7 @@ def run_evaluation(args: argparse.Namespace) -> EvalSummary:
             include_punct=args.include_punct,
             timeout_sec=args.timeout_per_sentence,
             labels=labels,
+            max_length=args.max_length,
         )
         rows.append(row)
         summary.add(row)
@@ -423,6 +603,12 @@ def main() -> None:
         default="NP,VP,PP",
         help="Comma-separated constituent labels to compare",
     )
+    parser.add_argument(
+        "--max-length",
+        type=int,
+        default=15,
+        help="Maximum number of word forms (excluding punctuation if --include-punct not set) to process. Longer sentences are skipped.",
+    )
     args = parser.parse_args()
 
     summary = run_evaluation(args)
@@ -433,6 +619,7 @@ def main() -> None:
     print(f"Unparsed:        {stats['unparsed']}")
     print(f"Token mismatch:  {stats['token_mismatch']}")
     print(f"Timeout:         {stats['timeout']}")
+    print(f"Too long:        {stats['too_long']}")
     print(f"Exact match:     {stats['exact_match_count']} ({stats['corpus_exact_match_rate']:.2%})")
     micro = stats["micro"]
     print(f"Micro P/R/F1:    {micro['precision']:.4f} / {micro['recall']:.4f} / {micro['f1']:.4f}")

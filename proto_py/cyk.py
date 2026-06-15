@@ -75,6 +75,7 @@ def build_cyk_table(token_feature_pairs, unary_index, binary_index):
                                         dp[i][j].setdefault(lhs, set()).add(new_feat)
         while _unary_closure_round(dp, unary_index, tokens, n):
             pass
+    print(dp)
     return dp
 
 def dict_from_frozenset(fs):

@@ -18,11 +18,12 @@
 \end{itemize}
 
 Сравнение перечисленных морфологических анализаторов по сформулированным критериям приведено в таблице~\ref{tab:compare_morph}.
-
+\bgroup
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \begin{table}[H]
 	\centering
 	\caption{Сравнение систем синтаксической разметки}
-	\begin{tabular}{|p{4cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+	\begin{tabular}{|L{.44\textwidth}|p{.1\textwidth}|p{.095\textwidth}|p{.11\textwidth}|p{.12\textwidth}|}
 		\hline
 		Критерий & MyStem & Stemka & xMorphy & PyMorphy\\\hline
 		Использование в качестве подключаемой библиотеки & Да & Да  & Да & Да\\\hline
@@ -31,6 +32,7 @@
 	\end{tabular}
 	\label{tab:compare_morph}
 \end{table}
+\egroup
 
 На основании приведенного сравнения анализаторы xMorphy и PyMorphy являются наиболее подходящими для использования в разработанном методе, как наиболее полно удовлетворяющие требованиям.
 
@@ -50,7 +52,7 @@
 	\end{itemize}
 \end{itemize}
 
-Для реализации серверной составляющей web-приложения был использован язык Python и фреймворк FastAPI~\cite{fastapi_github}. Для реализации клиентской составляющей web-приложения был использован язык TypeScript~\cite{typescriptlang_docs} и фреймворк React~\cite{react_reference}. Пример пользовательского web-интерфейса представлен на рисунке~\ref{fig:interface}.
+Для реализации серверной составляющей web-приложения был использован язык Python и фреймворк FastAPI~\cite{fastapi_github}. Для реализации клиентской составляющей web-приложения был использован язык TypeScript~\cite{typescriptlang_docs} и фреймворк React~\cite{react_reference}. Пример пользовательского интерфейса представлен на рисунке~\ref{fig:interface}.
 
 \begin{figure}[H]
 	\centering
@@ -79,8 +81,10 @@
 
 Для тестирования корректности работы алгоритма построения таблицы составляющих были выделены классы эквивалентности входных данных, представленные в таблице~\ref{tab:cyk_test}.
 
+\bgroup
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \small
-\begin{longtable}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.3\linewidth}|}
+\begin{longtable}{|L{0.22\textwidth}|L{0.45\textwidth}|L{0.25\textwidth}|}
 	\caption{Классы эквивалентности входных данных алгоритма построения таблицы составляющих}
 	\label{tab:cyk_test}\\
 	\hline
@@ -98,10 +102,10 @@
 	\hline
 	\endlastfoot
 	Пустая последовательность токенов & Пустой список $token\_feature\_pairs$ & Пустая таблица составляющих $dp$, размерности  $1\times1$\\\hline
-	Последовательность токенов из одного элемента, для обработки унарными правилами, с единственным набором морфологических признаков & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<кот>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline \textit{<<number>>}:\textit{<<sg>>},\newline \textit{<<case>>}:\textit{<<nomn>>}\}])$,\newline$unary=\{\textit{<<N>>}: [\textit{<<NP>>}], \textit{<<NP>>}: [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержится ключ $N$ и ключи $NP$, $IP$ полученные выводом из унарных правил, с соответствующими наборами морфологических признаков. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
+	Последовательность токенов из одного элемента, для обработки унарными правилами, с единственным набором морфологических признаков & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<кот>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline \textit{<<number>>}:\textit{<<sg>>},\newline \textit{<<case>>}:\textit{<<nomn>>}\}])$,\newline$unary=\{\textit{<<N>>}:[\textit{<<NP>>}],\ \textit{<<NP>>}:[\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержится ключ $N$ и ключи $NP$, $IP$ полученные выводом из унарных правил, с соответствующими наборами морфологических признаков. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
 	Последовательность токенов из одного элемента, для обработки унарными правилами, с несколькими наборами морфологических признаков & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<стали>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<case>>}:\textit{<<gent>>}\},
-	\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<pl>>},\newline\textit{<<tense>>}:\textit{<<past>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержатся ключи $N$, $V$ с соответствующими морфологическими характеристиками. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
-	Последовательность токенов, из которой выводится корень дерева составляющих, посредством унарных правил & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<бежит>>},\ [\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])\newline unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\textit{<<VP>>}: [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержатся ключи $V$, $VP$ и $IP$ с соответствующими морфологическими характеристиками. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
+	\newline\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<pl>>},\newline\textit{<<tense>>}:\textit{<<past>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержатся ключи $N$, $V$ с соответствующими морфологическими характеристиками. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
+	Последовательность токенов, из которой выводится корень дерева составляющих, посредством унарных правил & $token\_feature\_pairs$ содержит единственную пару $(\textit{<<бежит>>},\ [\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])\newline unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\ \textit{<<VP>>}: [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][1]$ содержатся ключи $V$, $VP$ и $IP$ с соответствующими морфологическими характеристиками. $dp[0][0]$, $dp[1][1]$~---~пусты\\\hline
 	Последовательность согласованных токенов из которой выводится корень дерева составляющих, посредством бинарных правил & $token\_feature\_pairs$ содержит пары $(\textit{<<кот>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<case>>}:\textit{<<nomn>>},\newline\textit{<<gender>>}:\textit{<<m>>}\}]),\newline(\textit{<<спит>>},\ [\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<person>>}:3,\newline\textit{<<tense>>}:\textit{<<pres>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])\newline unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\textit{<<N>>}: [\textit{<<NP>>}]\}\newline binary = \{(\textit{<<NP>>}, \textit{<<VP>>}): [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $2 \times 2$. В $dp[0][2]$ содержится ключ $IP$, в $dp[0][1]$~---~ключ $NP$, в $dp[1][2]$~---~ключ $VP$, значения определяют морфологические характеристики соответствующих составляющих\\\hline
 	Последовательность несогласованных токенов & $token\_feature\_pairs$ содержит пары $(\textit{<<кот>>},\ [\{\textit{<<pos>>}:\textit{<<N>>},\newline\textit{<<number>>}:\textit{<<sg>>},\newline\textit{<<case>>}:\textit{<<nomn>>},\newline\textit{<<gender>>}:\textit{<<m>>}\}]),\newline(\textit{<<спят>>},\ [\{\textit{<<pos>>}:\textit{<<V>>},\newline\textit{<<number>>}:\textit{<<pl>>},\newline\textit{<<person>>}:3,\newline\textit{<<tense>>}:\textit{<<pres>>},\newline\textit{<<verb\_form>>}:\textit{<<fin>>}\}])\newline unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\textit{<<N>>}: [\textit{<<NP>>}]\}\newline binary = \{(\textit{<<NP>>}, \textit{<<VP>>}): [\textit{<<IP>>}]\}$ & Таблица составляющих $dp$ размерности $3 \times 3$. В $dp[0][2]$ содержится ключ $IP$, в $dp[0][1]$~---~ключ $NP$, в $dp[1][2]$~---~ключ $VP$, значения определяют морфологические характеристики соответствующих составляющих\\\hline
 	Последовательность согласованных токенов, описывающая вложенную структуру составляющих, из которой выводится корень дерева составляющих& $token\_feature\_pairs$ содержит пары $(\textit{<<кошка>>},\ [\{
@@ -125,12 +129,15 @@
 	unary=\{\textit{<<V>>}: [\textit{<<VP>>}],\textit{<<N>>}: [\textit{<<NP>>}]\}\newline
 	binary = \{(\textit{<<NP>>},\ \textit{<<VP>>}): [\textit{<<IP>>}],\newline (\textit{<<V>>},\ \textit{<<NP>>}): [\textit{<<VP>>}]\}$ & Таблица составляющих $dp$ размерности $4 \times 4$. В $dp[0][1]$ и $dp[2][3]$ содержатся ключи $NP$, в $dp[0][3]$ и $dp[0][2]$~---~ключ $IP$, в $dp[1][3]$~---~ключ $VP$, значения определяют морфологические характеристики соответствующих составляющих\\\hline
 \end{longtable}
+\egroup
 \normalsize
 
-Также были выделены классы эквивалентности, представленные в таблице~\ref{tab:extract_trees_test}, для тестирования алгоритма восстановления дерева составляющих по получаемым таблицам.
+Классы эквивалентности для тестирования алгоритма восстановления дерева составляющих по получаемым таблицам, представлены в таблице~\ref{tab:extract_trees_test}, .
 
+\bgroup
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \small
-\begin{longtable}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.3\linewidth}|}
+\begin{longtable}{|L{0.19\linewidth}|L{0.42\linewidth}|L{0.31\linewidth}|}
 	\caption{Классы эквивалентности входных данных алгоритма восстановления дерева составляющих}
 	\label{tab:extract_trees_test}\\
 	\hline
@@ -162,7 +169,7 @@
 	$grammar=\{\textit{<<NP>>}: [[\textit{<<N>>}]]\}$,\newline
 	$target\_feat=None$ & 
 	Список из одного узла с единственным потомком-листом:\newline$[\{\textit{<<tag>>}:\textit{<<NP>>},\newline
-	\textit{<<feats>>}:\{\{\textit{<<number>>}:\textit{<<sg>>}\}\},\newline
+	\textit{<<feats>>}:\{\newline\{\textit{<<number>>}:\textit{<<sg>>}\}\},\newline
 	\textit{<<children>>}:[\{\textit{<<tag>>}:\textit{<<N>>},\newline
 	\textit{<<feats>>}:\{\textit{<<number>>}:\textit{<<sg>>}\},\newline
 	\textit{<<word>>}:\textit{<<кот>>}\}]\}]$\\\hline
@@ -179,7 +186,7 @@
 	Токен с несколькими наборами морфологических признаков & 
 	$i=0$, $j=1$, $symbol=\textit{<<N>>}$, $word\_chain=[\textit{<<стали>>}]$,\newline
 	$dp[0][1]=\{\textit{<<N>>}: \{\{\textit{<<number>>}:\textit{<<sg>>},\newline
-	\textit{<<case>>}:\textit{<<gent>>}\},\newline
+	\textit{<<case>>}:\textit{<<gent>>}\}\},\newline
 	\textit{<<V>>}: \{\{\textit{<<number>>}:\textit{<<pl>>},\newline
 	\textit{<<tense>>}:\textit{<<past>>}\}\}\}$,\newline
 	$target\_feat=None$ &
@@ -219,6 +226,8 @@
 	Список деревьев, узел которых имеет $\textit{<<tag>>}=\textit{<<\_\_AUX\_i>>}$ и двух потомков $NP$ и $PP$
 	
 \end{longtable}
+\egroup
+\normalsize
 
 Все тесты, сформированные по выделенным классам эквивалентности, для алгоритмов построения таблицы составляющих и восстановления деревьев составляющих были пройдены. Покрытие функции $extract\_trees$ составило $90.6\%$, покрытие функции $build\_cyk\_table$~---~$97.6\%$.
 

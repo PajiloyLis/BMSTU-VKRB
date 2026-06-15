@@ -1,14 +1,20 @@
-\documentclass[a4paper, 12pt]{extreport}
+\documentclass[a4paper, 14pt]{extreport}
 
 \input{./chapters/preambula.tex}
 
 \begin{document}
 	\includepdf{./chapters/title.pdf}
-%	\includepdf[pages={1,2}]{./chapters/task.pdf}
-		\setcounter{page}{5}
+	%	\includepdf[pages={1,2}]{./chapters/task.pdf}
+	\setcounter{page}{5}
 	\include{chapters/abstract}
-
-	\def\contentsname{\begin{center}\Large СОДЕРЖАНИЕ\end{center}}	\tableofcontents
+	\renewcommand{\contentsname}{\centering\Large\bfseries СОДЕРЖАНИЕ}
+	\bgroup
+	
+	\titleformat{name=\ssra,numberless}[block]{}{}{0pt}{\centering\Large\bfseries}
+	\titlespacing*{name=\chapter,numberless}{0pt}{-26pt}{1em}
+	%	\titlespacing{\chapter}{0pt}{0pt}{0pt}
+	\tableofcontents
+	\egroup
 	% \include{./chapters/content}
 	\include{./chapters/intro.tex}
 	\include{./chapters/analytic.tex}
